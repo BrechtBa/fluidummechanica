@@ -1,0 +1,24 @@
+\documentclass[11pt,twoside,openright]{book}
+
+\input{tex/packages.tex}
+
+\graphicspath{{fig/hydrostatica/}{fig/behoudsvergelijkingen/}{fig/stroming_in_leidingen/}{fig/leidingnetwerken/}}
+
+
+\begin{document}
+
+	\renewcommand{\labelenumi}{(\roman{enumi})}
+
+	\frontmatter
+
+	\mainmatter
+		\input{tex/hydrostatica}
+		\input{tex/behoudsvergelijkingen}
+		\input{tex/gelijkvormigheid}
+		\input{tex/uitwendige_stroming}
+		\input{tex/stroming_in_leidingen}
+		\input{tex/leidingnetwerken}	
+		
+	\backmatter
+		\input{tex/studeerplan}
+\end{document}
