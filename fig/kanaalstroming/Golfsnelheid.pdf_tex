@@ -1,6 +1,6 @@
 %% Creator: Inkscape 0.48.2, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'Stroomfunctie.pdf' (pdf, eps, ps)
+%% Accompanies image file 'Golfsnelheid.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{283.46455078bp}%
+    \setlength{\unitlength}{340.1574707bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,11 +48,11 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.63000004)%
-    \put(0,0){\includegraphics[width=\unitlength]{Stroomfunctie.pdf}}%
-    \put(0.66926987,0.30439686){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\vt{v}$}}}%
-    \put(0.57211925,0.22963155){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\diff n$}}}%
-    \put(0.73073279,0.26281669){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$v_y$}}}%
-    \put(0.68595416,0.22642192){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$v_x$}}}%
+  \begin{picture}(1,0.44166667)%
+    \put(0,0){\includegraphics[width=\unitlength]{Golfsnelheid.pdf}}%
+    \put(0.3695319,0.21389024){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$c$}}}%
+    \put(0.6051614,0.21058195){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$c + \Delta v$}}}%
+    \put(0.60004199,0.27494193){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$y$}}}%
+    \put(0.60033342,0.39521208){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\Delta y$}}}%
   \end{picture}%
 \endgroup%

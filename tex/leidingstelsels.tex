@@ -1,23 +1,23 @@
-\FloatBarrier
 \chapter{Leidingstelsels}
 \label{sec:Leidingstelsels}
 
-	\FloatBarrier
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Inleiding}
 	\label{sec:Leidingstelsels Inleiding}
-Ingenieurstoepassingen hebben vaak te maken met het transport van een flu\"idum van \'e\'en locatie naar een andere. Dit kan gebeuren in een Leidingstelsel. In het voorgaande hoofdstuk hebben we reeds berekend welke drukverliezen veroorzaakt worden door de viskeuze spanningen in een horizontale leiding. Een praktisch leidingstelsel zal echter bestaan uit een aaneenschakeling van meerdere leidingen, bochten, veranderingen van diameter, kranen, aanzuigmonden, pompen,...
-\npar
+Ingenieurstoepassingen hebben vaak te maken met het transport van een fluïdum van één locatie naar een andere. Dit kan gebeuren in een leidingstelsel. In het voorgaande hoofdstuk hebben we reeds berekend welke drukverliezen veroorzaakt worden door de viskeuze spanningen in een horizontale leiding. Een praktisch leidingstelsel zal echter bestaan uit een aaneenschakeling van meerdere leidingen, bochten, veranderingen van diameter, kranen, aanzuigmonden, pompen,...
+
 In dit hoofdstuk zullen we trachten enkele basis componenten van een leidingstelsel uit te lichten en te analyseren.
-	\FloatBarrier
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Ladingsverliezen}
 	\label{sec:Ladingsverliezen}
-In het vorige hoofdstuk hebben we de drukverliezen van een viskeuze stroming in een leiding bepaald. Hierbij zijn we er telkens vanuit gegaan dat de viskeuze krachten in evenwicht waren met de drukkrachten. Het verschil in druk aan het begin en het einde van de leiding was met andere woorden de drijvende kracht van de stroming. Wanneer een leiding onder een helling staat zal de zwaartekracht echter ook een kracht uitoefenen op het flu\"idum en dus een deel van de drijvende kracht vormen. We moeten het drukverlies uit het vorige hoofdstuk dus op een andere manier beschouwen. Dit kan door het te beschouwen als een energieverlies. Door de viscositeit zal een deel van de mechanische energie aanwezig in een stroming gedissipeerd worden. Het drukverlies uit het vorige hoofdstuk komt dus ook overeen met een energieverlies. Wanneer we de eenhenden beschouwen zien we dat de eenheid [\unit{}{Pa}] inderdaad overeenkomt met een hoeveelheid energie per volume [\unit{}{J/m^3}].
-\npar
-In sectie \ref{sec:Mechanische arbeid van een deeltje} hebben we de vergelijking van Bernoulli beschouwd als behoud van mechanische energie van een niet-viskeuze, stationaire stroming langs een stroomlijn. In een leiding zullen er steeds stoomlijnen de leiding volgen. De precieze ligging van deze stroomlijnen in de leiding is niet belangrijk aangezien we in de gemiddelde grootheden overheen de leiding geinteresseerd zijn. Bij viskeuze stromingen zal echter een deel van de mechanische energie verloren gaan. We kunnen (\ref{eqn:kinetische energie en arbeid}) dus herformuleren voor een viskeuze stroming:
+In het vorige hoofdstuk hebben we de drukverliezen van een viskeuze stroming in een leiding bepaald. Hierbij zijn we er telkens vanuit gegaan dat de viskeuze krachten in evenwicht waren met de drukkrachten. Het verschil in druk aan het begin en het einde van de leiding was met andere woorden de drijvende kracht van de stroming. Wanneer een leiding onder een helling staat zal de zwaartekracht echter ook een kracht uitoefenen op het fluïdum en dus een deel van de drijvende kracht vormen. We moeten het drukverlies uit het vorige hoofdstuk dus op een andere manier beschouwen. Dit kan door het te beschouwen als een energieverlies. Door de viscositeit zal een deel van de mechanische energie aanwezig in een stroming gedissipeerd worden. Het drukverlies uit het vorige hoofdstuk komt dus ook overeen met een energieverlies. Wanneer we de eenheden beschouwen zien we dat de eenheid [\unit{}{Pa}] inderdaad overeenkomt met een hoeveelheid energie per volume [\unit{}{J/m^3}].
+
+In sectie \ref{sec:Mechanische arbeid van een deeltje} hebben we de vergelijking van Bernoulli beschouwd als behoud van mechanische energie van een niet-viskeuze, stationaire stroming langs een stroomlijn. In een leiding zullen er steeds stoomlijnen de leiding volgen. De precieze ligging van deze stroomlijnen in de leiding is niet belangrijk aangezien we in de gemiddelde grootheden overheen de leiding geïnteresseerd zijn. Bij viskeuze stromingen zal echter een deel van de mechanische energie verloren gaan. We kunnen (\ref{eqn:kinetische energie en arbeid}) dus herformuleren voor een viskeuze stroming:
 \begin{equation}
 	p_2 + \rho \frac{1}{2} v_2^2 + \rho g z_2 = p_1 + \rho \frac{1}{2} v_1^2 + \rho g z_1 - \Delta E
 \end{equation}
-Met $\Delta E$ het energieverlies tengevolge van de viskeuze dissipatie zoals berekend in het vorige hoofdstuk. Een vaak gebruikte voorstelling van deze vergelijking is de weergave als energiehoogtes. De vergelijking wordt dan:
+Met $\Delta E$ het energieverlies ten gevolge van de viskeuze dissipatie zoals berekend in het vorige hoofdstuk. Een vaak gebruikte voorstelling van deze vergelijking is de weergave als energiehoogtes. De vergelijking wordt dan:
 \begin{equation}
 	\frac{p_2}{\rho g} + \rho \frac{v_2^2}{2 g}  + z_2 = \frac{p_1}{\rho g} + \rho \frac{v_1^2}{2 g}  + z_1 - h_L
 \end{equation}
@@ -26,37 +26,37 @@ Hierin wordt $h_L$ het \emph{ladingsverlies} (E: head loss) genoemd. In woorden 
 	h_L = f \frac{v^2}{2 g} \frac{L}{D}
 	\label{eqn:ladingsverlies door een leiding}
 \end{equation}
-In ingenieurstoepassingen zijn we vaak niet geinteresseerd in de gemiddelde snelheid van de stroming in een leiding. We zijn ge\"interesseerd in het debiet dat door deze leiding stroomt. Dit debiet kunnen we echter eenvoudig berekenen met behulp van de gemiddelde snelheid en de diameter als $\dot{V} = v \pi D^2/4$. We kunnen dus vergelijking (\ref{eqn:ladingsverlies door een leiding}) herschrijven als:
+In ingenieurstoepassingen zijn we vaak niet geïnteresseerd in de gemiddelde snelheid van de stroming in een leiding. We zijn geïnteresseerd in het debiet dat door deze leiding stroomt. Dit debiet kunnen we echter eenvoudig berekenen met behulp van de gemiddelde snelheid en de diameter als $\dot{V} = v \pi D^2/4$. We kunnen dus vergelijking (\ref{eqn:ladingsverlies door een leiding}) herschrijven als:
 \begin{equation}
 	h_L = 8 f \frac{\dot{V}^2}{g \pi^2} \frac{L}{D^5}
 	\label{eqn:ladingsverlies door een leiding debiet}
 \end{equation}
 
-	\FloatBarrier
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Lokale ladingsverliezen}
 	\label{sec:Lokale ladingsverliezen}
-Wanneer een flu\"idum door een kraan stroomt zal er een bepaald ladingsverlies optreden ten gevolge van de stand van de kraan. Aangezien dit ladingsverlies, in tegenstelling tot het ladingsverlies in een leiding, aan \'e\'en specifieke locatie kan toegewezen worden wordt er gesproken over lokale ladingsverliezen. Voor de meeste componenten is het moeilijk de lokale ladingsverliezen analytisch te bepalen. Voor de bepaling ervan wordt vaak gebruik gemaakt van een empirisch bepaalde verliesco\"effici\"ent gedefinieerd zodat:
+Wanneer een fluïdum door een kraan stroomt zal er een bepaald ladingsverlies optreden ten gevolge van de stand van de kraan. Aangezien dit ladingsverlies, in tegenstelling tot het ladingsverlies in een leiding, aan één specifieke locatie kan toegewezen worden wordt er gesproken over lokale ladingsverliezen. Voor de meeste componenten is het moeilijk de lokale ladingsverliezen analytisch te bepalen. Voor de bepaling ervan wordt vaak gebruik gemaakt van een empirisch bepaalde verliescoëfficiënt gedefinieerd zodat:
 \begin{equation}
 	h_{L, lokaal} = \zeta \frac{v^2}{2 g} = \zeta \frac{\dot{V}^2}{2 g A^2}
 	\label{eqn:lokale ladingsverliezen}
 \end{equation}
-Uit dimensie analyse blijkt dat de verliesco\"effici\"ent een functie moet zijn van de geometrie en het Reynoldsgetal.
+Uit dimensie analyse blijkt dat de verliescoëfficiënt een functie moet zijn van de geometrie en het Reynoldsgetal.
 \begin{equation}
 	\zeta = \zeta(geometrie, Re)
 \end{equation}
-In vele gevallen zal de invloed van het Reynoldsgetal echter verwaarloosd kunnen worden. Dit komt omdat in kranen, bochten,... de energieverliezen voornamelijk veroorzaakt worden door richtingsveranderingen (traagheidskrachten) in in mindere mate door viskeuze krachten. Bij een bocht kunnen we bijvoorbeeld het ladingsverlies opsplitsen in een ladingsverlies ten gevolge van de richtingsverandering (Reynolds onafhankelijk) en een ladingsverlies tengevolge van de lengte van de bocht (Reynolds afhankelijk). Het ladingsverlies ten gevolge van de lengte van de bocht kan berekend worden met behulp van de formules voor een rechte leiding en wordt dan ook meestal bij de gewone ladingsverliezen gerekend.
-\npar
-De waarden van de verliesco\"effici\"ent voor enkele veel voorkomende leidingsonderdelen zijn gegeven in Appendix \ref{sec:Tabellen en grafieken}.
-\npar
-De lokale ladingsverliezen worden ook soms uitgedrukt als een equivalente leiding lengte. De component wordt dan beschouwd als een extra deel leiding met dezelfde diameter als de leiding waarin het is ingebouw dat hetzelfde ladingsverlies zou veroorzaken als de werkelijke component. De equivalente lengte wordt dan:
+In vele gevallen zal de invloed van het Reynoldsgetal echter verwaarloosd kunnen worden. Dit komt omdat in kranen, bochten,... de energieverliezen voornamelijk veroorzaakt worden door richtingsveranderingen (traagheidskrachten) in in mindere mate door viskeuze krachten. Bij een bocht kunnen we bijvoorbeeld het ladingsverlies opsplitsen in een ladingsverlies ten gevolge van de richtingsverandering (Reynolds onafhankelijk) en een ladingsverlies ten gevolge van de lengte van de bocht (Reynolds afhankelijk). Het ladingsverlies ten gevolge van de lengte van de bocht kan berekend worden met behulp van de formules voor een rechte leiding en wordt dan ook meestal bij de gewone ladingsverliezen gerekend.
+
+De waarden van de verliescoëfficiënt voor enkele veel voorkomende leidingsonderdelen zijn gegeven in Appendix \ref{sec:Tabellen en grafieken}.
+
+De lokale ladingsverliezen worden ook soms uitgedrukt als een equivalente leiding lengte. De component wordt dan beschouwd als een extra deel leiding met dezelfde diameter als de leiding waarin het is ingebouwd dat hetzelfde ladingsverlies zou veroorzaken als de werkelijke component. De equivalente lengte wordt dan:
 \begin{equation}
 	L_{equivalent} = \frac{\zeta D}{f}
 \end{equation}
-\npar
-Uit (\ref{eqn:lokale ladingsverliezen}) blijkt dat we de verliesco\"effici\"ent beschouwen als de fractie van de kinetische energie van de stroming die in de beschouwde component verloren gaat. Om dit te illustreren zullen we de verliesco\"effici\"ent bij een plotse verwijding bepalen. Dit is \'e\'en van de weinige leidingsonderdelen waarvoor het ladingsverlies analytisch kan uitgerekend worden.
+
+Uit (\ref{eqn:lokale ladingsverliezen}) blijkt dat we de verliescoëfficiënt beschouwen als de fractie van de kinetische energie van de stroming die in de beschouwde component verloren gaat. Om dit te illustreren zullen we de verliescoëfficiënt bij een plotse verwijding bepalen. Dit is één van de weinige leidingsonderdelen waarvoor het ladingsverlies analytisch kan uitgerekend worden.
 
 	\subsection{Ladingsverlies bij een plotse verwijding}
-Beschouw een plotse verwijding in een leiding als in Figuur \ref{fig:Plotse verwijding}. Ter hoogte van de verwijding zal er een jet achtige stroming ontstaan. Voldoende verderop zal de stroming opnieuw volledig ontwikkeld zijn. Beschouwen we nu een impulsbalans voor het aangeduide controlevolume.
+Beschouw een plotse verwijding in een leiding als in Figuur \ref{fig:Plotse verwijding}. Ter hoogte van de verwijding zal er een jet-achtige stroming ontstaan. Voldoende verderop zal de stroming opnieuw volledig ontwikkeld zijn. Beschouwen we nu een impulsbalans voor het aangeduide controlevolume.
 \begin{figure}
 	\centering
 	\includesvg{fig/leidingstelsels/Plotse_verwijding}
@@ -71,30 +71,31 @@ De energie vergelijking wordt hier:
 \begin{equation}
 	\frac{p_2}{\rho g} + \frac{v_2^2}{2 g} = \frac{p_1}{\rho g} + \frac{v_1^2}{2 g} - h_L
 \end{equation}
-Wanneer we deze twee verglijkingen combineren bekomen we:
+Wanneer we deze twee vergelijkingen combineren bekomen we:
 \begin{equation}
 	h_L = \frac{v_1^2}{2 g} \left(1 - 2\frac{v_2}{v_1} + \frac{v_2^2}{v_1^2} \right)
 \end{equation}
-Indien we hierin de verhouding van snelheden vevangen door de verhouding van oppervlaktes (behoud van massa) verkrijgen we:
+Indien we hierin de verhouding van snelheden vervangen door de verhouding van oppervlaktes (behoud van massa) verkrijgen we:
 \begin{equation}
 	h_L = \frac{v_1^2}{2 g} \left(1 - \frac{A_1}{A_2} \right)^2
 \end{equation}
-De verliesco\"effici\"ent wordt dus:
+De verliescoëfficiënt wordt dus:
 \begin{equation}
 	\zeta = \left(1 - \frac{A_1}{A_2} \right)^2
 \end{equation}
-De verliesco\"effici\"ent is hier dus enkel een functie van de geometrie. Dit resultaat is in goede overeenstemming met experimenteel bepaalde waarden. Wanneer we de oppervlakte $A_2$ naar oneindig laten gaan bekomen we de verliesco\"effici\"ent voor een uitstroming in een zeer groot reservoir. De verliesco\"effici\"ent is dan 1. Met andere woorden de volledige kinetische energie wordt gedissipeerd tijdens de uitstroming in een reservoir.
-	\FloatBarrier
+De verliescoëfficiënt is hier dus enkel een functie van de geometrie. Dit resultaat is in goede overeenstemming met experimenteel bepaalde waarden. Wanneer we de oppervlakte $A_2$ naar oneindig laten gaan bekomen we de verliescoëfficiënt voor een uitstroming in een zeer groot reservoir. De verliescoëfficiënt is dan 1. Met andere woorden de volledige kinetische energie wordt gedissipeerd tijdens de uitstroming in een reservoir.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Serie en parallelschakeling van leidingen}
 	\label{sec:Serie en parallelschakeling van leidingen}
-Aangezien leidingstelsels niet uit enkelvoudige rechte leidingen bestaan maar een vaak veel complexere structuur hebben (\ref{fig:leiding_structuur}), is het aangewezen deze structuur op te delen in enkele basis bouwstenen. De eenvoudigste van deze bouwstenen is de serie schakeling van elementen.
+Aangezien leidingstelsels niet uit enkelvoudige rechte leidingen bestaan maar een vaak veel complexere structuur hebben (zie Figuur \ref{fig:leiding_structuur}), is het aangewezen deze structuur op te delen in enkele basis bouwstenen. De eenvoudigste van deze bouwstenen is de serie schakeling van elementen.
 \begin{figure}
 	\centering
 	\includesvg{fig/leidingstelsels/leiding_structuur}
 	\caption{Voorbeeld van een leidingstructuur}
 	\label{fig:leiding_structuur}
 \end{figure}
-Bij een serie schakeling (\ref{fig:serieschakeling}) zal logischerwijze het totale ladingsverlies gelijk zijn aan de som der ladingsverliezen. Voor een serieschakeling van $n$ componenten kunnen we dus schrijven:
+Bij een serie schakeling (Figuur \ref{fig:serieschakeling}) zal logischerwijze het totale ladingsverlies gelijk zijn aan de som der ladingsverliezen. Voor een serieschakeling van $n$ componenten kunnen we dus schrijven:
 \begin{equation}
 h_{L,serie} = \sum_i^n h_{L,i}
 \end{equation}
@@ -109,8 +110,8 @@ Aangezien het debiet in alle componenten gelijk is wordt dit voor een serieschak
 	\caption{Serieschakeling van componenten}
 	\label{fig:serieschakeling}
 \end{figure}
-\npar
-Een iets complexere structuur is de parallelschakeling (\ref{fig:parallelschakeling}). Bij een parallelschakeling van leidingen zal de stroming zich opsplitsen tussen de verzschillende elementen. Het totale ladingsverlies tussen het begin en het einde van de parallelschakeling kunnen we bekomen door op te merken dat het ladingsverlies door elk van de elementen die deel uitmaken van de schakeling hetzelfde ladingsverlies moeten veroorzaken. Het totaal debiet zal dus zodanig opgesplitsd worden dat het ladingsverlies in alle componenten gelijk is:
+
+Een iets complexere structuur is de parallelschakeling (\ref{fig:parallelschakeling}). Bij een parallelschakeling van leidingen zal de stroming zich opsplitsen tussen de verschillende elementen. Het totale ladingsverlies tussen het begin en het einde van de parallelschakeling kunnen we bekomen door op te merken dat het ladingsverlies door elk van de elementen die deel uitmaken van de schakeling hetzelfde ladingsverlies moeten veroorzaken. Het totaal debiet zal dus zodanig opgesplitst worden dat het ladingsverlies in alle componenten gelijk is:
 \begin{figure}
 	\centering
 	\includesvg{fig/leidingstelsels/parallelschakeling}
@@ -124,7 +125,7 @@ Voor een parallelschakeling van leidingen wordt dit:
 \begin{equation}
 	h_{L,parallel} = 8 f_i \frac{\dot{V_i}^2}{g \pi^2} \frac{L_i}{D^5_i} \quad i=1..n
 \end{equation}
-Samen met de continuiteitsvergelijking levert dit een stelsel van $n+1$ vergelijkingen en $n+1$ onbekenden ($h_{L,parallel}$ en $\dot{V}_i, i=1..n$):
+Samen met de continuïteitsvergelijking levert dit een stelsel van $n+1$ vergelijkingen en $n+1$ onbekenden ($h_{L,parallel}$ en $\dot{V}_i, i=1..n$):
 \begin{equation}
 	\left\{
 	\begin{array}{lcl}
@@ -134,14 +135,14 @@ Samen met de continuiteitsvergelijking levert dit een stelsel van $n+1$ vergelij
 	\right.
 	\label{eqn:parallelschakeling}
 \end{equation}
-\npar
+
 Bij het toepassen van bovenstaande uitdrukkingen op ingenieurstoepassingen ontstaan er meteen enkele problemen. Wanneer de debieten in de leidingen gekend zijn kunnen we met behulp van het Moody diagram de ladingsverliezen (en dus de drukken in elk punt van de leidingen) berekenen. Dit is echter niet het enige type probleem dat we kunnen tegenkomen. Algemeen zijn er drie types problemen te onderscheiden:
 \begin{itemize}
 	\item Het berekenen van ladingsverliezen uit het debiet en de geometrie
 	\item Het berekenen van het debiet uit gekende ladingsverliezen en geometrie
-	\item Het berekenen van de geometrie uit met gekende ladingsverliezen bij een bepaald debiet
+	\item Het berekenen van de geometrie met gekende ladingsverliezen bij een bepaald debiet
 \end{itemize}
-Het eerste type probleem is zeer eenvoudig en kan bij een serieschakeling van elementen zonder problemen gedaan worden. Wanneer er echter een parallelschakeling in het leidingstelsel voorkomt wordt ook dit probleem iets ingewikkelder. Naar alle waarscheinlijkheid zal de debietsverdeling in de verschillende componenten van de parallelschakeling niet gekend zijn. We dienen dus het stelsel (\ref{eqn:parallelschakeling}) op te lossen. Hierin zijn de wrijvingsfactoren $f_i$ echter afhankelijk van het Reynoldsgetal en dus het debiet (dat niet gekend is). Bij turbulente stroming is deze relatie zelfs sterk niet lineair en moeilijk in gesloten vorm weer te geven. Daarbovenop is het stelsel (\ref{eqn:parallelschakeling}) zelf ook niet lineair. Er is dus geen garantie dat er een oplossing bestaat.
+Het eerste type probleem is zeer eenvoudig en kan bij een serieschakeling van elementen zonder problemen gedaan worden. Wanneer er echter een parallelschakeling in het leidingstelsel voorkomt wordt ook dit probleem iets ingewikkelder. Naar alle waarschijnlijkheid zal de debietverdeling in de verschillende componenten van de parallelschakeling niet gekend zijn. We dienen dus het stelsel (\ref{eqn:parallelschakeling}) op te lossen. Hierin zijn de wrijvingsfactoren $f_i$ echter afhankelijk van het Reynoldsgetal en dus het debiet (dat niet gekend is). Bij turbulente stroming is deze relatie zelfs sterk niet lineair en moeilijk in gesloten vorm weer te geven. Daarbovenop is het stelsel (\ref{eqn:parallelschakeling}) zelf ook niet lineair. Er is dus geen garantie dat er een oplossing bestaat.
 Indien de oplossing echter wel bestaat kunnen we met behulp van iteratieve technieken wel tot deze oplossing komen. Een stappenplan om tot een oplossing te komen gaat als volgt:
 \begin{enumerate}
 	\item Maak een veronderstelling voor het debiet in de verschillende leidingen
@@ -149,10 +150,10 @@ Indien de oplossing echter wel bestaat kunnen we met behulp van iteratieve techn
 	\item Los het stelsel (\ref{eqn:parallelschakeling}) op naar de debieten met de veronderstelde wrijvingsfactoren
 	\item Indien de debieten sterk afwijken van de voorgaande debieten ga naar stap 2, indien niet is de oplossing gevonden.
 \end{enumerate}
-\npar
-Voor het tweede type problemen (Bepaling van het debiet bij een gekend ladingsverlies) kan bovenstaande oplossings methode ook gebruikt worden. Dit type problemen komt voort bij stroming die wordt veroorzaakt door hoogteverschillen tussen 2 reservoirs of bij stroming tueen een leiding op gekende druk en een reservoir. 
-\npar
-Het derde type probleem is een typsiche ingenieursprobleem waarbij een bepaald debiet flu\"idum van een locatie naar een andere getransporteerd dient te worden. De diameter van de leidingen moet zo gekozen worden dat het ladingsverlies over elk onderdeel beperkt blijft. Het toegelaten ladingsverlies bepaalt hoeveel vermogen er nodig is voor het transport en dus de grootte van pompen of ventilatoren en de energie nodig voor het transport. Aangezien het Reynoldsgetal (en dus ook de wrijvingsfactor) ook afhankelijk is van de diameter van de leiding, hebben we opnieuw een iteratieve techniek nodig om dit probleem op te lossen. Indien we het bovenstaande stappenplan licht aanpassen bekomen we:
+
+Voor het tweede type problemen (Bepaling van het debiet bij een gekend ladingsverlies) kan bovenstaande oplossingsmethode ook gebruikt worden. Dit type problemen komt voor bij stroming die wordt veroorzaakt door hoogteverschillen tussen 2 reservoirs of bij stroming tussen een leiding op gekende druk en een reservoir. 
+
+Het derde type probleem is een typische ingenieursprobleem waarbij een bepaald debiet fluïdum van een locatie naar een andere getransporteerd dient te worden. De diameter van de leidingen moet zo gekozen worden dat het ladingsverlies over elk onderdeel beperkt blijft. Het toegelaten ladingsverlies bepaalt hoeveel vermogen er nodig is voor het transport en dus de grootte van pompen of ventilatoren en de energie nodig voor het transport. Aangezien het Reynoldsgetal (en dus ook de wrijvingsfactor) ook afhankelijk is van de diameter van de leiding, hebben we opnieuw een iteratieve techniek nodig om dit probleem op te lossen. Indien we het bovenstaande stappenplan licht aanpassen bekomen we:
 \begin{enumerate}
 	\item Maak een veronderstelling voor de diameter van de leiding
 	\item Bereken de Reynoldsgetallen en de wrijvingsfactoren voor elke leiding met behulp van het Moody diagram
@@ -161,10 +162,10 @@ Het derde type probleem is een typsiche ingenieursprobleem waarbij een bepaald d
 \end{enumerate}
 Aangezien de diameters van leidingen sterk genormeerd zijn kan de eerstvolgende grotere leiding gekozen worden en dienen er nooit veel iteraties uitgevoerd te worden.
 
-	\FloatBarrier
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Leiding netwerken}
 	\label{sec:Leiding netwerken}	
-Niet alle structuren van leidingen kunnen opgesplitsd worden in eenvoudige serie- en parallelschakelingen zoals hierboven beschreven. In Figuur \ref{fig:leidingnetwerk} is een leiding structuur gegeven met slechts drie leidingen die niet als een serie- of paralleleschakeling kan beschouwd worden. Zo'n structuur noemen we een leidingnetwerk.
+Niet alle structuren van leidingen kunnen opgesplitst worden in eenvoudige serie- en parallelschakelingen zoals hierboven beschreven. In Figuur \ref{fig:leidingnetwerk} is een leiding structuur gegeven met slechts drie leidingen die niet als een serie- of parallelschakeling kan beschouwd worden. Zo'n structuur noemen we een leidingnetwerk.
 \begin{figure}
 	\centering
 	\includesvg{fig/leidingstelsels/Leidingnetwerk}
@@ -177,7 +178,7 @@ Indien we de leidingen vertrekkende uit reservoir $i$ aanduiden met de index $i$
 	\frac{p_k}{\rho g} + z_k = \frac{p_2}{\rho g} + z_2 - h_{L,2} \\
 	\frac{p_3}{\rho g} + z_3 = \frac{p_k}{\rho g} + z_k - h_{L,3} \nonumber
 \end{eqnarray} 
-Bij het opschrijven van deze vergelijkingen hebben we impliciet stroomrichtingen verondersteld. In leiding 1 en 2 hebben de stroming naar het knooppunt toe verondersteld, terwijl in leiding 3 de stroming van het knooppunt weg verondersteld is. Ook hebben we verondersteld dat de kinetische energie in het knooppunt verwaarloosbaar is tenopzichte van de druk en de hoogte. Dit is een veel gemaakte veronderstelling die in de meeste gevallen gerechtvaardigd is. De ladingsverliezen kunnen we ook schrijven in functie van de debieten in de 3 leidingen. Indien we de wrijvingsfactoren gekend veronderstellen (wat mogelijk is door het gebruik van een iteratieve techniek) hebben we dus een stelsel van 3 vergelijkingen en 4 onbekenden ($\dot{V}_1,\dot{V}_2,\dot{V}_3$ en $p_k$). Er is dus nog \'e\'en vergelijking nodig om dit stelsel te kunnen oplossen. Deze vinden we in de vorm van de continuiteitsvergelijking. In het knooppunt moet namelijk evenveel massa toekoomen als vertrekken. Het volledige stelsel wordt dus:
+Bij het opschrijven van deze vergelijkingen hebben we impliciet stroomrichtingen verondersteld. In leiding 1 en 2 hebben de stroming naar het knooppunt toe verondersteld, terwijl in leiding 3 de stroming van het knooppunt weg verondersteld is. Ook hebben we verondersteld dat de kinetische energie in het knooppunt verwaarloosbaar is ten opzichte van de druk en de hoogte. Dit is een veel gemaakte veronderstelling die in de meeste gevallen gerechtvaardigd is. De ladingsverliezen kunnen we ook schrijven in functie van de debieten in de 3 leidingen. Indien we de wrijvingsfactoren gekend veronderstellen (wat mogelijk is door het gebruik van een iteratieve techniek) hebben we dus een stelsel van 3 vergelijkingen en 4 onbekenden ($\dot{V}_1,\dot{V}_2,\dot{V}_3$ en $p_k$). Er is dus nog één vergelijking nodig om dit stelsel te kunnen oplossen. Deze vinden we in de vorm van de continuïteitsvergelijking. In het knooppunt moet namelijk evenveel massa toekomen als vertrekken. Het volledige stelsel wordt dus:
 \begin{equation}
 	\left\{
 	\begin{array}{lcl}
@@ -188,9 +189,9 @@ Bij het opschrijven van deze vergelijkingen hebben we impliciet stroomrichtingen
 	\end{array}
 	\right.
 \end{equation}
-Dit stelsel kunnen we oplossen naar de 3 onbekende debieten en de onbekende druk in het knooppunt. Aangezien het een niet lineair stelsel is, is het mogelijk dat dit stelsel geen oplossing heeft. Dit betekent dat het stelsel geen fysische betekenis heeft. E\'en of meerdere van onze veronderstellingen was dus fout. In de meeste gevallen wordt dit veroorzaakt door een verkeerde keuze voor de stromingsrichting in de leidingen.
+Dit stelsel kunnen we oplossen naar de 3 onbekende debieten en de onbekende druk in het knooppunt. Aangezien het een niet lineair stelsel is, is het mogelijk dat dit stelsel geen oplossing heeft. Dit betekent dat het stelsel geen fysische betekenis heeft. Eén of meerdere van onze veronderstellingen was dus fout. In de meeste gevallen wordt dit veroorzaakt door een verkeerde keuze voor de stromingsrichting in de leidingen.
 
-	\FloatBarrier
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Pomp - ventilator - leiding karakteristiek}
 	\label{sec:Pomp - ventilator - leiding karakteristiek}
 In de voorgaande secties werd het debiet in een leiding of leidingstelsel veroorzaakt door een hoogteverschil of het debiet werd verondersteld gekend te zijn. Het is echter ook mogelijk dat het de stroming wordt veroorzaakt door een pomp of ventilator. Dit zijn toestellen met als doel een bepaald debiet te genereren. Een pomp of ventilator zal dus net zoveel energie aan de stroming toevoegen totdat de toegevoegde energie gelijk is aan de energie die nodig is om hoogte of drukverschillen te overwinnen en de gedisipeerde energie. We kunnen de vergelijking van Bernoulli dus nogmaals uitbreiden naar situatie waar er energie aan de stroming toegevoegd wordt. Dit geeft: 
@@ -198,13 +199,13 @@ In de voorgaande secties werd het debiet in een leiding of leidingstelsel veroor
 	\frac{p_2}{\rho g} + \rho \frac{v_2^2}{2 g}  + z_2 = \frac{p_1}{\rho g} + \rho \frac{v_1^2}{2 g}  + z_1 - h_L + h_P
 	\label{eqn:uitgebreide vergelijking van Bernoulli}
 \end{equation}
-Hierin stelt $h_P$ de opvoehoogte van de aanwezige pompen voor. De opvoerhoogte van een pomp is een maat voor de energie die de pomp aan de stroming toevoegd. Vaak komt deze tot uiting als een drukverhoging van de inlaat tot de uitlaat van de pomp. Indien de we de hoogteverschillen en verschillen in kinetische energie tussen inlaat en uitlaat verwaarlozen vinden we het drukverschil tussen in en uitlaat als:
+Hierin stelt $h_P$ de opvoerhoogte van de aanwezige pompen voor. De opvoerhoogte van een pomp is een maat voor de energie die de pomp aan de stroming toegevoegd. Vaak komt deze tot uiting als een drukverhoging van de inlaat tot de uitlaat van de pomp. Indien de we de hoogteverschillen en verschillen in kinetische energie tussen inlaat en uitlaat verwaarlozen vinden we het drukverschil tussen in en uitlaat als:
 \begin{equation}
 	\Delta p = \rho g h_P
 \end{equation}
 Vergelijking (\ref{eqn:uitgebreide vergelijking van Bernoulli}) wordt ook wel de uitgebreide vergelijking van Bernoulli genoemd.
-\npar
-Pompen kunnen we praktisch onderverdelen in twee types: \emph{Volumetrische pompen} en \emph{Turbopompen}. Bij volumetrische pompen (E: Positive displacement pump) zal er steeds een vast volume vloeistof verplaatsd worden onafhankelijk van het drukverschil tussen in en uitlaat. Het meest voor de hand liggende voorbeeld is de zuigerpomp waar een zuiger of plunjer in samen werking met enkele kleppen voor de verplaatsing van de vloeistof zorgt. Een schets van het werkingsprincipe van een zuigerpomp is gegeven in Figuur \ref{fig:zuigerpomp} 
+
+Pompen kunnen we praktisch onderverdelen in twee types: \emph{Volumetrische pompen} en \emph{Turbopompen}. Bij volumetrische pompen (E: Positive displacement pump) zal er steeds een vast volume vloeistof verplaatst worden onafhankelijk van het drukverschil tussen in en uitlaat. Het meest voor de hand liggende voorbeeld is de zuigerpomp waar een zuiger of plunjer in samen werking met enkele kleppen voor de verplaatsing van de vloeistof zorgt. Een schets van het werkingsprincipe van een zuigerpomp is gegeven in Figuur \ref{fig:zuigerpomp} 
 \begin{figure}
 	\centering
 	\subfigure[Zuigerpomp]{
@@ -218,9 +219,9 @@ Pompen kunnen we praktisch onderverdelen in twee types: \emph{Volumetrische pomp
 	\caption{Schematische voorstelling van een zuiger- en centrifugaalpomp}
 	\label{fig:pompen}
 \end{figure}
-\npar
+
 Bij een turbopomp zal er door middel van een rotor eerst kinetische energie aan de stroming toegevoegd worden. Nadien wordt deze kinetische energie in een diffusor omgezet naar druk energie. Een typische voorbeeld is de centrifugaal pomp (Figuur \ref{fig:centrifugaalpomp}). Vloeistof treedt binnen door een centrale opening. De stroming wordt door een rotor met schoepen radiaal naar buiten versneld waarna de bekomen kinetische energie in de diffusor in de vorm van een slakkenhuis wordt omgezet in druk.
-\npar
+
 Bij een turbopomp zal de geleverde opvoerhoogte wel afhankelijk zijn van het debiet. De relatie tussen de twee wordt vaak weergegeven in een pompkarakteristiek. Dit is een grafiek met op de $x$-as het debiet en op de $y$-as de opvoerhoogte. Vaak worden er verschillende krommen gegeven voor de werking bij verschillende toerentallen. Een voorbeeld van een pompkarakteristiek voor een centrifugaal pomp is gegeven in Figuur \ref{fig:Pompkarakteristiek}. De algemene trend is dat bij turbopompen de opvoerhoogte daalt bij stijgend debiet. Het is ook mogelijk een pompkarakteristiek te tekenen voor een volumetrische pomp. Dit is een verticale lijn bij het debiet dat de pomp levert. De opvoerhoogte is namelijk onafhankelijk van het debiet.
 \begin{figure}
 	\centering
@@ -228,7 +229,7 @@ Bij een turbopomp zal de geleverde opvoerhoogte wel afhankelijk zijn van het deb
 	\caption{Voorbeeld van een pompkarakteristiek van een centrifugaalpomp}
 	\label{fig:Pompkarakteristiek}
 \end{figure}
-\npar
+
 Ook voor het leidingstelsel kunnen we de nodige opvoerhoogte uitzetten in functie van het debiet. Deze kromme noemen we de leidingskarakteristiek. Indien we veronderstellen dat de wrijvingsfactor niet sterk verandert zien we uit vergelijking (\ref{eqn:ladingsverlies door een leiding debiet}) dat het ladingsverlies evenredig is met het kwadraat van het debiet. Een leidingskarakteristiek zal er dus kwalitatief uitzien als in Figuur \ref{fig:Leidingskarakteristiek}.
 \begin{figure}
 	\centering
@@ -236,22 +237,23 @@ Ook voor het leidingstelsel kunnen we de nodige opvoerhoogte uitzetten in functi
 	\caption{Voorbeeld van een leidingskarakteristiek}
 	\label{fig:Leidingskarakteristiek}
 \end{figure}
-Wanneer we de pompkarakteristiek (Figuur \ref{fig:Pompkarakteristiek}) en leidingskarakteristiek (\ref{fig:Leidingskarakteristiek}) combineren kunnen we het werkingspunt van het systeem aflezen als het snijpunt van de twee krommen (Figuur \ref{fig:Pompleidingkarakteristiek}). In dit punt zal de opvoerhoogte geleverd door de pomp net gelijk zijn aan de energie nodig om her flu\"idum door de leiding te verplaatsen.
+Wanneer we de pompkarakteristiek (Figuur \ref{fig:Pompkarakteristiek}) en leidingskarakteristiek (\ref{fig:Leidingskarakteristiek}) combineren kunnen we het werkingspunt van het systeem aflezen als het snijpunt van de twee krommen (Figuur \ref{fig:Pompleidingkarakteristiek}). In dit punt zal de opvoerhoogte geleverd door de pomp net gelijk zijn aan de energie nodig om her fluïdum door de leiding te verplaatsen.
 \begin{figure}
 	\centering
 	\includesvg{fig/leidingstelsels/Pompleidingkarakteristiek}
 	\caption{De combinatie van pomp en leidingskarakteristiek leidt tot het werkingspunt}
 	\label{fig:Pompleidingkarakteristiek}
 \end{figure}
-Het zoeken van het werkingspunt op deze manier komt neer op het grafisch oplossen van de uitgebreide vergelijking van Bernoulli. De pompkarakteristiek en leidingkarakteristiek kunnen we namelijk schrijven als:
+Het zoeken van het werkingspunt op deze manier komt neer op het grafisch oplossen van de uitgebreide vergelijking van Bernoulli. De pompkarakteristiek en leidingskarakteristiek kunnen we namelijk schrijven als:
 \begin{eqnarray}
 	h_P(\dot{V}) \\
 	\frac{p_2-p_1}{\rho g} + \rho \frac{v_2^2-v_1^2}{2 g}  + z_2-z_1 + h_L(\dot{V})
 \end{eqnarray}
 Indien we deze twee aan elkaar gelijkstellen bekomen we de uitgebreide vergelijking van Bernoulli die we kunnen oplossen naar $\dot{V}$ om het werkingspunt te vinden.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 		\section{Grafische voorstelling}
-In sectie \ref{sec:Mechanische arbeid van een deeltje} zijn we reeds een grafische voorstelling van de vergelijking van Bernoulli tegengekomen. We kunnen dezelfde grafische voorstelling ook maken voor de uigebreide vergelijking van Bernoulli toegepast op een enkelvoudig leidingstelsel (langs \'e\'en stoomlijn). De totale energiehoogte of ladingslijn zal nu echter niet meer horizontaal lopen. Ten gevolge van ladingsverliezen in leidingen of lokale ladingsverliezen zal de energiehoogte afnemen. Ter hoogte van een pomp of ventilator zal de energiehoogte toenemen met de opvoerhoogte van de pomp. Een voorbeeld wordt gegeven in Figuur \ref{fig:leidingstelsel_energiehoogte}. Het tekenen van dit diagram gaat als volgt:
+In sectie \ref{sec:Mechanische arbeid van een deeltje} zijn we reeds een grafische voorstelling van de vergelijking van Bernoulli tegengekomen. We kunnen dezelfde grafische voorstelling ook maken voor de uitgebreide vergelijking van Bernoulli toegepast op een enkelvoudig leidingstelsel (langs één stoomlijn). De totale energiehoogte of ladingslijn zal nu echter niet meer horizontaal lopen. Ten gevolge van ladingsverliezen in leidingen of lokale ladingsverliezen zal de energiehoogte afnemen. Ter hoogte van een pomp of ventilator zal de energiehoogte toenemen met de opvoerhoogte van de pomp. Een voorbeeld wordt gegeven in Figuur \ref{fig:leidingstelsel_energiehoogte}. Het tekenen van dit diagram gaat als volgt:
 \begin{enumerate}
 	\item Zet de lengte van verschillende leidingen uit op de $x$-as.
 	\item Teken de hoogte van ieder punt.

@@ -2,7 +2,7 @@
 
 \input{tex/packages.tex}
 
-\graphicspath{{fig/basisbegrippen/}{fig/hydrostatica/}{fig/controlevolumes/}{fig/deeltjesvergelijkingen/}{fig/gelijkvormigheid/}{fig/uitwendige_stroming/}{fig/inwendige_stroming/}{fig/leidingstelsels/}{fig/appendix/}}
+\graphicspath{{fig/basisbegrippen/}{fig/hydrostatica/}{fig/controlevolumes/}{fig/deeltjesvergelijkingen/}{fig/gelijkvormigheid/}{fig/uitwendige_stroming/}{fig/kanaalstroming/}{fig/inwendige_stroming/}{fig/leidingstelsels/}{fig/appendix/}}
 
 
 \begin{document}
@@ -14,28 +14,27 @@
 		\tableofcontents
 
 	\mainmatter
-
+	
 		% Hoofdstukken:
-
 		\input{tex/basisbegrippen}
 		\input{tex/hydrostatica}
 		\input{tex/controlevolumes}
 		\input{tex/deeltjesvergelijkingen}
 		\input{tex/gelijkvormigheid}
 		\input{tex/uitwendige_stroming}
+		\input{tex/kanaalstroming}
 		\input{tex/inwendige_stroming}
 		\input{tex/leidingstelsels}	
-		
-		\nocite{Yarin2012,Durst2008,Pozrikidis2009,Schlichting1979,Schobeiri2010,Tropea2007,UFA2008,Munson2010}
+	
+		% Bibliografie en index
+		\input{tex/bibliografie}
+		%\printindex
 		
 	\appendix
 		\input{tex/formularium}
  		\input{tex/tabellen}
- 		\input{tex/errata}
+ 		%\input{tex/errata}
  		
-	\backmatter
-		% Bibliografie en index
-		\input{tex/bibliografie}
-		%\printindex
+			
 
 \end{document}

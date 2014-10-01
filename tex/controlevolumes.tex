@@ -1,15 +1,14 @@
-\FloatBarrier
 \chapter{Behoudsvergelijkingen voor controlevolumes}
 \label{sec:Behoudsvergelijkingen voor controlevolumes}
 
-	\FloatBarrier
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Inleiding}
 	\label{sec:Controlevolume benadering Inleiding}
-Wanneer een flu\"idum in beweging is zullen belangrijke grootheden (drukken, krachten) niet enkel afhankelijk zijn van de eigenschappen van het flu\"idum, maar ook afhankelijk zijn van de stroming. Deze stroming kunnen we beschrijven met behulp van het snelheidsveld. Veelal is dit snelheidsveld echter ook onbekend en zijn enkel de randvoorwaarden gekend. We hebben dus een manier nodig om het snelheidsveld te bepalen en hieruit de belangrijke grootheden te berekenen.
-\npar
-In dit hoofdstuk worden de begrippen controle massa en controlevolume ge\"introduceerd. Een aantal behoudswetten worden afgeleid en er blijkt dat in sommige gevallen we voor het berekenen van grootheden uitgemiddeld over een volume of op de rand van het volume we enkel informatie over het snelheidsveld nodig hebben op de rand van het volume.
+Wanneer een fluïdum in beweging is zullen belangrijke grootheden (drukken, krachten) niet enkel afhankelijk zijn van de eigenschappen van het fluïdum, maar ook afhankelijk zijn van de stroming. Deze stroming kunnen we beschrijven met behulp van het snelheidsveld. Veelal is dit snelheidsveld echter ook onbekend en zijn enkel de randvoorwaarden gekend. We hebben dus een manier nodig om het snelheidsveld te bepalen en hieruit de belangrijke grootheden te berekenen.
 
-	\FloatBarrier
+In dit hoofdstuk worden de begrippen controle massa en controlevolume geïntroduceerd. Een aantal behoudswetten worden afgeleid en er blijkt dat in sommige gevallen we voor het berekenen van grootheden uitgemiddeld over een volume of op de rand van het volume we enkel informatie over het snelheidsveld nodig hebben op de rand van het volume.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Basis vergelijkingen voor controlemassa's}
 	\label{sec:Basis vergelijkingen voor controlemassa's}
 In de fysica en thermodynamica werden reeds een aantal natuurwetten geformuleerd. De vergelijkingen waar we in deze cursus gebruik van zullen maken zijn:
@@ -21,7 +20,7 @@ In de fysica en thermodynamica werden reeds een aantal natuurwetten geformuleerd
 De eerste is reeds geformuleerd als een behoudsvergelijking. Deze kan meteen geschreven worden als:
 \begin{equation}
 	\frac{\diff m}{\diff t} = 0
-	\label{eqn:controlemasse,behoud van massa}
+	\label{eqn:controlemassa,behoud van massa}
 \end{equation}
 De tweede wet van Newton kan ook als een behoudswet geformuleerd worden. Indien we het begrip \emph{impuls} invoeren als:
 \begin{equation}
@@ -31,27 +30,29 @@ De tweede wet van Newton kan ook als een behoudswet geformuleerd worden. Indien 
 De tweede wet van Newton kan nu algemeen geschreven worden als de wet van behoud van impuls:
 \begin{equation}
 	\frac{\diff \vt{P}}{\diff t} = \vt{F}
-	\label{eqn:controlemasse,behoud van impuls}
+	\label{eqn:controlemassa,behoud van impuls}
 \end{equation}
 De eerste hoofdwet van de thermodynamica is ook geformuleerd als een behoudsvergelijking, behoud van energie:
 \begin{equation}
 	\frac{\diff E}{\diff t} = \dot{Q}-\dot{W}
-	\label{eqn:controlemasse,behoud van energie}
+	\label{eqn:controlemassa,behoud van energie}
 \end{equation}
-Waarin $E$ de totale energieinhoud van het systeem voorstelt, en $\dot{Q}$ en $\dot{W}$ respectievelijk de warmtestroom naar het systeem en het arbeidsvermogen uit het systeem voorstellen.
-\npar
+Waarin $E$ de totale energieinhoud van het systeem voorstelt, en $\dot{Q}$ en $\dot{W}$ respectievelijk de warmtestroom naar het systeem en het arbeidsvermogen uit het systeem voorstellen (stromen van een bepaalde grootheid zullen in deze cursus met een punt aangeduid worden).
+
 Deze vergelijkingen zijn geformuleerd zodat ze geldig zijn voor een bepaald stelsel van deeltjes. 
 De massa die in de eerste twee vergelijkingen voorkomt is dan de massa van de beschouwde deeltjes. De energie in de eerste hoofdwet is de energie inhoud van de beschouwde deeltjes. We noemen zo'n stelsel een systeem of een controlemassa.
-\npar
-Voor het gebruik in de flu\"idomechanica zijn deze formuleringen echter niet zo geschikt. Een massa flu\"idum zal namelijk steeds van vorm veranderen en kan zelfs opgesplitst worden in verschillende delen. Het uitwerken van de behoudswetten zal in de meeste gevallen niet eenvoudig zijn.
-\npar
-Het beschrijven van een flu\"idumstroming is in de meeste gevallen eenvoudiger wanneer een deel van de ruimte wordt beschouwd waar het flu\"idum door stroomt. Dit deel zal een bepaald volume in de ruimte innemen en wordt een \emph{controlevolume} genoemd.
-\npar
+
+Voor het gebruik in de fluïdomechanica zijn deze formuleringen echter niet zo geschikt. Een massa fluïdum zal namelijk steeds van vorm veranderen en kan zelfs opgesplitst worden in verschillende delen. Het uitwerken van de behoudswetten zal in de meeste gevallen niet eenvoudig zijn.
+
+Het beschrijven van een fluïdumstroming is in de meeste gevallen eenvoudiger wanneer een deel van de ruimte wordt beschouwd waar het fluïdum door stroomt. Dit deel zal een bepaald volume in de ruimte innemen en wordt een \emph{controlevolume} genoemd.
+
 De beschouwde behoudswetten zullen nu anders geformuleerd worden zodat ze toepasbaar zijn voor een controle volume.
-	\FloatBarrier
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Basis vergelijkingen voor controlevolumes}
 	\label{sec:Basis vergelijkingen voor controlevolumes}
-In deze cursus zullen we de behoudswetten voor controlevolumes afleiden uit de behoudswetten voor controlemassas door het extrapoleren van eenvoudige bevindingen. De behoudswetten kunnen ook rigoreus wiskundig afgeleid worden met behulp van het Reynolds transport theorema. Dit valt echter buiten het bereik van deze cursus. Ge\"interesseerde lezers worden verwezen naar \cite{Schobeiri2010}.
+In deze cursus zullen we de behoudswetten voor controlevolumes afleiden uit de behoudswetten voor controlemassas door het extrapoleren van eenvoudige bevindingen. De behoudswetten kunnen ook rigoureus wiskundig afgeleid worden met behulp van het Reynolds transport theorema. Dit valt echter buiten het bereik van deze cursus. Geïnteresseerde lezers worden verwezen naar \cite{Schobeiri2010}.
+
 			\subsection{Behoud van massa}
 			\label{sec:Behoud van massa}
 Om behoud van massa te herschrijven voor het gebruik in een controle volume beschouwen we een willekeurig controlevolume in een stroming (Figuur \ref{fig:controlevolume in stroming}). Wanneer er netto een bepaalde hoeveelheid massa het controlevolume uitstoomt zal de hoeveel massa binnen het controlevolume net zoveel afnemen. Op dezelfde manier is de som van de netto massastroom over de grens van het controlevolume naar buiten en de verandering van massa binnen het controlevolume gelijk aan nul.
@@ -100,9 +101,10 @@ De massastroom door het oppervlak $\diff A$ vinden we door te delen door de tijd
 	\label{eqn:massastroom}
 \end{equation}
 Hierin is $v_{\perp}$ de loodrechte projectie van de snelheid op het oppervlak. Wanneer massastroom uit het controlevolume gericht is wordt de projectie van de snelheid positief gerekend, wanneer de massastroom het controlevolume in gericht is wordt de projectie negatief gerekend. Deze conventie komt overeen met de teken conventie van de vergelijking in woorden (\ref{eqn:controlevolume,behoud van massa,woorden}).
+
 			\subsection{Behoud van impuls}
 			\label{sec:Behoud van impuls}
-Wanneer we de vergelijking van behoud van massa voor een controlevolume en een controle massa vergelijken zien we dat enkel het linkerlid van vorm verandert. We kunnen dezelfde transformatie ook toepassen op de vergelijking van behoud wan impuls. Dit wordt:
+Wanneer we de vergelijking van behoud van massa voor een controlevolume en een controle massa vergelijken zien we dat enkel het linkerlid van vorm verandert. We kunnen dezelfde transformatie ook toepassen op de vergelijking van behoud van impuls. Dit wordt:
 \begin{equation}
 	\frac{\diff \vt{P}_{CV}}{\diff t} + \dot{\vt{P}}_{\partial CV} =  \vt{F}
 	\label{eqn:controlevolume,behoud van impuls}
@@ -134,11 +136,12 @@ De impulsstroom door een infinitesimaal oppervlak $\diff A$ kan als volgt bereke
 	\label{eqn:impulsstroom}
 \end{equation}
 Deze vergelijking is net zoals de impulsvergelijking voor controlemassa's een vectorvergelijking en kan dus geprojecteerd in een gewenste richting.
-\npar
+
 De term, de totale kracht op het controlevolume, zorgt soms voor verwarring. Krachten kunnen inwerken op een controlevolume via drukspanningen (normaalspanningen) en schuifspanningen. Wanneer de rand van een controlevolume tegen een wand valt zullen deze spanningen uitgeoefend worden door de wand en zal de wand gelijke maar tegengestelde reactie spanningen ondervinden. Deze spanningen kunnen dan voorgesteld worden als een resulterende reactiekracht. Wanneer de rand van het controlevolume in het medium valt zullen ook hier spanningen uitgeoefend worden door het medium buiten het controlevolume. De meest voor de hand liggende spanning is een drukspanning die gelijk in alle richtingen aanwezig is in het medium dus ook aan de rand van het controlevolume.
+
 			\subsection{Behoud van energie}
 			\label{sec:Behoud van energie}
-Ook voor behoud van energie kunnen we dezelfde transformatie als voor massa en impuls toepassen. (\ref{eqn:controlemasse,behoud van energie}) wordt dan:
+Ook voor behoud van energie kunnen we dezelfde transformatie als voor massa en impuls toepassen. (\ref{eqn:controlemassa,behoud van energie}) wordt dan:
 \begin{equation}
 	\frac{\diff E_{CV}}{\diff t} + \dot{E}_{\partial CV} =  \dot{Q}-\dot{W}
 	\label{eqn:controlevolume,behoud van energie}
@@ -165,14 +168,14 @@ In woorden wordt dit:
 	\label{eqn:controlevolume,behoud van energie,woorden}
 \end{equation}
 
-	\FloatBarrier
-	\section{Stationair controlevolume met \'e\'en instroming en \'e\'en uitstroming}	
-Bij ingenieurstoepassingen komt het vaak voor dat we controlevolumes beschouwen met slechts \'e\'en instroming en \'e\'en uitstroming. Voorbeelden zijn een simpele leiding, een pomp of turbine,... 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Stationair controlevolume met één instroming en één uitstroming}	
+Bij ingenieurstoepassingen komt het vaak voor dat we controlevolumes beschouwen met slechts één instroming en één uitstroming. Voorbeelden zijn een simpele leiding, een pomp of turbine, een reactorvat,... 
 Figuur \ref{fig:controlevolume een in en uitstroming} geeft een schematische voorstelling van zo'n situatie met bijhorend controlevolume. Het controlevolume is hier net tegen de wand van het systeem gekozen. Dit heeft als groot voordeel dat de projectie van de snelheid op de normaalvector enkel aan de instroom en de uitstroom verschillend is van nul. Aan de overige randen van het controlevolume kan er enkel een snelheid tangentieel aan de wand bestaan. De loodrechte component van de snelheid is dus $0$.
 \begin{figure}[htb]
 	\centering
 	\includesvg{fig/controlevolumes/Controlevolume_een_in_en_uitstroming}
-	\caption{Controlevolume met \'e\'en instroming en \'e\'en uitstroming}
+	\caption{Controlevolume met één instroming en één uitstroming}
 	\label{fig:controlevolume een in en uitstroming}
 \end{figure}
 De vergelijking voor behoud van massa (\ref{eqn:controlevolume,behoud van massa}) kunnen we schrijven als:
@@ -191,13 +194,13 @@ Wanneer daarbovenop we een stationaire situatie beschouwen, wordt de tijdsafgele
 	\label{eqn:behoud van massa in een stationair controlevolume met een in en uitstroming}
 \end{equation}
 Bovenstaande vergelijking zegt dus niets anders dan dat het ingaande massadebiet gelijk is aan het uitgaande massadebiet. Dezelfde uitdrukking is ook geldig voor een niet-stationaire, niet-samendrukbare stroming door een controlevolume waarvan het volume constant is. Bijvoorbeeld een niet-stationaire stroming van water bij een lage snelheid door een stalen buis.
-\npar
+
 Passen we nu behoud van impuls toe op hetzelfde controlevolume uit Figuur \ref{fig:controlevolume een in en uitstroming}. We kunnen opnieuw gebruik maken van de gemiddelde eigenschappen bij de in en uitstroming.
 \begin{equation}
 	 \dfrac{\diff m \vt{v}_{CV}}{\diff t} + \rho_{u} v_{u,\perp} \vt{v}_{u} A_{u} - \rho_{i} v_{i,\perp} \vt{v}_{i} A_{i} = \vt{F}
 	\label{eqn:behoud van impuls in een controlevolume met een in en uitstroming}
 \end{equation}
-In de tweede en derde term van bovenstaande vergelijking staat telkens de cominatie $\rho v_{\perp} A$ die gelijk is aan het massadebiet. Voor een stationaire stroming kunnen we (\ref{eqn:behoud van impuls in een controlevolume met een in en uitstroming}) dus verder vereenvoudigen aangezien ook hier de tijdsafgeleide $0$ wordt:
+In de tweede en derde term van bovenstaande vergelijking staat telkens de combinatie $\rho v_{\perp} A$ die gelijk is aan het massadebiet. Voor een stationaire stroming kunnen we (\ref{eqn:behoud van impuls in een controlevolume met een in en uitstroming}) dus verder vereenvoudigen aangezien ook hier de tijdsafgeleide $0$ wordt:
 \begin{equation}
 	\dot{m} (\vt{v}_u-\vt{v}_i) = \vt{F}
 	\label{eqn:behoud van impuls in een stationair controlevolume met een in en uitstroming}
@@ -210,8 +213,8 @@ Let wel, de krachten en snelheden voorkomend in deze vergelijking zijn vectoren,
 	\label{eqn:behoud van impuls in een stationair controlevolume met een in en uitstroming geprojecteerd}
 \end{eqnarray}
 Voor het bepalen van de inwerkende krachten moet ook hier rekening gehouden worden met de krachten aan de instroming en de uitstroming. De aan de instroming heersende druk zal namelijk een kracht $F = p A$ uitoefenen op het controlevolume.
-\npar
-We kunnen ook behoud van energie toepassen op het beschouwde controlevolume. De energie kunnen we opsplitsen in inwendige, kinetische en potenti\"ele energie. Deze kunnen we op hun beurt schrijven als de gemiddelde waarde van de specifieke grootheden vermenigvuldigd met de massa:
+
+We kunnen ook behoud van energie toepassen op het beschouwde controlevolume. De energie kunnen we opsplitsen in inwendige, kinetische en potentiële energie. Deze kunnen we op hun beurt schrijven als de gemiddelde waarde van de specifieke grootheden vermenigvuldigd met de massa:
 \begin{equation}
 	E = E_{inwendig} + E_{kinetisch} + E_{potenieel} = m u + m \frac{1}{2}v^2 + m g z
 \end{equation}
@@ -232,7 +235,7 @@ We kunnen dus de arbeidsvermogen uitgeoefend door het controlevolume op de omgev
 	\dot{W} = \dot{W}_s + \dot{W}_a
 	\label{eqn:stromings en asvermogen}
 \end{equation}
-Het stromingsvermogen kunnen we uitwerken als de uitgeoefende kracht vermenigvuldigd met de snelheid van de stroming aan de in en uitgangen. Met ingedachtname van de tekenconventie wordt dit:
+Het stromingsvermogen kunnen we uitwerken als de uitgeoefende kracht vermenigvuldigd met de snelheid van de stroming aan de in en uitgangen. Met inachtname van de tekenconventie wordt dit:
 \begin{equation}
 	\dot{W}_s = p_u A_u v_u - p_i A_i v_i
 	\label{eqn:stromingsvermogen}

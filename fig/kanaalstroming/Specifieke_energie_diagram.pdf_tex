@@ -1,6 +1,6 @@
 %% Creator: Inkscape 0.48.2, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'Stroomfunctie.pdf' (pdf, eps, ps)
+%% Accompanies image file 'Specifieke_energie_diagram.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{283.46455078bp}%
+    \setlength{\unitlength}{340.1574707bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,11 +48,15 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.63000004)%
-    \put(0,0){\includegraphics[width=\unitlength]{Stroomfunctie.pdf}}%
-    \put(0.66926987,0.30439686){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\vt{v}$}}}%
-    \put(0.57211925,0.22963155){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\diff n$}}}%
-    \put(0.73073279,0.26281669){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$v_y$}}}%
-    \put(0.68595416,0.22642192){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$v_x$}}}%
+  \begin{picture}(1,0.66666669)%
+    \put(0,0){\includegraphics[width=\unitlength]{Specifieke_energie_diagram.pdf}}%
+    \put(0.00839947,0.60543396){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$y$}}}%
+    \put(0.74934927,0.02015873){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$E = y + \frac{q^2}{2gy^2}$}}}%
+    \put(0.69883606,0.13170375){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$q$}}}%
+    \put(0.84666676,0.22913751){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$q'>q$}}}%
+    \put(0.50959391,0.16140636){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$y_{sup}$}}}%
+    \put(0.50840603,0.47262696){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$y_{sub}$}}}%
+    \put(0.00103006,0.25482945){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$y_{c}$}}}%
+    \put(0.33363214,0.02794752){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$E_{c}$}}}%
   \end{picture}%
 \endgroup%

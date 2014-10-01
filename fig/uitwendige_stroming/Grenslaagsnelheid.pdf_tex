@@ -1,0 +1,33 @@
+%% Created by Brecht Baeten
+%% 
+
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Matlab) Color is used for the text in Matlab, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Matlab) Transparency is used (non-zero) for the text in Matlab, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\matwidth\undefined%
+    \setlength{\unitlength}{8cm}%
+    \ifx\matscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\matscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\matwidth}%
+  \fi%
+  \global\let\matwidth\undefined%
+  \global\let\matscale\undefined%
+ \makeatother%
+  \begin{picture}(1,0.75)%
+    \put(0,0){\includegraphics[width=\unitlength]{Grenslaagsnelheid.pdf}}%
+    \put(0.53666,-0.00029079){\footnotesize\color[rgb]{0,0,0}\rotatebox{0}{\makebox(0,0)[cb]{\smash{$v/v_0$}}}}%
+    \put(0.093819,0.38493){\footnotesize\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[cb]{\smash{$\eta$}}}}%
+  \end{picture}%
+\endgroup%

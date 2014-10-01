@@ -1,6 +1,6 @@
 %% Creator: Inkscape 0.48.2, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'Massastroom.pdf' (pdf, eps, ps)
+%% Accompanies image file 'massastroom.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -49,12 +49,12 @@
   \global\let\svgscale\undefined%
   \makeatother%
   \begin{picture}(1,0.5)%
-    \put(0,0){\includegraphics[width=\unitlength]{Massastroom.pdf}}%
-    \put(0.68355461,0.2643041){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\Delta m$}}}%
+    \put(0,0){\includegraphics[width=\unitlength]{massastroom.pdf}}%
+    \put(0.68426732,0.2748802){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\Delta m$}}}%
     \put(0.59512017,0.25871684){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\diff A$}}}%
     \put(0.61293816,0.33569062){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$t$}}}%
     \put(0.79396872,0.31359618){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$t+\Delta t$}}}%
-    \put(0.78113979,0.18245586){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\vt{v}\Delta t$}}}%
-    \put(0.78974977,0.22949537){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\vt{v}_{\perp}\Delta t$}}}%
+    \put(0.78185249,0.19303196){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\vt{v}\Delta t$}}}%
+    \put(0.79046248,0.24007147){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\vt{v}_{\perp}\Delta t$}}}%
   \end{picture}%
 \endgroup%

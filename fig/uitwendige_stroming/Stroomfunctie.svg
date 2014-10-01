@@ -29,8 +29,8 @@
      inkscape:cy="124.4334"
      inkscape:current-layer="layer4"
      showgrid="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="706"
+     inkscape:window-width="1280"
+     inkscape:window-height="962"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -195,7 +195,7 @@
          sodipodi:role="line"
          id="tspan3043"
          x="258.92105"
-         y="137.19093">$v_x$</tspan></text>
+         y="137.19093">$v_y$</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
@@ -206,7 +206,7 @@
          sodipodi:role="line"
          id="tspan3043-7"
          x="243.05461"
-         y="150.08672">$v_y$</tspan></text>
+         y="150.08672">$v_x$</tspan></text>
   </g>
   <g
      sodipodi:insensitive="true"

@@ -1,6 +1,4 @@
 \chapter{Formularium}
-
-
 	\section{Hydrostatica}
 \begin{multicols}{2}
 		Hydrostatische druk:
@@ -12,92 +10,84 @@
 			F = \int p \diff A
 		\end{equation}
 \end{multicols}
-	\section{Integraal beschrijving}
-Behoud van massa:
+
+	\section{Behoudsvergelijkingen}
+Behoudvergelijkingen in integraal vorm
 \begin{equation}
 	0 = \frac{\partial}{\partial t} \int_{CV} \rho \diff V + \int_{\partial CV} \rho (\vt{v}\cdot \vt{n}) \diff A
 \end{equation}
-Behoud van impuls:
 \begin{equation}
 	\sum \vt{F} = \frac{\partial}{\partial t} \int_{CV} \rho \vt{v} \diff V + \int_{\partial CV} \rho \vt{v} (\vt{v}\cdot \vt{n}) \diff A
 \end{equation}
-Behoud van energie:
 \begin{equation}
 	\dot{Q}-\dot{W}_t = \frac{\partial}{\partial t} \int_{CV} \rho \left(u+\frac{v^2}{2}+g z \right) \diff V + \int_{\partial CV} \rho \left(u+\frac{p}{\rho}+\frac{v^2}{2}+g z \right) (\vt{v}\cdot \vt{n}) \diff A
 \end{equation}
-Behoud van massa in een stationaire stroming met \'e\'en instroming en \'e\'en uitstroming:
+Behoudvergelijkingen bij een stationaire stroming met één instroming en één uitstroming:
 \begin{equation}
 	0 = \dot{m}_{uit}-\dot{m}_{in}
 \end{equation}
-Behoud van impuls in een stationaire stroming met \'e\'en instroming en \'e\'en uitstroming:
 \begin{equation}
 	\sum \vt{F} = \dot{m} \left( \vt{v}_{uit}-\vt{v}_{in} \right)
 \end{equation}
-Behoud van energie in een stationaire stroming met \'e\'en instroming en \'e\'en uitstroming:
 \begin{equation}
 	\dot{Q}-\dot{W}_t = \dot{m} \left(u_{uit}-u_{in}+\frac{p_{uit}}{\rho_{uit}}-\frac{p_{in}}{\rho_{in}}+\frac{v_{uit}^2}{2}-\frac{v_{in}^2}{2}+g z_{uit}-g z_{in} \right)
 \end{equation}
-
-	\section{Differentiaal beschrijving}
-\begin{multicols}{2}
-	Behoud van massa:
-	\begin{equation}
-		\frac{\partial \rho}{\partial t} + \vt{\nabla} \cdot \vt {v} = 0
-	\end{equation}
-	Behoud van impuls:
-	\begin{equation}
-		\rho \frac{\partial \vt{v}}{\partial t} + \rho \vt{v} \vt{\nabla} \cdot \vt {v} = -\vt{\nabla} p + \rho \vt{g} + \mu \vt{\nabla}^2 \vt{v}
-	\end{equation}
-	De vergelijking van Euler:
-	\begin{equation}
-		\rho v \frac{\diff v}{\diff s} + \frac{\diff p}{\diff s} + \rho g \frac{\diff z}{\diff s} = 0
-	\end{equation}
-	De vergelijking van Bernoulli:
-	\begin{equation}
-		\frac{1}{2} \rho  v^2 + p + \rho g z = \text{Cst}
-	\end{equation}
-	De uitgebreide vergelijking van Bernoulli:
-	\begin{equation}
-		\frac{1}{2} \frac{v_1^2}{g} + \frac{p_1}{\rho g} + z_1 - h_L + h_P = \frac{1}{2} \frac{v_2^2}{g} + \frac{p_2}{\rho g} + z_2
-	\end{equation}
-\end{multicols}
+Behoudvergelijkingen in differentiaal vorm:
+\begin{equation}
+	\frac{\partial \rho}{\partial t} + \vt{\nabla} \cdot \vt {v} = 0
+\end{equation}
+\begin{equation}
+	\rho \frac{\partial \vt{v}}{\partial t} + \rho \vt{v} \vt{\nabla} \cdot \vt {v} = -\vt{\nabla} p + \rho \vt{g} + \mu \vt{\nabla}^2 \vt{v}
+\end{equation}
+\begin{equation}
+	\rho v \frac{\diff v}{\diff s} + \frac{\diff p}{\diff s} + \rho g \frac{\diff z}{\diff s} = 0
+\end{equation}
+Uitgebreide vergelijking van Bernoulli
+\begin{equation}
+	\frac{1}{2} \frac{v_1^2}{g} + \frac{p_1}{\rho g} + z_1 - h_L + h_P = \frac{1}{2} \frac{v_2^2}{g} + \frac{p_2}{\rho g} + z_2
+\end{equation}
 
 	\section{Dimensieloze getallen}
 \begin{multicols}{2}
-	Reynolds getal:
 	\begin{equation}
 		\text{Re} = \frac{\rho v D}{\mu} = \frac{v D}{\nu}
 	\end{equation}
-	Froude getal:
 	\begin{equation}
 		\text{Fr} = \frac{v}{\sqrt{g D}}
 	\end{equation}
-	Euler getal:
 	\begin{equation}
 		\text{Eu} = \frac{\Delta p}{\rho v^2}
 	\end{equation}
-	Mach getal:
 	\begin{equation}
 		\text{Ma} = \frac{v}{c}
 	\end{equation}
-	Drukco\"effici\"ent:
 	\begin{equation}
 		C_p = \frac{p}{\frac{1}{2}\rho v^2} \cong \frac{p}{\rho N^2 D^2}
 	\end{equation}
-	Krachtco\"effici\"ent:
 	\begin{equation}
-		C_F = \frac{F}{\frac{1}{2}\rho v^2 D^2}
+		C_F = \frac{F}{\frac{1}{2}\rho v^2 A}
 	\end{equation}
-	Vermogenco\"effici\"ent:
 	\begin{equation}
 		C_P = \frac{P}{\frac{1}{2}\rho v^3 D^2} \cong \frac{p}{\rho N^3 D^5}
 	\end{equation}
-	Debietco\"effici\"ent:
 	\begin{equation}
 		C_p = \frac{\dot{V}}{v D^2} \cong \frac{\dot{V}}{N D^3}
 	\end{equation}
 \end{multicols}
-
+	\section{Open kanaal stroming}
+\begin{multicols}{2}
+	Golfsnelheid:
+	\begin{equation}
+		c = \sqrt{gy}
+	\end{equation}
+	\begin{equation}
+		c = \sqrt{\frac{g\lambda}{2\pi}}
+	\end{equation}
+	Kritische diepte:
+	\begin{equation}
+		y_c = \left(\frac{q^2}{g}\right)^{1/3}
+	\end{equation}
+\end{multicols}
 	\section{Stroming in leidingen}
 \begin{multicols}{2}
 	Ladingsverlies bij stroming in een rechte cilindrische leiding met diameter D:
@@ -120,7 +110,7 @@ Behoud van energie in een stationaire stroming met \'e\'en instroming en \'e\'en
 	\begin{equation}
 		h_L = \left(\frac{A_1}{A_2}-1\right)^2 \frac{v_1^2}{2 g} = \zeta \frac{v_1^2}{2 g}
 	\end{equation}
-	Gebruik van de correctiefactor op de verliesco\"effici\"ent:
+	Gebruik van de correctiefactor op de verliescoëfficiënt:
 	\begin{equation}
 		\zeta_{corr} = k \zeta
 	\end{equation}
