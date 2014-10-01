@@ -1,0 +1,169 @@
+\FloatBarrier
+\chapter{Gelijkvormigheid}
+\label{sec:Gelijkvormigheid}
+	\FloatBarrier
+	\section{Inleiding}
+	\label{sec:Gelijkvormigheid Inleiding}
+In het vorige hoofdstuk hebben we de differentiaalvergelijkingen die de stroming beheersen afgeleid. Voor practische problemen is een oplossing voor deze vergelijkingen vinden alles behalve eenvoudig. Er moet gebruik gemaakt worden van numerieke oplossingsmethoden en zelfs dan is de modelering van turbulentie moeilijk.
+\npar
+Vaak is het nodig om experimentele resultaten te bekomen. Experimenten met prototypes zijn echter vaak niet mogelijk omwille van de kosten van deze prototypes of de schaal van het prototype. Het is bijvoorbeeld niet mogelijk een nieuwe vorm van romp voor een olietanker tijdens de ontwerpfase op volle schaal te testen om de stromingsweerstand te bepalen. Om deze redenen wordt vaak gebruik gemaakt van experimenten op schaalmodellen.
+\npar
+In dit hoofdstuk zullen we de gebruiksvoorwaarden voor schaalmodellen opstellen en een methode ontwikkelen op experimenteel bepaalde gegevens te vertalen naar de volle schaal geometrie. Het werkelijke probleem zan vanaf nu het prototype genoemd worden, terwijl het schaalmodel waarop experimenten gebeuren het model genoemd wordt. Grootheden die betrekking hebben op het model worden met een accent genoteerd.
+	\section{Voorwaarden voor gelijkvormigheid}
+	\FloatBarrier
+	\label{sec:Voorwaarden voor gelijkvormigheid}
+	\subsection{Geometrische gelijkvormigheid}
+De eerste en meest logische voorwaarde voor gelijkvormigheid is geometrische gelijkvormigheid. Deze stelt dat alle lengte verhoudingen gelijk moeten zijn voor het model en het prototype. In Figuur \ref{fig:geometrische gelijvormigheid} betekent dit dat de verhouding van koorde tot dikte in het model gelijk moet zijn aan de verhouding van koorde tot dikte in het prototype.
+\begin{equation}
+	\dfrac{T'}{C'} = \dfrac{T}{C}
+	\label{eqn:geometrische gelijkvormigheid vleugel}
+\end{equation}
+Of meer algemeen:
+\begin{equation}
+	\dfrac{\Delta \vt{x}_i'}{\Delta \vt{x}_j'} = \dfrac{\Delta \vt{x}_i}{\Delta \vt{x}_j} \quad, \forall i,j
+	\label{eqn:geometrische gelijkvormigheid}
+\end{equation}
+\begin{figure}[htb]
+	\centering
+	\includesvg{fig/gelijkvormigheid/Geometrische_gelijkvormigheid}
+	\caption{Geometrische gelijkvormigheid}
+	\label{fig:geometrische gelijvormigheid}
+\end{figure}
+Deze gelijkheid van lengteverhoudingen moet kloppen voor alle verhoudingen. Zo zal bijvoorbeeld ook de ruwheid van de oppervlakken meegeschaald moeten worden. Dit kan in de praktijk gebeuren door andere materialen of bewerkingen te kiezen. Sommige geometrische details zullen de interessante grootheden slechts weinig be\"invloeden. Het weglaten van zulke details is dan ook zeer interessant om de kosten van het model te drukken. De kunst bestaat erin de details die weinig invloed zullen hebben te herkennen.
+	\subsection{Kinematische gelijkvormigheid}
+Als tweede voorwaarde beschouwen we kinematische gelijkvormigheid. Dit komt er op neer dat het snelheidsveld voor het model en prototype gelijkvormig zijn. De verhoudingen tussen eenderwelke snelheden in het model moet dus gelijk zijn aan de verhouding van snelheden op de corresponderende punten in het prototype:
+\begin{equation}
+	\dfrac{\left. \vt{v}' \right|_{x_i',y_i'}}{\left. \vt{v}' \right|_{x_j',y_j'}} = \dfrac{\left. \vt{v} \right|_{x_i,y_i}}{\left. \vt{v} \right|_{x_j,y_j}} \quad, \forall i,j
+	\label{eqn:kinematische gelijkvormigheid}
+\end{equation}
+Voor de meeste problemen zijn bovenstaande voorwaarden echter niet voldoende.
+	\subsection{Dynamische gelijkvormigheid}
+De laatste voorwaarde voor gelijkvormigheid is dynamische gelijkvormigheid. Dit wil zeggen dat elke verhouding van krachten in het model gelijk moet zijn aan de corresponderende verhouding in het prototype.
+\begin{equation}
+	\dfrac{\left. \vt{F}'_a \right|_{x_i',y_i'}}{\left. \vt{F}'_b \right|_{x_j',y_j'}} = \dfrac{\left. \vt{F}_a \right|_{x_i,y_i}}{\left. \vt{F}_b \right|_{x_j,y_j}} \quad, \forall a,b,i,j
+	\label{eqn:dynamische gelijkvormigheid}
+\end{equation}
+Vaak wordt de traagheidskracht die aangrijpt op een flu\"idum deeltje als referentiekracht genomen:
+\begin{equation}
+	\dfrac{\left. \vt{F}' \right|_{x',y'}}{\left. \vt{F}'_{\text{traagheid}} \right|_{x',y'}} = \dfrac{\left. \vt{F} \right|_{x,y}}{\left. \vt{F}_{\text{traagheid}} \right|_{x,y}}
+	\label{eqn:dynamische gelijkvormigheid traagheid}
+\end{equation}
+Om deze voorwaarde te garanderen kunnen we een hulpmiddel gebruiken: het dimensieloos maken van de toepasbare vergelijkingen.
+	\section{Dimensieloze getallen}
+Beschouwen we de bewegingsvergelijking van een deeltje in een stationaire stroming zonder viskeuze krachten (\ref{eqn:vergelijking van Euler}). Elke term in deze vergelijking heeft de eenheid kracht per volume (\unit{}{N/m^3}). De verschillende termen stellen de verschillende krachten voor die op een flu\"idumdeeltje uitgeoefend worden. De term $\frac{\diff p}{\diff s}$ is afkomstig van de kracht ten gevolge van drukverschillen per eenheid van volume. De term $\rho g \frac{\diff y}{\diff s}$ is afkomstig van de zwaartekracht per eenheid van volume. De term $\rho v \frac{\diff v}{\diff s}$ stelt de convectieve versnelling van een deeltje voor en kunnen we dus voorstellen als de traagheidskracht per eenheid van volume.
+\npar
+We kunnen de veranderlijken in deze vergelijking allen schrijven als een dimensieloze veranderlijke vermenigvuldigd met een vaste referentie. Kiezen we bijvoorbeeld $D_{\text{ref}}$ als referentie voor de lengte, $t_{\text{ref}}$ als referentie voor de tijd en $v_{\text{ref}}$ als referentie voor de snelheid. De dimensieloze veranderlijken noteren we met een $^*$: 
+\begin{eqnarray}
+	D &=& D^* D_{\text{ref}} \nonumber \\
+	v &=& v^* v_{\text{ref}}  \\
+	p &=& p^* p_{\text{ref}} \nonumber
+	\label{eqn:referentie grootheden}
+\end{eqnarray}
+Indien we deze waarden invullen in (\ref{eqn:Euler}) verkrijgen we:
+\begin{equation}
+	\rho \frac{v_{\text{ref}}^2}{D_{\text{ref}}} v^* \frac{\diff v^*}{\diff s^*} + \frac{p_{\text{ref}}}{D_{\text{ref}}} \frac{\diff p^*}{\diff s^*} + \rho g \frac{\diff y^*}{\diff s^*} = 0
+	\label{eqn:Euler dimensieloos}
+\end{equation}
+Elke term in de vergelijking is nu geschreven als een constante maal een dimensieloze veranderlijke. Elke van de constante factoren moet dus een referentie waarde voor een bepaalde kracht voorstellen zoals hierboven besproken.
+\npar
+We kunnen de verhoudingen van de krachten die inwerken op een deeltje dus schrijven als het quocient van de factoren in vergelijking (\ref{eqn:Euler dimensieloos}). De voorwaarde voor dynamische gelijkvormigheid (\ref{eqn:dynamische gelijkvormigheid traagheid}) kunnen we nu bekomen door de quocienten van de factoren in (\ref{eqn:Euler dimensieloos}) constant te houden voor model en prototype.
+\npar
+Delen we (\ref{eqn:Euler dimensieloos}) door $\rho \frac{v_{\text{ref}}^2}{D_{\text{ref}}}$ (de referentiefactor voor traagheidskracht) verkrijgen we:
+\begin{equation}
+	v^* \frac{\diff v^*}{\diff s^*} + \frac{p_{\text{ref}}}{\rho v_{\text{ref}}^2} \frac{\diff p^*}{\diff s^*} + \frac{g D_{\text{ref}}}{v_{\text{ref}}^2}  \frac{\diff y^*}{\diff s^*} = 0
+	\label{eqn:Euler dimensieloos traagheid}
+\end{equation}
+In de eerste term van (\ref{eqn:Euler dimensieloos traagheid}) zien we de dimensieloze deeltjesversnelling terug. De overige termen stellen de verhoudingen van krachten voor die op het deeltje inwerken. Indien we deze constant kunnen houden tussen model en prototype, wordt de beweging van een deeltje in het model en het prototype beschreven door dezelfde differentiaalvergelijking. De relatieve beweging van elk deeltje zal dan ook hetzelfde zijn. We hebben dus een voorwaarde die dynamische gelijkvormigheid garandeert.
+\npar
+De co\"effici\"enten in (\ref{eqn:Euler dimensieloos traagheid}) kunnen allen gerelateerd worden aan dimensieloze getallen. Zo kan vergelijking (\ref{eqn:Euler dimensieloos traagheid}) geschreven worden als:
+\begin{equation}
+	v^* \frac{\diff v^*}{\diff s^*} + \text{Eu} \frac{\diff p^*}{\diff s^*} + \frac{1}{\text{Fr}^2}  \frac{\diff y^*}{\diff s^*} = 0
+	\label{eqn:Euler dimensieloze getallen}
+\end{equation}
+De voorkomende dimensieloze getallen zijn het Euler getal en het Froude getal. Deze relateren respectievelijk de druk kracht en zwaartekracht tot de traagheidskracht. In de definitie van de dimensieloze getallen wordt het subscript ''ref'' ook weggelaten aangezien het hier steeds over de referentiegrootheden gaat. Enkele in de stromingsmechanica vaak voorkomende dimensieloze getallen zijn:
+\begin{eqnarray}
+	\text{Re} &=& \dfrac{\rho v D}{\mu} = \dfrac{\text{traagheidskracht}}{\text{viskeuze krachten}} \label{eqn:Reynolds} \\
+	\text{Eu} &=& \dfrac{p}{\rho v^2} = \dfrac{\text{drukkracht}}{\text{traagheidskracht}} \label{eqn:Euler} \\
+	\text{Fr} &=& \dfrac{v}{\sqrt{g D}} = \sqrt{\dfrac{\text{traagheidskracht}}{\text{zwaartekracht}}} \\
+	\text{Ma} &=& \dfrac{v}{c} = \dfrac{\text{traagheidskracht}}{\text{samendrukbaarheidskrachten}}
+	\label{eqn:Dimensieloze getallen}
+\end{eqnarray}
+Een zeer belangrijke en zeer vaak gebruikte grootheid in de flu\"idum mechanica is het Reynoldsgetal, genoemd naar Osbourne Reynolds. Dit getal vormt de verhouding van de traagheidskracht tot de viskeuze krachten die inwerken op een flu\"idum deeltje. Wanneer het Reynoldsgetal voor een bepaalde stroming zeer laag is zullen viskeuze kracht de stroming overheersen. Zo'n stroming wordt ook kruipende stroming (E:creeping flow) genoemd. Wanneer het Reynoldsgetal echter zeer groot is zullen viskeuze krachten weinig invloed hebben. In dit geval kunnen we gebruik maken van de vergelijking van Euler en Bernoulli die in het vorige hoofdstuk afgeleid werden. Bij hoge Reynoldsgetallen zal er echter een ander fenomeen optreden: turbulentie. We zullen dieper op dit fenomeen ingaan in hoofdstuk \ref{sec:Uitwendige stroming}.
+
+Het Froude getal, genoemd naar Froude, Geeft de verhouding tussen de traagheidskrachten en de zwaartekracht weer. In de meeste stromingen zal de zwaartekracht enkel zorgen voor een lineare drukverdeling met de hoogte in de vloeistof. Bij een specifieke klasse stromingsproblemen heeft de zwaartekracht echter wel een belangrijke invloed op de beweging van individuele deeltjes. Dit zijn problemen waarbij er een vrij vloeistof oppervlak aanwezig is (E: Free surface). Voorbeelden zijn de stroming van een rivier onder invloed van de zwaartekracht, golven in de oceaan ten gevolge van de wind of de boeggolf van een schip dat zich door het water beweegt.
+
+	\FloatBarrier
+	\section{Buckingham-Pi theorema}
+Een andere kijk op dimensieloze grootheden kunnen we bekomen door middel van dimensie analyse. Elke vergelijking met een fysische betekenis moet namelijk homogeen in de eenheden zijn. Dit wil zeggen dat alle termen in de vergelijking dezelfde eenheden moeten hebben. Als een voudig voorbeeld kunnen we de tweede wet van Newton $F=ma$ aanhalen. Hierin heeft het linkerlid de eenheid van kracht [\unit{}{N}]. Het rechterlid heeft als eenheid [\unit{}{kg \frac{m}{s^2}}] wat in het meter-kilogram-seconde stelsel net de definitie van de eenheid van kracht [\unit{}{N}] is. Een meer flu\"idummechanish voorbeeld is de vergelijking van Bernoulli (\ref{eqn:vergelijking van Bernoulli}) Hierin hebben alle termen de eenheid [\unit{}{\frac{J}{m^3}}] ofwel energie per eenheid van volume. Elke fysische verglijking (en dus elke vergelijking in deze cursus) moet op deze manier homogeen zijn in de eenheden.
+\npar
+Elke fysiche grootheid heeft een eenheid die op een bepaalde manier gerelateerd kan worden aan enkel basiseenheden. Enkele veel voorkomende grootheden zijn gegeven in Tabel \ref{tab:grootheden}. Hierin is te zien dat de dimensies allen gevormd kunnen worden met behulp van enkele basis dimensies: L als dimensie van lengte, M als dimensie van massa , T als dimensie van tijd, en $\theta$ als dimensie van temperatuur. We kunnen elke fysische vergelijking dus ook schrijven met behulp van deze basis dimensies. Zo heeft de vergelijking van Bernoulli de dimensie ML$^{-1}$T$^{-2}$.
+\begin{table}[htb]
+	\centering
+	\begin{tabular}{lll}
+		\hline
+		Grootheid      & Dimensie   & Eenheid \\
+		\hline
+		Lengte & L &  \unit{}{m} \\
+		Massa   & M &   \unit{}{kg} \\
+		Tijd    & T &   \unit{}{s} \\
+		Dichtheid    & ML$^{-3}$    &   \unit{}{kg/m^3} \\
+		Druk    & ML$^{-1}$T$^{-2}$    &   \unit{}{N/m^2} \\	
+		Dynamische viscositeit    & MT$^{-1}$L$^{-1}$    &   \unit{}{Pa s} \\
+		Energie (arbeid)    & ML$^{2}$T$^{-2}$    &   \unit{}{J} \\
+		Impuls    & MLT$^{-1}$    &   \unit{}{kg m/s} \\
+		Kinematische viscositeit    & L$^{2}$T$^{-1}$    &   \unit{}{m^2/s} \\
+		Kracht    & MLT$^{-2}$    &   \unit{}{N} \\
+		Snelheid    & LT$^{-1}$    &   \unit{}{m/s} \\
+		Vermogen    & ML$^{2}$T$^{-3}$    &   \unit{}{J/s} \\
+		Versnelling    & LT$^{-2}$    &   \unit{}{m/s^2} \\
+		Volume    & L$^3$   &   \unit{}{m^3} \\
+		Temperatuur    & $\theta$    &   \unit{}{K} \\
+		Conductieco\"effici\"ent  &MT$^{-3}$$\theta^{-1}$    &   \unit{}{W/m^2 K} \\	
+		Energie (warmte)    & MLT$^{-2}$    &   \unit{}{J} \\
+		Warmteoverdrachtsco\"effici\"ent & MT$^{-3}$L$\theta^{-1}$    &   \unit{}{W/m K} \\
+		\hline
+	\end{tabular}
+	\caption{Vaak voorkomende grootheden met hun dimensie en eenheden}
+	\label{tab:grootheden}
+\end{table}
+\npar
+Het Buckingham-pi theorema stelt dat wanneer een fysische grootheid $a$ afhankelijk is van $n$ parameters $a_1$ tot $a_n$ waarvan $k$ grootheden onafhankelijke dimensies hebben:
+\begin{equation}
+	a = f(a_1,a_2,...,a_n)
+\end{equation}
+Dan kan deze uitdrukking herschreven worden tot een dimensieloze vergelijking met slechts $n-k$ dimensieloze parameters:
+\begin{equation}
+	\pi = \phi(\pi_1,\pi_2,...,\pi_{n-k})
+\end{equation}
+Edgar Buckingham formaliseerde dit principe in 1914 en presenteerde een manier om de dimensieloze parameters op een gestructureerde manier te vinden. Het principe werd echter reeds gebruikt door Baron Rayleigh in 1877.
+\npar
+Om de kracht van het theorema aan te tonen beschouwen we bij wijze van voorbeeld de stroming van water rond een scheepsschroef. We zijn ge\"interesseerd in de kracht die de schoef uitoefend op de stroming en hebben hier een aantal experimenten voor uitgevoerd. Uit de experimenten blijkt dat de kracht afhankelijk is van de snelheid van de stroming, de dichtheid, de viscositeit, het toerental van de schroef en de diameter van de schroef:
+\begin{equation}
+	F = f(v,\rho,\nu,N,D)
+	\label{eqn:dimensieanalyse, voorbeeld}
+\end{equation}
+De dimensies in deze relatie zijn: $v$: LT$^{-1}$, $\rho$: ML$^{-3}$, $\nu$: L$^{2}$T$^{-1}$, $N$: T$^{-1}$, $D$: L.
+\npar
+Hierin zijn slechts 3 grootheden dimensioneel onafhankelijk. Zo kan bijvoorbeeld de dimensie van $N$ geschreven worden als LT$^{-1}$/L, de dimensie van $v$ gedeeld door die van $D$ en de dimensie van $\nu$ kunnen we bekomen als de dimensie van $D$ maal de dimensie van $v$.  In termen van het Buckingham-pi theorema is $n=5$ en $k=3$. We zullen de relatie (\ref{eqn:dimensieanalyse, voorbeeld}) dus herschrijven als een dimensieloze vergelijking met $n-k=2$ parameters:
+\begin{equation}
+	\pi = \phi(\pi_1,\pi_2)
+\end{equation}
+Door even naar de betrokken parameters te kijken en uit de voorgaande analyse kunnen we de $\pi$ termen gemakkelijk terug vinden. Deze worden:
+\begin{eqnarray}
+	\pi &=& \frac{F}{\rho v^2 D^2}  \nonumber \\
+	\pi_1 &=& \frac{v D}{\nu} \\
+	\pi_2 &=& \frac{N D}{v} \nonumber
+\end{eqnarray}
+De dimensieloze relatie wordt dus:
+\begin{equation}
+	\frac{F}{\rho v^2 D^2} = \phi(\frac{v D}{\nu},\frac{N D}{v})
+\end{equation}
+De $\pi$ termen in deze relatie zijn nu ook heel herkenbaar. In het linkerlid vinden we een dimensieloze kracht. De functie in het rechterlid heeft twee parameters. De eerste herkennen we als het Reynoldsgetal. De tweede is het dimensieloze toerental van de schroef, of de verhouding tussen de tipsnelheid en de stroomsnelheid (de snellopendheid).
+\npar
+We kunnen de relatie die oorspronkelijk 5 parameters had dus schrijven als een relatie met slechts 2 parameters. Deze relatie kunnen we (indien de experimenten echt gebeurd zijn) eenvoudig weergeven in een graffiek door een set met krommen weer te geven. Bijvoorbeeld de dimensieloze kracht in functie van het Reynoldsgetal voor verschillende waarden van het dimensieloze toerental (Figuur \ref{fig:dimensieanalysevoorbeeld}). Met behulp van deze graffiek kunnen we de kracht voor elke schroef (die geometrisch gelijkvormig is) in elk flu\"idum met elke snelheid en elk toerental berekenen.
+\begin{figure}[htb]
+	\centering
+	\includesvg{fig/gelijkvormigheid/dimensieanalysevoorbeeld}
+	\caption{Voorbeeld van het resultaat van een dimensie analyse}
+	\label{fig:dimensieanalysevoorbeeld}
+\end{figure}
