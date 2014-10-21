@@ -51,7 +51,7 @@
   \begin{picture}(1,1)%
     \put(0,0){\includegraphics[width=\unitlength]{diffusiebocht.pdf}}%
     \put(0.28535795,0.91565412){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$A_{in} = 0.2$ m$^2$}}}%
-    \put(0.27281474,0.02195081){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$A_{uit} = 0.2$ m$^2$}}}%
+    \put(0.27281474,0.02195081){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$A_{uit} = 0.4$ m$^2$}}}%
     \put(0.10975307,0.68674054){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{4 m/s}}}%
   \end{picture}%
 \endgroup%
