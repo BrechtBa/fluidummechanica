@@ -50,9 +50,9 @@
   \makeatother%
   \begin{picture}(1,0.63768112)%
     \put(0,0){\includegraphics[width=\unitlength]{Leidingnetwerk.pdf}}%
-    \put(0.18695956,0.20000016){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$z_1$}}}%
+    \put(0.18695956,0.20000016){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$z_3$}}}%
     \put(0.74887114,0.52527509){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$z_2$}}}%
-    \put(0.09916086,0.60929285){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$z_3$}}}%
+    \put(0.09916086,0.60929285){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$z_1$}}}%
     \put(0.6796651,0.30368005){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$z_k$}}}%
   \end{picture}%
 \endgroup%
