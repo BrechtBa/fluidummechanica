@@ -1,0 +1,40 @@
+\documentclass[t]{beamer}
+
+\input{../tex/beamer_packages}
+\graphicspath{{../fig/hydrostatica/}}
+
+\title{Fluïdummechanica}
+\subtitle{Hydrostatica}
+\author{Brecht Baeten\inst{1}}
+\institute{
+	\inst{1}%
+  		KU Leuven, Technologie campus Diepenbeek, e-mail: brecht.baeten@kuleuven.be
+}
+\date{\today}
+
+\begin{document}
+
+	\frame{\titlepage}
+	\section{Inleiding}
+		\begin{frame}
+			\frametitle{Voorbeeld}
+			\center
+    		\includegraphics[height=0.8\textheight]{../fig/hydrostatica/dam.jpg}\\
+			\footnotesize{Bron: http://visitmt.com/}
+			% Hungry horse dam, Montana
+  		\end{frame}
+  	\section{Hydrostatische druk}	
+  		\begin{frame}
+			\frametitle{Druk}
+			\vspace{1cm}
+			\center
+			\includesvg{../fig/hydrostatica/oppervlak_in_stilstaande_vloeistof}
+  		\end{frame}	
+  	\section{Hydrostatische krachten}		
+		\begin{frame}
+			\frametitle{Krachten}
+			\vspace{1cm}
+			\center
+			\includesvg{../fig/hydrostatica/kracht_gebogen_oppervlak_vereenvoudigd_3d}
+  		\end{frame}
+\end{document}
