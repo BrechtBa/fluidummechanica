@@ -4,23 +4,11 @@
 \usepackage{a4wide}                     % Iets meer tekst op een bladzijde
 \usepackage[dutch]{babel}               % Voor nederlandstalige hyphenatie (woordsplitsing)
 \usepackage{amsmath,amsthm}             % Uitgebreide wiskundige mogelijkheden
-\usepackage{amssymb}                    % Voor speciale symbolen zoals de verzameling Z, R...
 \usepackage{url}                        % Om url's te verwerken
-\usepackage{graphicx,subfigure}         % Om figuren te kunnen verwerken
-\usepackage{color}                      % nodig voor svg's
+\usepackage{graphicx}         			% Om figuren te kunnen verwerken
 \usepackage[utf8]{inputenc}             % Om niet ascii karakters rechtstreeks te kunnen typen
-\usepackage{float}                      % Om nieuwe float environments aan te maken. Ook optie H!
-\usepackage{flafter}                    % Opdat floats niet zouden voorsteken
-\usepackage[section]{placeins}			% \FloatBarrier vormt een barriere voor floats
-\usepackage{listings}                   % Voor het weergeven van letterlijke text en codelistings
-\usepackage[numbers]{natbib}            % Voor juiste citatie stijl
-\usepackage[nottoc]{tocbibind}			% Bibliografie en inhoudsopgave in ToC; zie tocbibind.dvi
-\usepackage{eurosym}                    % om het euro symbool te krijgen
-\usepackage{textcomp}                   % Voor onder andere graden celsius
-\usepackage{fancyhdr}                   % Voor fancy headers en footers
-\usepackage[Gray,squaren,thinqspace,thinspace]{SIunits} % Om elegant eenheden te zetten
-\usepackage[version=3]{mhchem}          % Voor elegante scheikundige formules
-\usepackage{emptypage}					% Om de lege pagina's voor een hoofdstuk mooi te maken
+\usepackage{parskip}					
+%\usepackage{emptypage}					% Om de lege pagina's voor een hoofdstuk mooi te maken
 \usepackage{thmtools}                   % theorem tools
 \usepackage{collect}
 \usepackage{multicol}
@@ -29,29 +17,16 @@
 
 
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Algemene instellingen van het document.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\setlength{\parindent}{0cm}             % Inspringen van eerste lijn van paragrafen is niet gewenst.
-\setlength{\parskip}{0cm}
-\renewcommand{\baselinestretch}{1.2} 	% De interlinie afstand wat vergroten.
-
-\setcounter{MaxMatrixCols}{50}          % Max 20 kolommen in een matrix
-
-
-% Vandaar dat we expliciet aangeven wanneer we wensen dat een nieuwe paragraaf begint:
-% \par zorgt ervoor dat er een nieuwe paragraaf begint en
-% \vspace zorgt voor verticale ruimte.
-\newcommand{\npar}{\par \vspace{2.3ex plus 0.3ex minus 0.3ex}}
+%\setlength{\parindent}{0cm}             % Inspringen van eerste lijn van paragrafen is niet gewenst.
+%\setlength{\parskip}{0.5cm}
+%\renewcommand{\baselinestretch}{1.2} 	% De interlinie afstand wat vergroten.
 
 % commando's voor Toepassing hoofdstukken in mainmatter
 \addto\captionsdutch{\renewcommand\chaptername{Sessie}}
 
-
-
-%\newcommand{\includefigure}[1]{\vspace{0.5cm} \centering \includegraphics{#1}}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -60,39 +35,30 @@
 
 % Een enviroment  voor toepassingen
 \newcounter{toepassingcounter}[chapter]
-
 \renewcommand{\thetoepassingcounter}{\thechapter.\arabic{toepassingcounter}}
-\newenvironment{toepassing}{
+
+\newenvironment{toepassing}[1][]{
 	\refstepcounter{toepassingcounter}
 	\noindent
 	\begin{minipage}{\textwidth}
-	\textbf{Toepassing \thetoepassingcounter :}
-}
-{
-	\vspace{0.5cm}
-	\end{minipage}
-}
-\newenvironment{toepassing*}{
-	\refstepcounter{toepassingcounter}
-	\noindent
-	\begin{minipage}{\textwidth}
-	\textbf{* Toepassing \thetoepassingcounter :}
+	\ifx\\#1\\
+		\textbf{Toepassing \thetoepassingcounter :}
+	\else
+		\textbf{#1 Toepassing \thetoepassingcounter :}
+	\fi
 }
 {
 	\vspace{0.5cm}
 	\end{minipage}
 }
 
-% Een enviroment  voor antwoorden
+% Een enviroment voor antwoorden
 \definecollection{antwoorden}
-\newcounter{antwoordcounter}[chapter]
-
 \makeatletter
-\newenvironment{antwoord}{
+\newenvironment{antwoord}[1]{
 	\@nameuse{collect}{antwoorden}{
-    	\refstepcounter{antwoordcounter}
     	\noindent\vspace{1mm}
-    	\textbf{\arabic{chapter}.\arabic{antwoordcounter}:}
+    	\textbf{#1:}
     }{}
 }
 {
@@ -101,6 +67,19 @@
 \makeatother
 
 
+% Een enviroment voor voorbeelden
+\definecollection{voorbeelden}
+\makeatletter
+\newenvironment{voorbeeld}[1]{
+	\@nameuse{collect}{voorbeelden}{
+    	\noindent\vspace{1mm}
+    	\textbf{#1:}
+    }{}
+}
+{
+	\@nameuse{endcollect}
+}
+\makeatother
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -125,42 +104,8 @@
 
 % Graden celcius
 \newcommand{\degC}{\ensuremath{^\circ \mathrm{C}}}
+% graden
+\renewcommand{\deg}{\ensuremath{^\circ}}
 
-
-% nieuw commando om svg files dynamisch te updaten
-\newcommand{\executeiffilenewer}[3]{%
-\ifnum\pdfstrcmp{\pdffilemoddate{#1}}%
-{\pdffilemoddate{#2}}>0%
-{\immediate\write18{#3}}\fi%
-}
-% nieuw commando om. svg figuren in te voegen
-% Gebruik: \includesvg{path/filename.svg}
-\newcommand{\includesvg}[2][0]{%
-\executeiffilenewer{#2.svg}{#2.pdf}%
-{inkscape -z -C --file=#2.svg %
---export-pdf=#2.pdf --export-latex}%
-\ifx#10
-	\let\svgwidth\undefined
-\else
-	\def\svgwidth{#1}
-\fi%
-\input{#2.pdf_tex}%
-\ifx \svgwidth\undefined
-\else
-	\let\svgwidth\undefined
-\fi%
-}
-
-% nieuw commando om .fig figuren in te voegen
-\newcommand{\includefig}[2][0]{%
-\ifx#10
-	\let\figwidth\undefined
-\else
-	\def\figwidth{#1}
-\fi%
-\input{#2.pdf_tex}%
-\ifx \figwidth\undefined
-\else
-	\let\figwidth\undefined
-\fi%
-}
+% unit
+\newcommand{\unit}[1]{\ensuremath{\mathrm {#1}}}
