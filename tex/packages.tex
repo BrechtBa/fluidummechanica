@@ -34,18 +34,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Een enviroment  voor toepassingen
+\newlength{\currentparskip}
 \newcounter{toepassingcounter}[chapter]
 \renewcommand{\thetoepassingcounter}{\thechapter.\arabic{toepassingcounter}}
-
 \newenvironment{toepassing}[1][]{
 	\refstepcounter{toepassingcounter}
 	\noindent
+	\setlength{\currentparskip}{\parskip}
 	\begin{minipage}{\textwidth}
-	\ifx\\#1\\
-		\textbf{Toepassing \thetoepassingcounter :}
-	\else
-		\textbf{#1 Toepassing \thetoepassingcounter :}
-	\fi
+	\setlength{\parskip}{\currentparskip}
+	\textbf{#1Toepassing \thetoepassingcounter :}
 }
 {
 	\vspace{0.5cm}
@@ -57,12 +55,12 @@
 \makeatletter
 \newenvironment{antwoord}[1]{
 	\@nameuse{collect}{antwoorden}{
-    	\noindent\vspace{1mm}
+		\noindent\vspace{0mm}
     	\textbf{#1:}
     }{}
 }
-{
-	\@nameuse{endcollect}
+{	
+	\@nameuse{endcollect}	
 }
 \makeatother
 
@@ -72,7 +70,7 @@
 \makeatletter
 \newenvironment{voorbeeld}[1]{
 	\@nameuse{collect}{voorbeelden}{
-    	\noindent\vspace{1mm}
+    	\noindent\vspace{0mm}
     	\textbf{#1:}
     }{}
 }
