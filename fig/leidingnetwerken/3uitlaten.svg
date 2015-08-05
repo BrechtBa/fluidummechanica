@@ -10,8 +10,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="496.06299"
-   height="35.433071"
+   width="492.48819"
+   height="33.422615"
    id="svg3041"
    version="1.1"
    inkscape:version="0.48.2 r9819"
@@ -70,20 +70,24 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.959798"
-     inkscape:cx="61.370623"
-     inkscape:cy="76.083131"
+     inkscape:zoom="1.979899"
+     inkscape:cx="283.60774"
+     inkscape:cy="44.44905"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
-     showgrid="true"
-     inkscape:window-width="1280"
-     inkscape:window-height="962"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="706"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      units="mm"
      inkscape:object-paths="true"
-     inkscape:snap-nodes="true">
+     inkscape:snap-nodes="true"
+     fit-margin-left="0.5"
+     fit-margin-top="0.5"
+     fit-margin-bottom="0.5"
+     fit-margin-right="0.5">
     <inkscape:grid
        type="xygrid"
        id="grid2992"
@@ -103,7 +107,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -111,7 +115,7 @@
      inkscape:label="Laag 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-1016.929)">
+     transform="translate(-1.2716537,-1018.3463)">
     <g
        id="g3809"
        transform="matrix(0.70930233,0,0,0.28571424,-9.9295031,784.58937)">
