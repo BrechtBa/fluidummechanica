@@ -1,6 +1,4 @@
 % vaak gebruikte packages, nederlands
-
-
 \usepackage{a4wide}                     % Iets meer tekst op een bladzijde
 \usepackage[dutch]{babel}               % Voor nederlandstalige hyphenatie (woordsplitsing)
 \usepackage{amsmath,amsthm}             % Uitgebreide wiskundige mogelijkheden
@@ -14,7 +12,6 @@
 \usepackage{flafter}                    % Opdat floats niet zouden voorsteken
 \usepackage[section]{placeins}			% Om ervoor te zorgen dat floats binnen dezelfde section blijven
 \usepackage[nottoc]{tocbibind}			% Bibliografie en inhoudsopgave in ToC; zie tocbibind.dvi
-\usepackage{textcomp}                   % Voor onder andere graden celsius
 \usepackage{fancyhdr}                   % Voor fancy headers en footers
 \usepackage{thmtools}                   % theorem tools
 \usepackage{parskip}                    % Om paragrafen met een verticale spatie ipv horizontaal te laten beginnen
@@ -25,11 +22,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Algemene instellingen van het document.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\setlength{\parindent}{0cm}             % Inspringen van eerste lijn van paragrafen is niet gewenst.
-%\setlength{\parskip}{0cm}
 \renewcommand{\baselinestretch}{1.2} 	% De interlinie afstand wat vergroten.
-
 \setcounter{MaxMatrixCols}{50}          % Max 20 kolommen in een matrix
 
 
@@ -69,15 +62,9 @@
 % Nieuwe omgevingen
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Een definitie omgeving zonder nummering voor definities
-%\newtheoremstyle{definitie_style}{}{}{\itshape}{}{\bfseries}{}{ }{}
-%\theoremstyle{definitie_style}
-%\newtheorem*{definitie}{}
-
-
     
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Nieuwe commandos
+% .svg commando's
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % nieuw commando om svg files dynamisch te updaten
 \newcommand{\executeiffilenewer}[3]{%
