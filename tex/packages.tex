@@ -5,6 +5,7 @@
 \usepackage{url}                        % Om url's te verwerken
 \usepackage{graphicx,subfigure}         % Om figuren te kunnen verwerken
 \usepackage{color}
+\usepackage{framed}
 \usepackage{multicol}
 \usepackage[small,bf,hang]{caption}     % Om de captions wat te verbeteren
 \usepackage[utf8]{inputenc}             % Om niet ascii karakters rechtstreeks te kunnen typen
@@ -61,7 +62,24 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Nieuwe omgevingen
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\definecolor{shadecolor}{gray}{0.95}
+\newcounter{voorbeeldcounter}[chapter]
+\renewcommand{\thevoorbeeldcounter}{\thechapter.\arabic{voorbeeldcounter}}
+\makeatletter
+\newenvironment{voorbeeld}
+{
+\addtolength{\leftskip}{5mm}
+\begin{shaded*}
+\vspace{-3mm}
+\refstepcounter{voorbeeldcounter}
+\noindent
+\textbf{Voorbeeld \thevoorbeeldcounter:\\}
+}
+{
+\end{shaded*}
+\addtolength{\leftskip}{-5mm}
+}
+\makeatother  
     
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % .svg commando's
