@@ -1,0 +1,59 @@
+\documentclass[11pt,twoside]{book}
+
+\input{tex/packages.tex}
+
+\graphicspath{{fig/basisbegrippen/}{fig/hydrostatica/}{fig/controlevolumes/}{fig/deeltjesvergelijkingen/}{fig/gelijkvormigheid/}{fig/uitwendige_stroming/}{fig/kanaalstroming/}{fig/inwendige_stroming/}{fig/leidingstelsels/}{fig/appendix/}}
+
+
+\begin{document}
+
+	\appendix
+	\setcounter{chapter}{2}
+		\chapter{Oplossing van leidingnetwerken}
+		\label{sec:Oplossing van leidingnetwerken}
+			
+			\begin{figure}
+				\centering
+				\includesvg{fig/leidingstelsels/Leidingnetwerk}
+				\caption{Leiding netwerk}
+				\label{fig:leidingnetwerk}
+			\end{figure}
+
+Bij het bepalen van het debiet in een leidingnetwerk zoals in Figuur \ref{fig:leidingnetwerk} weergegeven bekomen we het volgende stelsel van vergelijkingen bestaande uit 3 keer de uitgebreide vergelijking van Bernoulli en de continuïteitsvergelijking.
+			\begin{equation}
+				\left\{
+				\begin{array}{lcl}
+					\dfrac{p_k}{\rho g} + z_k &=& \dfrac{p_1}{\rho g} + z_1 - 8 f_1 \dfrac{\dot{V}_1^2}{g \pi^2} \dfrac{L_1}{D_1^5} \\
+					\dfrac{p_k}{\rho g} + z_k &=& \dfrac{p_2}{\rho g} + z_2 - 8 f_2 \dfrac{\dot{V}_2^2}{g \pi^2} \dfrac{L_2}{D_2^5} \\
+					\dfrac{p_3}{\rho g} + z_3 &=& \dfrac{p_k}{\rho g} + z_k - 8 f_3 \dfrac{\dot{V}_3^2}{g \pi^2} \dfrac{L_3}{D_3^5} \\
+					\dot{V}_3 &=& \dot{V}_1 + \dot{V}_2
+				\end{array}
+				\right.
+				\label{eqn:stelsel}
+			\end{equation}
+Bij het opstellen van deze vergelijkingen is voor de 3 leidingen reeds een stroomrichting verondersteld. Er wordt namelijk verondersteld dat de stroming van 1 en 2 naar het knooppunt gaat en van het knooppunt naar 3. Dit stelsel van vergelijkingen is dus enkel geldig indien achteraf ook blijkt dat de stromingen in deze richting lopen. Dit komt erop neer dat de gebruikte debieten $V_1$,$V_2$ en $V_3$ allen groter dan nul moeten zijn.
+
+Aangezien 3 van de 4 vergelijkingen in het stelsel (\ref{eqn:stelsel}) kwadratisch zijn in het onbekende debiet, zal het stelsel meer dan één oplossing hebben. Indien het stelsel met behulp van analytische rekensoftware wordt opgelost zullen al deze oplossingen weergegeven worden. Het is dan aan de probleemoplosser op de juiste oplossing te selecteren. De juiste oplossing moet namelijk voldoen aan de hierboven genoemde voorwaarde, alle debieten moeten groter dan nul zijn.
+
+Het is echter ook mogelijk dat de oplossing van het bovenstaande stelsel geen enkele oplossing geeft waarvoor alle debieten groter zijn dan nul. Geen enkel van de oplossingen van het stelsel geeft dan de gezochte debieten aangezien het stelsel niet meer geldig is.
+
+Wanneer dit voorvalt wil het zeggen dat één of meerdere stromingsrichtingen verkeerd gekozen zijn. We moeten dus het stelsel aanpassen zodat het overeenkomt met een nieuwe veronderstelling voor de stroomrichtingen.
+
+In het geval van Figuur \ref{fig:leidingnetwerk} is het, afhankelijk van de getalwaarden voor de hoogtes, leiding lengtes en diameters, best mogelijk dat de stroming niet van punt 2 naar het knooppunt gaat, maar van het knooppunt naar punt 2. We moeten dan de vergelijking van Bernoulli tussen punt 2 en het knooppunt en de continuïteitsvergelijking aanpassen:
+			\begin{equation}
+				\left\{
+				\begin{array}{lcl}
+					\dfrac{p_k}{\rho g} + z_k &=& \dfrac{p_1}{\rho g} + z_1 - 8 f_1 \dfrac{\dot{V}_1^2}{g \pi^2} \dfrac{L_1}{D_1^5} \\
+					\dfrac{p_2}{\rho g} + z_2 &=& \dfrac{p_k}{\rho g} + z_k - 8 f_2 \dfrac{\dot{V}_2^2}{g \pi^2} \dfrac{L_2}{D_2^5} \\
+					\dfrac{p_3}{\rho g} + z_3 &=& \dfrac{p_k}{\rho g} + z_k - 8 f_3 \dfrac{\dot{V}_3^2}{g \pi^2} \dfrac{L_3}{D_3^5} \\
+					\dot{V}_3 + \dot{V}_2 &=& \dot{V}_1 
+				\end{array}
+				\right.
+				\label{eqn:stelsel2}
+			\end{equation}
+
+Met dit nieuwe stelsel van vergelijkingen kan nu wel een correcte oplossing, waarvoor alle 3 de debieten groter zijn dan nul bekomen worden.
+
+
+
+\end{document}
