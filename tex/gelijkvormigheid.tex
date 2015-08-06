@@ -58,7 +58,7 @@ Beschouwen we de bewegingsvergelijking van een deeltje in een niet samendrukbare
 	\rho \frac{\partial v}{\partial t} + \rho v \frac{\partial v}{\partial s} = -\frac{\partial p}{\partial s} + \rho g_s + \mu \frac{\partial^2 v}{\partial s^2}
 	\label{eqn:navier-stokes geprojecteerd}
 \end{equation}
-Elke term in deze vergelijking heeft de eenheid kracht per volume (\unit{}{N/m^3}). De verschillende termen stellen de verschillende krachten voor die op een fluïdumdeeltje uitgeoefend worden. De term $-\frac{\diff p}{\diff s}$ is afkomstig van de kracht ten gevolge van drukverschillen per eenheid van volume. De term $\rho g_s$ is afkomstig van de zwaartekracht per eenheid van volume geprojecteerd in de $s$ richting. De term $\mu \frac{\partial^2 v}{\partial s^2}$ stelt de viskeuze kracht voor inwerkend op het deeltje. De term $\rho \frac{\partial v}{\partial t}$ stelt de lokale versnelling van het deeltje voor en de term $\rho v \frac{\diff v}{\diff s}$ stelt de convectieve versnelling van een deeltje voor en kunnen we dus voorstellen als de traagheidskracht per eenheid van volume.
+Elke term in deze vergelijking heeft de eenheid kracht per volume (\unit{N/m^3}). De verschillende termen stellen de verschillende krachten voor die op een fluïdumdeeltje uitgeoefend worden. De term $-\frac{\diff p}{\diff s}$ is afkomstig van de kracht ten gevolge van drukverschillen per eenheid van volume. De term $\rho g_s$ is afkomstig van de zwaartekracht per eenheid van volume geprojecteerd in de $s$ richting. De term $\mu \frac{\partial^2 v}{\partial s^2}$ stelt de viskeuze kracht voor inwerkend op het deeltje. De term $\rho \frac{\partial v}{\partial t}$ stelt de lokale versnelling van het deeltje voor en de term $\rho v \frac{\diff v}{\diff s}$ stelt de convectieve versnelling van een deeltje voor en kunnen we dus voorstellen als de traagheidskracht per eenheid van volume.
 
 We kunnen de veranderlijken in deze vergelijking allen schrijven als een dimensieloze veranderlijke vermenigvuldigd met een vaste referentie. Kiezen we bijvoorbeeld $D_{\text{ref}}$ als referentie voor de lengte, $t_{\text{ref}}$ als referentie voor de tijd  $v_{\text{ref}}$ als referentie voor de snelheid en $p_{\text{ref}}$ als referentie voor de druk. De dimensieloze veranderlijken noteren we met een $^*$: 
 \begin{eqnarray}
@@ -105,7 +105,7 @@ Het Froude getal, genoemd naar William Froude, geeft de verhouding tussen de tra
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Buckingham-Pi theorema}
-Een andere kijk op dimensieloze grootheden kunnen we bekomen door middel van dimensie analyse. Elke vergelijking met een fysische betekenis moet namelijk homogeen in de eenheden zijn. Dit wil zeggen dat alle termen in de vergelijking dezelfde eenheden moeten hebben. Als eenvoudig voorbeeld kunnen we de tweede wet van Newton $F=ma$ aanhalen. Hierin heeft het linkerlid de eenheid van kracht [\unit{}{N}]. Het rechterlid heeft als eenheid [\unit{}{kg \frac{m}{s^2}}] wat in het meter-kilogram-seconde stelsel net de definitie van de eenheid van kracht [\unit{}{N}] is. Een meer fluïdummechanish voorbeeld is de vergelijking van Bernoulli (\ref{eqn:vergelijking van Bernoulli}). Hierin hebben alle termen de eenheid [\unit{}{\frac{J}{m^3}}] ofwel energie per eenheid van volume. Elke fysische vergelijking (en dus elke vergelijking in deze cursus) moet op deze manier homogeen zijn in de eenheden.
+Een andere kijk op dimensieloze grootheden kunnen we bekomen door middel van dimensie analyse. Elke vergelijking met een fysische betekenis moet namelijk homogeen in de eenheden zijn. Dit wil zeggen dat alle termen in de vergelijking dezelfde eenheden moeten hebben. Als eenvoudig voorbeeld kunnen we de tweede wet van Newton $F=ma$ aanhalen. Hierin heeft het linkerlid de eenheid van kracht [\unit{N}]. Het rechterlid heeft als eenheid [\unit{kg \frac{m}{s^2}}] wat in het meter-kilogram-seconde stelsel net de definitie van de eenheid van kracht [\unit{N}] is. Een meer fluïdummechanish voorbeeld is de vergelijking van Bernoulli (\ref{eqn:vergelijking van Bernoulli}). Hierin hebben alle termen de eenheid [\unit{\frac{J}{m^3}}] ofwel energie per eenheid van volume. Elke fysische vergelijking (en dus elke vergelijking in deze cursus) moet op deze manier homogeen zijn in de eenheden.
 
 Elke fysiche grootheid heeft een eenheid die op een bepaalde manier gerelateerd kan worden aan enkel basiseenheden. Enkele veel voorkomende grootheden zijn gegeven in Tabel \ref{tab:grootheden}. Hierin is te zien dat de dimensies allen gevormd kunnen worden met behulp van enkele basis dimensies: L als dimensie van lengte, M als dimensie van massa , T als dimensie van tijd, en $\theta$ als dimensie van temperatuur. We kunnen elke fysische vergelijking dus ook schrijven met behulp van deze basis dimensies. Zo heeft de vergelijking van Bernoulli de dimensie ML$^{-1}$T$^{-2}$.
 \begin{table}[htb]
@@ -114,24 +114,24 @@ Elke fysiche grootheid heeft een eenheid die op een bepaalde manier gerelateerd 
 		\hline
 		Grootheid                   & Dimensie   & Eenheid \\
 		\hline
-		Lengte                       & L                          &  \unit{}{m} \\
-		Massa                        & M                          &   \unit{}{kg} \\
-		Tijd                         & T                          &   \unit{}{s} \\
-		Dichtheid                    & ML$^{-3}$                  &   \unit{}{kg/m^3} \\
-		Druk                         & ML$^{-1}$T$^{-2}$          &   \unit{}{N/m^2} \\	
-		Dynamische viscositeit       & MT$^{-1}$L$^{-1}$          &   \unit{}{Pa s} \\
-		Energie (arbeid)             & ML$^{2}$T$^{-2}$           &   \unit{}{J} \\
-		Impuls                       & MLT$^{-1}$                 &   \unit{}{kg m/s} \\
-		Kinematische viscositeit     & L$^{2}$T$^{-1}$            &   \unit{}{m^2/s} \\
-		Kracht                       & MLT$^{-2}$                 &   \unit{}{N} \\
-		Snelheid                     & LT$^{-1}$                  &   \unit{}{m/s} \\
-		Vermogen                     & ML$^{2}$T$^{-3}$           &   \unit{}{J/s} \\
-		Versnelling                  & LT$^{-2}$                  &   \unit{}{m/s^2} \\
-		Volume                       & L$^3$                      &   \unit{}{m^3} \\
-		Temperatuur                  & $\theta$                   &   \unit{}{K} \\
-		Conductiecoëfficiënt         & MT$^{-3}$ $\theta^{-1}$    &   \unit{}{W/m^2 K} \\	
-		Energie (warmte)             & MLT$^{-2}$                 &   \unit{}{J} \\
-		Warmteoverdrachtscoëfficiënt & MT$^{-3}$L$\theta^{-1}$    &   \unit{}{W/m K} \\
+		Lengte                       & \unit{L}                      &   \unit{m} \\
+		Massa                        & \unit{M}                      &   \unit{kg} \\
+		Tijd                         & \unit{T}                      &   \unit{s} \\
+		Dichtheid                    & \unit{ML^{-3}}                &   \unit{kg/m^3} \\
+		Druk                         & \unit{ML^{-1}T^{-2}}          &   \unit{N/m^2} \\	
+		Dynamische viscositeit       & \unit{MT^{-1}L^{-1}}          &   \unit{Pa s} \\
+		Energie (arbeid)             & \unit{ML^{2}T^{-2}}           &   \unit{J} \\
+		Impuls                       & \unit{MLT^{-1}}               &   \unit{kg m/s} \\
+		Kinematische viscositeit     & \unit{L^{2}T^{-1}}            &   \unit{m^2/s} \\
+		Kracht                       & \unit{MLT^{-2}}               &   \unit{N} \\
+		Snelheid                     & \unit{LT^{-1}}                &   \unit{m/s} \\
+		Vermogen                     & \unit{ML^{2}T^{-3}}           &   \unit{J/s} \\
+		Versnelling                  & \unit{LT^{-2}}                &   \unit{m/s^2} \\
+		Volume                       & \unit{L^3}                    &   \unit{m^3} \\
+		Temperatuur                  & \unit{\theta}                 &   \unit{K} \\
+		Conductiecoëfficiënt         & \unit{MT^{-3} \theta^{-1}}    &   \unit{W/m^2 K} \\	
+		Energie (warmte)             & \unit{MLT^{-2}}               &   \unit{J} \\
+		Warmteoverdrachtscoëfficiënt & \unit{MT^{-3}L\theta^{-1}}    &   \unit{W/m K} \\
 		\hline
 	\end{tabular}
 	\caption{Vaak voorkomende grootheden met hun dimensie en eenheden}

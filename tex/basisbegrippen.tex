@@ -6,7 +6,7 @@
 	\label{sec:Basisbegrippen Inleiding}
 Overal rondom ons vinden we vloeistoffen en gassen, fluïda. In deze cursus zullen we de bewegingen die deze fluïda ondergaan en de krachten die ze op de omgeving uitoefenen bestuderen. Vaak zullen ingenieurs deze krachten en bewegingen kanaliseren en uitbuiten om een bepaald doel te realiseren, bijvoorbeeld arbeid opwekken of een kracht uitoefenen of simpelweg de verplaatsing van massa van één locatie naar een andere. Om systemen die dit doen te ontwerpen is het nodig het gedrag van de fluïda in bepaalde omstandigheden goed te kunnen voorspellen.
 
-Een bepaalde hoeveelheid fluïdum zal steeds bestaan uit een zeer groot aantal moleculen. De hoeveelheid moleculen binnen \unit{1}{m^3} water bij atmosfeer druk en 20\textcelsius\ is ongeveer \unit{10\times10^{30}}{}. Een theorie die het gedrag van al deze moleculen zou voorspellen, bijvoorbeeld op basis van deeltjesmechanica, zou zeer complex zijn en weinig praktisch nut hebben aangezien de rekencapaciteit van huidige supercomputers verre van voldoende zou zijn om zulke systemen op te lossen.
+Een bepaalde hoeveelheid fluïdum zal steeds bestaan uit een zeer groot aantal moleculen. De hoeveelheid moleculen binnen 1\unit{m^3} water bij atmosfeer druk en 20\degC\ is ongeveer $10\times10^{30}$. Een theorie die het gedrag van al deze moleculen zou voorspellen, bijvoorbeeld op basis van deeltjesmechanica, zou zeer complex zijn en weinig praktisch nut hebben aangezien de rekencapaciteit van huidige supercomputers verre van voldoende zou zijn om zulke systemen op te lossen.
 
 We moeten dus methodes bedenken om het globale gedrag van zulke systemen te beschrijven.
 
@@ -17,26 +17,26 @@ In dit hoofdstuk worden enkele principes uitgewerkt die het mogelijk maken om fl
 	\label{sec:Beschrijving van een continuum}	
 We zullen binnen de fluïdomechanica een fluïdum niet bestuderen als een verzameling van moleculen maar als een continuüm. Deze benadering is analoog aan degene gebruikt binnen de vaste stof mechanica. We smeren als het ware de moleculen binnen het fluïdum uit over de volledige ruimte die het fluïdum inneemt (en niet enkel de ruimte die bezet wordt door de afzonderlijke moleculen). Dit brengt met zich mee dat alle afgeleide principes enkel geldig zijn indien we een volume beschouwen waarin voldoende moleculen aanwezig zijn zodat de gemiddelde eigenschappen van de aanwezige moleculen representatief zijn.
 
-Beschouw als voorbeeld een bepaald volume uit een fluïdum. Aangezien de moleculen in een fluïdum een grote bewegingsvrijheid hebben zullen er steeds moleculen het volume in en uit bewegen. Wanneer het beschouwde volume echter groot genoeg is zullen er steeds ongeveer evenveel moleculen binnen het beschouwde volume zijn (de beweging van de moleculen is willekeurig dus zullen er evenveel moleculen instromen als uitstromen). De massa van het fluïdum binnen het volume is dus ook constant. Wanneer het volume echter zo klein gekozen wordt dat er slechts enkele moleculen zich binnen het volume bevinden heeft de verplaatsing van één enkele molecule een veel groter effect op de variatie van massa binnen het volume en kan de continuüm aanname niet meer gerechtvaardigd worden.
+Beschouw als voorbeeld een bepaald volume uit een fluïdum. Aangezien de moleculen in een fluïdum een grote bewegingsvrijheid hebben zullen er steeds moleculen het volume in en uit bewegen. Wanneer het beschouwde volume echter groot genoeg is zullen er steeds ongeveer evenveel moleculen binnen het beschouwde volume zijn (de beweging van de moleculen is willekeurig dus zullen er evenveel moleculen instromen als uitstromen). De massa van het fluïdum binnen het volume is dus ook constant. Wanneer het volume echter zo klein gekozen wordt dat er slechts enkele moleculen zich binnen het volume bevinden heeft de verplaatsing van één enkele molecule een veel groter effect op de variatie van massa binnen het volume en kan de continuümaanname niet meer gerechtvaardigd worden.
 
 Een belangrijke eigenschap voor het beschrijven van een continuüm is de \emph{massadichtheid} of \emph{dichtheid}. Deze wordt gedefinieerd als de massa binnen een bepaald volume gedeeld door het ingenomen volume wanneer dit volume infinitesimaal klein wordt. 
 \begin{equation}
 	\rho = \lim_{\delta V \to 0} \frac{\delta m}{\delta V}
 	\label{eqn:dichtheid}
 \end{equation}
-Onder de continuüm aannames zal de dichtheid onafhankelijk zijn van de grootte van het infinitesimaal volume en heeft de bovenstaande limiet een constante waarde. De SI eenheid van dichtheid is \unit{}{kg/m^3}.
+Onder de continuümaannames zal de dichtheid onafhankelijk zijn van de grootte van het infinitesimaal volume en heeft de bovenstaande limiet een constante waarde. De SI eenheid van dichtheid is \unit{kg/m^3}.
 
-In de mechanica zijn we steeds geïnteresseerd in de beweging en vervorming van systemen onder invloed van krachten. In de continuüm veronderstelling kunnen we deze krachten onderverdelen in \emph{volumekrachten} en \emph{oppervlaktekrachten}. De meest voor de hand liggende volumekracht is de zwaartekracht. Deze zal overal in het continuüm aangrijpen en is gelijk aan het product van de massadichtheid en de valversnelling. De totale kracht die een volumekracht uitgeoefend op een systeem kunnen we berekenen door de volume integraal van de volumekracht over het volledige volume te nemen (vandaar de naam). Zo wordt de totale zwaartekracht uitgeoefend op een systeem:
+In de mechanica zijn we steeds geïnteresseerd in de beweging en vervorming van systemen onder invloed van krachten. In de continuümveronderstelling kunnen we deze krachten onderverdelen in \emph{volumekrachten} en \emph{oppervlaktekrachten}. De meest voor de hand liggende volumekracht is de zwaartekracht. Deze zal overal in het continuüm aangrijpen en is gelijk aan het product van de massadichtheid en de valversnelling. De totale kracht die een volumekracht uitgeoefend op een systeem kunnen we berekenen door de volume-integraal van de volumekracht over het volledige volume te nemen (vandaar de naam). Zo wordt de totale zwaartekracht uitgeoefend op een systeem:
 \begin{equation}
 	\vt{F_{g,totaal}} = \int_V \rho \vt{g} \diff V = m \vt{g}
 	\label{eqn:volumekracht}
 \end{equation}
-In tegenstelling tot volume krachten zullen oppervlaktekrachten enkel aan de rand van een volume inwerken. Deze kunnen beschreven worden door de spanning op een oppervlak. De spanning noteren we met het symbool $\sigma$ of $\tau$ en heeft een eenheid  \unit{}{N/m^2}. De totale kracht die een spanning op een oppervlak uitoefent wordt berekend als: 
+In tegenstelling tot volume krachten zullen oppervlaktekrachten enkel aan de rand van een volume inwerken. Deze kunnen beschreven worden door de spanning op een oppervlak. De spanning noteren we met het symbool $\sigma$ of $\tau$ en heeft een eenheid  \unit{N/m^2}. De totale kracht die een spanning op een oppervlak uitoefent wordt berekend als: 
 \begin{equation}
 	\vt{F_{\sigma,totaal}} = \int_A \vt{\sigma} \diff A
 	\label{eqn:oppervlaktekracht}
 \end{equation}
-De spanning op een oppervlak kan steeds beschreven worden door een component loodrecht op het oppervlak, de \emph{normaalspanning} $\sigma$ en een component tangentieel aan het oppervlak,de \emph{schuifspanning} $\tau$ (Figuur \ref{fig:spanning}).
+De spanning op een oppervlak kan steeds beschreven worden door een component loodrecht op het oppervlak, de \emph{normaalspanning} $\sigma$ en een component tangentieel aan het oppervlak, de \emph{schuifspanning} $\tau$ (Figuur \ref{fig:spanning}).
 \begin{figure}[htb]
 	\centering
 	\includesvg{fig/basisbegrippen/Spanning}
@@ -84,13 +84,13 @@ De eenvoudigste relatie tussen vervormingssnelheid en schuifspanning is een line
 	\tau = \mu \frac{\diff v}{\diff y}
 	\label{eqn:schuifspanning newtoniaans}
 \end{equation}
-De evenredigheidsfactor $\mu$ wordt de \emph{dynamische viscositeit} of gewoon \emph{viscositeit} genoemd met als eenheid \unit{}{Pa\ s}. Vloeistoffen die aan (\ref{eqn:schuifspanning newtoniaans}) voldoen worden \emph{Newtoniaanse} vloeistoffen genoemd. Vele praktische en ingenieursvloeistoffen als water, lucht, smeerolie,... voldoen zeer goed aan deze relatie.
+De evenredigheidsfactor $\mu$ wordt de \emph{dynamische viscositeit} of gewoon \emph{viscositeit} genoemd met als eenheid \unit{Pa\ s}. Vloeistoffen die aan (\ref{eqn:schuifspanning newtoniaans}) voldoen worden \emph{Newtoniaanse} vloeistoffen genoemd. Vele praktische en ingenieursvloeistoffen als water, lucht, smeerolie,... voldoen zeer goed aan deze relatie.
 
 Vaak wordt de viscositeit voorgesteld als een \emph{kinematische viscositeit} $\nu$. Deze wordt bekomen door de dynamische viscositeit te delen door de dichtheid van het fluïdum:
 \begin{equation}
 	\nu = \frac{\mu}{\rho}
 \end{equation}
-De eenheid van de kinematische viscositeit is \unit{}{m^2/s}.
+De eenheid van de kinematische viscositeit is \unit{m^2/s}.
 
 De viscositeit van een vloeistof is vaak sterk afhankelijk van de temperatuur. Wanneer we Figuur \ref{fig:dynamische viscositeit temperatuur} bestuderen valt op dat bij vloeistoffen de viscositeit daalt bij stijgende temperatuur, terwijl bij gassen de viscositeit stijgt bij stijgende temperatuur. Dit kunnen we verklaren door op te merken dat bij vloeistoffen de verschillende moleculen dicht bij elkaar gelegen zijn. De viscositeit wordt dus hoofdzakelijk veroorzaakt door intermoleculaire krachten of cohesie. Bij hogere temperaturen nemen deze cohesiekrachten en dus ook de viscositeit af. Bij gassen is de afstand tussen de moleculen groter en de moleculen bezitten elk een willekeurige snelheid. De viscositeit wordt dus veroorzaakt door impulsoverdracht door de moleculen. Aangezien bij stijgende temperatuur de moleculaire activiteit toeneemt zal ook de viscositeit toenemen.
 \begin{figure}[htb]
@@ -138,7 +138,7 @@ Ook systemen die op het eerste zicht geen stationaire stroming ondervinden kunne
 	\label{fig:stationaire stroming vliegtuig}
 \end{figure}
 
-Indien ze gekend zijn kunnen de snelheidsvectoren op elk moment grafisch weergegeven worden. Indien we een set lijnen tekenen die op elk punt raken aan de snelheidsvectoren kunnen we ook op deze manier de stroming grafish weergeven. Deze lijnen worden \emph{stroomlijnen} genoemd (E: Streamlines). Als voorbeeld is in Figuur \ref{fig:snelheidsveld} een snelheidsveld gegeven voor een niet viskeuze stroming in een rechte hoek. De snelheidsvectoren worden als pijlen weergegeven op enkele discrete posities. De stroomlijnen zijn weergegeven als streeplijnen.
+Indien ze gekend zijn kunnen de snelheidsvectoren op elk moment grafisch weergegeven worden. Indien we een set lijnen tekenen die op elk punt raken aan de snelheidsvectoren kunnen we ook op deze manier de stroming grafisch weergeven. Deze lijnen worden \emph{stroomlijnen} genoemd (E: Streamlines). Als voorbeeld is in Figuur \ref{fig:snelheidsveld} een snelheidsveld gegeven voor een niet viskeuze stroming in een rechte hoek. De snelheidsvectoren worden als pijlen weergegeven op enkele discrete posities. De stroomlijnen zijn weergegeven als streeplijnen.
 \begin{figure}[htb]
 	\centering
 	\includesvg{fig/basisbegrippen/Snelheidsveld}

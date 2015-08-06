@@ -4,34 +4,21 @@
 \usepackage{a4wide}                     % Iets meer tekst op een bladzijde
 \usepackage[dutch]{babel}               % Voor nederlandstalige hyphenatie (woordsplitsing)
 \usepackage{amsmath,amsthm}             % Uitgebreide wiskundige mogelijkheden
-%\usepackage{amssymb}                    % Voor speciale symbolen zoals de verzameling Z, R...
-%\usepackage{makeidx}                    % Om een index te maken
 \usepackage{url}                        % Om url's te verwerken
 \usepackage{graphicx,subfigure}         % Om figuren te kunnen verwerken
 \usepackage{color}
 \usepackage{multicol}
 \usepackage[small,bf,hang]{caption}     % Om de captions wat te verbeteren
-%\usepackage{xspace}                    % Magische spaties na een commando
 \usepackage[utf8]{inputenc}             % Om niet ascii karakters rechtstreeks te kunnen typen
 \usepackage{float}                      % Om nieuwe float environments aan te maken. Ook optie H!
 \usepackage{flafter}                    % Opdat floats niet zouden voorsteken
 \usepackage[section]{placeins}			% Om ervoor te zorgen dat floats binnen dezelfde section blijven
-%\usepackage{listings}                   % Voor het weergeven van letterlijke text en codelistings
-%\usepackage[numbers]{natbib}            % Voor juiste citatie stijl
 \usepackage[nottoc]{tocbibind}			% Bibliografie en inhoudsopgave in ToC; zie tocbibind.dvi
-\usepackage{eurosym}                    % om het euro symbool te krijgen
 \usepackage{textcomp}                   % Voor onder andere graden celsius
 \usepackage{fancyhdr}                   % Voor fancy headers en footers
-\usepackage[Gray,squaren,thinqspace,thinspace]{SIunits} % Om elegant eenheden te zetten
-\usepackage[version=3]{mhchem}          % Voor elegante scheikundige formules
-%\usepackage{emptypage}					% Om de lege pagina's voor een hoofdstuk mooi te maken
 \usepackage{thmtools}                   % theorem tools
-\usepackage{collect}
 \usepackage{parskip}                    % Om paragrafen met een verticale spatie ipv horizontaal te laten beginnen
-
-
-
-\usepackage[plainpages=false]{hyperref}    % Om hyperlinks te hebben in het pdfdocument.
+\usepackage[plainpages=false]{hyperref} % Om hyperlinks te hebben in het pdfdocument.
 
 
 
@@ -92,27 +79,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Nieuwe commandos
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% De differentiaal operator
-\newcommand{\diff}{\ensuremath{\mathrm{d}}}
-\newcommand{\subsdiff}{\ensuremath{\mathrm{D}}}
-\newcommand{\vardiff}{\ensuremath{\mathrm{\delta}}}
-
-% Super en subscript
-\newcommand{\supsc}[1]{\ensuremath{^{\text{#1}}}}   % Superscript in tekst
-\newcommand{\subsc}[1]{\ensuremath{_{\text{#1}}}}   % Subscript in tekst
-
-% Vectoren en matrices
-\newcommand{\vt}[1]{\ensuremath{\boldsymbol{#1}}} % vector in juiste lettertype
-\newcommand{\mx}[1]{\ensuremath{\mathsf{#1}}}	  % matrix in juiste lettertype
-
-% Nieuw commando om iets te benadrukken en tegelijkertijd in de index te steken.
-\newcommand{\begrip}[1]{\index{#1}\textbf{#1}\xspace}
-
-% Graden celcius
-\newcommand{\degC}{\ensuremath{^\circ \mathrm{C}}}
-
-
 % nieuw commando om svg files dynamisch te updaten
 \newcommand{\executeiffilenewer}[3]{%
 \ifnum\pdfstrcmp{\pdffilemoddate{#1}}%

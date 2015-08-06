@@ -19,7 +19,7 @@ Dit vereenvoudigt de oplossing van het snelheidsveld voor gegeven randvoorwaarde
 Beschouw een willekeurige tweedimensionale stroming met stroomlijnen zoals in Figuur \ref{fig:Stroomfunctie}.
 \begin{figure}[htb]
 	\centering
-	\includesvg{fig/uitwendige_stroming/Stroomfunctie}
+	\includegraphics{fig/uitwendige_stroming/Stroomfunctie}
 	\caption{Stroomlijnen van een tweedimensionale stroming}
 	\label{fig:Stroomfunctie}
 \end{figure}
@@ -49,7 +49,7 @@ Indien we nu (\ref{eqn:debiet tussen stroomlijnen}) en (\ref{eqn:verandering van
 \end{eqnarray}
 \begin{figure}[htb]
 	\centering
-	\includesvg{fig/uitwendige_stroming/Stroomlijnen}
+	\includegraphics{fig/uitwendige_stroming/Stroomlijnen}
 	\caption{Vectoren van de stroomlijn co\"ordinaten}
 	\label{fig:Stroomlijn coordinaten}
 \end{figure}
@@ -68,7 +68,7 @@ Analytische oplossingen voor deze vergelijking bestaan voor een groot aantal ver
 Beschouw vlakke plaat waar langs één zijde een viskeus fluïdum over stroomt (Figuur \ref{fig:Laminaire grenslaag}). Vlak voor de plaat is de stroming uniform, de snelheid varieert niet met de hoogte. Bij het begin van de plaat zullen de deeltjes het dichtst bij de plaat door de wrijvingskrachten afgeremd worden tot stilstand. De deeltjes verder van de plaat worden op deze plaats echter nog niet beïnvloed door de plaat. Wanneer het fluïdum verder over de plaat stoomt zullen de deeltjes die iets verder van de plaat stromen ook afgeremd worden door de deeltjes het dischtst bij de plaat. De deeltjes ver van de plaat ondervinden echter nog steeds geen invloed van de plaat.
 \begin{figure}[htb]
 	\centering
-	\includesvg{fig/uitwendige_stroming/Laminaire_grenslaag}
+	\includegraphics{fig/uitwendige_stroming/Laminaire_grenslaag}
 	\caption{Vorming van een grenslaag bij stroming over een vlakke plaat}
 	\label{fig:Laminaire grenslaag}
 \end{figure}
@@ -82,7 +82,7 @@ Wanneer de dikte van de grenslaag echter gekend is kan gemakkelijk een snelheids
 In het voorgaande voorbeeld liepen alle snelheidsvectoren in dezelfde richting. Indien we de stroomlijnen in deze stroming zouden tekenen is te zien dat deze allemaal parallel lopen. De stroming wordt als het ware door de ongestoorde snelheid gedwongen in verschillende lagen te stromen. Zo'n stroming noemen we \emph{laminair}. Wanneer we ons nog verder over de wand verplaatsen zal de grenslaag steeds dikker worden. Op een gegeven moment wordt de grenslaag zo dik dat de stroming binnen de grenslaag onstabiel wordt. Er zullen variaties van de grootte en richting van de snelheid optreden naargelang de plaats en het tijdstip waarop we kijken (Figuur \ref{fig:Turbulente grenslaag}). We noemen dit een turbulente grenslaag.
 \begin{figure}[htb]
 	\centering
-	\includesvg{fig/uitwendige_stroming/Turbulente_grenslaag}
+	\includegraphics{fig/uitwendige_stroming/Turbulente_grenslaag}
 	\caption{Vorming van een turbulente grenslaag bij stroming over een vlakke plaat}
 	\label{fig:Turbulente grenslaag}
 \end{figure}
@@ -123,7 +123,7 @@ Deze partiële differentiaalvergelijking kan door middel van een coördinaten tr
 De numeriek oplossing gebruikt een getransformeerde coördinaat $\eta = y (\frac{v_0}{\nu x})^{1/2}$. De relatieve snelheid in de grenslaag in functie van deze coördinaat wordt gegeven in Figuur  \ref{fig:Grenslaagsnelheid}. Merk op dat deze figuur kan gebruikt worden om de snelheid in de grenslaag op alle hoogtes en alle afstanden van de rand van de plaat te berekenen aangezien de coördinaat $\eta$ zowel de $y$ als $x$ coördinaat bevat.
 \begin{figure}[htb]
 	\centering
-	\includefig{fig/uitwendige_stroming/Grenslaagsnelheid}
+	\includegraphics{fig/uitwendige_stroming/Grenslaagsnelheid}
 	\caption{Blasius oplossing van de snelheid in de grenslaag bij laminaire stroming over een vlakke plaat}
 	\label{fig:Grenslaagsnelheid}
 \end{figure}
@@ -143,7 +143,7 @@ Aangezien het snelheidsprofiel volgens Blasius geen analytische uitdrukking heef
 Voor een laminaire stroming over een vlakke plaat kunnen we de weerstandskracht uitwerken door een controlevolume te beschouwen rond de grenslaag. Kies als randen voor het controle volume de vlakke plaat zelf, een verticale aan het begin van de plaat, een verticale op de beschouwde positie $x$ en een stroomlijn die op positie $x$ door de rand van de grenslaag stroomt. Ter hoogte van het begin van de plaat bevindt deze stroomlijn zich op een hoogte $h$ (Figuur \ref{fig:Laminaire_genslaag_controlevolume}).
 \begin{figure}[htb]
 	\centering
-	\includesvg{fig/uitwendige_stroming/Laminaire_grenslaag_controlevolume}
+	\includegraphics{fig/uitwendige_stroming/Laminaire_grenslaag_controlevolume}
 	\caption{Controle volume in de laminaire stroming over een vlakke plaat voor de berekening van de weerstandskracht}
 	\label{fig:Laminaire_genslaag_controlevolume}
 \end{figure}
@@ -173,23 +173,52 @@ In het rechterlid van deze vergelijking kunnen we de integralen combineren tot:
 Deze vergelijking illustreert dat de weerstandskracht door viskeuze wrijving gebalanceerd wordt door een impuls daling in de grenslaag. Hoe verder we ons op de plaat bewegen hoe meer weerstand er zal uitgeoefend worden. De totale impuls in de grenslaag moet dus dalen en als gevolg van behoud van massa zal de grenslaag dikte groter worden.
 
 		\subsection{Turbulentie}
-Wanneer het Reynoldsgetal in een stroming groot genoeg is zal de stroming turbulent worden. Het snelheidsveld dat de stroming beschrijft bevat dan schijnbaar willekeurige variaties in grootte en richting van de snelheid. Het fenomeen werd als eerste beschreven en gekwantificeerd door Osbourne Reynolds voor een stroming in een buis. In een turbulente stroming ontstaan onstabiele wervels van verschillende grootteordes die zorgen voor de fluctuaties in de snelheid. Een turbulente stroming wordt nog steeds beschreven door de Navier-Stokes vergelijking (\ref{eqn:navier-stokes vergelijkingen}). Door de niet lineaire convectieve termen in de deeltjesversnelling ($v_i \frac{\partial v_j}{\partial x_i}$) is het bekomen van een oplossing voor de vergelijkingen tot nog toe niet mogelijk. Wel bestaan er technieken die het numeriek benaderen van turbulente stroming mogelijk maken.
+Wanneer het Reynoldsgetal in een stroming groot genoeg is zal de stroming turbulent worden. Het snelheidsveld dat de stroming beschrijft bevat dan schijnbaar willekeurige variaties in grootte en richting van de snelheid. Het fenomeen werd als eerste beschreven en gekwantificeerd door Osbourne Reynolds voor een stroming in een buis. Een turbulente stroming wordt gekarakteriseerd door:
+\begin{itemize}
+	\item Wanordelijke, schijnbaar willekeurige stroming
+	\item Zeer gevoelig aan begincondities
+	\item Grote menging en dissipatie
+	\item Grote variatie in lengte en tijdschalen
+	\item 3 dimensionaal
+\end{itemize}
 
-De oorsprong van de wervels kunnen we illustreren met een eenvoudig voorbeeld. Beschouw een stroming met een sinusvormige verstoring in de $x$-richting ($v_x = \sin(\omega x)$). De convectieve term van de deeltjesversnelling in de $x$-richting wordt nu:
+Wanneer in een stroming energie toegevoegd wordt op een grote lengte schaal zal deze energie door wervelingen overgedragen worden naar steeds kleinere lengteschalen, tot een schaal waar de viscositeit overheerst en de energie gedissipeerd wordt tot warmte door viskeuze wrijving. Dit principe werd in 1922 poëtisch beschreven door Lewis Fry Richardson:
+\begin{quotation}
+Big whorls have little whorls,\\
+which feed on their velocity;\\
+And little whorls have lesser whorls\\
+and so on to viscosity.\\
+\end{quotation}
+
+Dit principe kan geillustreerd worden aan de hand van een grote tank met een roer installatie (Figuur \ref{fig:Energie_cascade}). De roerder voegt energie toe en creërt een grote wervel op de schaal van de tank zelf. Deze wervel zal zijn energie overdragen aan kleinere wervels met hogere snelheid, die op hun beurt de energie overdragen aan nog kleinere wervels. Dit proces gaat door to de lengte schaal zo klein is en de snelheid zo groot dat de viscositeit terug domineert en de mechanische energie omgezet wordt in warmte. Dit principe noemt men ook de energie cascade.
+\begin{figure}[htb]
+	\centering
+	\includegraphics{fig/uitwendige_stroming/Energie_cascade}
+	\caption{Illustratie van de energie cascade bij een turbulente menging in een tank waarbij energie toegevoegd wordt door een roorder.}
+	\label{fig:Energie_cascade}
+\end{figure}
+
+De oorzaak van de energiecascade kunnen we illustreren met een eenvoudig voorbeeld. Beschouw een stroming met een sinusvormige verstoring in de $x$-richting ($v_x = \sin(\omega x)$). De convectieve term van de deeltjesversnelling in de $x$-richting wordt nu:
 \begin{equation}
-	v \frac{\partial v}{\partial x} = \omega \sin(\omega x) \cos(\omega x) = \frac{1}{2} \omega \sin( 2 \omega) 
+	v \frac{\partial v}{\partial x} = \omega \sin(\omega x) \cos(\omega x) = \frac{1}{2} \omega \sin( 2 \omega x) 
 \end{equation}
-Een aanwezige verstoring wordt dus met een half zo kleine golflengte overgedragen naar de versnelling. Er wordt met andere woorden energie overgedragen naar kleinere golflengten en hogere frequenties. Hierdoor zal een globale verstoring evolueren tot een variatie in snelheid op zeer kleine schaal. Wanneer de stroming viskeus is zullen vanaf een bepaalde (kleine) schaal de oscillaties gedempt worden door de viskeuze krachten. Het Reynolds getal (verhouding tussen traagheidskrachten en viskeuze krachten) zal dus een goede maatstaf zijn voor het inschatten van turbulentie. De Reynoldsgetallen waarbij turbulentie optreedt zijn echter sterk afhankelijk van de specifieke situatie. Bij de grenslaagstroming over een vlakke plaat zoals hierboven beschreven zal turbulentie optreden vanaf een Reynoldsgetal van 350000 - 1000000 \cite{Schlichting1979}. Het Reynoldsgetal word in dit geval gedefinieerd als:
+Een aanwezige verstoring wordt dus met een half zo kleine golflengte overgedragen naar de versnelling. Er wordt dus een nieuwe verstoring gecreerd met een kleinere golflengte en hogere frequentie. Hierdoor zal een globale verstoring evolueren tot een variatie in snelheid op zeer kleine schaal.
+
+Een turbulente stroming wordt nog steeds beschreven door de Navier-Stokes vergelijking (\ref{eqn:navier-stokes vergelijkingen}). Door de niet lineaire convectieve termen in de deeltjesversnelling ($v_i \frac{\partial v_j}{\partial x_i}$) is het bekomen van een oplossing voor de vergelijkingen tot nog toe niet mogelijk. Wel bestaan er technieken die het numeriek benaderen van turbulente stroming mogelijk maken.
+
+Het Reynolds getal (verhouding tussen traagheidskrachten en viskeuze krachten) is een goede maatstaf voor het inschatten van turbulentie. De Reynoldsgetallen waarbij turbulentie optreedt zijn echter sterk afhankelijk van de specifieke situatie. Bij de grenslaagstroming over een vlakke plaat zoals hierboven beschreven zal turbulentie optreden vanaf een Reynoldsgetal van 350000 - 1000000 \cite{Schlichting1979}. Het Reynoldsgetal word in dit geval gedefinieerd als:
 \begin{equation}
 	Re_x = \frac{v x}{\nu}
 \end{equation}
 Hierin is $x$ de afstand van het beschouwde punt tot de rand van de plaat. Een voorbeeld van snelheidsvectoren van een turbulente stroming over een vlakke plaat is gegeven in Figuur \ref{fig:Turbulente grenslaag voorbeeld}.
 \begin{figure}[htb]
 	\centering
-	\includesvg[15cm]{fig/uitwendige_stroming/Turbulente_grenslaag_voorbeeld}
+	\includegraphics[width=15cm]{fig/uitwendige_stroming/Turbulente_grenslaag_voorbeeld}
 	\caption{Snelheidsvectoren opgemeten bij een turbulente grenslaag over een vlakke plaat \cite{Tomkins1997}.}
 	\label{fig:Turbulente grenslaag voorbeeld}
 \end{figure}
+
+Meer informatie over turbulentie is te vinden in \cite{McDonough2007}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Loshechting}
@@ -212,7 +241,7 @@ Deze zal bij lage Reynoldsgetallen zeer groot zijn en sterk afhankelijk zijn van
 \end{figure}
 \begin{figure}[htb]
 	\centering
-	\includesvg{fig/uitwendige_stroming/loshechting}
+	\includegraphics{fig/uitwendige_stroming/loshechting}
 	\caption{Afscheiding van een viskeuze stroming onder invloed van een positieve drukgradiënt}
 	\label{fig:afscheiding}
 \end{figure}
@@ -248,9 +277,9 @@ Bij hogere Reynoldsgetallen zien we dat er een zog met circulatie stroming achte
 
 Bij nog hogere waarden van het Reynolds getal zal de afgescheiden zone achter de cilinder terug verkleinen terwijl ook de wrijvingscoëfficiënt terug daalt (Figuur \ref{fig:cilinder Re 100000}).
 
-Om deze waarnemingen te verklaren bekijken we ook de stroming bij de afwezigheid van viskeuze krachten (potentiaalstroming). In deze situatie ontstaat er een hoge druk zone voor de cilinder met een stagnatiepunt waar de stroming helemaal tot stilstand komt. Aan de zijkanten (op 90\degree en 270\degree) zal de snelheid van het fluïdum het grootst zijn. De druk is hier minimaal. wanneer we verderop in de stroming kijken zal aan de achterzijde van de cilinder (180\degree) ook een stagnatiepunt zijn waar de snelheid $0$ is en de druk maximaal. Er wordt met andere woorden energie omgezet van druk aan de voorzijde van de cilinder naar kinetische energie aan de randen en terug naar druk aan de achterzijde van de cilinder. Aan de achterzijde van de cilinder zal de druk stijgen, er heerst een positieve drukgradiënt.
+Om deze waarnemingen te verklaren bekijken we ook de stroming bij de afwezigheid van viskeuze krachten (potentiaalstroming). In deze situatie ontstaat er een hoge druk zone voor de cilinder met een stagnatiepunt waar de stroming helemaal tot stilstand komt. Aan de zijkanten (op 90\deg en 270\deg) zal de snelheid van het fluïdum het grootst zijn. De druk is hier minimaal. wanneer we verderop in de stroming kijken zal aan de achterzijde van de cilinder (180\deg) ook een stagnatiepunt zijn waar de snelheid $0$ is en de druk maximaal. Er wordt met andere woorden energie omgezet van druk aan de voorzijde van de cilinder naar kinetische energie aan de randen en terug naar druk aan de achterzijde van de cilinder. Aan de achterzijde van de cilinder zal de druk stijgen, er heerst een positieve drukgradiënt.
 
-Hetzelfde geldt voor het niet viskeuze gedeelte (het gedeelte buiten de grenslaag) van de bovenstaande stromingen. Uit de grenslaag theorie volgt dat er binnen de grenslaag geen drukvariaties met de hoogte zijn. Aan de achterzijde van de cilinder vinden we dus ook binnen de grenslaag een positieve drukgradiënt. Binnen de grenslaag wordt er echter ook energie gedissipieerd door de viskeuze wrijving. De stroming zal dus voor het normale stagnatiepunt ($\theta = 180\degree$) tot stilstand komen. Aangezien er buiten de grenslaag wel nog steeds een positieve drukgradiënt heerst zal de stroming binnen de grenslaag zelfs van richting veranderen en terugstromen over het oppervlak van de cilinder (\ref{fig:afscheiding}).
+Hetzelfde geldt voor het niet viskeuze gedeelte (het gedeelte buiten de grenslaag) van de bovenstaande stromingen. Uit de grenslaag theorie volgt dat er binnen de grenslaag geen drukvariaties met de hoogte zijn. Aan de achterzijde van de cilinder vinden we dus ook binnen de grenslaag een positieve drukgradiënt. Binnen de grenslaag wordt er echter ook energie gedissipieerd door de viskeuze wrijving. De stroming zal dus voor het normale stagnatiepunt ($\theta = 180\deg$) tot stilstand komen. Aangezien er buiten de grenslaag wel nog steeds een positieve drukgradiënt heerst zal de stroming binnen de grenslaag zelfs van richting veranderen en terugstromen over het oppervlak van de cilinder (\ref{fig:afscheiding}).
 
 Bij hogere Reynoldsgetallen zal het gebied in afscheiding terug afnemen. Dit wordt veroorzaakt doordat de stroming turbulent wordt aan het oppervlak van de cilinder. Bij turbulente stroming is de convectieve impulsoverdracht veel groter (het snelheidsprofiel wordt vlakker) er wordt dus meer energie van de vrije stroming naar de grenslaag overgedragen zodat de drukstijging gemakkelijker overwonnen kan worden. Aan de achterzijde van de cilinder ontstaat een turbulent zog. Bij nog hogere Reynoldsgetallen zal dit zog terug uitbreiden wanneer de volledige grenslaag turbulent wordt.
 
@@ -261,7 +290,7 @@ Bij hogere Reynoldsgetallen zal het gebied in afscheiding terug afnemen. Dit wor
 Een in de ingenieurstoepassingen veel voorkomend voorwerp is een vleugelprofiel. Onder de term vleugelprofiel vallen alle voorwerpen waarvan het doel is dat wanneer ze door een stroming bewegen ze een kracht loodrecht op de stroming ondervinden. Een vleugelprofiel zal dus niet enkel een \emph{weerstandskracht} in de richting van de stroming ondervinden maar ook een kracht loodrecht op de stroming, de \emph{liftkracht} (Figuur \ref{fig:vleugelprofiel krachten}).
 \begin{figure}[htb]
 	\centering
-	\includesvg{fig/uitwendige_stroming/vleugelprofiel_krachten}
+	\includegraphics{fig/uitwendige_stroming/vleugelprofiel_krachten}
 	\caption{Weerstandskracht en liftkracht op een vleugelprofiel}
 	\label{fig:vleugelprofiel krachten}
 \end{figure}
@@ -269,14 +298,14 @@ Een in de ingenieurstoepassingen veel voorkomend voorwerp is een vleugelprofiel.
 Wanneer we de stoomlijnen van een stationaire stroming rond een vleugelprofiel visualiseren (Figuur \ref{fig:vleugelprofiel stroomlijnen}) Zien we dat de stroming door het profiel naar beneden afgebogen wordt. Volgens de wet van behoud van impuls (\ref{eqn:controlevolume,behoud van impuls}) zal de stroming dus een verticale reactiekracht op het profiel uitoefenen.
 \begin{figure}[htb]
 	\centering
-	\includesvg{fig/uitwendige_stroming/vleugelprofiel_stroomlijnen}
+	\includegraphics{fig/uitwendige_stroming/vleugelprofiel_stroomlijnen}
 	\caption{Stroomlijnen rond een vleugelprofiel}
 	\label{fig:vleugelprofiel stroomlijnen}
 \end{figure}
 De liftkracht en een gedeelte van de weerstandskracht worden door de druk in de stroming uitgeoefend op het profiel. Wanneer we deze druk uitzetten op over profiel (Figuur \ref{fig:vleugelprofiel drukverdeling}) zien we dat aan de bovenzijde er een onderdruk heerst terwijl er aan de onderzijde overdruk heerst. Aan de wand van het vleugelprofiel zal ook een grenslaag ontstaan die naargelang het Reynoldsgetal van de stroming laminair of turbulent kan zijn.
 \begin{figure}[htb]
 	\centering
-	\includesvg{fig/uitwendige_stroming/vleugelprofiel_drukverdeling}
+	\includegraphics{fig/uitwendige_stroming/vleugelprofiel_drukverdeling}
 	\caption{Drukverdeling rond een vleugelprofiel}
 	\label{fig:vleugelprofiel drukverdeling}
 \end{figure}
@@ -285,7 +314,7 @@ De grootte van de lift- en weerstandskracht die gegenereerd worden door het prof
 De \emph{koorde} van een profiel wordt gedefinieerd als de verbindingslijn tussen de aanvalsboord en de achterrand. We kunnen nu de aanvalshoek definiëren als de hoek $\alpha$ tussen de koorde en de vrije stroomsnelheid (Figuur \ref{fig:vleugelprofiel aanvalshoek}).
 \begin{figure}[htb]
 	\centering
-	\includesvg{fig/uitwendige_stroming/vleugelprofiel_aanvalshoek}
+	\includegraphics{fig/uitwendige_stroming/vleugelprofiel_aanvalshoek}
 	\caption{Koorde en aanvalshoek bij een vleugelprofiel}
 	\label{fig:vleugelprofiel aanvalshoek}
 \end{figure}

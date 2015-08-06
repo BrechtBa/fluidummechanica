@@ -11,7 +11,7 @@ In dit hoofdstuk zullen we trachten enkele basis componenten van een leidingstel
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Ladingsverliezen}
 	\label{sec:Ladingsverliezen}
-In het vorige hoofdstuk hebben we de drukverliezen van een viskeuze stroming in een leiding bepaald. Hierbij zijn we er telkens vanuit gegaan dat de viskeuze krachten in evenwicht waren met de drukkrachten. Het verschil in druk aan het begin en het einde van de leiding was met andere woorden de drijvende kracht van de stroming. Wanneer een leiding onder een helling staat zal de zwaartekracht echter ook een kracht uitoefenen op het fluïdum en dus een deel van de drijvende kracht vormen. We moeten het drukverlies uit het vorige hoofdstuk dus op een andere manier beschouwen. Dit kan door het te beschouwen als een energieverlies. Door de viscositeit zal een deel van de mechanische energie aanwezig in een stroming gedissipeerd worden. Het drukverlies uit het vorige hoofdstuk komt dus ook overeen met een energieverlies. Wanneer we de eenheden beschouwen zien we dat de eenheid [\unit{}{Pa}] inderdaad overeenkomt met een hoeveelheid energie per volume [\unit{}{J/m^3}].
+In het vorige hoofdstuk hebben we de drukverliezen van een viskeuze stroming in een leiding bepaald. Hierbij zijn we er telkens vanuit gegaan dat de viskeuze krachten in evenwicht waren met de drukkrachten. Het verschil in druk aan het begin en het einde van de leiding was met andere woorden de drijvende kracht van de stroming. Wanneer een leiding onder een helling staat zal de zwaartekracht echter ook een kracht uitoefenen op het fluïdum en dus een deel van de drijvende kracht vormen. We moeten het drukverlies uit het vorige hoofdstuk dus op een andere manier beschouwen. Dit kan door het te beschouwen als een energieverlies. Door de viscositeit zal een deel van de mechanische energie aanwezig in een stroming gedissipeerd worden. Het drukverlies uit het vorige hoofdstuk komt dus ook overeen met een energieverlies. Wanneer we de eenheden beschouwen zien we dat de eenheid [\unit{Pa}] inderdaad overeenkomt met een hoeveelheid energie per volume [\unit{J/m^3}].
 
 In sectie \ref{sec:Mechanische arbeid van een deeltje} hebben we de vergelijking van Bernoulli beschouwd als behoud van mechanische energie van een niet-viskeuze, stationaire stroming langs een stroomlijn. In een leiding zullen er steeds stoomlijnen de leiding volgen. De precieze ligging van deze stroomlijnen in de leiding is niet belangrijk aangezien we in de gemiddelde grootheden overheen de leiding geïnteresseerd zijn. Bij viskeuze stromingen zal echter een deel van de mechanische energie verloren gaan. We kunnen (\ref{eqn:kinetische energie en arbeid}) dus herformuleren voor een viskeuze stroming:
 \begin{equation}
@@ -172,7 +172,7 @@ Niet alle structuren van leidingen kunnen opgesplitst worden in eenvoudige serie
 	\caption{Leiding netwerk}
 	\label{fig:leidingnetwerk}
 \end{figure}
-Indien we de leidingen vertrekkende uit reservoir $i$ aanduiden met de index $i$ kunnen we voor dit systeem met zekerheid 3 stroomlijnen tekenen. Namelijk de stroomlijnen vertrekkende van het oppervlak van reservoir $i$ en aankomend in het knooppunt. Voor elk van deze stroomlijnen kunnen we de vergelijking van Bernoulli uitschrijven:
+Indien we de leidingen vertrekkende uit reservoir $i$ aanduiden met de index $i$ kunnen we voor dit systeem met zekerheid 3 stroomlijnen tekenen. Namelijk de stroomlijnen vertrekkende van het oppervlak van reservoir $i$ en aankomend in het knooppunt. Voor elk van deze stroomlijnen kunnen we de energievergelijking uitschrijven:
 \begin{eqnarray}
 	\frac{p_k}{\rho g} + z_k = \frac{p_1}{\rho g} + z_1 - h_{L,1} \nonumber \\
 	\frac{p_k}{\rho g} + z_k = \frac{p_2}{\rho g} + z_2 - h_{L,2} \\
@@ -189,7 +189,29 @@ Bij het opschrijven van deze vergelijkingen hebben we impliciet stroomrichtingen
 	\end{array}
 	\right.
 \end{equation}
-Dit stelsel kunnen we oplossen naar de 3 onbekende debieten en de onbekende druk in het knooppunt. Aangezien het een niet lineair stelsel is, is het mogelijk dat dit stelsel geen oplossing heeft. Dit betekent dat het stelsel geen fysische betekenis heeft. Eén of meerdere van onze veronderstellingen was dus fout. In de meeste gevallen wordt dit veroorzaakt door een verkeerde keuze voor de stromingsrichting in de leidingen.
+Bij het opstellen van deze vergelijkingen is voor de 3 leidingen reeds een stroomrichting verondersteld. Er wordt namelijk verondersteld dat de stroming van 1 en 2 naar het knooppunt gaat en van het knooppunt naar 3. Dit stelsel van vergelijkingen is dus enkel geldig indien achteraf ook blijkt dat de stromingen in deze richting lopen. Dit komt erop neer dat de gebruikte debieten $V_1$,$V_2$ en $V_3$ allen groter dan nul moeten zijn.
+
+Aangezien 3 van de 4 vergelijkingen in het stelsel (\ref{eqn:stelsel}) kwadratisch zijn in het onbekende debiet, zal het stelsel meer dan één oplossing hebben. Indien het stelsel met behulp van analytische rekensoftware wordt opgelost zullen al deze oplossingen weergegeven worden. Het is dan aan de probleemoplosser op de juiste oplossing te selecteren. De juiste oplossing moet namelijk voldoen aan de hierboven genoemde voorwaarde, alle debieten moeten groter dan nul zijn.
+
+Het is echter ook mogelijk dat de oplossing van het bovenstaande stelsel geen enkele oplossing geeft waarvoor alle debieten groter zijn dan nul. Geen enkel van de oplossingen van het stelsel geeft dan de gezochte debieten aangezien het stelsel niet meer geldig is.
+
+Wanneer dit voorvalt wil het zeggen dat één of meerdere stromingsrichtingen verkeerd gekozen zijn. We moeten dus het stelsel aanpassen zodat het overeenkomt met een nieuwe veronderstelling voor de stroomrichtingen.
+
+In het geval van Figuur \ref{fig:leidingnetwerk} is het, afhankelijk van de getalwaarden voor de hoogtes, leiding lengtes en diameters, best mogelijk dat de stroming niet van punt 2 naar het knooppunt gaat, maar van het knooppunt naar punt 2. We moeten dan de energievergelijking tussen punt 2 en het knooppunt en de continuïteitsvergelijking aanpassen:
+			\begin{equation}
+				\left\{
+				\begin{array}{lcl}
+					\dfrac{p_k}{\rho g} + z_k &=& \dfrac{p_1}{\rho g} + z_1 - 8 f_1 \dfrac{\dot{V}_1^2}{g \pi^2} \dfrac{L_1}{D_1^5} \\
+					\dfrac{p_2}{\rho g} + z_2 &=& \dfrac{p_k}{\rho g} + z_k - 8 f_2 \dfrac{\dot{V}_2^2}{g \pi^2} \dfrac{L_2}{D_2^5} \\
+					\dfrac{p_3}{\rho g} + z_3 &=& \dfrac{p_k}{\rho g} + z_k - 8 f_3 \dfrac{\dot{V}_3^2}{g \pi^2} \dfrac{L_3}{D_3^5} \\
+					\dot{V}_3 + \dot{V}_2 &=& \dot{V}_1 
+				\end{array}
+				\right.
+				\label{eqn:stelsel2}
+			\end{equation}
+
+Met dit nieuwe stelsel van vergelijkingen kan nu wel een correcte oplossing, waarvoor alle 3 de debieten groter zijn dan nul bekomen worden.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Pomp - ventilator - leiding karakteristiek}
@@ -197,13 +219,13 @@ Dit stelsel kunnen we oplossen naar de 3 onbekende debieten en de onbekende druk
 In de voorgaande secties werd het debiet in een leiding of leidingstelsel veroorzaakt door een hoogteverschil of het debiet werd verondersteld gekend te zijn. Het is echter ook mogelijk dat het de stroming wordt veroorzaakt door een pomp of ventilator. Dit zijn toestellen met als doel een bepaald debiet te genereren. Een pomp of ventilator zal dus net zoveel energie aan de stroming toevoegen totdat de toegevoegde energie gelijk is aan de energie die nodig is om hoogte of drukverschillen te overwinnen en de gedisipeerde energie. We kunnen de vergelijking van Bernoulli dus nogmaals uitbreiden naar situatie waar er energie aan de stroming toegevoegd wordt. Dit geeft: 
 \begin{equation}
 	\frac{p_2}{\rho g} + \rho \frac{v_2^2}{2 g}  + z_2 = \frac{p_1}{\rho g} + \rho \frac{v_1^2}{2 g}  + z_1 - h_L + h_P
-	\label{eqn:uitgebreide vergelijking van Bernoulli}
+	\label{eqn:mechanische energievergelijking}
 \end{equation}
 Hierin stelt $h_P$ de opvoerhoogte van de aanwezige pompen voor. De opvoerhoogte van een pomp is een maat voor de energie die de pomp aan de stroming toegevoegd. Vaak komt deze tot uiting als een drukverhoging van de inlaat tot de uitlaat van de pomp. Indien de we de hoogteverschillen en verschillen in kinetische energie tussen inlaat en uitlaat verwaarlozen vinden we het drukverschil tussen in en uitlaat als:
 \begin{equation}
 	\Delta p = \rho g h_P
 \end{equation}
-Vergelijking (\ref{eqn:uitgebreide vergelijking van Bernoulli}) wordt ook wel de uitgebreide vergelijking van Bernoulli genoemd.
+Vergelijking (\ref{eqn:mechanische energievergelijking}) wordt ook wel de mechanische energievergelijking genoemd.
 
 Pompen kunnen we praktisch onderverdelen in twee types: \emph{Volumetrische pompen} en \emph{Turbopompen}. Bij volumetrische pompen (E: Positive displacement pump) zal er steeds een vast volume vloeistof verplaatst worden onafhankelijk van het drukverschil tussen in en uitlaat. Het meest voor de hand liggende voorbeeld is de zuigerpomp waar een zuiger of plunjer in samen werking met enkele kleppen voor de verplaatsing van de vloeistof zorgt. Een schets van het werkingsprincipe van een zuigerpomp is gegeven in Figuur \ref{fig:zuigerpomp} 
 \begin{figure}
@@ -244,16 +266,16 @@ Wanneer we de pompkarakteristiek (Figuur \ref{fig:Pompkarakteristiek}) en leidin
 	\caption{De combinatie van pomp en leidingskarakteristiek leidt tot het werkingspunt}
 	\label{fig:Pompleidingkarakteristiek}
 \end{figure}
-Het zoeken van het werkingspunt op deze manier komt neer op het grafisch oplossen van de uitgebreide vergelijking van Bernoulli. De pompkarakteristiek en leidingskarakteristiek kunnen we namelijk schrijven als:
+Het zoeken van het werkingspunt op deze manier komt neer op het grafisch oplossen van de mechanische energievergelijking. De pompkarakteristiek en leidingskarakteristiek kunnen we namelijk schrijven als:
 \begin{eqnarray}
 	h_P(\dot{V}) \\
 	\frac{p_2-p_1}{\rho g} + \rho \frac{v_2^2-v_1^2}{2 g}  + z_2-z_1 + h_L(\dot{V})
 \end{eqnarray}
-Indien we deze twee aan elkaar gelijkstellen bekomen we de uitgebreide vergelijking van Bernoulli die we kunnen oplossen naar $\dot{V}$ om het werkingspunt te vinden.
+Indien we deze twee aan elkaar gelijkstellen bekomen we de mechanische energievergelijking die we kunnen oplossen naar $\dot{V}$ om het werkingspunt te vinden.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 		\section{Grafische voorstelling}
-In sectie \ref{sec:Mechanische arbeid van een deeltje} zijn we reeds een grafische voorstelling van de vergelijking van Bernoulli tegengekomen. We kunnen dezelfde grafische voorstelling ook maken voor de uitgebreide vergelijking van Bernoulli toegepast op een enkelvoudig leidingstelsel (langs één stoomlijn). De totale energiehoogte of ladingslijn zal nu echter niet meer horizontaal lopen. Ten gevolge van ladingsverliezen in leidingen of lokale ladingsverliezen zal de energiehoogte afnemen. Ter hoogte van een pomp of ventilator zal de energiehoogte toenemen met de opvoerhoogte van de pomp. Een voorbeeld wordt gegeven in Figuur \ref{fig:leidingstelsel_energiehoogte}. Het tekenen van dit diagram gaat als volgt:
+In sectie \ref{sec:Mechanische arbeid van een deeltje} zijn we reeds een grafische voorstelling van de vergelijking van Bernoulli tegengekomen. We kunnen dezelfde grafische voorstelling ook maken voor de mechanische energievergelijking toegepast op een enkelvoudig leidingstelsel (langs één stoomlijn). De totale energiehoogte of ladingslijn zal nu echter niet meer horizontaal lopen. Ten gevolge van ladingsverliezen in leidingen of lokale ladingsverliezen zal de energiehoogte afnemen. Ter hoogte van een pomp of ventilator zal de energiehoogte toenemen met de opvoerhoogte van de pomp. Een voorbeeld wordt gegeven in Figuur \ref{fig:leidingstelsel_energiehoogte}. Het tekenen van dit diagram gaat als volgt:
 \begin{enumerate}
 	\item Zet de lengte van verschillende leidingen uit op de $x$-as.
 	\item Teken de hoogte van ieder punt.
@@ -264,7 +286,7 @@ Met behulp van dit diagram kan eenvoudig weergegeven worden hoe de verschillende
 \begin{figure}
 	\centering
 	\includesvg{fig/leidingstelsels/leidingstelsel_energiehoogte}
-	\caption{Grafische weergave van de uitgebreide vergelijking van Bernoulli voor het leidingstelsel in Figuur \ref{fig:leiding_structuur}}
+	\caption{Grafische weergave van de mechanische energievergelijking voor het leidingstelsel in Figuur \ref{fig:leiding_structuur}}
 	\label{fig:leidingstelsel_energiehoogte}
 \end{figure}
 

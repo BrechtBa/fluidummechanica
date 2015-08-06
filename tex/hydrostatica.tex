@@ -34,7 +34,7 @@ Indien we de uitdrukkingen (\ref{eqn:druk_scalair_rechthoekige_driehoek1}) en (\
 	\sigma_B &=& \sigma_C
 	\label{eqn:druk_scalair}
 \end{eqnarray}
-Of de spanning op alle 3 de vlakken is dezelfde, onafhankelijk van de hoek van de driehoek. Het negatieve van deze spanning noemen we de hydrostatische druk $p$ met als eenheid [Pa] of [N/m$^2$]. In ingenieurstoepassingen wordt ook vaak gewerkt met de eenheid [bar] ($\unit{1}{bar} = \unit{100000}{Pa}$) of met de Engelse eenheid [psi] ($\unit{1}{psi} \approx \unit{6895}{Pa}$). Volgens de meest gangbare conventies wordt deze in tegenstelling tot een normaalspanning positief gerekend indien ze werkt om het elementje te verkleinen. Aangezien de druk onafhankelijk is van de richting van het oppervlak waar ze op inwerkt is het een scalaire grootheid. Aangezien de druk een normaalspanning is zal ze ook steeds loodrecht op een oppervlak inwerken.
+Of de spanning op alle 3 de vlakken is dezelfde, onafhankelijk van de hoek van de driehoek. Het negatieve van deze spanning noemen we de hydrostatische druk $p$ met als eenheid [Pa] of [\unit{N/m^2}]. In ingenieurstoepassingen wordt ook vaak gewerkt met de eenheid [bar] ($1\unit{bar} = 100000\unit{Pa}$) of met de Engelse eenheid [psi] ($1\unit{psi} \approx 6895\unit{Pa}$). Volgens de meest gangbare conventies wordt deze in tegenstelling tot een normaalspanning positief gerekend indien ze werkt om het elementje te verkleinen. Aangezien de druk onafhankelijk is van de richting van het oppervlak waar ze op inwerkt is het een scalaire grootheid. Aangezien de druk een normaalspanning is zal ze ook steeds loodrecht op een oppervlak inwerken.
 \begin{figure}[htb]
 	\centering
 	\includesvg{fig/hydrostatica/driehoek_uit_stilstaande_vloeistof}
@@ -74,7 +74,7 @@ of
 	\diff p = -\rho g \diff z
 \end{equation}
 
-De eerder gemaakte veronderstelling dat de druk aan het vrije vloeistof oppervlak 0 is in plaats van atmosfeerdruk is een vaak gebruikte veronderstelling in de ingenieurswetenschappen. Aangezien in veel toepassingen de atmosfeerdruk overal aanwezig is heeft ze vaak geen invloed op de berekening van krachten. Vaak wordt de druk dan ook weergegeven ten opzichte van de atmosfeerdruk. We noemen dit een overdruk (E: gauge pressure). De atmosfeerdruk heeft dus een overdruk van \unit{0}{Pa}. Een overdruk van \unit{1}{bar} betekent dat de druk \unit{100 000}{Pa} hoger is dan de lokale atmosfeerdruk. Aangezien de atmosfeerdruk varieert in de tijd en met positie kunnen overdrukken gemeten op verschillende tijdstippen of locaties moeilijk met elkaar vergeleken worden. Wanneer we echter geïnteresseerd zijn in krachten die uitgeoefend worden door een fluïdum kunnen overdrukken wel vergeleken worden aangezien de atmosfeerdruk vaak geen rol speelt bij de berekening van krachten.
+De eerder gemaakte veronderstelling dat de druk aan het vrije vloeistof oppervlak 0 is in plaats van atmosfeerdruk is een vaak gebruikte veronderstelling in de ingenieurswetenschappen. Aangezien in veel toepassingen de atmosfeerdruk overal aanwezig is heeft ze vaak geen invloed op de berekening van krachten. Vaak wordt de druk dan ook weergegeven ten opzichte van de atmosfeerdruk. We noemen dit een overdruk (E: gauge pressure). De atmosfeerdruk heeft dus een overdruk van 0\unit{Pa}. Een overdruk van 1\unit{bar} betekent dat de druk 100 000\unit{Pa} hoger is dan de lokale atmosfeerdruk. Aangezien de atmosfeerdruk varieert in de tijd en met positie kunnen overdrukken gemeten op verschillende tijdstippen of locaties moeilijk met elkaar vergeleken worden. Wanneer we echter geïnteresseerd zijn in krachten die uitgeoefend worden door een fluïdum kunnen overdrukken wel vergeleken worden aangezien de atmosfeerdruk vaak geen rol speelt bij de berekening van krachten.
 
 
 Een klassieke toepassing van hydrostatica is het meten van drukken met behulp van een U-buis manometer (Figuur \ref{fig:Ubuis_manometer}). Hierbij bevindt een vloeistof met hoge massadichtheid zich in een U vormige doorzichtige buis. E\'en zijde van de buis wordt verbonden met de zone waar de te meten druk heerst. De andere zijde wordt vaak verbonden met de vrije atmosfeer. Aangezien wanneer de dichtheid constant is de druk enkel varieert met de hoogte zal ter hoogte van de onderste stippellijn de druk in beide benen van de manometer gelijk zijn. Ter hoogte van de bovenste stippellijn zal er dus een drukverschil heersen gelijk aan het verschil van dichtheid van de twee fluïda vermenigvuldigd met de valversnelling en het hoogteverschil tussen de twee niveaus. De overdruk in het reservoir ter hoogte van de bovenste stippellijn kan dus berekend worden als: 
@@ -87,7 +87,7 @@ Een klassieke toepassing van hydrostatica is het meten van drukken met behulp va
 	\caption{U-buis manometer.}
 	\label{fig:Ubuis_manometer}
 \end{figure}
-Vroeger werd vaak kwik als meetvloeistof gebruikt omwille van zijn hoge dichtheid ($\rho_{Hg} \simeq \unit{13600}{kg/m^3}$). Wanneer een kwikmanometer gebruikt wordt om de druk in een gas te meten kan vaak de dichtheid van het gas verwaarloosd worden. Dit is ook de herkomst van de eenheid voor druk [mm Hg] die overeenkomt met het hoogteverschil afgelezen tussen de 2 manometer benen uitgedrukt in mm.
+Vroeger werd vaak kwik als meetvloeistof gebruikt omwille van zijn hoge dichtheid ($\rho_{Hg} \simeq 13600\unit{kg/m^3}$). Wanneer een kwikmanometer gebruikt wordt om de druk in een gas te meten kan vaak de dichtheid van het gas verwaarloosd worden. Dit is ook de herkomst van de eenheid voor druk [mm Hg] die overeenkomt met het hoogteverschil afgelezen tussen de 2 manometer benen uitgedrukt in mm.
 
 Ander types analoge manometers (vb. zuiger-, bourdon- of membraanmanometers) maken gebruik van veren om een druk uit te lezen. Elektronische manometers kunnen gebruik maken van rekstrookjes, piëzo elementen of andere technieken om drukken te meten.
 
@@ -170,7 +170,38 @@ Het feit dat de kracht op een oppervlak in een stilstaande vloeistof onafhankeli
 	\label{fig:hydrostatische_paradox}
 \end{figure}
 
-		\subsection{Drijven en stabiliteit}
+Beschouw als voorbeeld de kracht die uitgeoefend wordt op een kwart van een cilindermantel met straal $R$ en lengte $L$ waarvan het bovenste punt zich op een diepte $H$ bevindt zoals afgebeeld in Figuur \ref{fig:kracht_gebogen_oppervlak_vereenvoudigd_2d} (de lengte staat hier loodrecht op het vlak van de figuur).
+
+Het horizontale gedeelte van de kracht zal gelijk zijn aan de horizontale kracht uitgeoefend op een verticaal vlak met dezelfde geprojecteerde oppervlakte. Deze kracht is dus gelijk aan het volume van de figuur gevormd door de druk uit te zetten op een verticaal vlak. Aangezien de hydrostatische druk lineair verloopt met de diepte is dit het volume van een balk met een trapezium als grondvlak en lengte $L$. Het grondvlak van de figuur kan opnieuw opgesplitst worden in een rechthoek en een rechthoekige driehoek. Beide hebben dezelfde basis $R$. De hoogte van de rechthoek komt overeen met de druk aan het bovenste punt van de cilinder: $\rho g H$.
+\begin{equation}
+	h_{rechthoek} = p_{boven} = \rho g H
+\end{equation}
+De hoogte van de driehoek komt overeen met het drukverschil tussen het bovenste en het onderste punt van de cilinder: $\rho g R$
+\begin{equation}
+	h_{driehoek} = p_{onder}-p_{boven} = \rho g (H+R) - \rho g H =  \rho g R
+\end{equation}
+Het volume van de figuur of de horizontale kracht wordt dan:
+\begin{equation}
+	F_{hor} = (A_{rechthoek} + A_{driehoek}) L = (R \rho g H + \frac{1}{2} R \rho g R) L
+\end{equation}
+
+Het aangrijpingspunt van de resultante horizontale kracht is nu ook zeer eenvoudig te berekenen. Dit komt namelijk overeen met het zwaartepunt van de gevormde figuur. Aangezien deze bestaat uit 2 delen kan het zwaartepunt van de samengestelde figuur gevonden worden als het gemiddelde van de zwaartepunten van de delen gewogen met hun oppervlakte:
+\begin{equation}
+	y_z = \frac{y_{z,rechthoek} A_{rechthoek} + y_{z,driehoek} A_{driehoek}}{A_{rechthoek} + A_{driehoek}}
+\end{equation}
+Het zwaartepunt van de rechthoek ligt uiteraard op de helft van de basis. Het zwaartepunt van de driehoek ligt op één derde van de basis van de onderzijde gemeten. Dit geeft voor het aangrijpingspunt een afstand van het laagste punt van de cilinder:
+\begin{equation}
+	y_z = \frac{(\frac{1}{2} R)  R \rho g H + (\frac{1}{3} R) \frac{1}{2} R \rho g R}{R \rho g H + \frac{1}{2} R \rho g R} = \frac{\frac{1}{2} R^2 H + \frac{1}{6} R^3}{R H + \frac{1}{2} R^2}
+\end{equation}
+
+Om de verticale kracht te berekenen moeten we het volume boven het oppervlak berekenen (het donkere gedeelte op de figuur). Het gewicht van dit volume water komt overeen met de verticale kracht. Bemerk dat het volume niet noodzakelijk gevuld met water moet zijn. Het volume is eenvoudig te berekenen al de oppervlakte van een rechthoek min de oppervlakte van de kwart cilinder vermenigvuldigd met de lengte:
+\begin{equation}
+	F_{ver} = \rho g (A_{rechthoek} - \frac{1}{4}A_{cilinder}) L  = \rho g \left( (H+R)R - \frac{1}{4} \pi R^2 \right) L
+\end{equation}
+
+Het aangrijpingspunt van de verticale kracht kan op dezelfde manier gevonden worden als dat van de horizontale component, enkel moet het zwaartepunt van de kwart cirkel berekend worden. Dit ligt op $\frac{4R}{3\pi}$ van het middelpunt. De verdere uitwerking verloopt analoog als hierboven.
+
+	\section{Drijven en stabiliteit}
 Wanneer een schip te water gelaten wordt zal het net zo diep in het water zakken totdat de resultante van de drukkrachten uitgeoefend door het water op de romp van het schip gelijk is aan het gewicht van het schip (Figuur \ref{fig:opwaartse_kracht}). De resultante van deze drukkrachten kunnen we berekenen met behulp van de vereenvoudigde methode voor verticale krachten zoals hierboven uitgewerkt en wordt vaak de opwaartse kracht of Archimedeskracht genoemd. Wanneer een voorwerp volledig ondergedompeld is moeten zowel de drukkrachten aan de onderzijde als aan de bovenzijde in rekening gebracht worden. De opwaartse kracht is echter steeds gelijk aan de valversnelling vermenigvuldigd met de verplaatste massa fluïdum.
 \begin{equation}
 	F_{opwaarts} = \rho_{\text{fluïdum}} g V_{\text{verplaatst}}
