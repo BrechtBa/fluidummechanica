@@ -25,13 +25,13 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.6"
-     inkscape:cx="269.00403"
-     inkscape:cy="101.47745"
+     inkscape:zoom="1.979899"
+     inkscape:cx="279.8934"
+     inkscape:cy="82.265545"
      inkscape:current-layer="layer5"
      showgrid="false"
-     inkscape:window-width="1280"
-     inkscape:window-height="962"
+     inkscape:window-width="1366"
+     inkscape:window-height="706"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -222,73 +222,37 @@
        id="path5053"
        d="m 225.86712,976.53818 c 4.72054,-15.77381 5.40047,-30.28493 5.82786,-47.44769"
        style="fill:none;stroke:#ff0000;stroke-width:1.77165353;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
-    <text
+    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="content"
+       transform="matrix(1.25,0,0,-1.25,-0.4479362,1867.77)"
        xml:space="preserve"
-       style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-       x="242.45691"
-       y="954.96368"
-       id="text3081"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3083"
-         x="242.45691"
-         y="954.96368">$\Delta m$</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-       x="210.86934"
-       y="960.69086"
-       id="text3085"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3087"
-         x="210.86934"
-         y="960.69086">$\diff A$</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-       x="217.1828"
-       y="933.41669"
-       id="text3089"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3091"
-         x="217.1828"
-         y="933.41669">$t$</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-       x="281.32748"
-       y="941.24542"
-       id="text3093"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3095"
-         x="281.32748"
-         y="941.24542">$t+\Delta t$</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-       x="277.03433"
-       y="983.96503"
-       id="text3097"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3099"
-         x="277.03433"
-         y="983.96503">$\vt{v}\Delta t$</tspan></text>
-    <text
-       sodipodi:linespacing="125%"
-       id="text3101"
-       y="967.29749"
-       x="280.08511"
-       style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-       xml:space="preserve"><tspan
-         y="967.29749"
-         x="280.08511"
-         id="tspan3103"
-         sodipodi:role="line">$\vt{v}_{\perp}\Delta t$</tspan></text>
-  </g>
+       stroke-miterlimit="10.433"
+       font-style="normal"
+       font-variant="normal"
+       font-weight="normal"
+       font-stretch="normal"
+       font-size-adjust="none"
+       letter-spacing="normal"
+       word-spacing="normal"
+       ns0:text="$\\vt{v}\\Delta t$"
+       ns0:preamble="D:\\Onderwijs\\FLUI\\Cursus\\FLUI_theorie\\tex\\commands.tex">
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 228.82,710.72 -0.01,0.04 0,0.04 0,0.04 0,0.04 -0.01,0.04 0,0.03 -0.01,0.04 0,0.03 -0.01,0.03 -0.01,0.03 -0.01,0.03 -0.01,0.03 -0.01,0.03 -0.01,0.02 -0.01,0.03 -0.01,0.02 -0.01,0.03 -0.01,0.02 -0.02,0.02 -0.01,0.02 -0.01,0.02 -0.02,0.02 -0.01,0.02 -0.02,0.01 -0.01,0.02 -0.02,0.02 -0.03,0.02 -0.03,0.03 -0.03,0.02 -0.03,0.02 -0.03,0.02 -0.03,0.01 -0.03,0.02 -0.03,0.01 -0.03,0.01 -0.03,0 -0.02,0.01 -0.02,0.01 -0.03,0 -0.01,0 -0.02,0 -0.01,0 -0.01,0 -0.01,0 0,0 0,0 0,0.01 c -0.4,0 -0.76,-0.42 -0.76,-0.76 0,-0.28 0.21,-0.4 0.3,-0.45 0.42,-0.25 0.5,-0.42 0.5,-0.62 0,-0.22 -0.58,-2.4 -1.74,-2.4 -0.72,0 -0.72,0.6 -0.72,0.78 0,0.57 0.28,1.3 0.6,2.09 0.08,0.2 0.11,0.29 0.11,0.45 0,0.58 -0.58,0.89 -1.13,0.89 -1.05,0 -1.55,-1.35 -1.55,-1.54 0,-0.14 0.15,-0.14 0.24,-0.14 0.12,0 0.19,0 0.23,0.12 0.32,1.08 0.84,1.21 1.02,1.21 0.07,0 0.17,0 0.17,-0.21 0,-0.23 -0.12,-0.52 -0.15,-0.6 -0.46,-1.15 -0.6,-1.6 -0.6,-2.07 0,-1.06 0.85,-1.33 1.72,-1.33 1.71,0 2.44,2.82 2.44,3.67 z"
+   id="path3846" />
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 233.85,714.06 -0.01,0.01 -0.01,0.01 0,0.01 -0.01,0.01 0,0.01 -0.01,0.01 -0.01,0.01 0,0.01 -0.01,0.01 0,0.01 -0.01,0.01 0,0 -0.01,0.01 0,0.01 -0.01,0 -0.01,0.01 0,0 -0.01,0.01 -0.01,0 -0.01,0.01 0,0 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0 -0.01,0 -0.01,0 -0.02,0.01 -0.01,0 -0.01,0 -0.02,0 -0.01,0 c -0.17,0 -0.19,-0.05 -0.26,-0.18 l -0.06,-0.82 2.67,-5.36 h -5.36 l 2.69,5.36 0.06,0.82 -3.37,-6.74 c -0.05,-0.09 -0.05,-0.11 -0.05,-0.12 0,-0.07 0.06,-0.07 0.22,-0.07 h 6.91 c 0.16,0 0.22,0 0.22,0.07 0,0.01 0,0.03 -0.05,0.12 z"
+   id="path3848" />
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 239.8,711.1 h 0.93 c 0.2,0 0.3,0 0.3,0.2 0,0.11 -0.1,0.11 -0.28,0.11 h -0.87 c 0.36,1.41 0.41,1.61 0.41,1.67 0,0.16 -0.12,0.26 -0.29,0.26 -0.03,0 -0.31,-0.01 -0.4,-0.35 l -0.39,-1.58 h -0.93 c -0.2,0 -0.3,0 -0.3,-0.19 0,-0.12 0.08,-0.12 0.28,-0.12 h 0.87 c -0.71,-2.82 -0.75,-2.99 -0.75,-3.17 0,-0.54 0.37,-0.91 0.91,-0.91 1.02,0 1.58,1.45 1.58,1.53 0,0.1 -0.08,0.1 -0.12,0.1 -0.09,0 -0.1,-0.04 -0.15,-0.14 -0.42,-1.04 -0.95,-1.28 -1.29,-1.28 -0.21,0 -0.31,0.13 -0.31,0.46 0,0.24 0.02,0.31 0.06,0.48 z"
+   id="path3850" />
+</g>  </g>
   <g
      style="display:none"
      transform="translate(0,-875.19683)"
@@ -587,5 +551,155 @@
        width="35.433071"
        id="rect4563"
        style="fill:#ffffff;stroke:none" />
-  </g>
+    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="g3896"
+       transform="matrix(1.25,0,0,-1.25,-45.714286,926.07142)"
+       xml:space="preserve"
+       stroke-miterlimit="10.433"
+       font-style="normal"
+       font-variant="normal"
+       font-weight="normal"
+       font-stretch="normal"
+       font-size-adjust="none"
+       letter-spacing="normal"
+       word-spacing="normal"
+       ns0:text="$t$"
+       ns0:preamble="D:\\Onderwijs\\FLUI\\Cursus\\FLUI_theorie\\tex\\commands.tex">
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 225.48,711.1 h 0.94 c 0.2,0 0.29,0 0.29,0.2 0,0.11 -0.09,0.11 -0.27,0.11 h -0.88 c 0.36,1.41 0.41,1.61 0.41,1.67 0,0.16 -0.12,0.26 -0.29,0.26 -0.03,0 -0.31,-0.01 -0.4,-0.35 l -0.38,-1.58 h -0.94 c -0.2,0 -0.3,0 -0.3,-0.19 0,-0.12 0.08,-0.12 0.28,-0.12 h 0.88 c -0.72,-2.82 -0.76,-2.99 -0.76,-3.17 0,-0.54 0.38,-0.91 0.91,-0.91 1.02,0 1.59,1.45 1.59,1.53 0,0.1 -0.08,0.1 -0.12,0.1 -0.09,0 -0.1,-0.04 -0.15,-0.14 -0.43,-1.04 -0.96,-1.28 -1.3,-1.28 -0.2,0 -0.3,0.13 -0.3,0.46 0,0.24 0.02,0.31 0.05,0.48 z"
+   id="path3152" />
+</g>    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       ns0:preamble="D:\\Onderwijs\\FLUI\\Cursus\\FLUI_theorie\\tex\\commands.tex"
+       ns0:text="$\\diff A$"
+       word-spacing="normal"
+       letter-spacing="normal"
+       font-size-adjust="none"
+       font-stretch="normal"
+       font-weight="normal"
+       font-variant="normal"
+       font-style="normal"
+       stroke-miterlimit="10.433"
+       xml:space="preserve"
+       transform="matrix(1.25,0,0,-1.25,-71.071428,981.42856)"
+       id="g3332">
+<path
+   id="path3334"
+   d="m 227.21,707.67 v -0.65 l 1.47,0.11 v 0.3 c -0.7,0 -0.78,0.07 -0.78,0.56 v 6.03 l -1.43,-0.11 v -0.31 c 0.69,0 0.77,-0.07 0.77,-0.55 v -2.15 c -0.29,0.36 -0.71,0.62 -1.25,0.62 l 0.04,-0.22 c 0.35,0 0.76,-0.15 1.07,-0.6 0.11,-0.17 0.11,-0.19 0.11,-0.37 h 0 v -2.03 c 0,-0.18 0,-0.2 -0.11,-0.37 -0.3,-0.48 -0.74,-0.7 -1.17,-0.7 -0.45,0 -0.81,0.26 -1.05,0.64 -0.25,0.41 -0.28,0.97 -0.28,1.38 0,0.37 0.02,0.96 0.3,1.41 0.21,0.31 0.59,0.64 1.13,0.64 l -0.04,0.22 c -1.17,0 -2.22,-0.98 -2.22,-2.26 0,-1.26 0.97,-2.24 2.11,-2.24 0.64,0 1.08,0.33 1.33,0.65 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+<path
+   id="path3336"
+   d="m 230.75,708.27 -0.04,-0.06 -0.04,-0.06 -0.03,-0.06 -0.04,-0.05 -0.04,-0.05 -0.04,-0.04 -0.03,-0.05 -0.04,-0.04 -0.04,-0.04 -0.03,-0.04 -0.04,-0.03 -0.04,-0.03 -0.04,-0.03 -0.03,-0.03 -0.04,-0.02 -0.04,-0.03 -0.04,-0.02 -0.03,-0.02 -0.04,-0.02 -0.04,-0.02 -0.04,-0.01 -0.04,-0.01 -0.04,-0.02 -0.04,-0.01 -0.04,-0.01 -0.03,-0.01 -0.04,0 -0.04,-0.01 -0.08,-0.01 -0.09,-0.01 c -0.12,-0.01 -0.2,-0.01 -0.2,-0.2 0,-0.06 0.05,-0.1 0.13,-0.1 0.26,0 0.57,0.03 0.85,0.03 0.33,0 0.68,-0.03 0.99,-0.03 0.06,0 0.19,0 0.19,0.18 0,0.11 -0.08,0.12 -0.16,0.12 -0.22,0.02 -0.46,0.1 -0.46,0.35 0,0.12 0.06,0.23 0.14,0.37 l 0.75,1.27 h 2.5 l -0.03,0.31 h -2.28 l 1.96,3.28 0.32,-3.28 0.03,-0.31 c 0.02,-0.21 0.16,-1.56 0.16,-1.66 0,-0.3 -0.52,-0.33 -0.72,-0.33 -0.14,0 -0.24,0 -0.24,-0.2 0,-0.1 0.12,-0.1 0.14,-0.1 0.41,0 0.84,0.03 1.25,0.03 0.25,0 0.87,-0.03 1.12,-0.03 0.06,0 0.18,0 0.18,0.19 0,0.11 -0.1,0.11 -0.23,0.11 -0.62,0 -0.62,0.07 -0.65,0.36 l -0.6,6.21 c -0.02,0.2 -0.02,0.24 -0.19,0.24 -0.16,0 -0.2,-0.07 -0.26,-0.17 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+</g>    <g
+       id="g3520"
+       transform="matrix(1.25,0,0,-1.25,-40.732232,964.05854)"
+       xml:space="preserve"
+       stroke-miterlimit="10.433"
+       font-style="normal"
+       font-variant="normal"
+       font-weight="normal"
+       font-stretch="normal"
+       font-size-adjust="none"
+       letter-spacing="normal"
+       word-spacing="normal"
+       ns0:text="$\\Delta m$"
+       ns0:preamble="D:\\Onderwijs\\FLUI\\Cursus\\FLUI_theorie\\tex\\commands.tex"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0">
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 227.83,714.06 -0.01,0.01 0,0.01 -0.01,0.01 0,0.01 -0.01,0.01 -0.01,0.01 0,0.01 -0.01,0.01 0,0.01 -0.01,0.01 0,0.01 -0.01,0 0,0.01 -0.01,0.01 -0.01,0 0,0.01 -0.01,0 -0.01,0.01 0,0 -0.01,0.01 -0.01,0 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0 -0.01,0 -0.01,0 -0.01,0.01 -0.02,0 -0.01,0 -0.01,0 -0.02,0 c -0.17,0 -0.19,-0.05 -0.26,-0.18 l -0.06,-0.82 2.68,-5.36 h -5.36 l 2.68,5.36 0.06,0.82 -3.36,-6.74 c -0.05,-0.09 -0.05,-0.11 -0.05,-0.12 0,-0.07 0.06,-0.07 0.22,-0.07 h 6.9 c 0.16,0 0.22,0 0.22,0.07 0,0.01 0,0.03 -0.05,0.12 z"
+   id="path3522" />
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 232.61,707.71 0,-0.01 -0.01,-0.02 0,-0.01 0,-0.02 -0.01,-0.03 -0.01,-0.03 0,-0.03 -0.01,-0.04 -0.01,-0.03 -0.01,-0.03 0,-0.01 0,-0.02 -0.01,-0.01 0,-0.02 0,-0.01 -0.01,-0.01 0,-0.02 0,-0.01 0,-0.01 0,-0.01 -0.01,-0.01 0,-0.01 0,-0.01 0,0 0,-0.01 0,-0.01 c 0,-0.18 0.14,-0.26 0.29,-0.26 0.12,0 0.3,0.07 0.37,0.27 0.01,0.02 0.13,0.49 0.19,0.74 l 0.22,0.89 c 0.05,0.22 0.11,0.44 0.16,0.67 0.04,0.17 0.12,0.46 0.13,0.5 0.15,0.3 0.68,1.21 1.63,1.21 0.44,0 0.53,-0.37 0.53,-0.7 0,-0.25 -0.07,-0.52 -0.15,-0.82 l -0.28,-1.15 -0.2,-0.76 c -0.03,-0.2 -0.12,-0.54 -0.12,-0.59 0,-0.18 0.14,-0.26 0.28,-0.26 0.31,0 0.37,0.24 0.45,0.56 0.14,0.56 0.51,2.01 0.6,2.4 0.03,0.12 0.56,1.32 1.64,1.32 0.43,0 0.54,-0.34 0.54,-0.7 0,-0.56 -0.42,-1.7 -0.62,-2.22 -0.09,-0.24 -0.13,-0.35 -0.13,-0.55 0,-0.47 0.35,-0.81 0.82,-0.81 0.93,0 1.3,1.45 1.3,1.53 0,0.1 -0.09,0.1 -0.12,0.1 -0.1,0 -0.1,-0.04 -0.15,-0.18 -0.15,-0.53 -0.47,-1.24 -1.01,-1.24 -0.17,0 -0.24,0.1 -0.24,0.33 0,0.25 0.09,0.49 0.18,0.71 0.19,0.51 0.6,1.62 0.6,2.18 0,0.65 -0.39,1.07 -1.14,1.07 -0.75,0 -1.25,-0.44 -1.62,-0.97 -0.01,0.13 -0.04,0.47 -0.32,0.71 -0.25,0.21 -0.57,0.26 -0.81,0.26 -0.9,0 -1.39,-0.64 -1.56,-0.87 -0.05,0.57 -0.47,0.87 -0.91,0.87 -0.46,0 -0.65,-0.39 -0.74,-0.57 -0.18,-0.35 -0.31,-0.93 -0.31,-0.96 0,-0.1 0.1,-0.1 0.12,-0.1 0.1,0 0.11,0.01 0.17,0.22 0.17,0.71 0.37,1.19 0.73,1.19 0.16,0 0.31,-0.08 0.31,-0.46 0,-0.21 -0.03,-0.32 -0.16,-0.83 z"
+   id="path3524" />
+</g>    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       ns0:preamble="D:\\Onderwijs\\FLUI\\Cursus\\FLUI_theorie\\tex\\commands.tex"
+       ns0:text="$t+\\Delta t$"
+       word-spacing="normal"
+       letter-spacing="normal"
+       font-size-adjust="none"
+       font-stretch="normal"
+       font-weight="normal"
+       font-variant="normal"
+       font-style="normal"
+       stroke-miterlimit="10.433"
+       xml:space="preserve"
+       transform="matrix(1.25,0,0,-1.25,0.24765519,946.52701)"
+       id="g4102">
+<path
+   id="path4104"
+   d="m 225.48,711.1 h 0.94 c 0.2,0 0.29,0 0.29,0.2 0,0.11 -0.09,0.11 -0.27,0.11 h -0.88 c 0.36,1.41 0.41,1.61 0.41,1.67 0,0.16 -0.12,0.26 -0.29,0.26 -0.03,0 -0.31,-0.01 -0.4,-0.35 l -0.38,-1.58 h -0.94 c -0.2,0 -0.3,0 -0.3,-0.19 0,-0.12 0.08,-0.12 0.28,-0.12 h 0.88 c -0.72,-2.82 -0.76,-2.99 -0.76,-3.17 0,-0.54 0.38,-0.91 0.91,-0.91 1.02,0 1.59,1.45 1.59,1.53 0,0.1 -0.08,0.1 -0.12,0.1 -0.09,0 -0.1,-0.04 -0.15,-0.14 -0.43,-1.04 -0.96,-1.28 -1.3,-1.28 -0.2,0 -0.3,0.13 -0.3,0.46 0,0.24 0.02,0.31 0.05,0.48 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+<path
+   id="path4106"
+   d="m 233.31,709.41 h 2.78 c 0.14,0 0.33,0 0.33,0.2 0,0.2 -0.19,0.2 -0.33,0.2 h -2.78 v 2.78 c 0,0.14 0,0.33 -0.2,0.33 -0.2,0 -0.2,-0.19 -0.2,-0.33 v -2.78 h -2.78 c -0.14,0 -0.33,0 -0.33,-0.2 0,-0.2 0.19,-0.2 0.33,-0.2 h 2.78 v -2.78 c 0,-0.14 0,-0.33 0.2,-0.33 0.2,0 0.2,0.19 0.2,0.33 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+<path
+   id="path4108"
+   d="m 243.6,714.06 0,0.01 -0.01,0.01 -0.01,0.01 0,0.01 -0.01,0.01 0,0.01 -0.01,0.01 0,0.01 -0.01,0.01 0,0.01 -0.01,0.01 -0.01,0 0,0.01 -0.01,0.01 0,0 -0.01,0.01 -0.01,0 0,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0 0,0.01 -0.01,0 -0.01,0 -0.02,0 -0.01,0 -0.01,0.01 -0.01,0 -0.02,0 -0.01,0 -0.02,0 c -0.17,0 -0.19,-0.05 -0.25,-0.18 l -0.07,-0.82 2.68,-5.36 h -5.36 l 2.68,5.36 0.07,0.82 -3.37,-6.74 c -0.05,-0.09 -0.05,-0.11 -0.05,-0.12 0,-0.07 0.06,-0.07 0.22,-0.07 h 6.91 c 0.16,0 0.21,0 0.21,0.07 0,0.01 0,0.03 -0.05,0.12 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+<path
+   id="path4110"
+   d="m 249.56,711.1 h 0.93 c 0.2,0 0.3,0 0.3,0.2 0,0.11 -0.1,0.11 -0.28,0.11 h -0.87 c 0.35,1.41 0.4,1.61 0.4,1.67 0,0.16 -0.11,0.26 -0.28,0.26 -0.03,0 -0.31,-0.01 -0.4,-0.35 l -0.39,-1.58 h -0.93 c -0.2,0 -0.3,0 -0.3,-0.19 0,-0.12 0.08,-0.12 0.27,-0.12 h 0.88 c -0.71,-2.82 -0.76,-2.99 -0.76,-3.17 0,-0.54 0.38,-0.91 0.92,-0.91 1.02,0 1.58,1.45 1.58,1.53 0,0.1 -0.08,0.1 -0.12,0.1 -0.09,0 -0.1,-0.04 -0.15,-0.14 -0.42,-1.04 -0.95,-1.28 -1.29,-1.28 -0.21,0 -0.31,0.13 -0.31,0.46 0,0.24 0.02,0.31 0.06,0.48 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+</g>    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       ns0:preamble="D:\\Onderwijs\\FLUI\\Cursus\\FLUI_theorie\\tex\\commands.tex"
+       ns0:text="$\\vt{v}_{\\perp}\\Delta t$"
+       text-anchor="start"
+       word-spacing="normal"
+       letter-spacing="normal"
+       font-size-adjust="none"
+       font-stretch="normal"
+       font-weight="normal"
+       font-variant="normal"
+       font-style="normal"
+       fill-opacity="1"
+       fill-rule="evenodd"
+       fill="none"
+       stroke-opacity="1"
+       stroke-dashoffset="0"
+       stroke-dasharray="none"
+       stroke-miterlimit="10.433"
+       stroke-linejoin="miter"
+       stroke-linecap="butt"
+       stroke="black"
+       xml:space="preserve"
+       transform="matrix(1.25,0,0,-1.25,2.4999957,975.35714)"
+       id="g3166">
+<path
+   id="path3168"
+   fill="black"
+   stroke-width="0"
+   d="M228.82,710.72 L228.81,710.76 L228.81,710.8 L228.81,710.84 L228.81,710.88 L228.8,710.92 L228.8,710.95 L228.79,710.99 L228.79,711.02 L228.78,711.05 L228.77,711.08 L228.76,711.11 L228.75,711.14 L228.74,711.17 L228.73,711.19 L228.72,711.22 L228.71,711.24 L228.7,711.27 L228.69,711.29 L228.67,711.31 L228.66,711.33 L228.65,711.35 L228.63,711.37 L228.62,711.39 L228.6,711.4 L228.59,711.42 L228.57,711.44 L228.54,711.46 L228.51,711.49 L228.48,711.51 L228.45,711.53 L228.42,711.55 L228.39,711.56 L228.36,711.58 L228.33,711.59 L228.3,711.6 L228.27,711.6 L228.25,711.61 L228.23,711.62 L228.2,711.62 L228.19,711.62 L228.17,711.62 L228.16,711.62 L228.15,711.62 L228.14,711.62 L228.14,711.62 L228.14,711.62 L228.14,711.63 C227.74,711.63,227.38,711.21,227.38,710.87 C227.38,710.59,227.59,710.47,227.68,710.42 C228.1,710.17,228.18,710,228.18,709.8 C228.18,709.58,227.6,707.4,226.44,707.4 C225.72,707.4,225.72,708,225.72,708.18 C225.72,708.75,226,709.48,226.32,710.27 C226.4,710.47,226.43,710.56,226.43,710.72 C226.43,711.3,225.85,711.61,225.3,711.61 C224.25,711.61,223.75,710.26,223.75,710.07 C223.75,709.93,223.9,709.93,223.99,709.93 C224.11,709.93,224.18,709.93,224.22,710.05 C224.54,711.13,225.06,711.26,225.24,711.26 C225.31,711.26,225.41,711.26,225.41,711.05 C225.41,710.82,225.29,710.53,225.26,710.45 C224.8,709.3,224.66,708.85,224.66,708.38 C224.66,707.32,225.51,707.05,226.38,707.05 C228.09,707.05,228.82,709.87,228.82,710.72 Z " />
+<path
+   id="path3170"
+   fill="black"
+   stroke-width="0"
+   d="M232.73,710.19 L232.73,710.2 L232.73,710.21 L232.73,710.22 L232.73,710.23 L232.73,710.25 L232.73,710.26 L232.72,710.27 L232.72,710.28 L232.72,710.29 L232.72,710.31 L232.72,710.32 L232.72,710.33 L232.71,710.34 L232.71,710.35 L232.71,710.36 L232.7,710.37 L232.7,710.38 L232.69,710.39 L232.69,710.4 L232.68,710.41 L232.67,710.42 L232.66,710.42 L232.66,710.43 L232.66,710.43 L232.65,710.43 L232.65,710.44 L232.64,710.44 L232.64,710.44 L232.63,710.44 L232.63,710.45 L232.62,710.45 L232.62,710.45 L232.61,710.45 L232.6,710.45 L232.6,710.45 L232.59,710.46 L232.58,710.46 L232.58,710.46 L232.57,710.46 L232.56,710.46 C232.39,710.46,232.39,710.3,232.39,710.19 V705.97 H230.26 C230.16,705.97,229.98,705.97,229.98,705.8 C229.98,705.63,230.14,705.63,230.26,705.63 H234.85 C234.96,705.63,235.13,705.63,235.13,705.8 C235.13,705.97,234.97,705.97,234.85,705.97 H232.73 Z " />
+<path
+   id="path3172"
+   fill="black"
+   stroke-width="0"
+   d="M240.57,714.06 L240.56,714.07 L240.56,714.08 L240.55,714.09 L240.54,714.1 L240.54,714.11 L240.53,714.12 L240.53,714.13 L240.52,714.14 L240.52,714.15 L240.51,714.16 L240.51,714.17 L240.5,714.17 L240.5,714.18 L240.49,714.19 L240.48,714.19 L240.48,714.2 L240.47,714.2 L240.46,714.21 L240.46,714.21 L240.45,714.22 L240.44,714.22 L240.43,714.22 L240.42,714.23 L240.41,714.23 L240.4,714.23 L240.39,714.23 L240.38,714.23 L240.37,714.24 L240.35,714.24 L240.34,714.24 L240.33,714.24 L240.31,714.24 C240.14,714.24,240.12,714.19,240.05,714.06 L239.99,713.24 L242.67,707.88 H237.3 L239.99,713.24 L240.05,714.06 L236.69,707.32 C236.64,707.23,236.64,707.21,236.64,707.2 C236.64,707.13,236.7,707.13,236.86,707.13 H243.76 C243.92,707.13,243.98,707.13,243.98,707.2 C243.98,707.21,243.98,707.23,243.93,707.32 Z " />
+<path
+   id="path3174"
+   fill="black"
+   stroke-width="0"
+   d="M246.52,711.1 H247.46 C247.66,711.1,247.76,711.1,247.76,711.3 C247.76,711.41,247.66,711.41,247.48,711.41 H246.6 C246.96,712.82,247.01,713.02,247.01,713.08 C247.01,713.24,246.89,713.34,246.72,713.34 C246.69,713.34,246.41,713.33,246.32,712.99 L245.94,711.41 H245 C244.8,711.41,244.7,711.41,244.7,711.22 C244.7,711.1,244.78,711.1,244.98,711.1 H245.86 C245.14,708.28,245.1,708.11,245.1,707.93 C245.1,707.39,245.48,707.02,246.02,707.02 C247.03,707.02,247.6,708.47,247.6,708.55 C247.6,708.65,247.52,708.65,247.48,708.65 C247.39,708.65,247.38,708.61,247.33,708.51 C246.9,707.47,246.37,707.23,246.04,707.23 C245.83,707.23,245.73,707.36,245.73,707.69 C245.73,707.93,245.75,708,245.79,708.17 Z " />
+</g>  </g>
 </svg>
