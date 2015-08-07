@@ -62,6 +62,52 @@ Uit de vector analyse volgt dat voor een rotatievrije stroming de stroomfunctie 
 \end{equation}
 Analytische oplossingen voor deze vergelijking bestaan voor een groot aantal verschillende randvoorwaarden. Een bijkomend voordeel van deze formulering is dat de Laplacevergelijking een lineaire partiële differentiaalvergelijking is. Hierop is het superpositieprincipe van toepassing. Een lineaire combinatie van oplossingen zal dus ook voldoen aan de vergelijking. Met behulp hiervan kunnen een aantal problemen analytisch behandeld worden.
 
+\begin{voorbeeld}
+	\label{Potentiaalstroming_cilinder}
+	Bepaal en teken de stroomlijnen voor een stroming met snelheid $v_{\infty}$ rond een cilinder met straal $R$.
+	\begin{center}
+		\includegraphics{Potentiaalstroming_cilinder}
+	\end{center}
+	
+	De stroomfunctie voor de stroming rond een cilinder kan worden gevonden door de superpositie van een uniforme stroming en een doublet. Aangezien we rond een cilinder werken is het aangewezen om in poolcoordinaten te werken. De stroomfunctie van een uniforme stroming wordt dan:
+	\begin{equation*}
+		\psi = v_{\infty} r \sin{\theta}
+	\end{equation*}
+	Een doubles wordt gevormd wanneer een bron van fluïdum en een put infinitesimaal dicht bij elkaar geplaatst worden. De stroomfunctie kan geschreven worden als:
+	 \begin{equation*}
+		\psi = -\frac{K \sin \theta}{r}
+	\end{equation*}
+	De stroomlijnen zien er als volgt uit:
+	\begin{center}
+		\includegraphics{Potentiaalstroming_doublet}
+	\end{center}
+	De gezochte stroomfunctie wordt dus:
+	\begin{equation*}
+		\psi = v_{\infty} r \sin{\theta} - \frac{K \sin \theta}{r}
+	\end{equation*}
+
+	De sterkte van het doublet $K$ moet zo gekozen worden zodat de cilinderomtrek een stroomlijn is. Dit betekent dat op $r=R$, $v_r$ nul moet zijn met de partieel afgeleiden in cilindercoördinaten wordt de radiale snelheid:
+	\begin{align*}
+		v_{r} &= \dfrac{1}{r}\dfrac{\partial \psi}{\partial \theta} \\
+		      &= v_{\infty} \cos{\theta} - \frac{K \cos \theta}{r^2}
+	\end{align*}
+	Dus op de cilindermantel:
+	\begin{align*}
+		0 &= v_{\infty} \cos{\theta} - \frac{K \cos \theta}{R^2}
+		  &= v_{\infty} \cos{\theta} R^2 - K \cos \theta
+		K &= v_{\infty} R^2
+	\end{align*}
+	De stroomfunctie wordt:
+	\begin{equation*}
+		\psi = v_{\infty} r \sin{\theta} - \frac{v_{\infty} R^2 \sin \theta}{r}
+	\end{equation*}
+	De stroomlijnen kunnen nu getekend worden:
+	\begin{center}
+		\includegraphics{Potentiaalstroming_cilinder_stroomlijnen}
+	\end{center}
+	
+\end{voorbeeld}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Grenslagen}
 	\label{sec:Grenslagen}
