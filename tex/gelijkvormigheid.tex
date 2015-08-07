@@ -26,7 +26,7 @@ Of meer algemeen:
 \end{equation}
 \begin{figure}[htb]
 	\centering
-	\includesvg{fig/gelijkvormigheid/Geometrische_gelijkvormigheid}
+	\includegraphics{fig/gelijkvormigheid/Geometrische_gelijkvormigheid}
 	\caption{Geometrische gelijkvormigheid}
 	\label{fig:geometrische gelijkvormigheid}
 \end{figure}
@@ -148,33 +148,34 @@ Dan kan deze uitdrukking herschreven worden tot een dimensieloze vergelijking me
 \end{equation}
 Edgar Buckingham formaliseerde dit principe in 1914 en presenteerde een manier om de dimensieloze parameters op een gestructureerde manier te vinden. Het principe werd echter reeds gebruikt door Baron Rayleigh in 1877. Het theorema kan formeel bewezen worden, dit valt echter buiten het bereik van deze cursus. Geïnteresseerde lezers worden verwezen naar \cite{Yarin2012} waar het thema zeer uitgebreid beschouwd wordt.
 
-Om de kracht van het theorema aan te tonen beschouwen we bij wijze van voorbeeld de stroming van water rond een scheepsschroef. We zijn geïnteresseerd in de kracht die de schroef uitoefent op de stroming en hebben hier een aantal experimenten voor uitgevoerd. Uit de experimenten blijkt dat de kracht afhankelijk is van de snelheid van de stroming, de dichtheid, de viscositeit, het toerental van de schroef en de diameter van de schroef:
-\begin{equation}
-	F = f(v,\rho,\nu,N,D)
-	\label{eqn:dimensieanalyse, voorbeeld}
-\end{equation}
-De dimensies in deze relatie zijn: $v$: LT$^{-1}$, $\rho$: ML$^{-3}$, $\nu$: L$^{2}$T$^{-1}$, $N$: T$^{-1}$, $D$: L.
+\begin{voorbeeld}
+	Om de kracht van het theorema aan te tonen beschouwen we bij wijze van voorbeeld de stroming van water rond een scheepsschroef. We zijn geïnteresseerd in de kracht die de schroef uitoefent op de stroming en hebben hier een aantal experimenten voor uitgevoerd. Uit de experimenten blijkt dat de kracht afhankelijk is van de snelheid van de stroming, de dichtheid, de viscositeit, het toerental van de schroef en de diameter van de schroef:
+	\begin{equation*}
+		F = f(v,\rho,\nu,N,D)
+		\label{eqn:dimensieanalyse, voorbeeld}
+	\end{equation*}
+	De dimensies in deze relatie zijn: $v$: LT$^{-1}$, $\rho$: ML$^{-3}$, $\nu$: L$^{2}$T$^{-1}$, $N$: T$^{-1}$, $D$: L.
+	
+	Hierin zijn slechts 3 grootheden dimensioneel onafhankelijk. Zo kan bijvoorbeeld de dimensie van $N$ geschreven worden als LT$^{-1}$/L, de dimensie van $v$ gedeeld door die van $D$ en de dimensie van $\nu$ kunnen we bekomen als de dimensie van $D$ maal de dimensie van $v$.  In termen van het Buckingham-pi theorema is $n=5$ en $k=3$. We zullen de relatie dus herschrijven als een dimensieloze vergelijking met $n-k=2$ parameters:
+	\begin{equation}
+		\pi = \phi(\pi_1,\pi_2)
+	\end{equation}
+	Door even naar de betrokken parameters te kijken en uit de voorgaande analyse kunnen we de $\pi$ termen gemakkelijk terug vinden. Deze worden:
+	\begin{align*}
+		\pi &= \frac{F}{\rho v^2 D^2} \\
+		\pi_1 &= \frac{v D}{\nu} \\
+		\pi_2 &= \frac{N D}{v}
+	\end{align*}
+	De dimensieloze relatie wordt dus:
+	\begin{equation*}
+		\frac{F}{\rho v^2 D^2} = \phi(\frac{v D}{\nu},\frac{N D}{v})
+	\end{equation*}
+	De $\pi$ termen in deze relatie zijn nu ook heel herkenbaar. In het linkerlid vinden we een dimensieloze kracht. De functie in het rechterlid heeft twee parameters. De eerste herkennen we als het Reynoldsgetal. De tweede is het dimensieloze toerental van de schroef, of de verhouding tussen de tipsnelheid en de stroomsnelheid (de snellopendheid).
+	
+	We kunnen de relatie die oorspronkelijk 5 parameters had dus schrijven als een relatie met slechts 2 parameters. Deze relatie kunnen we (indien de experimenten echt gebeurd zijn) eenvoudig weergeven in een grafiek door een set met krommen weer te geven. Bijvoorbeeld de dimensieloze kracht in functie van het Reynoldsgetal voor verschillende waarden van het dimensieloze toerental. Met behulp van deze grafiek kunnen we de kracht voor elke schroef die geometrisch gelijkvormig is, in elk fluïdum met elke snelheid en elk toerental berekenen.
+	\begin{center}
+		\includegraphics{fig/gelijkvormigheid/dimensieanalysevoorbeeld}
+	\end{center}	
+	Indien de analyse op voorhand gebeurd is kan zelfs het aantal nodige experimenten sterk beperkt worden, van bijvoorbeeld $2^5=32$ experimenten, om een lineair verband te bepalen tot $2^2=4$ experimenten. Hiervoor is wel een goede inschatting van de invloedrijke parameters nodig.
 
-Hierin zijn slechts 3 grootheden dimensioneel onafhankelijk. Zo kan bijvoorbeeld de dimensie van $N$ geschreven worden als LT$^{-1}$/L, de dimensie van $v$ gedeeld door die van $D$ en de dimensie van $\nu$ kunnen we bekomen als de dimensie van $D$ maal de dimensie van $v$.  In termen van het Buckingham-pi theorema is $n=5$ en $k=3$. We zullen de relatie (\ref{eqn:dimensieanalyse, voorbeeld}) dus herschrijven als een dimensieloze vergelijking met $n-k=2$ parameters:
-\begin{equation}
-	\pi = \phi(\pi_1,\pi_2)
-\end{equation}
-Door even naar de betrokken parameters te kijken en uit de voorgaande analyse kunnen we de $\pi$ termen gemakkelijk terug vinden. Deze worden:
-\begin{eqnarray}
-	\pi &=& \frac{F}{\rho v^2 D^2}  \nonumber \\
-	\pi_1 &=& \frac{v D}{\nu} \\
-	\pi_2 &=& \frac{N D}{v} \nonumber
-\end{eqnarray}
-De dimensieloze relatie wordt dus:
-\begin{equation}
-	\frac{F}{\rho v^2 D^2} = \phi(\frac{v D}{\nu},\frac{N D}{v})
-\end{equation}
-De $\pi$ termen in deze relatie zijn nu ook heel herkenbaar. In het linkerlid vinden we een dimensieloze kracht. De functie in het rechterlid heeft twee parameters. De eerste herkennen we als het Reynoldsgetal. De tweede is het dimensieloze toerental van de schroef, of de verhouding tussen de tipsnelheid en de stroomsnelheid (de snellopendheid).
-
-We kunnen de relatie die oorspronkelijk 5 parameters had dus schrijven als een relatie met slechts 2 parameters. Deze relatie kunnen we (indien de experimenten echt gebeurd zijn) eenvoudig weergeven in een grafiek door een set met krommen weer te geven. Bijvoorbeeld de dimensieloze kracht in functie van het Reynoldsgetal voor verschillende waarden van het dimensieloze toerental (Figuur \ref{fig:dimensieanalysevoorbeeld}). Met behulp van deze grafiek kunnen we de kracht voor elke schroef die geometrisch gelijkvormig is, in elk fluïdum met elke snelheid en elk toerental berekenen.
-\begin{figure}[htb]
-	\centering
-	\includesvg{fig/gelijkvormigheid/dimensieanalysevoorbeeld}
-	\caption{Voorbeeld van het resultaat van een dimensie analyse}
-	\label{fig:dimensieanalysevoorbeeld}
-\end{figure}
+\end{voorbeeld}

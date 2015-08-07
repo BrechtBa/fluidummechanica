@@ -2,6 +2,7 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
+   xmlns:ns0="http://www.iki.fi/pav/software/textext/"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -22,9 +23,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="310.46405"
-     inkscape:cy="105.52607"
+     inkscape:zoom="2.8"
+     inkscape:cx="183.58755"
+     inkscape:cy="8.6641607"
      inkscape:document-units="mm"
      inkscape:current-layer="g4322"
      showgrid="false"
@@ -271,30 +272,118 @@
          id="path6530"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="cc" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text3055"
-         y="995.88647"
-         x="259.85779"
-         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-         xml:space="preserve"><tspan
-           y="995.88647"
-           x="259.85779"
-           id="tspan3057"
-           sodipodi:role="line">$T'$</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text3059"
-         y="1037.1074"
-         x="306.20581"
-         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-         xml:space="preserve"><tspan
-           y="1037.1074"
-           x="306.20581"
-           id="tspan3061"
-           sodipodi:role="line">$C'$</tspan></text>
     </g>
-  </g>
+    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="content"
+       transform="matrix(1.25,0,0,-1.25,-175.89286,1925)"
+       xml:space="preserve"
+       stroke-miterlimit="10.433"
+       font-style="normal"
+       font-variant="normal"
+       font-weight="normal"
+       font-stretch="normal"
+       font-size-adjust="none"
+       letter-spacing="normal"
+       word-spacing="normal"
+       ns0:text="$C$"
+       ns0:preamble="D:\\Onderwijs\\FLUI\\Cursus\\FLUI_theorie\\tex\\commands.tex">
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 230.99,714.03 0,0 0,0.01 0,0 0,0 0,0.01 0,0 0,0 0,0.01 0,0 0,0.01 -0.01,0 0,0 0,0.01 0,0 -0.01,0.01 0,0 0,0 0,0.01 -0.01,0 0,0 -0.01,0.01 0,0 -0.01,0 0,0.01 -0.01,0 0,0 0,0 -0.01,0 0,0 0,0 -0.01,0 0,0.01 0,0 -0.01,0 0,0 0,0 -0.01,0 0,0 -0.01,0 c -0.03,0 -0.04,-0.01 -0.14,-0.12 l -0.7,-0.77 c -0.09,0.14 -0.55,0.89 -1.65,0.89 -2.22,0 -4.46,-2.2 -4.46,-4.5 0,-1.64 1.17,-2.72 2.7,-2.72 0.86,0 1.62,0.39 2.14,0.85 0.93,0.82 1.1,1.72 1.1,1.75 0,0.1 -0.1,0.1 -0.12,0.1 -0.06,0 -0.11,-0.02 -0.13,-0.1 -0.09,-0.29 -0.32,-0.99 -1,-1.57 -0.69,-0.56 -1.32,-0.73 -1.83,-0.73 -0.9,0 -1.95,0.52 -1.95,2.07 0,0.57 0.2,2.18 1.2,3.34 0.61,0.7 1.54,1.2 2.43,1.2 1.01,0 1.6,-0.77 1.6,-1.92 0,-0.39 -0.03,-0.4 -0.03,-0.5 0,-0.1 0.11,-0.1 0.15,-0.1 0.13,0 0.13,0.02 0.18,0.2 z"
+   id="path3092" />
+</g>    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       ns0:preamble="D:\\Onderwijs\\FLUI\\Cursus\\FLUI_theorie\\tex\\commands.tex"
+       ns0:text="$T$"
+       word-spacing="normal"
+       letter-spacing="normal"
+       font-size-adjust="none"
+       font-stretch="normal"
+       font-weight="normal"
+       font-variant="normal"
+       font-style="normal"
+       stroke-miterlimit="10.433"
+       xml:space="preserve"
+       transform="matrix(1.25,0,0,-1.25,-275.89286,1873.9285)"
+       id="g3238">
+<path
+   id="path3240"
+   d="m 227.68,713.16 0.01,0.02 0,0.02 0.01,0.03 0.01,0.02 0,0.02 0.01,0.02 0,0.02 0.01,0.02 0,0.01 0.01,0.02 0.01,0.01 0,0.02 0.01,0.01 0,0.01 0.01,0.01 0.01,0.01 0,0.01 0.01,0.01 0.01,0.01 0,0.01 0.01,0 0.01,0.01 0,0.01 0.01,0 0.01,0.01 0.01,0 0.01,0.01 0.01,0 0.01,0 0.01,0.01 0.01,0 0.01,0 c 0.09,0.02 0.42,0.02 0.63,0.02 1,0 1.45,-0.04 1.45,-0.81 0,-0.15 -0.04,-0.54 -0.08,-0.8 -0.01,-0.04 -0.03,-0.16 -0.03,-0.19 0,-0.06 0.03,-0.13 0.12,-0.13 0.11,0 0.13,0.09 0.15,0.23 l 0.27,1.73 c 0.01,0.04 0.02,0.14 0.02,0.17 0,0.11 -0.1,0.11 -0.27,0.11 h -5.52 c -0.24,0 -0.25,-0.01 -0.32,-0.2 l -0.6,-1.75 c -0.01,-0.02 -0.06,-0.16 -0.06,-0.18 0,-0.06 0.05,-0.11 0.12,-0.11 0.1,0 0.11,0.05 0.17,0.21 0.54,1.54 0.8,1.72 2.27,1.72 h 0.39 c 0.27,0 0.27,-0.04 0.27,-0.12 0,-0.06 -0.03,-0.18 -0.04,-0.21 l -1.33,-5.3 c -0.09,-0.37 -0.12,-0.48 -1.18,-0.48 -0.36,0 -0.42,0 -0.42,-0.19 0,-0.11 0.11,-0.11 0.17,-0.11 0.27,0 0.55,0.02 0.81,0.02 0.28,0 0.57,0.01 0.85,0.01 0.28,0 0.56,-0.01 0.83,-0.01 0.28,0 0.58,-0.02 0.86,-0.02 0.1,0 0.22,0 0.22,0.19 0,0.11 -0.08,0.11 -0.34,0.11 -0.25,0 -0.38,0 -0.64,0.02 -0.28,0.03 -0.36,0.06 -0.36,0.22 0,0.01 0,0.06 0.04,0.21 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+</g>    <g
+       id="g3388"
+       transform="matrix(1.25,0,0,-1.25,-16.964295,1885)"
+       xml:space="preserve"
+       stroke="black"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="10.433"
+       stroke-dasharray="none"
+       stroke-dashoffset="0"
+       stroke-opacity="1"
+       fill="none"
+       fill-rule="evenodd"
+       fill-opacity="1"
+       font-style="normal"
+       font-variant="normal"
+       font-weight="normal"
+       font-stretch="normal"
+       font-size-adjust="none"
+       letter-spacing="normal"
+       word-spacing="normal"
+       text-anchor="start"
+       ns0:text="$T\'$"
+       ns0:preamble="D:\\Onderwijs\\FLUI\\Cursus\\FLUI_theorie\\tex\\commands.tex"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0">
+<path
+   d="M227.68,713.16 L227.69,713.18 L227.69,713.2 L227.7,713.23 L227.71,713.25 L227.71,713.27 L227.72,713.29 L227.72,713.31 L227.73,713.33 L227.73,713.34 L227.74,713.36 L227.75,713.37 L227.75,713.39 L227.76,713.4 L227.76,713.41 L227.77,713.42 L227.78,713.43 L227.78,713.44 L227.79,713.45 L227.8,713.46 L227.8,713.47 L227.81,713.47 L227.82,713.48 L227.82,713.49 L227.83,713.49 L227.84,713.5 L227.85,713.5 L227.86,713.51 L227.87,713.51 L227.88,713.51 L227.89,713.52 L227.9,713.52 L227.91,713.52 C228,713.54,228.33,713.54,228.54,713.54 C229.54,713.54,229.99,713.5,229.99,712.73 C229.99,712.58,229.95,712.19,229.91,711.93 C229.9,711.89,229.88,711.77,229.88,711.74 C229.88,711.68,229.91,711.61,230,711.61 C230.11,711.61,230.13,711.7,230.15,711.84 L230.42,713.57 C230.43,713.61,230.44,713.71,230.44,713.74 C230.44,713.85,230.34,713.85,230.17,713.85 H224.65 C224.41,713.85,224.4,713.84,224.33,713.65 L223.73,711.9 C223.72,711.88,223.67,711.74,223.67,711.72 C223.67,711.66,223.72,711.61,223.79,711.61 C223.89,711.61,223.9,711.66,223.96,711.82 C224.5,713.36,224.76,713.54,226.23,713.54 H226.62 C226.89,713.54,226.89,713.5,226.89,713.42 C226.89,713.36,226.86,713.24,226.85,713.21 L225.52,707.91 C225.43,707.54,225.4,707.43,224.34,707.43 C223.98,707.43,223.92,707.43,223.92,707.24 C223.92,707.13,224.03,707.13,224.09,707.13 C224.36,707.13,224.64,707.15,224.9,707.15 C225.18,707.15,225.47,707.16,225.75,707.16 C226.03,707.16,226.31,707.15,226.58,707.15 C226.86,707.15,227.16,707.13,227.44,707.13 C227.54,707.13,227.66,707.13,227.66,707.32 C227.66,707.43,227.58,707.43,227.32,707.43 C227.07,707.43,226.94,707.43,226.68,707.45 C226.4,707.48,226.32,707.51,226.32,707.67 C226.32,707.68,226.32,707.73,226.36,707.88 Z "
+   stroke-width="0"
+   fill="black"
+   id="path3390" />
+<path
+   d="M232.66,714.02 L232.66,714.03 L232.67,714.04 L232.67,714.05 L232.68,714.06 L232.68,714.07 L232.68,714.08 L232.69,714.09 L232.69,714.1 L232.69,714.11 L232.7,714.12 L232.7,714.12 L232.7,714.13 L232.7,714.14 L232.71,714.15 L232.71,714.15 L232.71,714.16 L232.71,714.17 L232.71,714.17 L232.71,714.18 L232.71,714.18 L232.72,714.19 L232.72,714.2 L232.72,714.2 L232.72,714.21 L232.72,714.22 L232.72,714.23 L232.72,714.24 L232.72,714.24 C232.72,714.46,232.52,714.63,232.31,714.63 C232.04,714.63,231.96,714.41,231.93,714.3 L231.01,711.29 C231,711.28,230.97,711.18,230.97,711.18 C230.97,711.09,231.19,711.03,231.24,711.03 C231.29,711.03,231.3,711.04,231.35,711.14 Z "
+   stroke-width="0"
+   fill="black"
+   id="path3392" />
+</g>    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       ns0:preamble="D:\\Onderwijs\\FLUI\\Cursus\\FLUI_theorie\\tex\\commands.tex"
+       ns0:text="$C\'$"
+       text-anchor="start"
+       word-spacing="normal"
+       letter-spacing="normal"
+       font-size-adjust="none"
+       font-stretch="normal"
+       font-weight="normal"
+       font-variant="normal"
+       font-style="normal"
+       fill-opacity="1"
+       fill-rule="evenodd"
+       fill="none"
+       stroke-opacity="1"
+       stroke-dashoffset="0"
+       stroke-dasharray="none"
+       stroke-miterlimit="10.433"
+       stroke-linejoin="miter"
+       stroke-linecap="butt"
+       stroke="black"
+       xml:space="preserve"
+       transform="matrix(1.25,0,0,-1.25,35.178567,1923.5714)"
+       id="g3530">
+<path
+   id="path3532"
+   fill="black"
+   stroke-width="0"
+   d="M230.99,714.03 L230.99,714.03 L230.99,714.04 L230.99,714.04 L230.99,714.04 L230.99,714.05 L230.99,714.05 L230.99,714.05 L230.99,714.06 L230.99,714.06 L230.99,714.07 L230.98,714.07 L230.98,714.07 L230.98,714.08 L230.98,714.08 L230.97,714.09 L230.97,714.09 L230.97,714.09 L230.97,714.1 L230.96,714.1 L230.96,714.1 L230.95,714.11 L230.95,714.11 L230.94,714.11 L230.94,714.12 L230.93,714.12 L230.93,714.12 L230.93,714.12 L230.92,714.12 L230.92,714.12 L230.92,714.12 L230.91,714.12 L230.91,714.13 L230.91,714.13 L230.9,714.13 L230.9,714.13 L230.9,714.13 L230.89,714.13 L230.89,714.13 L230.88,714.13 C230.85,714.13,230.84,714.12,230.74,714.01 L230.04,713.24 C229.95,713.38,229.49,714.13,228.39,714.13 C226.17,714.13,223.93,711.93,223.93,709.63 C223.93,707.99,225.1,706.91,226.63,706.91 C227.49,706.91,228.25,707.3,228.77,707.76 C229.7,708.58,229.87,709.48,229.87,709.51 C229.87,709.61,229.77,709.61,229.75,709.61 C229.69,709.61,229.64,709.59,229.62,709.51 C229.53,709.22,229.3,708.52,228.62,707.94 C227.93,707.38,227.3,707.21,226.79,707.21 C225.89,707.21,224.84,707.73,224.84,709.28 C224.84,709.85,225.04,711.46,226.04,712.62 C226.65,713.32,227.58,713.82,228.47,713.82 C229.48,713.82,230.07,713.05,230.07,711.9 C230.07,711.51,230.04,711.5,230.04,711.4 C230.04,711.3,230.15,711.3,230.19,711.3 C230.32,711.3,230.32,711.32,230.37,711.5 Z " />
+<path
+   id="path3534"
+   fill="black"
+   stroke-width="0"
+   d="M233.29,714.02 L233.29,714.03 L233.29,714.04 L233.3,714.05 L233.3,714.06 L233.31,714.07 L233.31,714.08 L233.31,714.09 L233.32,714.1 L233.32,714.11 L233.32,714.12 L233.33,714.12 L233.33,714.13 L233.33,714.14 L233.33,714.15 L233.33,714.15 L233.34,714.16 L233.34,714.17 L233.34,714.17 L233.34,714.18 L233.34,714.18 L233.34,714.19 L233.34,714.2 L233.34,714.2 L233.35,714.21 L233.35,714.22 L233.35,714.23 L233.35,714.24 L233.35,714.24 C233.35,714.46,233.15,714.63,232.94,714.63 C232.67,714.63,232.59,714.41,232.55,714.3 L231.63,711.29 C231.63,711.28,231.6,711.18,231.6,711.18 C231.6,711.09,231.82,711.03,231.87,711.03 C231.92,711.03,231.93,711.04,231.98,711.14 Z " />
+</g>  </g>
   <g
      style="display:inline"
      transform="translate(0,-974.40943)"
@@ -358,28 +447,6 @@
        inkscape:connector-curvature="0" />
     <g
        id="g3084">
-      <text
-         sodipodi:linespacing="125%"
-         id="text3047"
-         y="992.76318"
-         x="1.0101525"
-         style="display:inline;font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-         xml:space="preserve"><tspan
-           y="992.76318"
-           x="1.0101525"
-           id="tspan3049"
-           sodipodi:role="line">$T$</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text3051"
-         y="1040.7455"
-         x="104.55079"
-         style="display:inline;font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-         xml:space="preserve"><tspan
-           y="1040.7455"
-           x="104.55079"
-           id="tspan3053"
-           sodipodi:role="line">$C$</tspan></text>
       <path
          style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.0629921;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
          d="m 62.301031,982.08758 c -7.69844,-0.0618 -11.96271,0.18778 -20.81187,1.46621 -3.77225,0.54498 -9.98711,1.99704 -13.25063,3.78379 -2.99603,1.6403 -3.9758,2.51867 -4,3.5625 -0.0496,2.1424 3.72358,4.43447 9.71875,5.9375 5.85003,1.46663 22.2091,4.41552 36.59375,5.34372 71.658479,7.6354 120.599789,15.9366 159.522329,22.8259 0,0 -6.33315,-3.4289 -17.79019,-8.0491 -29.73574,-11.9911 -57.87376,-20.48885 -89.40625,-27.77677 -14.04823,-3.24688 -41.281359,-6.59011 -51.232139,-6.875 -3.78612,-0.10839 -6.7776,-0.19814 -9.34375,-0.21875 z"
