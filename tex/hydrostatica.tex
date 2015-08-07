@@ -128,7 +128,26 @@ Indien we opnieuw de grafische voorstelling van hierboven gebruiken, dan komen d
 In het geval van hydrostatisch drukken leid dit vaak zeer eenvoudige uitdrukkingen voor de kracht en het aangrijpingspunt aangezien de druk lineair verloopt met de diepte.
 
 \begin{voorbeeld}
-Test
+	\label{vb:luik}
+	Bepaal de grootte en het aangrijpingspunt van de resulterende kracht op het luik ondergedompeld in een fluïdum met dichtheid $\rho$ getoond in de figuur. De bovenzijde bevindt zich op een diepte $d$, het luik heeft een hoogte $h$ en breedte $b$ (de breedte staat loodrecht op het vlak van de figuur).
+	\begin{center}
+		\includegraphics{fig/hydrostatica/kracht_op_luik}
+	\end{center}
+	Boven het fluïdum en aan de achterzijde van het luik heersen atmosfeerdruk. We kunnen deze dus buiten beschouwing laten aangezien ze netto geen kracht uitoefent op het luik. De druk binnen de vloeistof verloop linear zoals aangegeven op de figuur. Deze grootte van de kracht is dus gelijk aan het volume van de figuur gevormd door de druk uit te zetten op een verticaal vlak, dit het volume van een balk met een trapezium als grondvlak en lengte $b$. Het grondvlak van de figuur kan opnieuw opgesplitst worden in een rechthoek en een rechthoekige driehoek. Beide hebben dezelfde basis $h$. De hoogte van de rechthoek komt overeen met de druk aan het bovenste punt van het luik, $\rho g d$. de hoogte van de driehoek komt overeen met het drukverschil tussen het bovenste en onderste punt van het luik, $\rho g h$ De grootte van de kracht wordt dan:
+	\begin{align*}
+		F &= \left( A_{\text{rechthoek}} + A_{\text{driehoek}} \right) b\\
+		  &= \left( \rho g d h + 1/2 \rho g h h \right) b
+	\end{align*}
+
+	Om het aangrijpingspunt te bepalen zoeken we de hoogte van het zwaartepunt van de figuur. Dit kunnen we bepalen als het gewogen gemiddelde van het zwaartepunt van de rechthoek en de driehoek, gewogen met hun oppervlaktes:
+	\begin{equation*}
+		y_z = \frac{ y_{z,\text{rechthoek}} A_{\text{rechthoek}} + y_{z,\text{driehoek}} A_{\text{driehoek}}}{A_{\text{rechthoek}} + A_{\text{driehoek}}}
+	\end{equation*}
+	Aangezien het zwaartepunt van de rechthoek op $1/2 h$ van de onderzijde ligt en dat van de driehoek op $1/3 h$ wordt de afstand van het aangrijpingspunt tot de onderzijde:
+	\begin{align*}
+		y_z &= \frac{ 1/2 h \rho g d h + 1/3 h 1/2 \rho g h h}{\rho g d h + 1/2 \rho g h h} \\
+		    &= \frac{ 1/2 d h + 1/6 h^2}{d + 1/2 h}
+	\end{align*}
 \end{voorbeeld}
 
 		\subsection{krachten op gebogen oppervlakken}
@@ -174,36 +193,25 @@ Het feit dat de kracht op een oppervlak in een stilstaande vloeistof onafhankeli
 	\label{fig:hydrostatische_paradox}
 \end{figure}
 
-Beschouw als voorbeeld de kracht die uitgeoefend wordt op een kwart van een cilindermantel met straal $R$ en lengte $L$ waarvan het bovenste punt zich op een diepte $H$ bevindt zoals afgebeeld in Figuur \ref{fig:kracht_gebogen_oppervlak_vereenvoudigd_2d} (de lengte staat hier loodrecht op het vlak van de figuur).
+\begin{voorbeeld}
+	Bereken de horiontale en vertikale kracht die uitgeoefend wordt op een kwart van een cilindermantel met straal $r$ en breedte $b$ waarvan het bovenste punt zich op een diepte $d$ bevindt zoals afgebeeld in Figuur \ref{fig:kracht_gebogen_oppervlak_vereenvoudigd_2d}.
 
-Het horizontale gedeelte van de kracht zal gelijk zijn aan de horizontale kracht uitgeoefend op een verticaal vlak met dezelfde geprojecteerde oppervlakte. Deze kracht is dus gelijk aan het volume van de figuur gevormd door de druk uit te zetten op een verticaal vlak. Aangezien de hydrostatische druk lineair verloopt met de diepte is dit het volume van een balk met een trapezium als grondvlak en lengte $L$. Het grondvlak van de figuur kan opnieuw opgesplitst worden in een rechthoek en een rechthoekige driehoek. Beide hebben dezelfde basis $R$. De hoogte van de rechthoek komt overeen met de druk aan het bovenste punt van de cilinder: $\rho g H$.
-\begin{equation}
-	h_{rechthoek} = p_{boven} = \rho g H
-\end{equation}
-De hoogte van de driehoek komt overeen met het drukverschil tussen het bovenste en het onderste punt van de cilinder: $\rho g R$
-\begin{equation}
-	h_{driehoek} = p_{onder}-p_{boven} = \rho g (H+R) - \rho g H =  \rho g R
-\end{equation}
-Het volume van de figuur of de horizontale kracht wordt dan:
-\begin{equation}
-	F_{hor} = (A_{rechthoek} + A_{driehoek}) L = (R \rho g H + \frac{1}{2} R \rho g R) L
-\end{equation}
+	Het horizontale gedeelte van de kracht zal gelijk zijn aan de horizontale kracht uitgeoefend op een verticaal vlak met dezelfde geprojecteerde oppervlakte en kan dus zoals in Voorbeeld \ref{vb:luik} berekend worden:
+	\begin{align*}
+		F_{hor} &= \left( A_{\text{rechthoek}} + A_{\text{driehoek}} \right) b\\
+		        &= \left( \rho g d r + 1/2 \rho g r r \right) b \\
+		y_z &= \frac{ y_{z,\text{rechthoek}} A_{\text{rechthoek}} + y_{z,\text{driehoek}} A_{\text{driehoek}}}{A_{\text{rechthoek}} + A_{\text{driehoek}}} \\
+		    &= \frac{ 1/2 d r + 1/6 r^2}{d + 1/2 r}
+	\end{align*}
 
-Het aangrijpingspunt van de resultante horizontale kracht is nu ook zeer eenvoudig te berekenen. Dit komt namelijk overeen met het zwaartepunt van de gevormde figuur. Aangezien deze bestaat uit 2 delen kan het zwaartepunt van de samengestelde figuur gevonden worden als het gemiddelde van de zwaartepunten van de delen gewogen met hun oppervlakte:
-\begin{equation}
-	y_z = \frac{y_{z,rechthoek} A_{rechthoek} + y_{z,driehoek} A_{driehoek}}{A_{rechthoek} + A_{driehoek}}
-\end{equation}
-Het zwaartepunt van de rechthoek ligt uiteraard op de helft van de basis. Het zwaartepunt van de driehoek ligt op één derde van de basis van de onderzijde gemeten. Dit geeft voor het aangrijpingspunt een afstand van het laagste punt van de cilinder:
-\begin{equation}
-	y_z = \frac{(\frac{1}{2} R)  R \rho g H + (\frac{1}{3} R) \frac{1}{2} R \rho g R}{R \rho g H + \frac{1}{2} R \rho g R} = \frac{\frac{1}{2} R^2 H + \frac{1}{6} R^3}{R H + \frac{1}{2} R^2}
-\end{equation}
+	Om de verticale kracht te berekenen moeten we het volume boven het oppervlak berekenen (het donkere gedeelte op de figuur). Het gewicht van dit volume water komt overeen met de verticale kracht. Bemerk dat het volume niet noodzakelijk gevuld met water moet zijn. Het volume is eenvoudig te berekenen al de oppervlakte van een rechthoek min de oppervlakte van de kwart cilinder vermenigvuldigd met de lengte:
+	\begin{align*}
+		F_{ver} &= \rho g (A_{\text{rechthoek}} - \frac{1}{4}A_{\text{cilinder}}) L\\
+		        &= \rho g \left( (d+r)r - \frac{1}{4} \pi r^2 \right) b
+	\end{align*}
 
-Om de verticale kracht te berekenen moeten we het volume boven het oppervlak berekenen (het donkere gedeelte op de figuur). Het gewicht van dit volume water komt overeen met de verticale kracht. Bemerk dat het volume niet noodzakelijk gevuld met water moet zijn. Het volume is eenvoudig te berekenen al de oppervlakte van een rechthoek min de oppervlakte van de kwart cilinder vermenigvuldigd met de lengte:
-\begin{equation}
-	F_{ver} = \rho g (A_{rechthoek} - \frac{1}{4}A_{cilinder}) L  = \rho g \left( (H+R)R - \frac{1}{4} \pi R^2 \right) L
-\end{equation}
-
-Het aangrijpingspunt van de verticale kracht kan op dezelfde manier gevonden worden als dat van de horizontale component, enkel moet het zwaartepunt van de kwart cirkel berekend worden. Dit ligt op $\frac{4R}{3\pi}$ van het middelpunt. De verdere uitwerking verloopt analoog als hierboven.
+	Het aangrijpingspunt van de verticale kracht kan op dezelfde manier gevonden worden als dat van de horizontale component, enkel moet het zwaartepunt van de kwart cirkel berekend worden. Dit ligt op $\frac{4r}{3\pi}$ van het middelpunt. De verdere uitwerking verloopt analoog als hierboven.
+\end{voorbeeld}
 
 	\section{Drijven en stabiliteit}
 Wanneer een schip te water gelaten wordt zal het net zo diep in het water zakken totdat de resultante van de drukkrachten uitgeoefend door het water op de romp van het schip gelijk is aan het gewicht van het schip (Figuur \ref{fig:opwaartse_kracht}). De resultante van deze drukkrachten kunnen we berekenen met behulp van de vereenvoudigde methode voor verticale krachten zoals hierboven uitgewerkt en wordt vaak de opwaartse kracht of Archimedeskracht genoemd. Wanneer een voorwerp volledig ondergedompeld is moeten zowel de drukkrachten aan de onderzijde als aan de bovenzijde in rekening gebracht worden. De opwaartse kracht is echter steeds gelijk aan de valversnelling vermenigvuldigd met de verplaatste massa fluïdum.

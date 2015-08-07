@@ -62,20 +62,24 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Nieuwe omgevingen
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\definecolor{shadecolor}{gray}{0.95}
+\definecolor{shadecolor}{gray}{0.98}
 \newcounter{voorbeeldcounter}[chapter]
 \renewcommand{\thevoorbeeldcounter}{\thechapter.\arabic{voorbeeldcounter}}
 \makeatletter
 \newenvironment{voorbeeld}
 {
+\vspace{3mm}
 \addtolength{\leftskip}{5mm}
 \begin{shaded*}
 \vspace{-3mm}
 \refstepcounter{voorbeeldcounter}
 \noindent
 \textbf{Voorbeeld \thevoorbeeldcounter:\\}
+%\vspace{-8mm}
+%\begin{multicols}{2}
 }
 {
+%\end{multicols}
 \end{shaded*}
 \addtolength{\leftskip}{-5mm}
 }

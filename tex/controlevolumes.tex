@@ -247,3 +247,70 @@ Wanneer we (\ref{eqn:stromings en asvermogen}) en (\ref{eqn:stromingsvermogen}) 
 \end{equation}
 De termen $u + \frac{p}{\rho}$ kennen we reeds uit de thermodynamica als de enthalpie $h$.
 
+\begin{voorbeeld}
+	Bereken de axiale en tangentiële kracht die uitgeoefend wordt op één schoep van de stilstaande schoepenrij in onderstaande figuur met hoogte $h$, de afstand tussen 2 schoepen is $b$. Door de schoepenrij stroomt een fluïdum met dichtheid $\rho$, voor de schoepenrij is verloopt de stroming axiaal en is de snelheid $v_{in}$. Na de schoepenrij maak en de stroomlijnen een hoek $\alpha$ met de axiale richting en is de druk $p_{uit}$. De stroming is stationair en adiabatisch en er zijn geen energieverliezen.
+	\begin{center}
+		\includegraphics{fig/controlevolumes/Schoepenrij}
+	\end{center}
+
+	Beginnen de analyse door een geschikt controlevolume te tekenen zoals aangeduid in de figuur. Het controle volume loopt volgens de stroomlijnen tussen twee schoepen door en wordt afgsloten door twee vlakken volgens de tangentiële richting. Definieer ook een geschikt assenstelsel.
+
+	Om de krachten uit te rekenen kunnen wede vergelijking van behoud van impuls uitschrijven voor het controlevolume. Aangezien dit volgens de stoomlijnen loopt hebben we een controlevolume met één inlaat en één uitlaat. Behoud van impuls wordt dan:
+	\begin{align*}
+		\sum F_x &= \dot{m} \left(v_{uit,x} - v_{in,x}\right) \\
+		\sum F_y &= \dot{m} \left(v_{uit,y} - v_{in,y}\right)
+	\end{align*}
+
+	De snelheids componenten kunnen we halen uit de vergelijkingen voor behoud van massa. dit geeft:
+	\begin{equation*}
+		\rho v_{in} b h = \rho v_{uit} b h \cos \alpha
+	\end{equation*}
+	of:
+	\begin{equation*}
+		v_{uit} = \frac{v_{in}}{\cos \alpha}
+	\end{equation*}
+	dus:
+	\begin{align*}
+		v_{in,x}  &= v_{in}\\
+		v_{uit,x} &= v_{in}\\
+		v_{in,y}  &= 0\\
+		v_{uit,y} &= -v_{in}\tan \alpha
+	\end{align*}
+	Het massadebiet is halen we uit de doorstroom oppervlakte en de ingaande snelheid:
+	\begin{equation*}
+		\dot{m} = \rho b h v_{in}
+	\end{equation*}
+
+	Bovenstaande uitdrukkingen invullen geeft:
+	\begin{align*}
+		\sum F_x &= 0 \\
+		\sum F_y &= -\rho b h v_{in}^2 \tan \alpha
+	\end{align*}
+
+	In de $x$-richting worden er krachten op het controlevolume uitgeoefend door de druk aan de boven en onderzijde van het controle volume en door de schoepen:
+	\begin{equation*}
+		\sum F_x = p_{in} b h - p_{uit} b h - F_{schoep,x}
+	\end{equation*}
+	In de $y$ richting wordt er enkel door de schoepen een kracht uitgeoefend, de druk krachten links en rechts heffen elkaar op.
+	\begin{equation*}
+		\sum F_y = - F_{schoep,y}
+	\end{equation*}
+	Door het min teken in te voeren bij de schoepkrachten stellen deze de kracht voor die de stroming uitoefent op de schoep, zoals gevraagd. In de vergelijking voor behoud van impuls staat namelijk de kracht die op het controlevolume wordt uitgeoefend.
+
+	Om de druk voor de schoepenrij te berekenen kunnen we behoud van energie toepassen. Aangezien er geen verliezen zijn en de stroming adiabatisch verloopt is er geen toegevoegde warmte of onttrokken arbeid en blijft de inwendige energie constant:
+	\begin{equation*}
+		\dot{m} \left(\frac{p_{uit}}{\rho} + \frac{1}{2}v^2_{uit}\right) - \dot{m} \left(\frac{p_{in}}{\rho}+ \frac{1}{2}v^2_{in} \right) = 0
+	\end{equation*}
+	of:
+	\begin{align*}
+		 p_{uit} - p_{in} &= \frac{1}{2} \rho \left(v^2_{in} - v^2_{uit} \right) \\
+		                  &= \frac{1}{2} \rho v^2_{in} \left(1 - \frac{1}{\cos^2 \alpha} \right) \\
+		                  &= \frac{1}{2} \rho v^2_{in} \tan^2 \alpha
+	\end{align*}
+
+	Met deze uitdrukkingen kunnen we de schoepkrachten uitrekenen als:
+	\begin{align*}
+		F_{schoep,x} &= \rho b h  v^2_{in} \frac{1}{2} \tan^2 \alpha \\
+		F_{schoep,y} &= \rho b h v_{in}^2 \tan \alpha
+	\end{align*}
+\end{voorbeeld}
