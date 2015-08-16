@@ -6,36 +6,9 @@
 	\label{sec:Behoudsvergelijkingen langs stroomlijnen inleiding}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\section{Behoud van massa in differentiaalvorm}
-	\label{sec:Behoud van massa in differentiaalvorm}
-Beschouw een infinitesimaal kubusvormig controlevolume met ribben $\Delta x$, $\Delta y$, $\Delta z$ in een willekeurige 2 dimensionale stroming. Voor dit controlevolume kunnen we de massabalans opstellen. Aangezien het over een infinitesimaal controle volume gaat kunnen we de snelheid door een oppervlak als constant beschouwen. Dit resulteert in:
-\begin{equation}
-	0 = (\rho v_x|_{x} - \rho v_x|_{x+\Delta x})\Delta y \Delta z + (\rho v_y|_{y} - \rho v_y|_{y+\Delta y})\Delta x \Delta z
-\end{equation}
-Delen we deze vergelijking door het volume van het elementje krijgen we:
-\begin{equation}
-	0 = \frac{\rho v_x|_{x} - \rho v_x|_{x+\Delta x}}{\Delta x} + \frac{\rho v_y|_{y} - \rho v_y|_{y+\Delta y}}{\Delta y}
-\end{equation}
-Indien we nu de limiet nemen van deze vergelijking met het volume van het elementje gaande naar 0, dan kunnen de twee termen in het rechter lid geschreven worden als de afgeleiden van de snelheid. Na herschikking wordt dit:
-\begin{equation}
-	\frac{\partial \rho v_x}{\partial x} + \frac{\partial \rho v_y}{\partial y} = 0
-	\label{eqn:continuiteitsvergelijking}
-\end{equation}
-Met de introductie van de divergentie als vector operator ($\vt{\nabla}$) kan dit compact geschreven worden als:
-\begin{equation}
-	\vt{\nabla} (\rho\vt{v}) = 0
-\end{equation}
-Voor een niet-samendrukbare stroming zal de dichtheid constant blijven en kunnen we deze dus voor de afgeleide brengen en weglaten. In vector notatie wordt dit:
- \begin{equation}
-	\vt{\nabla} \vt{v} = 0
-\end{equation}
-
-In een niet-samendrukbare stroming betekent behoud van massa dus dat de divergentie van het snelheidsveld nul is.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Bewegingsvergelijking langs de stroomlijnen}
 	\label{sec:Bewegingsvergelijking langs de stroomlijnen}
-De uitwerking van de bewegingsvergelijking in cartesiaanse coördinaten zoals hierboven is gedaan voor behoud van massa is niet voor de hand liggen en bied weinig inzicht. Een eenvoudig alternatief is de uitwerking in stroomlijn coördinaten. Kies hiervoor een $s$ coördinaat die de stroomlijnen volgt in de richting van de stroming. Een $n$ coördinaat vector kunnen we nu definiëren door de $\vt{s}$ vector 90$^\circ$ in tegenwijzerzin te draaien (Figuur \ref{fig:stroomlijncoordinaten}). We kunnen dan elk punt in de stroming karakteriseren door de stroomlijn die door dit punt gaat ($n$) en de afstand langs de stroomlijn tot een bepaalde referentie ($s$). De richtingen van $s$ en $n$ coördinaat zullen nu wel in elk punt van de stroming verschillen. 
+De uitwerking van de bewegingsvergelijking in cartesiaanse coördinaten is niet voor de hand liggend en bied weinig inzicht. Een eenvoudig alternatief is de uitwerking in stroomlijn coördinaten. Kies hiervoor een $s$ coördinaat die de stroomlijnen volgt in de richting van de stroming. Een $n$ coördinaat vector kunnen we nu definiëren door de $\vt{s}$ vector 90$^\circ$ in tegenwijzerzin te draaien (Figuur \ref{fig:stroomlijncoordinaten}). We kunnen dan elk punt in de stroming karakteriseren door de stroomlijn die door dit punt gaat ($n$) en de afstand langs de stroomlijn tot een bepaalde referentie ($s$). De richtingen van $s$ en $n$ coördinaat zullen nu wel in elk punt van de stroming verschillen. 
 \begin{figure}[htb]
 	\centering
 	\includegraphics{fig/deeltjesvergelijkingen/Stoomlijncoordinaten}
@@ -59,7 +32,7 @@ Aangezien het controle volume langs een stroomlijn ligt staat de snelheid steeds
 \begin{equation}
 	\frac{\left. \rho v v A \right|_{s+\Delta s} - \left. \rho v v A \right|_{s}}{\Delta s} = -\frac{\left. p A \right|_{s+\Delta s} - \left. p A \right|_{s}}{\Delta s} + p_{gem} \frac{\left. A \right|_{s+\Delta s}-\left. A \right|_{s}}{\Delta s} -\rho g A_{gem} \frac{\left. z\right|_{s+\Delta s} - \left. z\right|_{s}}{\Delta s}
 \end{equation}
-Indien we de limiet van bovenstaande uitdrukking nemen voor $\Delta s$ gaande naar $0$ zal de gemiddelde druk en de gemiddelde oppervlakte naar de druk en de oppervlakte in het punt $s$ streven. We krijgen dan:
+Indien we de limiet van bovenstaande uitdrukking nemen voor $\Delta s$ gaande naar $0$ zullen de gemiddelde druk en de gemiddelde oppervlakte naar respectievelijk de druk en de oppervlakte in het punt $s$ streven. We krijgen dan:
 \begin{equation}
 	\frac{\diff \rho v v A}{\diff s} = -\frac{\diff p A}{\diff s} + p \frac{\diff A}{\diff s} -\rho g A \frac{\diff z}{\diff s}
 \end{equation}
@@ -268,4 +241,31 @@ Geprojecteerd op de $x$-richting van een carthesiaans assenstelsel geeft dit:
 	\label{eqn:navier-stokes vergelijkingen carthesiaans}
 \end{equation}
 In het linkerlid vinden we de versnelling van het deeltje terug. In het rechterlid de verschillende krachten die op het deeltje inwerken. De eerste twee termen in het rechterlid zijn herkenbaar van in de vergelijking van Euler (\ref{eqn:vergelijking van Euler}) als de krachten ten gevolge van drukverschillen en ten gevolge van de zwaartekracht. De derde term geeft de viskeuze krachten in een Newtoniaanse niet-samendrukbare stroming weer.
-	
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Het oplossen van de Navier-Stokes vergelijkingen naar het snelheidsveld en drukveld bij bepaalde begin en randvoorwaarden is echter nog niet mogelijk. De vergelijkingen hebben namelijk slechts 3 componenten (één in elke coordinaat richting) en er zijn 4 onbekenden: $v_x$, $v_y$, $v_z$ en $p$. De extra vergelijking nodig voor het bepalen van een oplossing vinden we in de vergelijking van behoud van massa. Ook deze kan in differentiaalvorm geschreven worden.
+
+Beschouw een infinitesimaal kubusvormig controlevolume met ribben $\Delta x$, $\Delta y$, $\Delta z$ in een willekeurige niet-samendrukbare stroming. Voor dit controlevolume kunnen we de massabalans opstellen. Aangezien het over een infinitesimaal controle volume gaat kunnen we de snelheid door een oppervlak als constant beschouwen. Dit resulteert in:
+\begin{equation}
+	0 = (\rho v_x|_{x} - \rho v_x|_{x+\Delta x})\Delta y \Delta z + (\rho v_y|_{y} - \rho v_y|_{y+\Delta y})\Delta x \Delta z + (\rho v_z|_{z} - \rho v_z|_{z+\Delta z})\Delta x \Delta y
+\end{equation}
+Delen we deze vergelijking door het volume van het elementje krijgen we:
+\begin{equation}
+	0 = \frac{\rho v_x|_{x} - \rho v_x|_{x+\Delta x}}{\Delta x} + \frac{\rho v_y|_{y} - \rho v_y|_{y+\Delta y}}{\Delta y} + \frac{\rho v_z|_{z} - \rho v_z|_{z+\Delta z}}{\Delta z}
+\end{equation}
+Indien we nu de limiet nemen van deze vergelijking met het volume van het elementje gaande naar 0, dan kunnen de twee termen in het rechter lid geschreven worden als de afgeleiden van de snelheid. Na herschikking wordt dit:
+\begin{equation}
+	\frac{\partial \rho v_x}{\partial x} + \frac{\partial \rho v_y}{\partial y} + \frac{\partial \rho v_z}{\partial z} = 0
+	\label{eqn:continuiteitsvergelijking}
+\end{equation}
+Met de introductie van de divergentie als vector operator ($\vt{\nabla}$) kan dit compact geschreven worden als:
+\begin{equation}
+	\vt{\nabla} (\rho\vt{v}) = 0
+\end{equation}
+Voor een niet-samendrukbare stroming zal de dichtheid constant blijven en kunnen we deze dus voor de afgeleide brengen en weglaten. In vector notatie wordt dit:
+ \begin{equation}
+	\vt{\nabla} \vt{v} = 0
+\end{equation}
+In een niet-samendrukbare stroming betekent behoud van massa dus dat de divergentie van het snelheidsveld nul is.
+
+Het stelsel van de 3 Navier-Stokes vergelijkingen samen met de continuïteitsvergelijking kan, indien voldoende rand- en beginvoorwaarden gegeven zijn, opgelost woorden naar de drie snelheidscomponenten en het drukveld. Aangezien het hier echter gaat over een stelsel gekoppelde partiële differentiaalvergelijkingen is het vinden van zo'n oplossing enkel in zeer eenvoudige gevallen haalbaar. In meer realistische situaties moet men beroep doen op numerieke oplossingstechnieken die onder de noemer Computational Fluid Dynamics (CFD) vallen.
