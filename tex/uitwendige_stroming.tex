@@ -181,7 +181,7 @@ Uit de Figuur \ref{fig:Grenslaagsnelheid} valt af te leiden dat de grenslaagdikt
 
 Aangezien het snelheidsprofiel volgens Blasius geen analytische uitdrukking heeft is het niet eenvoudig om berekeningen mee uit te voeren. We kunnen het snelheidsprofiel echter zeer goed benaderen met een kwadratisch snelheidsprofiel zoals getoond in Figuur \ref{fig:Grenslaagsnelheid}. Dit benaderende snelheidsprofiel kunnen we uitdrukken als:
 \begin{equation}
-	\delta = \frac{2}{5}\eta - \frac{1}{25}\eta^2
+	\frac{v}{v_0} = \frac{2}{5}\eta - \frac{1}{25}\eta^2
 \end{equation}
 
 		\subsection{Impulsbalans voor de laminaire stroming over een vlakke plaat}
@@ -287,12 +287,6 @@ Deze zal bij lage Reynoldsgetallen zeer groot zijn en sterk afhankelijk zijn van
 \end{figure}
 \begin{figure}[htb]
 	\centering
-	\includegraphics{fig/uitwendige_stroming/loshechting}
-	\caption{Afscheiding van een viskeuze stroming onder invloed van een positieve drukgradiënt}
-	\label{fig:afscheiding}
-\end{figure}
-\begin{figure}[htb]
-	\centering
 	\subfigure[Re = 1]{
 		\label{fig:cilinder Re 1}
 		\includegraphics[height=0.2\textwidth]{Stroomfunctie_Re1_bw.png}
@@ -324,6 +318,12 @@ Bij hogere Reynoldsgetallen zien we dat er een zog met circulatie stroming achte
 Bij nog hogere waarden van het Reynolds getal zal de afgescheiden zone achter de cilinder terug verkleinen terwijl ook de wrijvingscoëfficiënt terug daalt (Figuur \ref{fig:cilinder Re 100000}).
 
 Om deze waarnemingen te verklaren bekijken we ook de stroming bij de afwezigheid van viskeuze krachten (potentiaalstroming). In deze situatie ontstaat er een hoge druk zone voor de cilinder met een stagnatiepunt waar de stroming helemaal tot stilstand komt. Aan de zijkanten (op 90\deg en 270\deg) zal de snelheid van het fluïdum het grootst zijn. De druk is hier minimaal. wanneer we verderop in de stroming kijken zal aan de achterzijde van de cilinder (180\deg) ook een stagnatiepunt zijn waar de snelheid $0$ is en de druk maximaal. Er wordt met andere woorden energie omgezet van druk aan de voorzijde van de cilinder naar kinetische energie aan de randen en terug naar druk aan de achterzijde van de cilinder. Aan de achterzijde van de cilinder zal de druk stijgen, er heerst een positieve drukgradiënt.
+\begin{figure}[htb]
+	\centering
+	\includegraphics{fig/uitwendige_stroming/loshechting}
+	\caption{Afscheiding van een viskeuze stroming onder invloed van een positieve drukgradiënt}
+	\label{fig:afscheiding}
+\end{figure}
 
 Hetzelfde geldt voor het niet viskeuze gedeelte (het gedeelte buiten de grenslaag) van de bovenstaande stromingen. Uit de grenslaag theorie volgt dat er binnen de grenslaag geen drukvariaties met de hoogte zijn. Aan de achterzijde van de cilinder vinden we dus ook binnen de grenslaag een positieve drukgradiënt. Binnen de grenslaag wordt er echter ook energie gedissipieerd door de viskeuze wrijving. De stroming zal dus voor het normale stagnatiepunt ($\theta = 180\deg$) tot stilstand komen. Aangezien er buiten de grenslaag wel nog steeds een positieve drukgradiënt heerst zal de stroming binnen de grenslaag zelfs van richting veranderen en terugstromen over het oppervlak van de cilinder (\ref{fig:afscheiding}).
 
