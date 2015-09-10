@@ -3,7 +3,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{toepassing}
 	\label{buis}
-Water van 20\degC\ vloeit in een buis van \unit{40}{mm} diameter over een afstand van 500m. Het debiet is 3 liter/s.  De ruwheid van de buis is 0.046mm.
+Water ($\rho=1000\unit{kg/m^3}$, $\nu=1\unit{mm^2/s}$) van vloeit in een buis van \unit{40}{mm} diameter over een afstand van 500m. Het debiet is 3 liter/s.  De ruwheid van de buis is 0.046mm.
 		
 Bepaal de drukval over de buis voor turbulente stroming.
 		
@@ -12,29 +12,15 @@ Wat zou de drukval zijn indien we er zouden in slagen om de stroming laminair te
 \begin{antwoord}{\ref{buis}}
 	$\Delta p = 784\unit{kPa}$, $\Delta p_{\text{laminair}} = 23\unit{kPa}$
 \end{antwoord}
-\vfill
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{toepassing}[*]
 	\label{buisdiameter}
-	Een buis met ruwheid $k = 0.0015\unit{mm}$ moet 2 liter/s water van 20\degC\ transporteren over een afstand van 400m.  Het verlies in drukhoogte mag hoogstens 30m bedragen.
+Een buis met ruwheid $\varepsilon = 0.0015\unit{mm}$ moet 2 liter/s water ($\rho=1000\unit{kg/m^3}$, $\nu=1\unit{mm^2/s}$) transporteren over een afstand van 400m.  Het verlies in drukhoogte mag hoogstens 30m bedragen.
 		
-	Bepaal de minimale diameter van de buis.
+Bepaal de minimale diameter van de buis.
 \end{toepassing}
 \begin{antwoord}{\ref{buisdiameter}}
 	$d = 39\unit{mm}$
-\end{antwoord}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{toepassing}[*]
-	\label{hevel met verlies}
-Een hevel wordt gebruikt om water uit een tank te halen, aan het uiteinde van de hevel heerst de atmosfeerdruk. De hoogtes zijn zoals aangegeven op onderstaande figuur, de buis heeft een constante diameter. De gebruikte buis heeft een diameter van 24mm een ruwheid van 0.1mm en een lengte van 3m, alle bochten hebben een straal van 40mm, de instroming mag verliesvrij verondersteld worden. De viscositeit van water is 1\unit{mm^2/s}.
-		
-Bepaal het debiet.
-
-	\centering
-	\includegraphics{/stroming_in_leidingen/hevel}
-\end{toepassing}
-\begin{antwoord}{\ref{hevel met verlies}}
-	$\dot{V} = 44.5\unit{l/min}$
 \end{antwoord}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{toepassing}
@@ -47,24 +33,41 @@ Bepaal het aantal buizen dat nodig is om een lagere drukval te genereren. $\rho 
 	$n = 3$
 \end{antwoord}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{toepassing}[*]
-	\label{pompopvoerhoogte}
-	Water wordt door leidingen zoals op de figuur aangegeven van een lager naar een hoger gelegen reservoir gepompt. Alle leidingen hebben een ruwheid van 0.5mm. De pomp heeft een karakteristiek zoals aangegeven op de figuur. De bocht heeft een gemiddelde straal van 120mm, de intrede heeft een verliescoëfficiënt $\xi = 0.1$, de uittrede heeft een verliescoëfficiënt $\xi = 0.8$.
+\begin{toepassing}
+	\label{hevel met verlies}
+Een hevel wordt gebruikt om water ($\rho=1000\unit{kg/m^3}$, $\nu=1\unit{mm^2/s}$) uit een tank te halen, aan het uiteinde van de hevel heerst de atmosfeerdruk. De hoogtes zijn zoals aangegeven op onderstaande figuur, de buis heeft een constante diameter. De gebruikte buis heeft een diameter van 24mm een ruwheid van 0.1mm en een lengte van 3m, alle lokale verliezen mogen verwaarloosd worden.
 		
-Bepaal het debiet en het werkingspunt van de pomp.
-		
-Teken het verloop van de hoogte, snelheidshoogte, drukhoogte en het drukhoogte verlies op één figuur.
+Bepaal het debiet.
 
 	\centering
-	\includegraphics{fig/stroming_in_leidingen/pompopvoerhoogte}
+	\includegraphics{/stroming_in_leidingen/hevel}
 \end{toepassing}
-\begin{antwoord}{\ref{pompopvoerhoogte}}
-	$\dot{V} = 155\unit{m^3/h}$
+\begin{antwoord}{\ref{hevel met verlies}}
+	$\dot{V} = 67.1\unit{l/min}$
+\end{antwoord}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{toepassing}[*]
+	\label{hevel met lokale verliezen}
+Bepaal voor de hevel uit Toepassing \ref{hevel met verlies} het debiet indien ook rekening gehouden wordt met de lokale verliezen veroorzaakt door de bochten.
+
+\end{toepassing}
+\begin{antwoord}{\ref{hevel met lokale verliezen}}
+	$\dot{V} = 44.5\unit{l/min}$
+\end{antwoord}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{toepassing}[*]
+	\label{pompkarakteristiek}
+Water ($\rho=1000\unit{kg/m^3}$, $\nu=1\unit{mm^2/s}$) wordt door een rechte leiding met binnendiameter 24mm ruwheid 0.002mm en lengte 10m van een laag reservoir gepompt naar een reservoir dat 3m hoger gelegen is. De pomp heeft een karakteristiek $H = 5 - 2*\dot{V}^2$ met $H$ uitgedrukt in meter en $\dot{V}$ in \unit{m^3/h}.
+
+Bepaal het debiet door de leiding als alle lokale verliezen verwaarloosd mogen worden.
+\end{toepassing}
+\begin{antwoord}{\ref{pompkarakteristiek}}
+	$\dot{V} = 2.27\unit{m^3/h}$
 \end{antwoord}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{toepassing}[*]
 	\label{olieafvoerdimensionering}
-In een machine dient olie met een dichtheid van 830\unit{kg/m^3} en viscositeit van 240\unit{mm^2/s} afgevoerd te worden uit een carter. Door de smering van verschillende componenten stroomt er een debiet van 80l/min naar het carter. De afvoerleiding dient een pad te volgen zoals aangegeven op de tekening. Bochten in de leiding worden uitgevoerd met een straal gelijk aan de buisdiameter. De druk in de machine en aan de olieafvoer is atmosfeerdruk.
+In een machine dient olie met een dichtheid van 830\unit{kg/m^3} en viscositeit van 240\unit{mm^2/s} afgevoerd te worden uit een carter. Door de smering van verschillende componenten stroomt er een debiet van 80l/min naar het carter. De afvoerleiding dient een pad te volgen zoals aangegeven op de tekening. Alle bochten hebben dezelfde straal als de buisdiameter. De druk in de machine en aan de olieafvoer is atmosfeerdruk.
 	
 Bepaal de nodige leiding diameter zodat het niveau in het carter niet hoger komt dan 500mm boven de afvoer.
 
@@ -73,6 +76,21 @@ Bepaal de nodige leiding diameter zodat het niveau in het carter niet hoger komt
 \end{toepassing}
 \begin{antwoord}{\ref{olieafvoerdimensionering}}
 	$\dot{d} = 42\unit{mm}$
+\end{antwoord}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{toepassing}[*]
+	\label{pompkarakteristiek serieschakeling}
+Water ($\rho=1000\unit{kg/m^3}$, $\nu=1\unit{mm^2/s}$) wordt door leidingen zoals op de figuur aangegeven van een lager naar een hoger gelegen reservoir gepompt. Alle leidingen hebben een ruwheid van 0.5mm. De pomp heeft een karakteristiek zoals aangegeven op de figuur. De bocht heeft een gemiddelde straal van 120mm, de intrede heeft een verliescoëfficiënt $\xi = 0.1$, de uittrede heeft een verliescoëfficiënt $\xi = 0.8$.
+		
+Bepaal het debiet en het werkingspunt van de pomp.
+		
+Teken het verloop van de hoogte, snelheidshoogte, drukhoogte en het drukhoogte verlies op één figuur.
+
+	\centering
+	\includegraphics{fig/stroming_in_leidingen/pompopvoerhoogte}
+\end{toepassing}
+\begin{antwoord}{\ref{pompkarakteristiek serieschakeling}}
+	$\dot{V} = 155\unit{m^3/h}$
 \end{antwoord}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Antwoorden}

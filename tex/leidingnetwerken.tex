@@ -1,57 +1,86 @@
 \chapter{Leidingnetwerken}
 \label{sec:Leidingnetwerken}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{toepassing}[*]
+	\label{warmtewisselaar}
+Een sectie van een warmtewisselaar bestaat uit 100 paralelle kanalen met een cilindrische doorsnede, een binnendiameter van 10mm en lengte 400mm en een ruwheid van 0.005mm. Door deze warmtewissellaar stroomt lucht ($\rho=1.2\unit{kg/m^3}$, $\nu=15\unit{mm^2/s}$) met een debiet van 360\unit{m^3/u}.
+		
+Bepaal de drukval over de warmtewissellaar, verwaarloos lokale verliezen aan in en uitlaat.	
+\end{toepassing}
+\begin{antwoord}{\ref{warmtewisselaar}}
+	$\Delta p = 128\unit{Pa}$
+\end{antwoord}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{toepassing}[*]
+	\label{serie parallel}
+Een leidingstelsel bestaat uit 4 leidingen A-D zoals aangegeven op onderstaande figuur. Leiding A heeft lengte 2000m en diameter 0.200m, leiding B heeft lengte 3000m en diameter 0.150m, leiding C heeft lengte 2000m en diameter 0.100m en , leiding B heeft lengte 1000m en diameter 0.180m. Alle leidingen hebben een ruwheid van 0.5mm. Doorheen het stelsel stroomt water ($\rho=1000\unit{kg/m^3}$, $\nu=1\unit{mm^2/s}$) met een debiet van 200\unit{m^3/h}.
+
+Bepaal de drukval over het leidingstelsel indien beide uiteindes zich op dezelfde hoogte bevinden. Verliezen in de splitsing en samenvoeging mogen verwaarloosd worden.
+
+	\centering
+	\includegraphics{fig/leidingnetwerken/serie_parallel}
+\end{toepassing}
+\begin{antwoord}{\ref{serie parallel}}
+	$\Delta p = 2081\unit{kPa}$
+\end{antwoord}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{toepassing}
+	\label{geperforeerde leiding hoogteverschil}
+Een hoofdleiding met een diameter van 675mm loopt horizontaal over 1500m en splitst dan in 2 dezelfde leidingen $d=450\unit{mm}$ en $l=3000\unit{m}$. Beide leidingen zijn open op het einde en komen op de zelfde eindhoogte uit, maar één van de twee leidingen heeft ook openingen in de zijwand. Hierdoor gaat de helft van het water afgevoerd worden over de totale lengte van de leiding.
+
+Als de wrijvingsfactor 0.024 is voor alle leidingen en het debiet is 0.28\unit{m^3/s} water ($\rho=1000\unit{kg/m^3}$, $\nu=1\unit{mm^2/s}$) in de hoofdleiding, bereken dan het hoogteverschil tussen het vloeistof oppervlak en de plaats waar de vloeistof in de atmosfeer komt. Men mag de vertragingsverliezen verwaarlozen.
+\end{toepassing}
+\begin{antwoord}{\ref{geperforeerde leiding hoogteverschil}}
+	$\Delta h = 6.42\unit{m}$
+\end{antwoord}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{toepassing}
 	\label{parallelle leidingen}
-Twee open reservoirs zijn met elkaar verbonden door 3 afzonderlijke leidingen met diameters $d$, $2d$, $3d$. De leidingen hebben allen dezelfde lengte.
+Twee open water reservoirs ($\rho=1000\unit{kg/m^3}$, $\nu=1\unit{mm^2/s}$) zijn met elkaar verbonden door 3 afzonderlijke leidingen met diameters $d$, $2d$, $3d$. De leidingen hebben allen dezelfde lengte.
 		
 Veronderstel dat de wrijvingsfactoren gelijk zijn, wat zal dan het volumedebiet doorheen de twee grootste leidingen zijn als het debiet door de kleinste leiding gelijk is aan 0.03\unit{m^3/s}? 
 \end{toepassing}
 \begin{antwoord}{\ref{parallelle leidingen}}
 	$\dot{V}_2 = 0.17\unit{m^3/s}$, $\dot{V}_3 = 0.47\unit{m^3/s}$
 \end{antwoord}
-\vfill
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{toepassing}[*]
-	\label{gesplitste leiding}
-Twee open reservoirs, waarvan het verschil tussen de twee vloeistofniveaus 6 meter is, zijn door een leiding met elkaar verbonden. De leiding ($d=600\unit{m}$) vertrekt in het reservoir met het hoogste waterniveau. Na 3000m splits te leiding in 2 leidingen ($d=300\unit{m}$) van elk 3000m lang. Deze leidingen komen beide aan in het tweede reservoir. 
-		
-Als de wrijvingsfactor gelijk is aan 0.04 bepaal dan het totale volumedebiet. 
+	\label{turbulent laminair}
+	Twee open water reservoirs ($\rho=1000\unit{kg/m^3}$, $\nu=1\unit{mm^2/s}$) zijn met elkaar verbonden door een leiding met diameter 100mm en lengte 200m en een leiding met diameter 10mm en lengte 20m. De ruwheid van beide leidingen is 0.01mm
+	
+Bepaal het debiet door elk van de leidingen indien het hoogteverschil tussen de 2 water niveau's 0.1m bedraagt en je de lokale verliezen aan in en uitlaat mag verwaarlozen.
 \end{toepassing}
-\begin{antwoord}{\ref{gesplitste leiding}}
-		$\dot{V} = 0.723\unit{m^3/s}$
-\end{antwoord}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{toepassing}[*]
-	\label{3reservoirs}
-Drie open reservoir zijn verbonden zoals op onderstaande afbeelding. De wrijvingsfactor van de drie leidingen is 0.032. In en uitstroom verliezen worden verwaarloosd.
-		
-Bepaal het debiet in alle drie de leidingen en de overdruk in het knooppunt.
-		
-	\centering
-	\includegraphics{fig/leidingnetwerken/3reservoirs}
-\end{toepassing}
-\begin{antwoord}{\ref{3reservoirs}}
-		$\dot{V}_1 = 764\unit{l/min}$, $\dot{V}_2 = 128\unit{l/min}$, $\dot{V}_3 = 893\unit{l/min}$, $p=-31.6\unit{kPa}$
-\end{antwoord}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{toepassing}[*]
-	\label{hoogteverschil}
-Een hoofdleiding met een diameter van 675mm loopt horizontaal over 1500m en splitst dan in 2 dezelfde leidingen $d=450\unit{mm}$ en $l=3000\unit{m}$. Beide leidingen zijn open op het einde en komen op de zelfde eindhoogte uit, maar één van de twee leidingen heeft ook openingen in de zijwand. Hierdoor gaat de helft van het water afgevoerd worden over de totale lengte van de leiding.
-
-Als de wrijvingsfactor 0.024 is voor alle leidingen en het debiet is 0.28\unit{m^3/s} in de hoofdleiding, bereken dan het hoogteverschil tussen het vloeistof oppervlak en de plaats waar de vloeistof in de atmosfeer komt. Men mag de vertragingsverliezen verwaarlozen.
-\end{toepassing}
-\begin{antwoord}{\ref{hoogteverschil}}
-	$\Delta h = 6.42\unit{m}$
+\begin{antwoord}{\ref{turbulent laminair}}
+	$\dot{V}_1 = 88\unit{l/min}$, $\dot{V}_2 = 0.72\unit{l/min}$
 \end{antwoord}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{toepassing}
-	\label{geperforeerde leiding}
-Een open reservoir voedt een leiding van 300m lang, diameter 200mm. Deze leiding splitst in 2 gelijke leidingen 150mm in diameter en 150m lang. Beide leidingen zijn open op het einde en bevinden zich beide op een hoogte van 15m onder het vloeistofoppervlak van het reservoir. Eén leiding heeft een uniforme afvoer langs de zijwand en verliest over de volledige lengte de helft van de hoeveelheid water door die leiding. De wrijvingsfactor is 0.024 voor beide leidingen. Alle lokale verliezen mogen verwaarloosd worden.
+	\label{gesplitste gelijke leidingen}
+Twee open water reservoirs ($\rho=1000\unit{kg/m^3}$, $\nu=1\unit{mm^2/s}$), waarvan het verschil tussen de twee vloeistofniveaus 6 meter is, zijn door een leiding met elkaar verbonden. De leiding ($d=600\unit{m}$) vertrekt in het reservoir met het hoogste waterniveau. Na 3000m splitst de leiding in 2 leidingen ($d=300\unit{m}$) van elk 3000m lang. Deze leidingen komen beide aan in het tweede reservoir. 
+		
+Als de wrijvingsfactor gelijk is aan 0.04 bepaal dan het totale volumedebiet. 
+\end{toepassing}
+\begin{antwoord}{\ref{gesplitste gelijke leidingen}}
+	$\dot{V} = 0.723\unit{m^3/s}$
+\end{antwoord}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{toepassing}[*]
+	\label{gesplitste ongelijke leidingen}
+Een open water reservoirs ($\rho=1000\unit{kg/m^3}$, $\nu=1\unit{mm^2/s}$), stroomt leeg via een leiding met een diameter van 200mm. Na 20m splitst de leiding in 2 leidingen waarvan de eerste een diameter van 120mm heeft en de tweede een diameter van 80mm. Na 10m stromen beide leidingen vrij uit in de atmosfeer op een hoogte 10m onder het waterniveau in het reservoir. Alle leidingen hebben een ruwheid van 0.01mm.
+
+Bepaal het debiet in elke leiding, verwaarloos lokale verliezen.
+\end{toepassing}
+\begin{antwoord}{\ref{gesplitste ongelijke leidingen}}
+	$\dot{V}_0 = 0.151\unit{m^3/s}$, $\dot{V}_1 = 0.112\unit{m^3/s}$, $\dot{V}_2 = 0.039\unit{m^3/s}$
+\end{antwoord}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{toepassing}[*]
+	\label{geperforeerde leiding debiet}
+Een open water reservoir ($\rho=1000\unit{kg/m^3}$, $\nu=1\unit{mm^2/s}$) voedt een leiding van 300m lang, diameter 200mm. Deze leiding splitst in 2 gelijke leidingen 150mm in diameter en 150m lang. Beide leidingen zijn open op het einde en bevinden zich beide op een hoogte van 15m onder het vloeistofoppervlak van het reservoir. Eén leiding heeft een uniforme afvoer langs de zijwand en verliest over de volledige lengte de helft van de hoeveelheid water door die leiding. De wrijvingsfactor is 0.024 voor beide leidingen. Alle lokale verliezen mogen verwaarloosd worden.
 		
 Bereken het volumedebiet van de twee leidingen afzonderlijk. 
 \end{toepassing}
-\begin{antwoord}{\ref{geperforeerde leiding}}
+\begin{antwoord}{\ref{geperforeerde leiding debiet}}
 	$\dot{V}_1 = 0.034\unit{m^3/s}$, $\dot{V}_2 = 0.045\unit{m^3/s}$
 \end{antwoord}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -79,6 +108,19 @@ Bepaal de het debiet door de twee boringen indien in de hoofdleiding een debiet 
 \end{toepassing}
 \begin{antwoord}{\ref{grondwarmtewisselaar}}
 	$\dot{V}_{1} = 11.6\unit{l/min}$, $\dot{V}_{2} = 8.4\unit{l/min}$
+\end{antwoord}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{toepassing}[*]
+	\label{3reservoirs}
+Drie open water reservoirs ($\rho=1000\unit{kg/m^3}$, $\nu=1\unit{mm^2/s}$) zijn verbonden zoals op onderstaande afbeelding. De wrijvingsfactor van de drie leidingen is 0.032. In en uitstroom verliezen worden verwaarloosd.
+		
+Bepaal het debiet in alle drie de leidingen en de overdruk in het knooppunt.
+		
+	\centering
+	\includegraphics{fig/leidingnetwerken/3reservoirs}
+\end{toepassing}
+\begin{antwoord}{\ref{3reservoirs}}
+		$\dot{V}_1 = 764\unit{l/min}$, $\dot{V}_2 = 128\unit{l/min}$, $\dot{V}_3 = 893\unit{l/min}$, $p=-31.6\unit{kPa}$
 \end{antwoord}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Antwoorden}
