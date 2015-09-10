@@ -1,5 +1,5 @@
 % vaak gebruikte packages, nederlands
-\usepackage[margin=2.5cm]{geometry}            % Marges instellen
+\usepackage[margin=2.5cm]{geometry}     % Marges instellen
 \usepackage[dutch]{babel}               % Voor nederlandstalige hyphenatie (woordsplitsing)
 \usepackage{amsmath,amsthm}             % Uitgebreide wiskundige mogelijkheden
 \usepackage{url}                        % Om url's te verwerken
@@ -36,6 +36,15 @@
 \fancyhead[RO] {\rightmark}
 \fancyhead[LE] {\leftmark}
 \fancyfoot[RO,LE] {\thepage}
+
+% no dot after chapter number
+\renewcommand{\chaptermark}[1]{
+	\markboth{\MakeUppercase{ \chaptername\ \thechapter\quad #1}}{}
+}
+% no dot after section number
+\renewcommand{\sectionmark}[1]{
+	\markright{\MakeUppercase{ \thesection\quad #1}}{}
+}
 
 % page header and footer style in mainmatter aanpassen
 \let\newmainmatter\mainmatter
