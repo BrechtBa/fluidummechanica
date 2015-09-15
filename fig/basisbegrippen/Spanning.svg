@@ -2,6 +2,7 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
+   xmlns:ns0="http://www.iki.fi/pav/software/textext/"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -22,9 +23,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="184.93244"
-     inkscape:cy="108.51265"
+     inkscape:zoom="2.8"
+     inkscape:cx="137.16682"
+     inkscape:cy="135.46896"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -114,27 +115,45 @@
        id="path4391"
        d="m 116.67239,925.06352 9.00884,-43.78711"
        style="fill:none;stroke:#000000;stroke-width:1.41732287;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)" />
-    <text
+    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="content"
+       transform="matrix(1.25,0,0,-1.25,-150,1767.5)"
        xml:space="preserve"
-       style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-       x="129.2386"
-       y="887.20215"
-       id="text2994"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan2996"
-         x="129.2386"
-         y="887.20215">$\sigma$</tspan></text>
-    <text
+       stroke-miterlimit="10.433"
+       font-style="normal"
+       font-variant="normal"
+       font-weight="normal"
+       font-stretch="normal"
+       font-size-adjust="none"
+       letter-spacing="normal"
+       word-spacing="normal"
+       ns0:text="$\\sigma$"
+       ns0:preamble="D:\\Onderwijs\\FLUI\\Cursus\\FLUI_theorie\\tex\\commands.tex">
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 228.59,710.83 0.01,0 0.01,0 0.02,0 0.01,0 0.02,0 0.02,0 0.02,0 0.02,0.01 0.02,0 0.02,0 0.02,0 0.02,0.01 0.02,0 0.02,0.01 0.02,0 0.02,0.01 0.02,0.01 0.02,0.01 0.02,0.01 0.01,0.01 0.02,0.02 0.02,0.01 0,0.01 0.01,0.01 0.01,0 0.01,0.01 0,0.01 0.01,0.01 0,0.01 0.01,0.01 0,0.01 0.01,0.01 0,0.01 0.01,0.02 0,0.01 0,0.01 0.01,0.01 0,0.02 0,0.01 0,0.02 0,0.01 0,0.02 c 0,0.24 -0.21,0.24 -0.39,0.24 h -2.26 c -1.51,0 -2.61,-1.64 -2.61,-2.82 0,-0.88 0.59,-1.57 1.49,-1.57 l 0.01,0.21 c -0.49,0 -0.88,0.36 -0.88,1.08 0,0.29 0.12,1.11 0.47,1.7 0.41,0.68 1.01,0.82 1.35,0.82 0.83,0 0.91,-0.66 0.91,-0.96 0,-0.47 -0.2,-1.28 -0.53,-1.79 -0.39,-0.59 -0.93,-0.85 -1.32,-0.85 h 0 l -0.01,-0.21 c 1.18,0 2.5,1.2 2.5,2.73 0,0.17 0,0.64 -0.31,1.08 z"
+   id="path3012" />
+</g>    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       ns0:preamble="D:\\Onderwijs\\FLUI\\Cursus\\FLUI_theorie\\tex\\commands.tex"
+       ns0:text="$\\tau$"
+       word-spacing="normal"
+       letter-spacing="normal"
+       font-size-adjust="none"
+       font-stretch="normal"
+       font-weight="normal"
+       font-variant="normal"
+       font-style="normal"
+       stroke-miterlimit="10.433"
        xml:space="preserve"
-       style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-       x="187.82745"
-       y="937.18439"
-       id="text2998"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3000"
-         x="187.82745"
-         y="937.18439">$\tau$</tspan></text>
-  </g>
+       transform="matrix(1.25,0,0,-1.25,-90.357143,1820.3571)"
+       id="g3052">
+<path
+   id="path3054"
+   d="m 226.36,710.83 h 1.67 c 0.13,0 0.49,0 0.49,0.34 0,0.24 -0.21,0.24 -0.4,0.24 h -2.79 c -0.2,0 -0.59,0 -1.02,-0.47 -0.33,-0.36 -0.61,-0.84 -0.61,-0.89 0,-0.01 0,-0.1 0.12,-0.1 0.08,0 0.1,0.04 0.16,0.12 0.49,0.76 1.05,0.76 1.26,0.76 h 0.83 l -0.98,-3.19 c -0.04,-0.12 -0.1,-0.33 -0.1,-0.37 0,-0.11 0.07,-0.26 0.29,-0.26 0.33,0 0.38,0.27 0.41,0.42 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+</g>  </g>
 </svg>

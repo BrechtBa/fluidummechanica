@@ -2,6 +2,7 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
+   xmlns:ns0="http://www.iki.fi/pav/software/textext/"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -22,11 +23,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="316.21395"
-     inkscape:cy="96.815703"
+     inkscape:zoom="1.4"
+     inkscape:cx="214.00047"
+     inkscape:cy="37.709077"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g3062"
      showgrid="false"
      units="mm"
      inkscape:window-width="1366"
@@ -76,6 +77,34 @@
          id="path3096"
          inkscape:connector-curvature="0" />
     </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Mend-1"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         id="path5215-7"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker3251"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         id="path3253"
+         inkscape:connector-curvature="0" />
+    </marker>
   </defs>
   <metadata
      id="metadata3014">
@@ -85,7 +114,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -217,40 +246,89 @@
            sodipodi:nodetypes="cccc" />
       </g>
       <g
-         id="g3083">
-        <path
-           inkscape:connector-curvature="0"
-           id="path3129"
-           d="m 125.63291,931.53695 0,-24.80318"
-           style="fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)" />
+         id="g3225"
+         transform="translate(0.49242397,-4.4283232)">
         <path
            style="fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
-           d="m 125.63291,931.53695 24.80315,0"
-           id="path3131"
+           d="m 125.63291,931.53695 0,-24.80318"
+           id="path3227"
            inkscape:connector-curvature="0" />
-        <text
+        <path
+           inkscape:connector-curvature="0"
+           id="path3229"
+           d="m 125.63291,931.53695 24.80315,0"
+           style="fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)" />
+        <g
+           id="content"
+           transform="matrix(1.25,0,0,-1.25,-129.4447,1813.064)"
            xml:space="preserve"
-           style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-           x="150.89285"
-           y="930.2193"
-           id="text3024"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             id="tspan3026"
-             x="150.89285"
-             y="930.2193">$x'$</tspan></text>
-        <text
+           stroke="black"
+           stroke-linecap="butt"
+           stroke-linejoin="miter"
+           stroke-miterlimit="10.433"
+           stroke-dasharray="none"
+           stroke-dashoffset="0"
+           stroke-opacity="1"
+           fill="none"
+           fill-rule="evenodd"
+           fill-opacity="1"
+           font-style="normal"
+           font-variant="normal"
+           font-weight="normal"
+           font-stretch="normal"
+           font-size-adjust="none"
+           letter-spacing="normal"
+           word-spacing="normal"
+           text-anchor="start"
+           ns0:text="$x\'$"
+           ns0:preamble="D:\\Onderwijs\\FLUI\\Cursus\\FLUI_theorie\\tex\\commands.tex"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0">
+<path
+   d="M226.76,710.13 L226.76,710.15 L226.77,710.18 L226.78,710.21 L226.79,710.25 L226.8,710.29 L226.81,710.33 L226.82,710.37 L226.84,710.42 L226.85,710.46 L226.87,710.51 L226.89,710.56 L226.91,710.61 L226.93,710.66 L226.96,710.71 L226.98,710.76 L227.01,710.81 L227.04,710.86 L227.07,710.9 L227.1,710.95 L227.14,710.99 L227.18,711.04 L227.22,711.08 L227.26,711.12 L227.3,711.15 L227.35,711.18 L227.4,711.21 L227.42,711.22 L227.45,711.24 L227.47,711.25 L227.5,711.26 L227.53,711.27 L227.56,711.27 L227.59,711.28 L227.61,711.29 L227.65,711.29 L227.68,711.29 L227.71,711.3 L227.74,711.3 C227.79,711.3,228.03,711.3,228.24,711.17 C227.96,711.12,227.76,710.87,227.76,710.63 C227.76,710.47,227.87,710.28,228.14,710.28 C228.36,710.28,228.68,710.46,228.68,710.86 C228.68,711.38,228.09,711.52,227.75,711.52 C227.17,711.52,226.82,710.99,226.71,710.76 C226.46,711.42,225.92,711.52,225.63,711.52 C224.6,711.52,224.03,710.23,224.03,709.99 C224.03,709.89,224.13,709.89,224.15,709.89 C224.23,709.89,224.26,709.91,224.28,710 C224.62,711.05,225.27,711.3,225.61,711.3 C225.8,711.3,226.15,711.21,226.15,710.63 C226.15,710.32,225.98,709.66,225.61,708.27 C225.45,707.65,225.1,707.23,224.67,707.23 C224.61,707.23,224.38,707.23,224.17,707.36 C224.42,707.41,224.64,707.62,224.64,707.9 C224.64,708.17,224.42,708.25,224.27,708.25 C223.97,708.25,223.72,707.99,223.72,707.67 C223.72,707.21,224.22,707.02,224.66,707.02 C225.31,707.02,225.67,707.71,225.7,707.77 C225.82,707.4,226.18,707.02,226.77,707.02 C227.8,707.02,228.37,708.3,228.37,708.55 C228.37,708.65,228.28,708.65,228.25,708.65 C228.16,708.65,228.14,708.6,228.12,708.54 C227.79,707.47,227.11,707.23,226.79,707.23 C226.41,707.23,226.25,707.55,226.25,707.89 C226.25,708.11,226.31,708.33,226.42,708.76 Z "
+   stroke-width="0"
+   fill="black"
+   id="path3329" />
+<path
+   d="M231.15,714.02 L231.15,714.03 L231.16,714.04 L231.16,714.05 L231.16,714.06 L231.17,714.07 L231.17,714.08 L231.18,714.09 L231.18,714.1 L231.18,714.11 L231.18,714.12 L231.19,714.12 L231.19,714.13 L231.19,714.14 L231.19,714.15 L231.2,714.15 L231.2,714.16 L231.2,714.17 L231.2,714.17 L231.2,714.18 L231.2,714.18 L231.2,714.19 L231.2,714.2 L231.21,714.2 L231.21,714.21 L231.21,714.22 L231.21,714.23 L231.21,714.24 L231.21,714.24 C231.21,714.46,231.01,714.63,230.8,714.63 C230.53,714.63,230.45,714.41,230.41,714.3 L229.49,711.29 C229.49,711.28,229.46,711.18,229.46,711.18 C229.46,711.09,229.68,711.03,229.73,711.03 C229.78,711.03,229.79,711.04,229.84,711.14 Z "
+   stroke-width="0"
+   fill="black"
+   id="path3331" />
+</g>        <g
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+           ns0:preamble="D:\\Onderwijs\\FLUI\\Cursus\\FLUI_theorie\\tex\\commands.tex"
+           ns0:text="$y\'$"
+           text-anchor="start"
+           word-spacing="normal"
+           letter-spacing="normal"
+           font-size-adjust="none"
+           font-stretch="normal"
+           font-weight="normal"
+           font-variant="normal"
+           font-style="normal"
+           fill-opacity="1"
+           fill-rule="evenodd"
+           fill="none"
+           stroke-opacity="1"
+           stroke-dashoffset="0"
+           stroke-dasharray="none"
+           stroke-miterlimit="10.433"
+           stroke-linejoin="miter"
+           stroke-linecap="butt"
+           stroke="black"
            xml:space="preserve"
-           style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-           x="127.9774"
-           y="907.30951"
-           id="text3024-1"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             id="tspan3026-7"
-             x="127.9774"
-             y="907.30951">$y'$</tspan></text>
-      </g>
+           transform="matrix(1.25,0,0,-1.25,-150.87327,1791.9926)"
+           id="g3428">
+<path
+   id="path3430"
+   fill="black"
+   stroke-width="0"
+   d="M228.27,710.91 L228.27,710.92 L228.27,710.92 L228.27,710.93 L228.27,710.93 L228.28,710.95 L228.28,710.96 L228.28,710.97 L228.29,710.98 L228.29,710.99 L228.29,710.99 L228.29,711 L228.29,711.01 L228.3,711.02 L228.3,711.03 L228.3,711.03 L228.3,711.04 L228.3,711.04 L228.3,711.05 L228.3,711.06 L228.3,711.06 L228.3,711.07 L228.3,711.07 L228.31,711.08 L228.31,711.09 L228.31,711.1 L228.31,711.11 L228.31,711.12 L228.31,711.13 L228.31,711.13 L228.31,711.14 C228.31,711.32,228.17,711.41,228.02,711.41 C227.92,711.41,227.76,711.35,227.67,711.2 C227.65,711.15,227.57,710.84,227.53,710.66 C227.46,710.4,227.39,710.14,227.33,709.87 L226.88,708.08 C226.85,707.93,226.42,707.23,225.76,707.23 C225.25,707.23,225.14,707.67,225.14,708.04 C225.14,708.5,225.31,709.11,225.65,709.99 C225.81,710.39,225.85,710.5,225.85,710.7 C225.85,711.15,225.53,711.52,225.03,711.52 C224.09,711.52,223.72,710.08,223.72,709.99 C223.72,709.89,223.82,709.89,223.84,709.89 C223.94,709.89,223.95,709.91,224,710.07 C224.27,711,224.67,711.3,225,711.3 C225.08,711.3,225.25,711.3,225.25,710.98 C225.25,710.73,225.15,710.47,225.08,710.28 C224.69,709.23,224.51,708.66,224.51,708.2 C224.51,707.31,225.13,707.02,225.72,707.02 C226.11,707.02,226.45,707.18,226.73,707.46 C226.6,706.95,226.48,706.46,226.08,705.93 C225.82,705.59,225.44,705.31,224.98,705.31 C224.85,705.31,224.4,705.34,224.23,705.72 C224.39,705.72,224.52,705.72,224.66,705.84 C224.76,705.93,224.85,706.06,224.85,706.25 C224.85,706.56,224.59,706.6,224.49,706.6 C224.26,706.6,223.93,706.44,223.93,705.95 C223.93,705.46,224.37,705.09,224.98,705.09 C226.01,705.09,227.03,705.99,227.31,707.11 Z " />
+<path
+   id="path3432"
+   fill="black"
+   stroke-width="0"
+   d="M230.69,714.02 L230.7,714.03 L230.7,714.04 L230.71,714.05 L230.71,714.06 L230.72,714.07 L230.72,714.08 L230.72,714.09 L230.73,714.1 L230.73,714.11 L230.73,714.12 L230.74,714.12 L230.74,714.13 L230.74,714.14 L230.74,714.15 L230.74,714.15 L230.75,714.16 L230.75,714.17 L230.75,714.17 L230.75,714.18 L230.75,714.18 L230.75,714.19 L230.75,714.2 L230.75,714.2 L230.75,714.21 L230.75,714.22 L230.76,714.23 L230.76,714.24 L230.76,714.24 C230.76,714.46,230.56,714.63,230.35,714.63 C230.08,714.63,230,714.41,229.96,714.3 L229.04,711.29 C229.04,711.28,229.01,711.18,229.01,711.18 C229.01,711.09,229.22,711.03,229.28,711.03 C229.33,711.03,229.34,711.04,229.38,711.14 Z " />
+</g>      </g>
     </g>
     <g
        transform="translate(186.6947,105.52865)"
@@ -265,28 +343,56 @@
          d="m 125.63291,931.53695 24.80315,0"
          id="path3021"
          inkscape:connector-curvature="0" />
-      <text
+      <g
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         id="g3336"
+         transform="matrix(1.25,0,0,-1.25,-129.4447,1813.064)"
          xml:space="preserve"
-         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-         x="150.89285"
-         y="930.2193"
-         id="text3023"
-         sodipodi:linespacing="125%"><tspan
-           sodipodi:role="line"
-           id="tspan3025"
-           x="150.89285"
-           y="930.2193">$x$</tspan></text>
-      <text
+         stroke-miterlimit="10.433"
+         font-style="normal"
+         font-variant="normal"
+         font-weight="normal"
+         font-stretch="normal"
+         font-size-adjust="none"
+         letter-spacing="normal"
+         word-spacing="normal"
+         ns0:text="$x$"
+         ns0:preamble="D:\\Onderwijs\\FLUI\\Cursus\\FLUI_theorie\\tex\\commands.tex">
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 226.76,710.13 0,0.02 0.01,0.03 0.01,0.03 0.01,0.04 0.01,0.04 0.01,0.04 0.01,0.04 0.02,0.05 0.01,0.04 0.02,0.05 0.02,0.05 0.02,0.05 0.02,0.05 0.03,0.05 0.02,0.05 0.03,0.05 0.03,0.05 0.03,0.04 0.03,0.05 0.04,0.04 0.04,0.05 0.04,0.04 0.04,0.04 0.04,0.03 0.05,0.03 0.05,0.03 0.02,0.01 0.03,0.02 0.02,0.01 0.03,0.01 0.03,0.01 0.03,0 0.03,0.01 0.02,0.01 0.04,0 0.03,0 0.03,0.01 0.03,0 c 0.05,0 0.29,0 0.5,-0.13 -0.28,-0.05 -0.48,-0.3 -0.48,-0.54 0,-0.16 0.11,-0.35 0.38,-0.35 0.22,0 0.54,0.18 0.54,0.58 0,0.52 -0.59,0.66 -0.93,0.66 -0.58,0 -0.93,-0.53 -1.04,-0.76 -0.25,0.66 -0.79,0.76 -1.08,0.76 -1.03,0 -1.6,-1.29 -1.6,-1.53 0,-0.1 0.1,-0.1 0.12,-0.1 0.08,0 0.11,0.02 0.13,0.11 0.34,1.05 0.99,1.3 1.33,1.3 0.19,0 0.54,-0.09 0.54,-0.67 0,-0.31 -0.17,-0.97 -0.54,-2.36 -0.16,-0.62 -0.51,-1.04 -0.94,-1.04 -0.06,0 -0.29,0 -0.5,0.13 0.25,0.05 0.47,0.26 0.47,0.54 0,0.27 -0.22,0.35 -0.37,0.35 -0.3,0 -0.55,-0.26 -0.55,-0.58 0,-0.46 0.5,-0.65 0.94,-0.65 0.65,0 1.01,0.69 1.04,0.75 0.12,-0.37 0.48,-0.75 1.07,-0.75 1.03,0 1.6,1.28 1.6,1.53 0,0.1 -0.09,0.1 -0.12,0.1 -0.09,0 -0.11,-0.05 -0.13,-0.11 -0.33,-1.07 -1.01,-1.31 -1.33,-1.31 -0.38,0 -0.54,0.32 -0.54,0.66 0,0.22 0.06,0.44 0.17,0.87 z"
+   id="path3066" />
+</g>      <g
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         ns0:preamble="D:\\Onderwijs\\FLUI\\Cursus\\FLUI_theorie\\tex\\commands.tex"
+         ns0:text="$y$"
+         text-anchor="start"
+         word-spacing="normal"
+         letter-spacing="normal"
+         font-size-adjust="none"
+         font-stretch="normal"
+         font-weight="normal"
+         font-variant="normal"
+         font-style="normal"
+         fill-opacity="1"
+         fill-rule="evenodd"
+         fill="none"
+         stroke-opacity="1"
+         stroke-dashoffset="0"
+         stroke-dasharray="none"
+         stroke-miterlimit="10.433"
+         stroke-linejoin="miter"
+         stroke-linecap="butt"
+         stroke="black"
          xml:space="preserve"
-         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-         x="127.9774"
-         y="907.30951"
-         id="text3027"
-         sodipodi:linespacing="125%"><tspan
-           sodipodi:role="line"
-           id="tspan3029"
-           x="127.9774"
-           y="907.30951">$y$</tspan></text>
-    </g>
+         transform="matrix(1.25,0,0,-1.25,-150.87327,1791.9926)"
+         id="g3179">
+<path
+   id="path3181"
+   fill="black"
+   stroke-width="0"
+   d="M228.27,710.91 L228.27,710.92 L228.27,710.92 L228.27,710.93 L228.27,710.93 L228.28,710.95 L228.28,710.96 L228.28,710.97 L228.29,710.98 L228.29,710.99 L228.29,710.99 L228.29,711 L228.29,711.01 L228.3,711.02 L228.3,711.03 L228.3,711.03 L228.3,711.04 L228.3,711.04 L228.3,711.05 L228.3,711.06 L228.3,711.06 L228.3,711.07 L228.3,711.07 L228.31,711.08 L228.31,711.09 L228.31,711.1 L228.31,711.11 L228.31,711.12 L228.31,711.13 L228.31,711.13 L228.31,711.14 C228.31,711.32,228.17,711.41,228.02,711.41 C227.92,711.41,227.76,711.35,227.67,711.2 C227.65,711.15,227.57,710.84,227.53,710.66 C227.46,710.4,227.39,710.14,227.33,709.87 L226.88,708.08 C226.85,707.93,226.42,707.23,225.76,707.23 C225.25,707.23,225.14,707.67,225.14,708.04 C225.14,708.5,225.31,709.11,225.65,709.99 C225.81,710.39,225.85,710.5,225.85,710.7 C225.85,711.15,225.53,711.52,225.03,711.52 C224.09,711.52,223.72,710.08,223.72,709.99 C223.72,709.89,223.82,709.89,223.84,709.89 C223.94,709.89,223.95,709.91,224,710.07 C224.27,711,224.67,711.3,225,711.3 C225.08,711.3,225.25,711.3,225.25,710.98 C225.25,710.73,225.15,710.47,225.08,710.28 C224.69,709.23,224.51,708.66,224.51,708.2 C224.51,707.31,225.13,707.02,225.72,707.02 C226.11,707.02,226.45,707.18,226.73,707.46 C226.6,706.95,226.48,706.46,226.08,705.93 C225.82,705.59,225.44,705.31,224.98,705.31 C224.85,705.31,224.4,705.34,224.23,705.72 C224.39,705.72,224.52,705.72,224.66,705.84 C224.76,705.93,224.85,706.06,224.85,706.25 C224.85,706.56,224.59,706.6,224.49,706.6 C224.26,706.6,223.93,706.44,223.93,705.95 C223.93,705.46,224.37,705.09,224.98,705.09 C226.01,705.09,227.03,705.99,227.31,707.11 Z " />
+</g>    </g>
   </g>
 </svg>
