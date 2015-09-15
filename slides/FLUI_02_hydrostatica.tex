@@ -1,19 +1,11 @@
 \documentclass[t]{beamer}
 
 \input{../tex/beamer_packages}
-\graphicspath{{../fig/hydrostatica/}}
+\input{../tex/commands}
 
-\title{Fluïdummechanica}
 \subtitle{Hydrostatica}
-\author{Brecht Baeten\inst{1}}
-\institute{
-	\inst{1}%
-  		KU Leuven, Technologie campus Diepenbeek, e-mail: brecht.baeten@kuleuven.be
-}
-\date{\today}
 
 \begin{document}
-
 	\frame{\titlepage}
 	\section{Inleiding}
 		\begin{frame}
@@ -23,18 +15,49 @@
 			\footnotesize{Bron: http://visitmt.com/}
 			% Hungry horse dam, Montana
   		\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   	\section{Hydrostatische druk}	
   		\begin{frame}
 			\frametitle{Druk}
 			\vspace{1cm}
 			\center
-			\includesvg{../fig/hydrostatica/oppervlak_in_stilstaande_vloeistof}
+			\includegraphics{../fig/hydrostatica/oppervlak_in_stilstaande_vloeistof}
   		\end{frame}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   	\section{Hydrostatische krachten}		
 		\begin{frame}
-			\frametitle{Krachten}
+			\frametitle{Krachten op rechte oppervlakken}
+			\center
+			\includegraphics[scale=0.9]{../fig/hydrostatica/grafische_weergave_integraal}
+			\begin{itemize}
+				\item<2-> De resultante kracht is het volume van de figuur gevormd door de druk op het oppervlak uit te zetten
+				\item<3-> Het aangrijpingspunt is de projectie van het zwaartepunt van de figuur gevormd door de druk op het oppervlak uit te zetten
+			\end{itemize}
+  		\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  		\begin{frame}
+			\frametitle{Voorbeeld}
 			\vspace{1cm}
 			\center
-			\includesvg{../fig/hydrostatica/kracht_gebogen_oppervlak_vereenvoudigd_3d}
+			\includegraphics{../fig/hydrostatica/kracht_op_luik}
+			
+			Bereken de resulterende kracht en het aangrijpingspunt
+		\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+  		\begin{frame}
+			\frametitle{Krachten op gebogen oppervlakken oppervlakken}
+			\center
+			\includegraphics[scale=0.9]{../fig/hydrostatica/kracht_gebogen_oppervlak_vereenvoudigd_3d}
+			\onslide<2->{
+				\begin{equation}
+					\diff F_r = -p \vt{n} \cdot \vt{r} \diff A
+				\end{equation}
+			}
+			\vspace{-0.7cm}
+			\begin{itemize}
+				\item<3-> De horizontale kracht is gelijk aan de horizontale kracht op de verticale projectie van het oppervlak
+				\item<4-> De verticale kracht is gelijk aan het gewicht van het fluïdum dat zich boven het oppervlak kan bevinden
+			\end{itemize}
   		\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
