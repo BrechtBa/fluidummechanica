@@ -1,33 +1,25 @@
 \documentclass[t]{beamer}
 
 \input{../tex/beamer_packages}
-\graphicspath{{../fig/controlevolumes/}}
+\input{../tex/commands}
 
-\title{Fluïdummechanica}
-\subtitle{Hydrostatica}
-\author{Brecht Baeten\inst{1}}
-\institute{
-	\inst{1}%
-  		KU Leuven, Technologie campus Diepenbeek, e-mail: brecht.baeten@kuleuven.be
-}
-\date{\today}
+\subtitle{Controle volumes}
 
 \begin{document}
 
 	\frame{\titlepage}
 	\section{Inleiding}
 		\begin{frame}
-		
 			\frametitle{Voorbeeld}
 			\center
     		\includegraphics[height=0.8\textheight]{../fig/controlevolumes/space_shuttle.jpg}\\
 			\footnotesize{Bron: http://www.nasa.gov/}
-			
   		\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   	\section{Controle massa's}	
   		\begin{frame}
-			\frametitle{Mechanica}
+			\frametitle{Mechanica en Thermodynamica}
+			\vspace{1cm}
 			\pause 
 			Behoud van massa
 			\begin{equation}
@@ -50,15 +42,63 @@
   	\section{Controle volumes}	
   		\begin{frame}
 			\frametitle{Controlevolume}
-			\vspace{1cm}
 			\center
-			\includesvg{../fig/controlevolumes/Controlevolume_met_stroomlijnen}
+			\includegraphics{../fig/controlevolumes/Controlevolume_met_stroomlijnen}
   		\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   		\begin{frame}
 			\frametitle{Behoud van massa}
 			\vspace{2cm}
+			\begin{equation*}
+				\left[
+					\begin{array}{c}
+						\mbox{De verandering} \\ \mbox{van massa in} \\ \mbox{het controlevolume}
+					\end{array}
+				\right]
+				+
+				\left[
+					\begin{array}{c}
+						\mbox{De netto} \\ \mbox{massastroom uit} \\ \mbox{het controlevolume}
+					\end{array}
+				\right]
+				= 0
+			\end{equation*}
+		\end{frame}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\begin{frame}
+			\frametitle{Massastroom}
+			\vspace{1cm}
+			\center
+			\includegraphics{../fig/controlevolumes/massastroom}
+  		\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  		\begin{frame}
+  			\frametitle{Massastroom}
+  			\begin{equation*}
+				\Delta m = \rho \Delta x_{\perp} \diff A
+			\end{equation*}
+  			
+  			\pause
+  			\begin{equation*}
+				\Delta m = \rho v_{\perp} \Delta t \diff A
+			\end{equation*}
+			
+			\pause
+  			\begin{equation*}
+				\frac{\Delta m}{\Delta t} = \rho v_{\perp} \diff A
+			\end{equation*}
+			
+			\pause
 			\begin{equation}
+				\diff \dot{m}  = \rho v_{\perp} \diff A
+				\label{eqn:massastroom}
+			\end{equation}
+  		\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\begin{frame}
+			\frametitle{Behoud van massa}
+			\vspace{1cm}
+			\begin{equation*}
 				\left[
 					\begin{array}{c}
 						\mbox{De verandering} \\ \mbox{van massa in} \\ \mbox{het controlevolume}
@@ -72,43 +112,19 @@
 				\right]
 				= 0
 				\label{eqn:controlevolume,behoud van massa,woorden}
+			\end{equation*}
+			\vspace{1cm}
+			\pause
+			\begin{equation}
+				\frac{\diff m_{CV}}{\diff t} + \dot{m}_{\partial CV} = 0
+				\label{eqn:controlevolume,behoud van massa}
 			\end{equation}
 		\end{frame}	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		\begin{frame}
-			\frametitle{Massastroom}
-			\vspace{1cm}
-			\center
-			\includesvg{../fig/controlevolumes/massastroom}
-  		\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  		\begin{frame}
-  			\frametitle{Massastroom}
-  			\begin{equation}
-				\Delta m = \rho \Delta x_{\perp} \diff A
-			\end{equation}
-  			
-  			\pause
-  			\begin{equation}
-				\Delta m = \rho v_{\perp} \Delta t \diff A
-			\end{equation}
-			
-			\pause
-  			\begin{equation}
-				\frac{\Delta m}{\Delta t} = \rho v_{\perp} \diff A
-			\end{equation}
-			
-			\pause
-			\begin{equation}
-				\diff \dot{m}  = \rho v_{\perp} \diff A
-				\label{eqn:massastroom}
-			\end{equation}
-  		\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   		\begin{frame}
 			\frametitle{Behoud van impuls}
-			\vspace{1.5cm}
-			\begin{equation}
+			\vspace{0.7cm}
+			\begin{equation*}
 				\left[
 					\begin{array}{c}
 						\mbox{De verandering} \\ \mbox{van impuls} \\ \mbox{in het}  \\ \mbox{controlevolume}
@@ -126,14 +142,20 @@
 						\mbox{De totale} \\ \mbox{kracht} \\ \mbox{op het} \\ \mbox{controlevolume}
 					\end{array}
 				\right]
-				\label{eqn:controlevolume,behoud van massa,woorden}
+				\label{eqn:controlevolume,behoud van impuls,woorden}
+			\end{equation*}
+			\vspace{1cm}
+			\pause
+			\begin{equation}
+				\frac{\diff \vt{P}_{CV}}{\diff t} + \dot{\vt{P}}_{\partial CV} =  \vt{F}
+				\label{eqn:controlevolume,behoud van impuls}
 			\end{equation}
 		\end{frame}	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   		\begin{frame}
 			\frametitle{Behoud van energie}
-			\vspace{1.3cm}
-			\begin{equation}
+			\vspace{0.5cm}
+			\begin{equation*}
 				\left[
 					\begin{array}{c}
 						\mbox{De verandering} \\ \mbox{van energie} \\ \mbox{in het} \\ \mbox{controlevolume}
@@ -151,8 +173,55 @@
 						\mbox{De warmtesroom} \\ \mbox{toegevoegd en} \\   \mbox{arbeidsstroom} \\ \mbox{onttrokken aan } \\ \mbox{het controlevolume}
 					\end{array}
 				\right]
-				\label{eqn:controlevolume,behoud van massa,woorden}
+				\label{eqn:controlevolume,behoud van energie,woorden}
+			\end{equation*}
+			\vspace{1cm}
+			\pause
+			\begin{equation}
+				\frac{\diff E_{CV}}{\diff t} + \dot{E}_{\partial CV} =  \dot{Q}-\dot{W}
+				\label{eqn:controlevolume,behoud van energie}
 			\end{equation}
 		\end{frame}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Controle volume met één instroming en één uitstroming}	
+  		\begin{frame}
+			\frametitle{Controle volume met één instroming en één uitstroming}
+			\vspace{1cm}
+			\centering
+			\includegraphics{../fig/controlevolumes/Controlevolume_een_in_en_uitstroming}
+		\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  		\begin{frame}
+			\frametitle{Controle volume met één instroming en één uitstroming}
+			\begin{textblock}{5}(0,3)
+            	\includegraphics[width=5cm]{../fig/controlevolumes/Controlevolume_een_in_en_uitstroming}
+        	\end{textblock}
+        	\vspace{2cm}
+			\begin{equation}
+				\rho_i v_{i,\perp} A_i = \rho_u v_{u,\perp} A_u
+				\label{eqn:behoud van massa in een stationair controlevolume met een in en uitstroming}
+			\end{equation}
+			\pause
+			\begin{align}
+				F_{x,R} &= p_{u} A_u n_{x,u} - p_{i} A_i n_{x,i} + \dot{m} (v_{x,u}-v_{x,i}) \nonumber \\
+				F_{y,R} &= p_{u} A_u n_{y,u} - p_{i} A_i n_{y,i} + \dot{m} (v_{y,u}-v_{y,i}) \\
+				F_{z,R} &= p_{u} A_u n_{z,u} - p_{i} A_i n_{z,i} + \dot{m} (v_{z,u}-v_{z,i}) \nonumber
+				\label{eqn:behoud van impuls in een stationair controlevolume met een in en uitstroming geprojecteerd2}
+			\end{align}
+			\pause
+			\begin{equation}
+				\dot{m} (u_u + \frac{p_u}{\rho_u} + \frac{1}{2}v^2_u + g z_u) - \dot{m} (u_i + \frac{p_i}{\rho_i}+ \frac{1}{2}v^2_i + g z_i) = \dot{Q}-\dot{W}_a
+				\label{eqn:behoud van energie in een controlevolume met een in en uitstroming asvermogen}
+			\end{equation}
+		\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\begin{frame}
+			\frametitle{Toepassing}
+			\vspace{1cm}
+			\centering
+			\includegraphics{../fig/controlevolumes/Schoepenrij}
+			
+			Bepaal de horizontale en verticale kracht op één schoep, veronderstel isotherme stroming zonder warmteoverdracht
+		\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}

@@ -206,13 +206,19 @@ In de tweede en derde term van bovenstaande vergelijking staat telkens de combin
 	\label{eqn:behoud van impuls in een stationair controlevolume met een in en uitstroming}
 \end{equation}
 Let wel, de krachten en snelheden voorkomend in deze vergelijking zijn vectoren, de vergelijking is dus een vectorvergelijking en kan geprojecteerd worden in verschillende richtingen. Als voorbeeld wordt (\ref{eqn:behoud van impuls in een stationair controlevolume met een in en uitstroming}) geprojecteerd op de assen van een cartesiaans assenstelsel. We bekomen:
-\begin{eqnarray}
-	F_x = \dot{m} (v_{x,u}-v_{x,i}) \nonumber \\
-	F_y = \dot{m} (v_{y,u}-v_{y,i}) \\
-	F_z = \dot{m} (v_{z,u}-v_{z,i}) \nonumber
+\begin{align}
+	F_x &= \dot{m} (v_{x,u}-v_{x,i}) \nonumber \\
+	F_y &= \dot{m} (v_{y,u}-v_{y,i}) \\
+	F_z &= \dot{m} (v_{z,u}-v_{z,i}) \nonumber
 	\label{eqn:behoud van impuls in een stationair controlevolume met een in en uitstroming geprojecteerd}
-\end{eqnarray}
-Voor het bepalen van de inwerkende krachten moet ook hier rekening gehouden worden met de krachten aan de instroming en de uitstroming. De aan de instroming heersende druk zal namelijk een kracht $F = p A$ uitoefenen op het controlevolume.
+\end{align}
+Voor het bepalen van de inwerkende krachten moet ook hier rekening gehouden worden met de krachten aan de instroming en de uitstroming. De aan de instroming heersende druk zal namelijk een kracht $\vt{F} = p A \vt{n}$ uitoefenen op het controlevolume:
+\begin{align}
+	F_{x,R} &= p_{u} A_u n_{x,u} - p_{i} A_i n_{x,i} + \dot{m} (v_{x,u}-v_{x,i}) \nonumber \\
+	F_{y,R} &= p_{u} A_u n_{y,u} - p_{i} A_i n_{y,i} + \dot{m} (v_{y,u}-v_{y,i}) \\
+	F_{z,R} &= p_{u} A_u n_{z,u} - p_{i} A_i n_{z,i} + \dot{m} (v_{z,u}-v_{z,i}) \nonumber
+	\label{eqn:behoud van impuls in een stationair controlevolume met een in en uitstroming geprojecteerd2}
+\end{align}
 
 We kunnen ook behoud van energie toepassen op het beschouwde controlevolume. De energie kunnen we opsplitsen in inwendige, kinetische en potentiële energie. Deze kunnen we op hun beurt schrijven als de gemiddelde waarde van de specifieke grootheden vermenigvuldigd met de massa:
 \begin{equation}
