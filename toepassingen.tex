@@ -1,7 +1,9 @@
+% Dit werk is gelicenseerd onder de licentie Creative Commons Naamsvermelding-GelijkDelen 4.0 Internationaal. Ga naar http://creativecommons.org/licenses/by-sa/4.0/ om een kopie van de licentie te kunnen lezen.
 \documentclass[11pt,twoside,openright]{book}
 
-\input{tex/packages.tex}
-\input{tex/commands.tex}
+\input{tex/packages}
+\input{tex/packages_tekst}
+\input{tex/packages_toepassingen}
 
 \graphicspath{{fig}}
 
@@ -10,16 +12,17 @@
 	\renewcommand{\labelenumi}{(\roman{enumi})}
 
 	\frontmatter
-
+		\input{tex/copyright}
+		
 	\mainmatter
-		\input{tex/hydrostatica}
-		\input{tex/behoudsvergelijkingen}
-		\input{tex/behoudsvergelijkingen_gecombineerd}
-		\input{tex/gelijkvormigheid}
-		\input{tex/uitwendige_stroming}
-		\input{tex/stroming_in_leidingen}
-		\input{tex/leidingnetwerken}	
+		\input{tex/toepassingen_hydrostatica}
+		\input{tex/toepassingen_behoudsvergelijkingen}
+		\input{tex/toepassingen_behoudsvergelijkingen_gecombineerd}
+		\input{tex/toepassingen_gelijkvormigheid}
+		\input{tex/toepassingen_uitwendige_stroming}
+		\input{tex/toepassingen_stroming_in_leidingen}
+		\input{tex/toepassingen_leidingstelsels}	
 		
 	\backmatter
-		\input{tex/studeerplan}
+		\input{tex/toepassingen_studeerplan}
 \end{document}
