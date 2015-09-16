@@ -1,0 +1,25 @@
+\documentclass[11pt,twoside,openright]{book}
+
+\input{tex/packages.tex}
+\input{tex/commands.tex}
+
+\graphicspath{{fig}}
+
+\begin{document}
+
+	\renewcommand{\labelenumi}{(\roman{enumi})}
+
+	\frontmatter
+
+	\mainmatter
+		\input{tex/hydrostatica}
+		\input{tex/behoudsvergelijkingen}
+		\input{tex/behoudsvergelijkingen_gecombineerd}
+		\input{tex/gelijkvormigheid}
+		\input{tex/uitwendige_stroming}
+		\input{tex/stroming_in_leidingen}
+		\input{tex/leidingnetwerken}	
+		
+	\backmatter
+		\input{tex/studeerplan}
+\end{document}

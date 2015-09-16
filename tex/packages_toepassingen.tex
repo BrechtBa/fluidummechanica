@@ -1,0 +1,110 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[margin=2.5cm]{geometry}     % Marges instellen
+\usepackage[dutch]{babel}               % Voor nederlandstalige hyphenatie (woordsplitsing)
+\usepackage{amsmath,amsthm}             % Uitgebreide wiskundige mogelijkheden
+\usepackage{url}                        % Om url's te verwerken
+\usepackage{graphicx}         			% Om figuren te kunnen verwerken
+\usepackage[utf8]{inputenc}             % Om niet ascii karakters rechtstreeks te kunnen typen
+\usepackage{parskip}					% Om pafagrafen niet te laten inspringen
+\usepackage{collect}					% Om antwoorden achteraan te verzamelen
+\usepackage{multicol}					% Om secties met meerdere kolommen te maken
+\usepackage{fancyhdr}                   % Voor fancy headers en footers
+
+\usepackage[plainpages=false]{hyperref}    % Om hyperlinks te hebben in het pdfdocument.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Algemene instellingen van het document.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% commando's voor Toepassing hoofdstukken in mainmatter
+\addto\captionsdutch{\renewcommand\chaptername{Sessie}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Headers en footers
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[RO] {\rightmark}
+\fancyhead[LE] {\leftmark}
+\fancyfoot[RO,LE] {\thepage}
+
+% no dot after chapter number
+\renewcommand{\chaptermark}[1]{
+	\markboth{\MakeUppercase{ \chaptername\ \thechapter\quad #1}}{}
+}
+
+% page header and footer style in mainmatter aanpassen
+\let\newmainmatter\mainmatter
+\renewcommand{\mainmatter}{
+
+	\pagestyle{fancy}
+	\fancyhf{}
+	\renewcommand{\headrulewidth}{0pt}
+	\fancyhead[RO] {\rightmark}
+	\fancyhead[LE] {\leftmark}
+	\fancyfoot[RO,LE] {\thepage}
+	\fancyfoot[C]{\tiny{Brecht Baeten}}
+
+	\newmainmatter
+}
+\let\newappendix\appendix
+\renewcommand{\appendix}{
+	\fancyfoot{}
+	\fancyfoot[RO,LE] {\thepage}
+	\newappendix
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Environments
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\raggedbottom
+
+% Een enviroment  voor toepassingen
+\newlength{\currentparskip}
+\newcounter{toepassingcounter}[chapter]
+\renewcommand{\thetoepassingcounter}{\thechapter.\arabic{toepassingcounter}}
+\newenvironment{toepassing}[1][]{
+	\refstepcounter{toepassingcounter}
+	\noindent
+	\setlength{\currentparskip}{\parskip}
+	\begin{minipage}{\textwidth}
+	\setlength{\parskip}{\currentparskip}
+	\textbf{#1Toepassing \thetoepassingcounter :}
+}
+{
+	\vspace{0.5cm}
+	\end{minipage}
+}
+
+% Een enviroment voor antwoorden
+\definecollection{antwoorden}
+\makeatletter
+\newenvironment{antwoord}[1]{
+	\@nameuse{collect}{antwoorden}{
+		\noindent\vspace{0mm}
+    	\textbf{#1:}
+    }{}
+}
+{	
+	\@nameuse{endcollect}	
+}
+\makeatother
+
+
+% Een enviroment voor voorbeelden
+\definecollection{voorbeelden}
+\makeatletter
+\newenvironment{voorbeeld}[1]{
+	\@nameuse{collect}{voorbeelden}{
+    	\noindent\vspace{0mm}
+    	\textbf{#1:}
+    }{}
+}
+{
+	\@nameuse{endcollect}
+}
+\makeatother
