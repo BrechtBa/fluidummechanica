@@ -1,35 +1,35 @@
+% Dit werk is gelicenseerd onder de licentie Creative Commons Naamsvermelding-GelijkDelen 4.0 Internationaal. Ga naar http://creativecommons.org/licenses/by-sa/4.0/ om een kopie van de licentie te kunnen lezen.
 % vaak gebruikte packages, nederlands
 \usepackage[margin=2.5cm]{geometry}     % Marges instellen
 \usepackage[dutch]{babel}               % Voor nederlandstalige hyphenatie (woordsplitsing)
-\usepackage{amsmath,amsthm}             % Uitgebreide wiskundige mogelijkheden
-\usepackage{url}                        % Om url's te verwerken
-\usepackage{graphicx,subfigure}         % Om figuren te kunnen verwerken
-\usepackage{color}
-\usepackage{framed}
-\usepackage{multicol}
-\usepackage[small,bf,hang]{caption}     % Om de captions wat te verbeteren
 \usepackage[utf8]{inputenc}             % Om niet ascii karakters rechtstreeks te kunnen typen
-\usepackage{float}                      % Om nieuwe float environments aan te maken. Ook optie H!
-\usepackage{flafter}                    % Opdat floats niet zouden voorsteken
-\usepackage[section]{placeins}			% Om ervoor te zorgen dat floats binnen dezelfde section blijven
-\usepackage[nottoc]{tocbibind}			% Bibliografie en inhoudsopgave in ToC; zie tocbibind.dvi
 \usepackage{fancyhdr}                   % Voor fancy headers en footers
-\usepackage{thmtools}                   % theorem tools
-\usepackage{parskip}                    % Om paragrafen met een verticale spatie ipv horizontaal te laten beginnen
-\usepackage[plainpages=false]{hyperref} % Om hyperlinks te hebben in het pdfdocument.
+\usepackage{parskip}                    % Om paragrafen met een verticale spatie te laten beginnen
+\usepackage[nottoc]{tocbibind}			% Bibliografie en inhoudsopgave in ToC
+\usepackage{amsmath,amsthm}             % Uitgebreide wiskundige mogelijkheden
+\usepackage{graphicx,subfigure}         % Om figuren te kunnen verwerken
+\usepackage[small,bf,hang]{caption}     % Om de captions wat te verbeteren
+\usepackage[section]{placeins}			% Om ervoor te zorgen dat floats binnen dezelfde section blijven
+\usepackage{color}						% Om kleuren te gebruiken
+\usepackage{framed}						% Om tekst te omkaderen
+\usepackage{multicol}					% Om te switchen tussen enkele of meerdere kolommen
+\usepackage{url}                        % Om url's te verwerken
+\usepackage[pdftex,                     % Om hyperlinks en metadata te hebben in het pdfdocument.
+			plainpages=false,
+            pdfauthor={Brecht Baeten},
+            pdftitle={Fluidummechanica}]{hyperref}
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Algemene instellingen van het document.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \renewcommand{\baselinestretch}{1.2} 	% De interlinie afstand wat vergroten.
 \setcounter{MaxMatrixCols}{50}          % Max 20 kolommen in een matrix
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Headers en footers
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
@@ -56,7 +56,10 @@
 	\fancyhead[RO] {\rightmark}
 	\fancyhead[LE] {\leftmark}
 	\fancyfoot[RO,LE] {\thepage}
-	\fancyfoot[C]{\tiny{Brecht Baeten}}
+	\fancyfoot[C]{\includegraphics[height=0.15cm]{fig/cc}
+				  \includegraphics[height=0.15cm]{fig/by}
+				  \includegraphics[height=0.15cm]{fig/sa}
+				  \quad \tiny{Brecht Baeten}}
 
 	\newmainmatter
 }
@@ -68,9 +71,10 @@
 }
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Nieuwe omgevingen
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Voorbeeld
 \definecolor{shadecolor}{gray}{0.95}
 \newcounter{voorbeeldcounter}[chapter]
 \renewcommand{\thevoorbeeldcounter}{\thechapter.\arabic{voorbeeldcounter}}
