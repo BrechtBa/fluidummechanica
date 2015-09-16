@@ -1,7 +1,8 @@
+% Dit werk is gelicenseerd onder de licentie Creative Commons Naamsvermelding-GelijkDelen 4.0 Internationaal. Ga naar http://creativecommons.org/licenses/by-sa/4.0/ om een kopie van de licentie te kunnen lezen.
 \documentclass[t]{beamer}
 
-\input{../tex/beamer_packages}
-\input{../tex/commands}
+\input{tex/packages}
+\input{tex/packages_slides}
 
 \subtitle{Hydrostatica}
 
@@ -11,7 +12,7 @@
 		\begin{frame}
 			\frametitle{Voorbeeld}
 			\center
-    		\includegraphics[height=0.8\textheight]{../fig/hydrostatica/dam.jpg}\\
+    		\includegraphics[height=0.8\textheight]{fig/hydrostatica/dam.jpg}\\
 			\footnotesize{Bron: http://visitmt.com/}
 			% Hungry horse dam, Montana
   		\end{frame}
@@ -21,14 +22,14 @@
 			\frametitle{Druk}
 			\vspace{1cm}
 			\center
-			\includegraphics{../fig/hydrostatica/oppervlak_in_stilstaande_vloeistof}
+			\includegraphics{fig/hydrostatica/oppervlak_in_stilstaande_vloeistof}
   		\end{frame}	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   	\section{Hydrostatische krachten}		
 		\begin{frame}
 			\frametitle{Krachten op rechte oppervlakken}
 			\center
-			\includegraphics[scale=0.9]{../fig/hydrostatica/grafische_weergave_integraal}
+			\includegraphics[scale=0.9]{fig/hydrostatica/grafische_weergave_integraal}
 			\begin{itemize}
 				\pause
 				\item De resultante kracht is het volume van de figuur gevormd door de druk op het oppervlak uit te zetten
@@ -41,7 +42,7 @@
 			\frametitle{Toepassing}
 			\vspace{1cm}
 			\center
-			\includegraphics{../fig/hydrostatica/kracht_op_luik}
+			\includegraphics{fig/hydrostatica/kracht_op_luik}
 			
 			Bereken de resulterende kracht en het aangrijpingspunt
 		\end{frame}
@@ -49,7 +50,7 @@
   		\begin{frame}
 			\frametitle{Krachten op gebogen oppervlakken oppervlakken}
 			\center
-			\includegraphics[scale=0.9]{../fig/hydrostatica/kracht_gebogen_oppervlak_vereenvoudigd_3d}
+			\includegraphics[scale=0.9]{fig/hydrostatica/kracht_gebogen_oppervlak_vereenvoudigd_3d}
 			\pause
 			\vspace{-0.5cm}
 			\begin{equation}
@@ -58,7 +59,7 @@
 			\vspace{-0.7cm}
 			\begin{itemize}
 				\pause
-				\item De horizontale kracht is gelijk aan de horizontale kracht op de verticale projectie van het oppervlak
+				\item De horizontale kracht is gelijk aan de horizontale kracht op de projectie van het oppervlak op een verticaal vlak
 				\pause
 				\item De verticale kracht is gelijk aan het gewicht van het fluïdum dat zich boven het oppervlak kan bevinden
 			\end{itemize}
