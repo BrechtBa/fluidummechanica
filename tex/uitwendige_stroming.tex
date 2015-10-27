@@ -13,7 +13,7 @@ In dit hoofdstuk zullen een aantal hulpiddelen voor het beschijven van stroming 
 
 Uit de vectorveld analyse weten we dat wanneer een vectorveld rotatievrij is er een scalaire potentiaalfunctie bestaat waaruit de componenten van het vectorveld kunnen worden afgeleid.
 
-Wanneer er geen viskeuze krachten op een fluïdum inwerken zal de rotatie van het snelheidsveld $0$ zijn. Het met andere woorden: het snelheidsveld is rotatievrij. Er zal dus een potentiaalfunctie bestaan waaruit de componenten van het snelheidsveld kunnen worden afgeleid.
+Wanneer er geen viskeuze krachten op een fluïdum inwerken zal de rotatie van het snelheidsveld constant blijven. Wanneer het snelheidsveld initieel geen rotatie had zal dit ook zo blijven en is het snelheidsveld dus rotatievrij. Er zal dus een potentiaalfunctie bestaan waaruit de componenten van het snelheidsveld kunnen worden afgeleid.
 
 Dit vereenvoudigt de oplossing van het snelheidsveld voor gegeven randvoorwaarden aanzienlijk. Voor een tweedimensionale niet-samendrukbare stroming moet normaal gezien een stelsel van 3 gekoppelde partiële differentiaalvergelijkingen opgelost worden (één voor elke richting en de continuïteitsvergelijking). Onder de voorwaarden van potentiaalstroming vereenvoudigt dit tot één partiële differentiaalvergelijking.
 		\subsection{Stroomfunctie}
@@ -38,7 +38,7 @@ Hierin wordt bij $\diff x$ een min teken toegevoegd aangezien $\diff x$ zoals hi
 	\diff \dot{V} = v_x \frac{\diff y}{\diff n} \diff n - v_y \frac{\diff x}{\diff n} \diff n = v_x \diff y - v_y \diff x
 	\label{eqn:debiet tussen stroomlijnen}
 \end{equation}
-Beschouw nu de onbekende stroomfunctie $\psi$ die een scalaire functie is in $x$ en $y$. De verandering van deze stroomfunctie kan met behulp van de kettingregel geschreven worden in functie van zijn partiële afgeleiden naar de twee co\"ordinaten:
+Beschouw nu de onbekende stroomfunctie $\psi$ die een scalaire functie is in $x$ en $y$. De verandering van deze stroomfunctie kan met behulp van de kettingregel geschreven worden in functie van zijn partiële afgeleiden naar de twee coördinaten:
 \begin{equation}
 	\diff \psi = \frac{\partial \psi}{\partial x} \diff x + \frac{\partial \psi}{\partial y} \diff y
 	\label{eqn:verandering van de stroomfunctie}
@@ -51,7 +51,7 @@ Indien we nu (\ref{eqn:debiet tussen stroomlijnen}) en (\ref{eqn:verandering van
 \begin{figure}[htb]
 	\centering
 	\includegraphics{fig/uitwendige_stroming/Stroomlijnen}
-	\caption{Vectoren van de stroomlijn co\"ordinaten}
+	\caption{Vectoren van de stroomlijn coördinaten}
 	\label{fig:Stroomlijn coordinaten}
 \end{figure}
 Een belangrijke eigenschap van de stroomfunctie is dat contouren van constante stroomfunctie de stroomlijnen beschrijven. Dit kan rechtstreeks afgeleid worden uit de interpretatie van de stroomfunctie als debiet.
