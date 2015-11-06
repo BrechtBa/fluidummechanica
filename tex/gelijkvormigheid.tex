@@ -47,7 +47,7 @@ De laatste voorwaarde voor gelijkvormigheid is dynamische gelijkvormigheid. Dit 
 \end{equation}
 Vaak wordt de traagheidskracht die aangrijpt op een fluïdumdeeltje als referentiekracht genomen:
 \begin{equation}
-	\dfrac{\left. \vt{F}' \right|_{x',y'}}{\left. \vt{F}'_{\text{traagheid}} \right|_{x',y'}} = \dfrac{\left. \vt{F} \right|_{x,y}}{\left. \vt{F}_{\text{traagheid}} \right|_{x,y}}
+	\dfrac{\left. \vt{F}' \right|_{x',y'}}{\left. \vt{F}'_{\mathrm{traagheid}} \right|_{x',y'}} = \dfrac{\left. \vt{F} \right|_{x,y}}{\left. \vt{F}_{\mathrm{traagheid}} \right|_{x,y}}
 	\label{eqn:dynamische gelijkvormigheid traagheid}
 \end{equation}
 Om deze voorwaarde te garanderen kunnen we een hulpmiddel gebruiken: het dimensieloos maken van de toepasbare vergelijkingen.
@@ -62,13 +62,13 @@ Beschouwen we de bewegingsvergelijking van een deeltje in een niet samendrukbare
 Elke term in deze vergelijking heeft de eenheid kracht per volume (\unit{N/m^3}). De verschillende termen stellen de verschillende krachten voor die op een fluïdumdeeltje uitgeoefend worden. De term $-\frac{\diff p}{\diff s}$ is afkomstig van de kracht ten gevolge van drukverschillen per eenheid van volume. De term $\rho g_s$ is afkomstig van de zwaartekracht per eenheid van volume geprojecteerd in de $s$ richting. De term $\mu \frac{\partial^2 v}{\partial s^2}$ stelt de viskeuze kracht voor inwerkend op het deeltje. De term $\rho \frac{\partial v}{\partial t}$ stelt de lokale versnelling van het deeltje voor en de term $\rho v \frac{\diff v}{\diff s}$ stelt de convectieve versnelling van een deeltje voor en kunnen we dus voorstellen als de traagheidskracht per eenheid van volume.
 
 We kunnen de veranderlijken in deze vergelijking allen schrijven als een dimensieloze veranderlijke vermenigvuldigd met een vaste referentie. Kiezen we bijvoorbeeld $D_{\text{ref}}$ als referentie voor de lengte, $t_{\text{ref}}$ als referentie voor de tijd  $v_{\text{ref}}$ als referentie voor de snelheid en $p_{\text{ref}}$ als referentie voor de druk. De dimensieloze veranderlijken noteren we met een $^*$: 
-\begin{eqnarray}
-	s &=& s^* D_{\text{ref}} \nonumber \\
-	v &=& v^* v_{\text{ref}}  \\
-	t &=& t^* t_{\text{ref}} \nonumber \\
-	p &=& p^* p_{\text{ref}} \nonumber
+\begin{align}
+	s &= s^* D_{\text{ref}} \nonumber \\
+	v &= v^* v_{\text{ref}}  \\
+	t &= t^* t_{\text{ref}} \nonumber \\
+	p &= p^* p_{\text{ref}} \nonumber
 	\label{eqn:referentie grootheden}
-\end{eqnarray}
+\end{align}
 Indien we deze waarden invullen in (\ref{eqn:navier-stokes geprojecteerd}) verkrijgen we:
 \begin{equation}
 	\rho \frac{\partial v^* v_{\text{ref}}}{\partial t^* t_{\text{ref}}} + \rho v^* v_{\text{ref}} \frac{\partial v^* v_{\text{ref}}}{\partial s^* D_{\text{ref}}} = -\frac{\partial p^* p_{\text{ref}}}{\partial s^*D_{\text{ref}}} + \rho g_s + \mu \frac{\partial^2 v^* v_{\text{ref}}}{\partial s^{*2} D_{\text{ref}}^2}
@@ -93,13 +93,13 @@ De coëfficiënten in (\ref{eqn:navier-stokes dimensieloos traagheid}) kunnen al
 	\label{eqn:navier-stokes dimensieloze getallen}
 \end{equation}
 De voorkomende dimensieloze getallen zijn het Euler getal, het Froude getal en het Reynolds getal. Deze relateren respectievelijk de druk kracht, zwaartekracht en viskeuze kracht tot de traagheidskracht. In de definitie van de dimensieloze getallen wordt het subscript ''ref'' ook weggelaten aangezien het hier steeds over de referentiegrootheden gaat. Enkele in de stromingsmechanica vaak voorkomende dimensieloze getallen zijn:
-\begin{eqnarray}
-	\text{Re} &=& \dfrac{\rho v D}{\mu} = \dfrac{v D}{\nu} = \dfrac{\text{traagheidskracht}}{\text{viskeuze krachten}} \label{eqn:Reynolds} \\
-	\text{Eu} &=& \dfrac{p}{\rho v^2} = \dfrac{\text{drukkracht}}{\text{traagheidskracht}} \label{eqn:Euler} \\
-	\text{Fr} &=& \dfrac{v}{\sqrt{g D}} = \sqrt{\dfrac{\text{traagheidskracht}}{\text{zwaartekracht}}} \\
-	\text{Ma} &=& \dfrac{v}{c} = \dfrac{\text{traagheidskracht}}{\text{samendrukbaarheidskrachten}}
+\begin{align}
+	\mathrm{Re} &= \dfrac{\rho v D}{\mu} &= \dfrac{v D}{\nu} = \dfrac{\mathrm{traagheidskracht}}{\mathrm{viskeuze krachten}} \label{eqn:Reynolds} \\
+	\mathrm{Eu} &= \dfrac{p}{\rho v^2}   &= \dfrac{\mathrm{drukkracht}}{\mathrm{traagheidskracht}} \label{eqn:Euler} \\
+	\mathrm{Fr} &= \dfrac{v}{\sqrt{g D}} &= \sqrt{\dfrac{\mathrm{traagheidskracht}}{\mathrm{zwaartekracht}}} \\
+	\mathrm{Ma} &= \dfrac{v}{c}          &= \dfrac{\mathrm{traagheidskracht}}{\mathrm{samendrukbaarheidskrachten}}
 	\label{eqn:Dimensieloze getallen}
-\end{eqnarray}
+\end{align}
 Een zeer belangrijke en zeer vaak gebruikte grootheid in de fluïdum mechanica is het Reynoldsgetal, genoemd naar Osbourne Reynolds. Dit getal vormt de verhouding van de traagheidskracht tot de viskeuze krachten die inwerken op een fluïdum deeltje. Wanneer het Reynoldsgetal voor een bepaalde stroming zeer laag is zullen viskeuze krachten de stroming overheersen. Zo'n stroming wordt ook kruipende stroming (E: creeping flow) genoemd. Wanneer het Reynoldsgetal echter zeer groot is zullen viskeuze krachten weinig invloed hebben. In dit geval kunnen we gebruik maken van de vergelijkingen van Euler en Bernoulli die in het vorige hoofdstuk afgeleid werden. Bij hoge Reynoldsgetallen zal er echter een ander fenomeen optreden: turbulentie. We zullen dieper op dit fenomeen ingaan in hoofdstuk \ref{sec:Uitwendige stroming} en hoofdstuk \ref{sec:Inwendige stroming}.
 
 Het Froude getal, genoemd naar William Froude, geeft de verhouding tussen de traagheidskrachten en de zwaartekracht weer. In de meeste stromingen zal de zwaartekracht enkel zorgen voor een lineaire drukverdeling met de hoogte in de vloeistof. Bij een specifieke klasse stromingsproblemen heeft de zwaartekracht echter wel een belangrijke invloed op de beweging van individuele deeltjes. Dit zijn problemen waarbij er een vrij vloeistof oppervlak aanwezig is (E: Free surface flow). Voorbeelden zijn de stroming van een rivier onder invloed van de zwaartekracht, golven in de oceaan ten gevolge van de wind of de boeggolf van een schip dat zich door het water beweegt.

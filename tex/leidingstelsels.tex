@@ -174,11 +174,15 @@ Niet alle structuren van leidingen kunnen opgesplitst worden in eenvoudige serie
 	\label{fig:leidingnetwerk}
 \end{figure}
 Indien we de leidingen vertrekkende uit reservoir $i$ aanduiden met de index $i$ kunnen we voor dit systeem met zekerheid 3 stroomlijnen tekenen. Namelijk de stroomlijnen vertrekkende van het oppervlak van reservoir $i$ en aankomend in het knooppunt. Voor elk van deze stroomlijnen kunnen we de energievergelijking uitschrijven:
-\begin{eqnarray}
-	\frac{p_k}{\rho g} + z_k = \frac{p_1}{\rho g} + z_1 - h_{L,1} \nonumber \\
-	\frac{p_k}{\rho g} + z_k = \frac{p_2}{\rho g} + z_2 - h_{L,2} \\
-	\frac{p_3}{\rho g} + z_3 = \frac{p_k}{\rho g} + z_k - h_{L,3} \nonumber
-\end{eqnarray} 
+\begin{equation}
+	\left\{
+	\begin{array}{lcl}
+		\frac{p_k}{\rho g} + z_k &=& \frac{p_1}{\rho g} + z_1 - h_{L,1} \nonumber \\
+		\frac{p_k}{\rho g} + z_k &=& \frac{p_2}{\rho g} + z_2 - h_{L,2} \\
+		\frac{p_3}{\rho g} + z_3 &=& \frac{p_k}{\rho g} + z_k - h_{L,3} \nonumber
+	\end{array}
+	\right.
+\end{equation} 
 Bij het opschrijven van deze vergelijkingen hebben we impliciet stroomrichtingen verondersteld. In leiding 1 en 2 hebben de stroming naar het knooppunt toe verondersteld, terwijl in leiding 3 de stroming van het knooppunt weg verondersteld is. Ook hebben we verondersteld dat de kinetische energie in het knooppunt verwaarloosbaar is ten opzichte van de druk en de hoogte. Dit is een veel gemaakte veronderstelling die in de meeste gevallen gerechtvaardigd is. De ladingsverliezen kunnen we ook schrijven in functie van de debieten in de 3 leidingen. Indien we de wrijvingsfactoren gekend veronderstellen (wat mogelijk is door het gebruik van een iteratieve techniek) hebben we dus een stelsel van 3 vergelijkingen en 4 onbekenden ($\dot{V}_1,\dot{V}_2,\dot{V}_3$ en $p_k$). Er is dus nog één vergelijking nodig om dit stelsel te kunnen oplossen. Deze vinden we in de vorm van de continuïteitsvergelijking. In het knooppunt moet namelijk evenveel massa toekomen als vertrekken. Het volledige stelsel wordt dus:
 \begin{equation}
 	\left\{
@@ -269,10 +273,10 @@ Wanneer we de pompkarakteristiek (Figuur \ref{fig:Pompkarakteristiek}) en leidin
 	\label{fig:Pompleidingkarakteristiek}
 \end{figure}
 Het zoeken van het werkingspunt op deze manier komt neer op het grafisch oplossen van de mechanische energievergelijking. De pompkarakteristiek en leidingskarakteristiek kunnen we namelijk schrijven als:
-\begin{eqnarray}
+\begin{align}
 	h_P(\dot{V}) \\
 	\frac{p_2-p_1}{\rho g} + \rho \frac{v_2^2-v_1^2}{2 g}  + z_2-z_1 + h_L(\dot{V})
-\end{eqnarray}
+\end{align}
 Indien we deze twee aan elkaar gelijkstellen bekomen we de mechanische energievergelijking die we kunnen oplossen naar $\dot{V}$ om het werkingspunt te vinden.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -113,20 +113,20 @@ Ook hier zijn twee gekende punten noodzakelijk om de coëfficiënten in de verge
 	\section{Beschrijving van een stroming}
 	\label{sec:Beschrijving van een stroming}
 Wanneer een vloeistof stroomt wil dit zeggen dat er vloeistofdeeltjes zich verplaatsen van één plaats naar een andere. Deze beweging van deeltjes kunnen we beschrijven door de positie $\vt{r}$ van elk deeltje te volgen in de tijd. Indien we de positie van een deeltje op elk tijdstip kennen kunnen we ook de snelheid $\vt{v}$ van het deeltje bepalen en kunnen we de stroming karakteriseren. We kunnen dus elk deeltje een label $j$ geven en de snelheid en positie van elk deeltje beschrijven als:
-\begin{eqnarray}
-	\vt{r} = \vt{r}_j(t) \\
-	\vt{v} = \vt{v}_j(t)
-\end{eqnarray}
+\begin{align}
+	\vt{r} &= \vt{r}_j(t) \\
+	\vt{v} &= \vt{v}_j(t)
+\end{align}
 Deze benadering wordt de Langrange benadering genoemd en is bekend uit de deeltjesmechanica. Voor het behandelen van een continuüm is deze benadering echter niet erg praktisch. De hoeveelheid deeltjes die gevolgd zou moeten worden zou snel hoog oplopen.
 
 Een andere benadering wordt de Euler benadering genoemd. Hier wordt de snelheid van de stroming beschreven als een vectorveld. Op elk tijdstip wordt op elke positie de snelheid bepaald onafhankelijk van welk deeltje er zich op dat tijdstip bevindt. Voor een tweedimensionale stroming wordt dit:
-\begin{eqnarray}
+\begin{equation}
 	\vt{v} = \vt{v}(t,x,y)
-\end{eqnarray}
+\end{equation}
 Vaak zal het snelheidsveld onafhankelijk zijn van de tijd. Het snelheidsveld ziet er met andere woorden steeds hetzelfde uit. voor een tweedimensionale stroming wordt dit: 
-\begin{eqnarray}
+\begin{equation}
 	\vt{v} = \vt{v}(x,y)
-\end{eqnarray}
+\end{equation}
 We noemen dit een stationaire stroming. Veel stromingen in de ingenieurstoepassingen kunnen als stationair beschouwd worden. De stroming van water door een leiding bijvoorbeeld zal op een inloop en uitloop fenomeen na tijdsonafhankelijk zijn. Ook de stroming door systemen als turbines en compressoren, met inwendig bewegende onderdelen, kunnen als stationair beschouw worden aangezien aan de inlaat en uitlaat de stroming weinig invloed zal ondervinden van het voorbijkomen van roterende onderdelen. Zolang we enkel in de ingaande en uitgaande stroming geïnteresseerd zijn is dit geldig. Wanneer we de details van de stroming in een turbine stator en rotor willen bestuderen zullen we deze als niet stationair moeten beschouwen.
 
 Ook systemen die op het eerste zicht geen stationaire stroming ondervinden kunnen vaak door een slimme transformatie als stationair beschouwd worden. Nemen we als voorbeeld een vliegtuig. Aangezien het vliegtuig zich door de stilstaande lucht verplaatst zal op een gegeven moment de lucht plaats moeten maken voor het vliegtuig en voldoende tijd later terug in rust zijn. De stroming is dus duidelijk niet stationair. Indien we echter de stroming relatief ten opzichte van het vliegtuig bekijken dan zal het snelheidsveld rond het vliegtuig wel stationair zijn (Figuur \ref{fig:stationaire stroming vliegtuig}). 

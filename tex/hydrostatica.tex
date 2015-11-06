@@ -12,29 +12,29 @@ In veel ingenieurstoepassingen komen situaties voor waar stilstaande fluïda int
 	\label{sec:Hydrostatische druk}
 	
 Beschouw een stilstaand fluïdum. We kunnen hieruit een balk met als grondvlak een rechthoekige driehoek afzonderen (Figuur \ref{sec:Hydrostatica}). Aangezien de volledige vloeistof in rust is zal ook de vloeistof binnen de balk in rust zijn en zullen er geen schuifspanningen aanwezig zijn (de snelheid is overal 0 dus is de snelheidsgradiënt ook overal 0). We kunnen nu een krachtenevenwicht schrijven voor dit elementje. In de richtingen loodrecht op de rechthoekszijden wordt dit:
-\begin{eqnarray}
-	F_A &=& F_C \cos(\alpha) \\
-	F_B &=& F_C \sin(\alpha)
-\end{eqnarray}
+\begin{align}
+	F_A &= F_C \cos(\alpha) \\
+	F_B &= F_C \sin(\alpha)
+\end{align}
 De uitgeoefende krachten zijn de resultante van een normaalspanning over de drie oppervlakken. Indien we het elementje klein genoeg kiezen zal deze spanning ook constant zijn over het oppervlak. Dus:
-\begin{eqnarray}
-	A \sigma_A &=& C \sigma_C \cos(\alpha) \\
-	B \sigma_B &=& C \sigma_C \sin(\alpha)
+\begin{align}
+	A \sigma_A &= C \sigma_C \cos(\alpha) \\
+	B \sigma_B &= C \sigma_C \sin(\alpha)
 	\label{eqn:druk_scalair_krachtenevenwicht}
-\end{eqnarray}
+\end{align}
 Aangezien de driehoek rechthoekig is geldt ook dat:
-\begin{eqnarray}
-	A &=& C \cos(\alpha) 
+\begin{align}
+	A &= C \cos(\alpha) 
 	\label{eqn:druk_scalair_rechthoekige_driehoek1} \\
-	B &=& C \sin(\alpha)
+	B &= C \sin(\alpha)
 	\label{eqn:druk_scalair_rechthoekige_driehoek2}
-\end{eqnarray}
+\end{align}
 Indien we de uitdrukkingen (\ref{eqn:druk_scalair_rechthoekige_driehoek1}) en (\ref{eqn:druk_scalair_rechthoekige_driehoek2}) in vullen in (\ref{eqn:druk_scalair_krachtenevenwicht}) bekomen we:
-\begin{eqnarray}
-	\sigma_A &=& \sigma_C \\
-	\sigma_B &=& \sigma_C
+\begin{align}
+	\sigma_A &= \sigma_C \\
+	\sigma_B &= \sigma_C
 	\label{eqn:druk_scalair}
-\end{eqnarray}
+\end{align}
 Of de spanning op alle 3 de vlakken is dezelfde, onafhankelijk van de hoek van de driehoek. Het negatieve van deze spanning noemen we de hydrostatische druk $p$ met als eenheid [Pa] of [\unit{N/m^2}]. In ingenieurstoepassingen wordt ook vaak gewerkt met de eenheid [bar] ($1\unit{bar} = 100000\unit{Pa}$) of met de Engelse eenheid [psi] ($1\unit{psi} \approx 6895\unit{Pa}$). Volgens de meest gangbare conventies wordt deze in tegenstelling tot een normaalspanning positief gerekend indien ze werkt om het elementje te verkleinen. Aangezien de druk onafhankelijk is van de richting van het oppervlak waar ze op inwerkt is het een scalaire grootheid. Aangezien de druk een normaalspanning is zal ze ook steeds loodrecht op een oppervlak inwerken.
 \begin{figure}[htb]
 	\centering
@@ -120,10 +120,10 @@ Deze uitdrukking kan ook grafisch weergegeven worden. Indien we de druk die heer
 \end{figure}
 
 De richting waarin de kracht werkt zal nog steeds gelijk zijn aan de richting waarin de druk werkt dus loodrecht op het oppervlak. Om de inwerkende kracht volledig te karakteriseren hebben we echter ook zijn aangrijpingspunt nodig. Voor het aangrijpingspunt van de kracht moet gelden dat het moment dat de kracht rond dit punt uitoefent 0 is. Het moment dat de kracht uitoefent is de som van de momenten die de infinitesimale krachten uitoefenen. In een cartesiaans assenstelsel wordt dit:
-\begin{eqnarray}
-	M_x &=& \int_A  p (y-y_z)  \diff A = 0 \\
-	M_y &=& \int_A  p (x-x_z)  \diff A = 0
-\end{eqnarray}
+\begin{align}
+	M_x &= \int_A  p (y-y_z)  \diff A = 0 \\
+	M_y &= \int_A  p (x-x_z)  \diff A = 0
+\end{align}
 Indien we opnieuw de grafische voorstelling van hierboven gebruiken, dan komen de bovenstaande vergelijkingen overeen met de definitie van het zwaartepunt van het gevormde volume. Het aangrijpingspunt van de kracht komt dus overeen met het zwaartepunt van het volume gevormd door de druk als hoogte loodrecht op het oppervlak uit te zetten.
 
 In het geval van hydrostatisch drukken leid dit vaak zeer eenvoudige uitdrukkingen voor de kracht en het aangrijpingspunt aangezien de druk lineair verloopt met de diepte.
