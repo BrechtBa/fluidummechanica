@@ -10,8 +10,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="200.0153"
-   height="285.06647"
+   width="148.81889"
+   height="194.88188"
    id="svg3041"
    version="1.1"
    inkscape:version="0.48.2 r9819"
@@ -23,14 +23,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="118.30075"
-     inkscape:cy="118.51732"
+     inkscape:zoom="2.8"
+     inkscape:cx="106.71694"
+     inkscape:cy="116.55035"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="706"
+     inkscape:window-width="1280"
+     inkscape:window-height="962"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -97,47 +97,47 @@
      inkscape:label="Laag 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-73.873566,-759.68499)">
+     transform="translate(-73.873566,-849.86957)">
     <path
        style="fill:#b3b3b3;stroke:#000000;stroke-width:1.77165353;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 129.13494,999.21253 141.73228,0 0,-32.85612 -46.06299,-16.42806 0,-131.42448 46.063,-16.42805 0,-32.85612 -141.73229,0 0,32.85612 46.06299,16.42805 0,131.42448 -46.06299,16.42806 z"
+       d="m 129.52826,1008.9899 85.03936,0 0,-21.25971 -27.63779,-10.62993 0,-85.03937 27.63779,-10.6299 0,-21.25985 -85.03936,0 0,21.25985 27.63779,10.6299 0,85.03937 -27.63779,10.62993 z"
        id="path8977"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccccccccc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:5.66929144, 1.41732285, 0.70866143, 1.41732285;stroke-dashoffset:0"
-       d="m 200.00108,1006.2991 0,-244.48813"
+       d="m 172.04794,1011.5407 0,-158.4562"
        id="path9487"
        inkscape:connector-curvature="0" />
     <path
        inkscape:connector-curvature="0"
        id="path9489"
-       d="m 270.86723,875.19679 -141.73229,0"
-       style="fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:5.66929134, 1.41732283, 0.70866142, 1.41732283;stroke-dashoffset:0"
+       d="m 214.56762,934.58057 -85.03937,0"
+       style="fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:5.66929137, 1.41732284, 0.70866142, 1.41732284;stroke-dashoffset:0"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
-       d="m 124.04532,946.06293 0,-127.55906"
+       d="m 124.43863,974.87825 0,-79.98835"
        id="path9491"
        inkscape:connector-curvature="0" />
     <path
        inkscape:connector-curvature="0"
        id="path9867"
-       d="m 105.80814,963.77945 0,-159.4488"
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)" />
+       d="m 106.20145,985.71353 0,-102.04933"
+       style="fill:none;stroke:#000000;stroke-width:0.99999988px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
-       d="m 86.729566,999.56962 0,-230.67204"
+       d="m 87.122868,1007.0115 0,-144.77548"
        id="path9869"
        inkscape:connector-curvature="0" />
     <path
        inkscape:connector-curvature="0"
        id="path9871"
-       d="m 270.86722,1040.7298 -141.73228,0"
+       d="m 214.34823,1041.7775 -83.74067,0"
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
-       d="m 224.80423,1024.0156 -49.6063,0"
+       d="m 186.28063,1025.0633 -28.49307,0"
        id="path9873"
        inkscape:connector-curvature="0" />
     <g
@@ -152,7 +152,7 @@
        font-style="normal"
        stroke-miterlimit="10.433"
        xml:space="preserve"
-       transform="matrix(0,-1.25,-1.25,0,967.94522,1178.1651)"
+       transform="matrix(0,-1.25,-1.25,0,968.33853,1233.256)"
        id="content"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0">
 <path
@@ -182,7 +182,7 @@
    style="fill:#000000;stroke-width:0" />
 </g>    <g
        id="g3138"
-       transform="matrix(0,-1.25,-1.25,0,987.07334,1178.1276)"
+       transform="matrix(0,-1.25,-1.25,0,987.46665,1233.2185)"
        xml:space="preserve"
        stroke-miterlimit="10.433"
        font-style="normal"
@@ -233,7 +233,7 @@
        font-style="normal"
        stroke-miterlimit="10.433"
        xml:space="preserve"
-       transform="matrix(0,-1.25,-1.25,0,1005.8909,1178.0776)"
+       transform="matrix(0,-1.25,-1.25,0,1006.2842,1233.1685)"
        id="g3230">
 <path
    id="path3232"
@@ -262,7 +262,7 @@
    style="fill:#000000;stroke-width:0" />
 </g>    <g
        id="g3336"
-       transform="matrix(1.25,0,0,-1.25,-100.0687,1904.0517)"
+       transform="matrix(1.25,0,0,-1.25,-125.93936,1905.0994)"
        xml:space="preserve"
        stroke-miterlimit="10.433"
        font-style="normal"
@@ -313,7 +313,7 @@
        font-style="normal"
        stroke-miterlimit="10.433"
        xml:space="preserve"
-       transform="matrix(1.25,0,0,-1.25,-100.0687,1922.3631)"
+       transform="matrix(1.25,0,0,-1.25,-125.93936,1923.4108)"
        id="g3450">
 <path
    id="path3452"
