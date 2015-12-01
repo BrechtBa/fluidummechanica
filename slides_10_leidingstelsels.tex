@@ -14,8 +14,8 @@
 	\begin{frame}
 		\frametitle{Voorbeeld}
 		\center
-    	\includegraphics[width=\textwidth]{fig/stroming_in_leidingen/Richard-Steinberg-The-Pipeline-Blog-51.jpg}\\
-    	\footnotesize{Bron: http://www.etftrends.com/}
+    	\includegraphics[height=0.8\textheight]{fig/leidingstelsels/piping.jpg}\\
+    	\footnotesize{Bron: http://hollandaptblog.com}
   	\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   	\section{Mechanische energie}
@@ -52,7 +52,7 @@
 			Stel de vergelijking voor mechanische energie voor in eenheid hoogte:
 			\begin{equation}
 				\frac{p_2}{\rho g} + \frac{v_2^2}{2 g} + z_2 = \frac{p_1}{\rho g} + \frac{v_1^2}{2 g} + z_1 - h_L
-			\end{equation}		
+			\end{equation}
 		}
 		\only<2-3>{
 			Ladingsverlies voor een cilindrische leiding:
@@ -69,7 +69,19 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   	\begin{frame}
 		\frametitle{Grafische voorstelling}
-		
+		\center
+		\only<1>{
+			\includegraphics[width=\textwidth]{fig/leidingstelsels/Energiehoogte0} \quad
+		}
+		\only<2>{
+			\includegraphics[width=\textwidth]{fig/leidingstelsels/Energiehoogte1} \quad
+		}	
+		\only<3>{
+			\includegraphics[width=\textwidth]{fig/leidingstelsels/Energiehoogte2} \quad
+		}	
+		\only<4>{
+			\includegraphics[width=\textwidth]{fig/leidingstelsels/Energiehoogte} \quad
+		}		
 	\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   	\section{Lokale ladingsverliezen}
@@ -77,8 +89,8 @@
 		\frametitle{Voorbeelden}
 		\center
 		\includegraphics[width=0.3\textwidth]{fig/appendix/Bocht} \quad
-		\includegraphics[width=0.3\textwidth]{fig/appendix/Gelijkdelijke_vernauwing} \quad
-		\includegraphics[width=0.3\textwidth]{fig/appendix/Gelijkdelijke_verwijding}
+		\includegraphics[width=0.3\textwidth]{fig/appendix/Gelijdelijke_vernauwing} \quad
+		\includegraphics[width=0.3\textwidth]{fig/appendix/Gelijdelijke_verwijding}
 		\\
 		\includegraphics[width=0.3\textwidth]{fig/appendix/Uitstroming} \quad
 		\includegraphics[width=0.3\textwidth]{fig/appendix/Vernauwing} \quad
@@ -165,46 +177,30 @@
 	\begin{frame}
 		\frametitle{Voorbeelden}
 		\center
-		\includegraphics[height=0.8\textheight]{fig/appendix/verwijding}
-	\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
-	\begin{frame}
-		\frametitle{Voorbeelden}
-		\center
-		\includegraphics[height=0.8\textheight]{fig/appendix/gelijkdelijke_verwijding}
-	\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
-	\begin{frame}
-		\frametitle{Voorbeelden}
-		\center
-		\includegraphics[height=0.8\textheight]{fig/appendix/uitstroming}
-	\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
-	\begin{frame}
-		\frametitle{Voorbeelden}
-		\center
-		\includegraphics[height=0.8\textheight]{fig/appendix/vernauwing}
-	\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
-	\begin{frame}
-		\frametitle{Voorbeelden}
-		\center
-		\includegraphics[height=0.8\textheight]{fig/appendix/gelijkdelijke_vernauwing}
-	\end{frame}	
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
-	\begin{frame}
-		\frametitle{Voorbeelden}
-		\center
-		\includegraphics[height=0.8\textheight]{fig/appendix/instroming}
-	\end{frame}	
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
-	\begin{frame}
-		\frametitle{Voorbeelden}
-		\center
-		\includegraphics[height=0.8\textheight]{fig/appendix/afgeronde_instroming}
+		\only<1>{
+			\includegraphics[height=0.8\textheight]{fig/appendix/Verwijding}
+		}
+		\only<2>{
+			\includegraphics[height=0.8\textheight]{fig/appendix/Gelijdelijke_verwijding}
+		}
+		\only<3>{
+			\includegraphics[height=0.8\textheight]{fig/appendix/Uitstroming}
+		}
+		\only<4>{
+			\includegraphics[height=0.8\textheight]{fig/appendix/Vernauwing}
+		}
+		\only<5>{
+			\includegraphics[height=0.8\textheight]{fig/appendix/Gelijdelijke_vernauwing}
+		}
+		\only<6>{
+			\includegraphics[height=0.8\textheight]{fig/appendix/Instroming}
+		}
+		\only<7>{
+			\includegraphics[height=0.8\textheight]{fig/appendix/Afgeronde_instroming}
+		}
 	\end{frame}	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  	\section{Serie en parallel schakeling}
+  	\section{Serie- en parallelschakeling}
   	\begin{frame}
 		\frametitle{Serieschakeling}
 		\only<1-3>{
@@ -214,7 +210,7 @@
 		\only<2-3>{	
 			\begin{align*}
 				\dot{V}_\mathrm{serie} &= \dot{V}_i \\
-				h_\mathrm{L,serie} &= \sum h_\mathrm{L,i}
+				h_\mathrm{L,serie} &= \sum h_{\mathrm{L},i}
 			\end{align*}
 		}
 		\only<3-3>{
@@ -232,7 +228,7 @@
 		\only<2-3>{	
 			\begin{align*}
 				\dot{V}_\mathrm{parallel} &= \sum \dot{V}_i \\
-				h_\mathrm{L,parallel} &= h_\mathrm{L,i}
+				h_\mathrm{L,parallel} &= h_{\mathrm{L},i}
 			\end{align*}
 		}
 		\only<3-3>{
@@ -240,5 +236,311 @@
 			Het ladingsverlies in elke tak van een parallelschakeling is gelijk aan het totale ladingsverlies
 		}
 	\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  	\begin{frame}
+  		\frametitle{Elektrisch analoog}
+  		\only<1-4>{
+  			\begin{equation*}
+  				h_\mathrm{L} = 8 f \frac{\dot{V}^2}{g \pi^2} \frac{L}{D^5}
+  			\end{equation*}
+  		}
+  		\only<2-4>{
+  			\begin{equation*}
+  				U = R I
+  			\end{equation*}
+  		}
+  		\only<3-4>{
+  			\begin{equation*}
+  				h_\mathrm{L} = R \dot{V}^2
+  			\end{equation*}
+  		}
+  		\only<4-4>{
+  		
+  			Voor leidingen:
+  			\begin{equation*}
+  				R = \frac{8 f}{g \pi^2} \frac{L}{D^5}
+  			\end{equation*}
+  			
+  			Voor lokale verliezen:
+  			\begin{equation*}
+  				R = \frac{\zeta}{2 g A^2}
+  			\end{equation*}
+  		}
+  		\only<5-6>{
+  		
+  			Serieschakeling:
+  			\begin{align*}
+  				h_\mathrm{L,serie} &= R_\mathrm{serie} \dot{V}^2\\
+  				R_\mathrm{serie} &= \sum_i R_i 
+  			\end{align*}
+  		}
+  		\only<6-6>{	
+  		
+  			Parallelschakeling:
+  			\begin{align*}
+  				h_\mathrm{L,parallel} &= R_\mathrm{parallel} \dot{V}^2\\
+  				R_\mathrm{parallel} &= \left( \sum_i \frac{1}{\sqrt{R_i}} \right)^{-2}
+  			\end{align*}
+  		}
+  	\end{frame}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  	\begin{frame}
+  		\frametitle{Voorbeeld}
+		\only<1>{
+			\center	
+  			\includegraphics[height=0.8\textheight]{fig/leidingstelsels/handdoekdroger.jpg}\\
+            \footnotesize{Bron: http://www.aquaprestige.be}
+  		}
+  		\only<2-5>{
+  			\begin{textblock}{5}(0,3)
+        	    \includegraphics[width=4.5cm]{fig/leidingstelsels/handdoekdroger}
+        	\end{textblock}
+  		}
+  		\begin{textblock}{6}(5.5,3)
+  			\only<3-5>{
+  				\begin{equation*}
+  					h_{\mathrm{L},1\rightarrow 2} = \left( \frac{1}{\sqrt{R_{\mathrm{h},1}}} + \frac{1}{\sqrt{2R_{\mathrm{v},1}+R_{\mathrm{h},1}}} \right)^{-2} \dot{V}_{\mathrm{v},2}^2
+  				\end{equation*}
+  				\begin{equation*}
+  					R_{1\rightarrow 2} = \left( \frac{1}{\sqrt{R_{\mathrm{h},1}}} + \frac{1}{\sqrt{2R_{\mathrm{v},1}+R_{\mathrm{h},1}}} \right)^{-2}
+  				\end{equation*}
+  			}
+  			\only<4-5>{
+  				\begin{equation*}
+  					R_{1\rightarrow 3} = \left( \frac{1}{\sqrt{R_{\mathrm{h},2}}} + \frac{1}{\sqrt{2R_{\mathrm{v},2} + R_{1\rightarrow 2}}} \right)^{-2}
+  				\end{equation*}
+  			}
+  			\only<5-5>{
+  				\begin{align*}
+  					R_{1\rightarrow n} &= \left( \frac{1}{\sqrt{R_{\mathrm{h},n-1}}} + \frac{1}{\sqrt{2R_{\mathrm{v},n-1}+R_{1\rightarrow n-1}}} \right)^{-2} \\
+  					h_{\mathrm{L},1\rightarrow n} &= R_{1\rightarrow n} \dot{V}_{\mathrm{v},n}^2
+  				\end{align*}
+  			}
+  		\end{textblock}
+  	\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  	\begin{frame}
+  		\frametitle{Toepassingen}
+  		\begin{itemize}
+  			\only<1,2-3>{
+  				\item Bepaal het ladingsverlies
+  			}
+  			\only<1,4>{
+  				\item Bepaal het debiet
+  			}
+  			\only<1,5>{
+  				\item Bepaal de leiding diameter
+  			}
+  		\end{itemize}
+  		\vspace{0.4cm}
+  		
+  		\only<2-3>{
+  			Gegeven:\\
+  			\qquad $\dot{V}, L, D,\varepsilon$
+
+  			
+  			Gevraagd:\\
+  			\qquad $h_\mathrm{L}$	
+  		}
+  		\only<2>{
+  		
+  			\vspace{0.4cm}
+  			Oplossingsmethode voor een serieschakeling van leidingen of een parallelschakeling van gelijke leidingen:
+  			\setbeamertemplate{enumerate items}[default]
+  			\begin{enumerate}
+  				\item Bepaal $\mathrm{Re}$
+  				\item Bepaal $f$
+  				\item Bepaal $h_\mathrm{L}$
+  			\end{enumerate}
+  		}
+  		\only<3>{
+  		
+  			\vspace{0.4cm}
+  			Oplossingsmethode een parallelschakeling:
+  			\setbeamertemplate{enumerate items}[default]
+  			\begin{enumerate}
+  				\item Schat $\dot{V}_i$
+  				\item Bepaal $\mathrm{Re}_i$
+  				\item Bepaal $f_i$
+  				\item Bepaal $h_\mathrm{L}$
+  				\item Bepaal $\dot{V}_i$
+  				\item Ga naar stap 2
+  			\end{enumerate}
+  		}
+		\only<4>{
+  			Gegeven:\\
+  			\qquad $h_\mathrm{L}, L, D,\varepsilon$
+
+  			Gevraagd:\\
+  			\qquad $\dot{V}$
+  			
+  			\vspace{0.4cm}
+  			Oplossingsmethode:
+  			\setbeamertemplate{enumerate items}[default]
+  			\begin{enumerate}
+  				\item Schat $\dot{V}$
+  				\item Bepaal $\mathrm{Re}$
+  				\item Bepaal $f$
+  				\item Bepaal $\dot{V}$
+  				\item Ga naar stap 2
+  			\end{enumerate}
+  		}
+  		\only<5>{
+  			Gegeven:\\
+  			\qquad $\dot{V}, h_\mathrm{L}, L,\varepsilon$
+
+  			Gevraagd:\\
+  			\qquad $D$
+  			
+  			\vspace{0.4cm}
+  			Oplossingsmethode:
+  			\setbeamertemplate{enumerate items}[default]
+  			\begin{enumerate}
+  				\item Schat $D$
+  				\item Bepaal $\mathrm{Re}$
+  				\item Bepaal $f$
+  				\item Bepaal $D$
+  				\item Ga naar stap 2
+  			\end{enumerate}
+  		}
+  	\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  	\begin{frame}
+  		\frametitle{Leidingnetwerk}
+  		\only<1>{
+  			\center
+			\includegraphics[width=\textwidth]{fig/leidingstelsels/Leidingnetwerk}
+		}
+		\only<2-3>{
+			\begin{textblock}{5}(0,3)
+        	    \includegraphics[width=5cm]{fig/leidingstelsels/Leidingnetwerk}
+        	\end{textblock}
+        	\vspace{3cm}
+  		}
+  		\only<2>{
+  			\begin{equation*}
+				\left\{
+					\begin{array}{lcl}
+						h_k &=& \dfrac{p_1}{\rho g} + z_1 - h_{L,1} \\
+						h_k &=& \dfrac{p_2}{\rho g} + z_2 - h_{L,2} \\
+						\dfrac{p_3}{\rho g} + z_3 &=& h_k - h_{L,3} 
+					\end{array}
+				\right.
+			\end{equation*}
+		}
+		\only<3>{
+  			\begin{equation*}
+				\left\{
+					\begin{array}{lcl}
+						h_k &=& \dfrac{p_1}{\rho g} + z_1 - h_{L,1} \\
+						h_k &=& \dfrac{p_2}{\rho g} + z_2 - h_{L,2} \\
+						\dfrac{p_3}{\rho g} + z_3 &=& h_k - h_{L,3} \\
+						\dot{V}_3 &=& \dot{V}_1 + \dot{V}_2
+					\end{array}
+				\right.
+			\end{equation*}
+		}
+    \end{frame} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Pompen en ventilatoren}
+  	\begin{frame}
+  		\frametitle{Mechanische energie}
+  		\only<1-4>{
+  			\center
+  			\textbf{Een pomp of ventilator voert mechanische energie toe aan de stroming}
+  		}
+  		\only<2-4>{
+  			\begin{equation*}
+				\frac{p_2}{\rho g} + \frac{v_2^2}{2 g} + z_2 = \frac{p_1}{\rho g} + \frac{v_1^2}{2 g} + z_1 - h_\mathrm{L} + h_\mathrm{P}
+			\end{equation*}
+			Met $h_\mathrm{P}$ de opvoerhoogte.
+  		}
+  		\only<3-4>{
+  			
+  			\vspace{1cm}
+  			\center
+  			\textbf{Een turbine onttrekt mechanische energie aan de stroming}
+  		}
+  		\only<4-4>{
+  			\begin{equation*}
+				\frac{p_2}{\rho g} + \frac{v_2^2}{2 g} + z_2 = \frac{p_1}{\rho g} + \frac{v_1^2}{2 g} + z_1 - h_\mathrm{L} + h_\mathrm{P} - h_\mathrm{T}
+			\end{equation*}
+  		}
+    \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
+  	\begin{frame}
+  		\frametitle{Pomp- of ventilatorkarakteristiek}
+  		\center
+  		\includegraphics[width=\textwidth]{fig/leidingstelsels/Pompkarakteristiek_UPS_25_120}
+    \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
+  	\begin{frame}
+  		\frametitle{Types pompen}
+  		\center
+  		\includegraphics[width=0.3\textwidth]{fig/leidingstelsels/Centrifugaalpomp}
+  		\hspace{2cm}
+  		\includegraphics[width=0.3\textwidth]{fig/leidingstelsels/Zuigerpomp}
+  		
+  		\vspace{0.5cm}
+  		\includegraphics[width=0.3\textwidth]{fig/leidingstelsels/Tandradpomp}
+  		\hspace{2cm}
+  		\includegraphics[width=0.3\textwidth]{fig/leidingstelsels/Schottenpomp}
+    \end{frame} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+  	\begin{frame}
+  		\frametitle{Leidingskarakteristiek}
+  		\only<1-2>{
+  			Het ladingsverlies plus het verschil in energiehoogte tussen uit- en inlaat is een functie van het debiet:
+  			\begin{equation*}
+  				h_\mathrm{L}(\dot{V}) + \left( \frac{p_2}{\rho g} + 8 \frac{\dot{V}^2}{g \pi^2 D_2^4} + z_2 \right) - \left( \frac{p_1}{\rho g} + 8 \frac{\dot{V}^2}{g \pi^2 D_1^4} + z_1 \right)
+  			\end{equation*}
+  		}
+  		\only<2>{
+  			\begin{equation*}
+  				\frac{p_2}{\rho g} - \frac{p_1}{\rho g} + z_2 - z_1 + 8 \frac{\dot{V}^2}{g \pi^2 D_2^4} - 8 \frac{\dot{V}^2}{g \pi^2 D_1^4} + h_\mathrm{L}(\dot{V})
+  			\end{equation*}
+  		}
+  		\only<3>{
+  			\center
+  			\includegraphics[width=\textwidth]{fig/leidingstelsels/Leidingskarakteristiek}
+  		}
+    \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+  	\begin{frame}
+  		\frametitle{Werkingspunt}
+  		\only<1>{
+  			\center
+  			\includegraphics[width=\textwidth]{fig/leidingstelsels/Pompleidingkarakteristiek}
+  		}
+  		\only<2-3>{
+  			\center
+  			\textbf{Het werkingspunt is het snijpunt van de pomp- en leidingskaraketeristiek}
+  			
+  			\begin{equation*}
+  				h_\mathrm{L}(\dot{V}) + \left( \frac{p_2}{\rho g} + 8 \frac{\dot{V}^2}{g \pi^2 D_2^4} + z_2 \right) - \left( \frac{p_1}{\rho g} + 8 \frac{\dot{V}^2}{g \pi^2 D_1^4} + z_1 \right) = h_\mathrm{P}
+  			\end{equation*}
+  		}
+  		\only<3-3>{
+  			\begin{equation*}
+  				\frac{p_2}{\rho g} + 8 \frac{\dot{V}^2}{g \pi^2 D_2^4} + z_2  = \frac{p_1}{\rho g} + 8 \frac{\dot{V}^2}{g \pi^2 D_1^4} + z_1 - h_\mathrm{L}(\dot{V}) + h_\mathrm{P}
+  			\end{equation*}
+  		}
+    \end{frame} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+  	\begin{frame}
+  		\frametitle{Grafische voorstelling}
+  		\only<1>{
+  			\vspace{0.6cm}
+  			
+  			\center
+			\includegraphics[width=\textwidth]{fig/leidingstelsels/leiding_structuur}
+		}
+  		\only<2>{
+  			\vspace{0.6cm}
+  			
+  			\center
+			\includegraphics[width=\textwidth]{fig/leidingstelsels/leidingstelsel_energiehoogte}
+		}
+    \end{frame} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
