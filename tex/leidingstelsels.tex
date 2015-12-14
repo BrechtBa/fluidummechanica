@@ -38,12 +38,12 @@ In ingenieurstoepassingen zijn we vaak niet geïnteresseerd in de gemiddelde sne
 	\label{sec:Lokale ladingsverliezen}
 Wanneer een fluïdum door een kraan stroomt zal er een bepaald ladingsverlies optreden ten gevolge van de stand van de kraan. Aangezien dit ladingsverlies, in tegenstelling tot het ladingsverlies in een leiding, aan één specifieke locatie kan toegewezen worden wordt er gesproken over lokale ladingsverliezen. Voor de meeste componenten is het moeilijk de lokale ladingsverliezen analytisch te bepalen. Voor de bepaling ervan wordt vaak gebruik gemaakt van een empirisch bepaalde verliescoëfficiënt gedefinieerd zodat:
 \begin{equation}
-	h_{L, lokaal} = \zeta \frac{v^2}{2 g} = \zeta \frac{\dot{V}^2}{2 g A^2}
+	h_{L, lokaal} = K \frac{v^2}{2 g} = K \frac{\dot{V}^2}{2 g A^2}
 	\label{eqn:lokale ladingsverliezen}
 \end{equation}
 Uit dimensie analyse blijkt dat de verliescoëfficiënt een functie moet zijn van de geometrie en het Reynoldsgetal.
 \begin{equation}
-	\zeta = \zeta(geometrie, Re)
+	K = K(geometrie, Re)
 \end{equation}
 In vele gevallen zal de invloed van het Reynoldsgetal echter verwaarloosd kunnen worden. Dit komt omdat in kranen, bochten,... de energieverliezen voornamelijk veroorzaakt worden door richtingsveranderingen (traagheidskrachten) in in mindere mate door viskeuze krachten. Bij een bocht kunnen we bijvoorbeeld het ladingsverlies opsplitsen in een ladingsverlies ten gevolge van de richtingsverandering (Reynolds onafhankelijk) en een ladingsverlies ten gevolge van de lengte van de bocht (Reynolds afhankelijk). Het ladingsverlies ten gevolge van de lengte van de bocht kan berekend worden met behulp van de formules voor een rechte leiding en wordt dan ook meestal bij de gewone ladingsverliezen gerekend.
 
@@ -51,7 +51,7 @@ De waarden van de verliescoëfficiënt voor enkele veel voorkomende leidingsonde
 
 De lokale ladingsverliezen worden ook soms uitgedrukt als een equivalente leiding lengte. De component wordt dan beschouwd als een extra deel leiding met dezelfde diameter als de leiding waarin het is ingebouwd dat hetzelfde ladingsverlies zou veroorzaken als de werkelijke component. De equivalente lengte wordt dan:
 \begin{equation}
-	L_{equivalent} = \frac{\zeta D}{f}
+	L_{equivalent} = \frac{K D}{f}
 \end{equation}
 
 Uit (\ref{eqn:lokale ladingsverliezen}) blijkt dat we de verliescoëfficiënt beschouwen als de fractie van de kinetische energie van de stroming die in de beschouwde component verloren gaat. Om dit te illustreren zullen we de verliescoëfficiënt bij een plotse verwijding bepalen. Dit is één van de weinige leidingsonderdelen waarvoor het ladingsverlies analytisch kan uitgerekend worden.
@@ -82,7 +82,7 @@ Indien we hierin de verhouding van snelheden vervangen door de verhouding van op
 \end{equation}
 De verliescoëfficiënt wordt dus:
 \begin{equation}
-	\zeta = \left(1 - \frac{A_1}{A_2} \right)^2
+	K = \left(1 - \frac{A_1}{A_2} \right)^2
 \end{equation}
 De verliescoëfficiënt is hier dus enkel een functie van de geometrie. Dit resultaat is in goede overeenstemming met experimenteel bepaalde waarden. Wanneer we de oppervlakte $A_2$ naar oneindig laten gaan bekomen we de verliescoëfficiënt voor een uitstroming in een zeer groot reservoir. De verliescoëfficiënt is dan 1. Met andere woorden de volledige kinetische energie wordt gedissipeerd tijdens de uitstroming in een reservoir.
 
