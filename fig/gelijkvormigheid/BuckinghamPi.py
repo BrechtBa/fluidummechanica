@@ -5,6 +5,7 @@
 # voorbeeld van de kracht van het Buckingham Pi theorema bij het analyseren van experimenten
 
 import numpy as np
+import scipy.optimize
 import matplotlib.pyplot as plt
 import textablepy
 
@@ -28,7 +29,7 @@ textablepy.textable( [no,N,D,v,F],f=['{:}','{:.0f}','{:.2f}','{:.1f}','{:.1f}'] 
 
 # plotting the raw data
 plt.figure(figsize=(16/2.54,12/2.54))
-p = plt.scatter(N,F,c=v, s=D*500, alpha=0.7)
+p = plt.scatter(N,F,c=v, s=D*500, alpha=0.7,cmap=plt.cm.viridis)
 cbar = plt.colorbar(p)
 cbar.set_label('$v$ (m/s)', rotation=90)
 cbar.ax.yaxis.set_label_coords(3.1, 0.5)
@@ -59,7 +60,7 @@ C_F = 2*F/(rho*v**2*D**2)
 
 # plot again
 plt.figure(figsize=(16/2.54,12/2.54))
-p = plt.scatter(l,C_F,c=Re,s=100, alpha=0.7)
+p = plt.scatter(l,C_F,c=Re,s=100, alpha=0.7,cmap=plt.cm.viridis)
 cbar = plt.colorbar(p)
 cbar.set_label('$Re$ (-)', rotation=90)
 cbar.ax.yaxis.set_label_coords(4.5, 0.5)
@@ -68,5 +69,22 @@ plt.ylabel(r'$\frac{F}{1/2 \rho v^2 D^2}$ (-)')
 plt.gca().set_xlim([0,80])
 plt.gca().set_ylim([0,0.014])
 plt.savefig('Dimensieanalyse_voorbeeld_data_dimensieloos.pdf')
+
+# plot trends
+for re in [1e6,2e6,3e6]:
+    ind = np.where( (Re>re-0.1e6) & (Re<re+0.1e6) )
+
+    x = l[ind]
+    y = C_F[ind]
+    
+    def f(x,p0,p1):
+        return x*p0*np.exp(-p1*x)
+        
+    popt,pcov = scipy.optimize.curve_fit(f, x, y)
+    
+    x = np.linspace(min(x),max(x),20)
+
+    plt.plot(x,f(x,*popt), linewidth=2, color=plt.cm.viridis( (re-min(Re))/(max(Re)-min(Re)) ))
+plt.savefig('Dimensieanalyse_voorbeeld_data_dimensieloos_trends.pdf')
 
 plt.show()
