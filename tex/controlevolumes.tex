@@ -56,7 +56,7 @@ In deze cursus zullen we de behoudswetten voor controlevolumes afleiden uit de b
 
 			\subsection{Behoud van massa}
 			\label{sec:Behoud van massa}
-Om behoud van massa te herschrijven voor het gebruik in een controle volume beschouwen we een willekeurig controlevolume in een stroming (Figuur \ref{fig:controlevolume in stroming}). Wanneer er netto een bepaalde hoeveelheid massa het controlevolume uitstoomt zal de hoeveel massa binnen het controlevolume net zoveel afnemen. Op dezelfde manier is de som van de netto massastroom over de grens van het controlevolume naar buiten en de verandering van massa binnen het controlevolume gelijk aan nul.
+Om behoud van massa te herschrijven voor het gebruik in een controle volume beschouwen we een willekeurig controlevolume in een stroming (Figuur \ref{fig:controlevolume in stroming}). Wanneer er netto een bepaalde hoeveelheid massa het controlevolume uitstoomt zal de hoeveelheid massa binnen het controlevolume net zoveel afnemen. Op dezelfde manier is de som van de netto massastroom over de grens van het controlevolume naar buiten en de verandering van massa binnen het controlevolume gelijk aan nul.
 \begin{figure}[htb]
 	\centering
 	\includegraphics{fig/controlevolumes/Controlevolume_met_stroomlijnen}
@@ -96,12 +96,12 @@ De hoeveelheid massa die in een tijdspanne $\Delta t$ door het oppervlak stroomt
 	\Delta m = \rho \Delta x_{\perp} \diff A = \rho v_{\perp} \Delta t \diff A
 	\label{eqn:hoeveelheid massa door een oppervlak}
 \end{equation}
-De massastroom door het oppervlak $\diff A$ vinden we door te delen door de tijdspanne $\Delta t$:
+Hierin is $v_{\perp}$ de loodrechte projectie van de snelheid op het oppervlak. De massastroom door het oppervlak $\diff A$ vinden we door te delen door de tijdspanne $\Delta t$:
 \begin{equation}
 	\diff \dot{m}  = \rho v_{\perp} \diff A
 	\label{eqn:massastroom}
 \end{equation}
-Hierin is $v_{\perp}$ de loodrechte projectie van de snelheid op het oppervlak. Wanneer massastroom uit het controlevolume gericht is wordt de projectie van de snelheid positief gerekend, wanneer de massastroom het controlevolume in gericht is wordt de projectie negatief gerekend. Deze conventie komt overeen met de teken conventie van de vergelijking in woorden (\ref{eqn:controlevolume,behoud van massa,woorden}).
+Wanneer massastroom uit het controlevolume gericht is wordt de projectie van de snelheid positief gerekend, wanneer de massastroom het controlevolume in gericht is wordt de projectie negatief gerekend. Deze conventie komt overeen met de teken conventie van de vergelijking in woorden (\ref{eqn:controlevolume,behoud van massa,woorden}).
 
 			\subsection{Behoud van impuls}
 			\label{sec:Behoud van impuls}
@@ -262,13 +262,13 @@ De termen $u + \frac{p}{\rho}$ kennen we reeds uit de thermodynamica als de enth
 
 	Beginnen de analyse door een geschikt controlevolume te tekenen zoals aangeduid in de figuur. Het controle volume loopt volgens de stroomlijnen tussen twee schoepen door en wordt afgsloten door twee vlakken volgens de tangentiële richting. Definieer ook een geschikt assenstelsel.
 
-	Om de krachten uit te rekenen kunnen wede vergelijking van behoud van impuls uitschrijven voor het controlevolume. Aangezien dit volgens de stoomlijnen loopt hebben we een controlevolume met één inlaat en één uitlaat. Behoud van impuls wordt dan:
+	Om de krachten uit te rekenen kunnen we de vergelijking van behoud van impuls uitschrijven voor het controlevolume. Aangezien dit volgens de stoomlijnen loopt hebben we een controlevolume met één inlaat en één uitlaat. Behoud van impuls wordt dan:
 	\begin{align*}
 		\sum F_x &= \dot{m} \left(v_{uit,x} - v_{in,x}\right) \\
 		\sum F_y &= \dot{m} \left(v_{uit,y} - v_{in,y}\right)
 	\end{align*}
 
-	De snelheids componenten kunnen we halen uit de vergelijkingen voor behoud van massa. dit geeft:
+	De snelheidscomponenten kunnen we halen uit de vergelijkingen voor behoud van massa. dit geeft:
 	\begin{equation*}
 		\rho v_{in} b h = \rho v_{uit} b h \cos \alpha
 	\end{equation*}
@@ -283,7 +283,7 @@ De termen $u + \frac{p}{\rho}$ kennen we reeds uit de thermodynamica als de enth
 		v_{in,y}  &= 0\\
 		v_{uit,y} &= -v_{in}\tan \alpha
 	\end{align*}
-	Het massadebiet is halen we uit de doorstroom oppervlakte en de ingaande snelheid:
+	Het massadebiet halen we uit de doorstroom oppervlakte en de ingaande snelheid:
 	\begin{equation*}
 		\dot{m} = \rho b h v_{in}
 	\end{equation*}
