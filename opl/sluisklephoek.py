@@ -5,7 +5,7 @@ import numpy as np
 
 # Gegevens
 g = 9.81                # m/s2
-rho = 1045.         	# kg/m3
+rho = 1000.         	# kg/m3
 H = 4.         	        # m
 B = 4.        	        # m
 R = 6.        	        # m
