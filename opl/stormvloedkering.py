@@ -55,8 +55,8 @@ print('')
 alpha1 = -np.arcsin(Hr/R)
 alpha2 = np.arcsin( (Hl-Hr)/R )
 
-print('alpha1 = {:.3f} rad'.format(alpha1))
-print('alpha2 = {:.3f} rad'.format(alpha2))
+print('alpha1 = {:.4f} rad'.format(alpha1))
+print('alpha2 = {:.4f} rad'.format(alpha2))
 print('')
 
 alpha_l = np.linspace(alpha1,alpha2,100)
