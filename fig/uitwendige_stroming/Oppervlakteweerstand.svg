@@ -14,7 +14,7 @@
    id="svg3009"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="Vormweerstand-oppervlakteweerstand.svg">
+   sodipodi:docname="Oppervlakteweerstand.svg">
   <defs
      id="defs3011">
     <marker
@@ -38,9 +38,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.1033203"
-     inkscape:cx="246.19289"
-     inkscape:cy="235.09796"
+     inkscape:zoom="1.3388735"
+     inkscape:cx="244.87836"
+     inkscape:cy="150.46264"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -50,8 +50,9 @@
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
+     inkscape:object-nodes="true"
      inkscape:object-paths="true"
-     inkscape:object-nodes="true">
+     inkscape:snap-smooth-nodes="true">
     <inkscape:grid
        type="xygrid"
        id="grid3017"
@@ -72,7 +73,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -122,16 +123,15 @@
        d="m 17.716536,1034.6456 53.149606,0"
        style="fill:none;stroke:#000000;stroke-width:1.77165365;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)" />
     <path
-       inkscape:connector-curvature="0"
        style="fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 296.47308,804.33068 c -8.95728,0 -30.72724,11.80959 -30.72724,35.43164 0,23.62207 21.76996,35.43359 30.72724,35.43359 28.88043,0 32.08722,-23.62256 75.57416,-35.43359 -43.48694,-11.81103 -46.69373,-35.43164 -75.57416,-35.43164 z"
-       id="path4152"
-       sodipodi:nodetypes="ssscs" />
+       d="M 194.88281 177.16602 C 162.04018 177.16602 124.01562 188.97561 124.01562 212.59766 C 124.01562 236.21973 162.04018 248.03125 194.88281 248.03125 C 300.77548 248.03125 354.33048 224.40869 513.7793 212.59766 C 354.33048 200.78663 300.77548 177.16602 194.88281 177.16602 z "
+       transform="translate(0,768.89761)"
+       id="path4152" />
     <path
-       sodipodi:nodetypes="ssscs"
-       id="path4738"
-       d="m 221.08212,946.06297 c -32.91502,0 -97.92491,11.80957 -97.92491,35.43161 0,23.62202 65.00989,35.43362 97.92491,35.43362 106.12595,0 132.89733,-23.62251 292.69741,-35.43362 C 353.97945,969.68355 327.20807,946.06297 221.08212,946.06297 Z"
+       id="path4157"
+       d="m 248.0315,804.33159 c -20.89983,0 -53.14961,11.80959 -53.14961,35.43164 0,23.62207 32.24978,35.43359 53.14961,35.43359 67.38616,0 93.41422,-23.62256 194.88153,-35.43359 C 341.44572,827.9522 315.41766,804.33159 248.0315,804.33159 Z"
        style="fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ssscs" />
   </g>
 </svg>
