@@ -93,11 +93,11 @@
 		Dimensieloze getallen zijn verhoudingen van referentiewaarden voor krachten
 		\pause
 		\vspace{0.5cm}
-		\begin{align*}
-			\text{Re} &= \dfrac{\rho v D}{\mu} = \dfrac{v D}{\nu} = \dfrac{\text{traagheidskracht}}{\text{viskeuze krachten}} \\
-			\text{Eu} &= \dfrac{p}{\rho v^2} = \dfrac{\text{drukkracht}}{\text{traagheidskracht}} \\
-			\text{Fr} &= \dfrac{v}{\sqrt{g D}} = \sqrt{\dfrac{\text{traagheidskracht}}{\text{zwaartekracht}}} \\
-		\end{align*}
+		\begin{alignat*}{3}
+			&\text{Re} &&= \dfrac{\rho v D}{\mu} = \dfrac{v D}{\nu} &&= \dfrac{\text{traagheidskracht}}{\text{viskeuze krachten}} \\
+			&\text{Eu} &&= \dfrac{p}{\rho v^2} &&= \dfrac{\text{drukkracht}}{\text{traagheidskracht}} \\
+			&\text{Fr} &&= \dfrac{v}{\sqrt{g D}} &&= \sqrt{\dfrac{\text{traagheidskracht}}{\text{zwaartekracht}}}
+		\end{alignat*}
 	\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   	\begin{frame}
@@ -227,6 +227,28 @@
 			Volume                       & \unit{L^3}                    &   \unit{m^3} \\
 			\hline
 		\end{tabular}
+	\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{frame}
+		\frametitle{Buckingham-Pi theorema}
+		\only<1-2>{
+			Een relatie:
+			\begin{equation*}
+				a = f\left( a_1,a_2,\ldots,a_n \right)
+			\end{equation*}
+			
+			met $k$ grootheden met onafhankelijke dimensies
+		}
+		\only<2-2>{
+		
+			\vspace{1cm}
+			kan herschreven worden als:
+			\begin{equation*}
+				\pi = f\left( \pi_1,\pi_2,\ldots,\pi_{n-k} \right)
+			\end{equation*}
+			
+			met $\pi, \pi_1,\ldots,\pi_{n-k}$ dimensieloze grootheden
+		}
 	\end{frame}	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\begin{frame}
@@ -236,9 +258,12 @@
         	\includegraphics[height=7cm]{fig/gelijkvormigheid/Dimensieanalyse_voorbeeld_data}
         }
         \only<2>{
-        	\includegraphics[height=8cm]{fig/gelijkvormigheid/Dimensieanalyse_voorbeeld_data_dimensieloos}
+        	\includegraphics[height=8cm]{fig/gelijkvormigheid/Dimensieanalyse_voorbeeld_data_dimensieloos_1par}
         }
         \only<3>{
+        	\includegraphics[height=8cm]{fig/gelijkvormigheid/Dimensieanalyse_voorbeeld_data_dimensieloos}
+        }
+        \only<4>{
         	\includegraphics[height=8cm]{fig/gelijkvormigheid/Dimensieanalyse_voorbeeld_data_dimensieloos_trends}
         }	
 	\end{frame}

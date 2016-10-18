@@ -58,7 +58,18 @@ Re = v*D/nu
 l = N*D/v
 C_F = 2*F/(rho*v**2*D**2)
 
-# plot again
+
+# plot again with one parameter (forgotten viscosity)
+plt.figure(figsize=(16/2.54,12/2.54))
+p = plt.scatter(l,C_F, s=100, alpha=0.7, color='k')
+plt.xlabel(r'$\frac{ N D}{v}$ (-)')
+plt.ylabel(r'$\frac{F}{1/2 \rho v^2 D^2}$ (-)')
+plt.gca().set_xlim([0,80])
+plt.gca().set_ylim([0,0.014])
+plt.savefig('Dimensieanalyse_voorbeeld_data_dimensieloos_1par.pdf')
+
+
+# plot again with two paramters
 plt.figure(figsize=(16/2.54,12/2.54))
 p = plt.scatter(l,C_F,c=Re,s=100, alpha=0.7,cmap=plt.cm.viridis)
 cbar = plt.colorbar(p)
