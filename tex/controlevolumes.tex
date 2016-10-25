@@ -140,6 +140,7 @@ Deze vergelijking is net zoals de impulsvergelijking voor controlemassa's een ve
 
 De term, de totale kracht op het controlevolume, zorgt soms voor verwarring. Krachten kunnen inwerken op een controlevolume via drukspanningen (normaalspanningen) en schuifspanningen. Wanneer de rand van een controlevolume tegen een wand valt zullen deze spanningen uitgeoefend worden door de wand en zal de wand gelijke maar tegengestelde reactie spanningen ondervinden. Deze spanningen kunnen dan voorgesteld worden als een resulterende reactiekracht. Wanneer de rand van het controlevolume in het medium valt zullen ook hier spanningen uitgeoefend worden door het medium buiten het controlevolume. De meest voor de hand liggende spanning is een drukspanning die gelijk in alle richtingen aanwezig is in het medium dus ook aan de rand van het controlevolume.
 
+
 			\subsection{Behoud van energie}
 			\label{sec:Behoud van energie}
 Ook voor behoud van energie kunnen we dezelfde transformatie als voor massa en impuls toepassen. (\ref{eqn:controlemassa,behoud van energie}) wordt dan:
@@ -213,11 +214,11 @@ Let wel, de krachten en snelheden voorkomend in deze vergelijking zijn vectoren,
 	F_z &= \dot{m} (v_{z,u}-v_{z,i}) \nonumber
 	\label{eqn:behoud van impuls in een stationair controlevolume met een in en uitstroming geprojecteerd}
 \end{align}
-Voor het bepalen van de inwerkende krachten moet ook hier rekening gehouden worden met de krachten aan de instroming en de uitstroming. De aan de instroming heersende druk zal namelijk een kracht $\vt{F} = p A \vt{n}$ uitoefenen op het controlevolume:
+Voor het bepalen van de inwerkende krachten moet ook hier rekening gehouden worden met de krachten aan de instroming en de uitstroming. De aan de instroming heersende druk zal namelijk een kracht $\vt{F} = - p A \vt{n}$ uitoefenen op het controlevolume met $\vt{n}$ de naar buiten gerichte normaalvector op de rand van het controle volume:
 \begin{align}
-	F_{x,R} &= p_{u} A_u n_{x,u} - p_{i} A_i n_{x,i} + \dot{m} (v_{x,u}-v_{x,i}) \nonumber \\
-	F_{y,R} &= p_{u} A_u n_{y,u} - p_{i} A_i n_{y,i} + \dot{m} (v_{y,u}-v_{y,i}) \\
-	F_{z,R} &= p_{u} A_u n_{z,u} - p_{i} A_i n_{z,i} + \dot{m} (v_{z,u}-v_{z,i}) \nonumber
+	F_{x,R} &= p_{u} A_u n_{x,u} + p_{i} A_i n_{x,i} + \dot{m} (v_{x,u}-v_{x,i}) \nonumber \\
+	F_{y,R} &= p_{u} A_u n_{y,u} + p_{i} A_i n_{y,i} + \dot{m} (v_{y,u}-v_{y,i}) \\
+	F_{z,R} &= p_{u} A_u n_{z,u} + p_{i} A_i n_{z,i} + \dot{m} (v_{z,u}-v_{z,i}) \nonumber
 	\label{eqn:behoud van impuls in een stationair controlevolume met een in en uitstroming geprojecteerd2}
 \end{align}
 
