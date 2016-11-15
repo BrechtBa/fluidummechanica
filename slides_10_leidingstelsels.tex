@@ -282,7 +282,75 @@
   				R_\mathrm{parallel} &= \left( \sum_i \frac{1}{\sqrt{R_i}} \right)^{-2}
   			\end{align*}
   		}
-  	\end{frame}	
+  	\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  	\begin{frame}
+  		\frametitle{Iteratief elektrisch analoog}
+  		\only<1-4>{
+  			\begin{equation*}
+  				h_\mathrm{L} = 8 f \frac{\dot{V}^2}{g \pi^2} \frac{L}{D^5}
+  			\end{equation*}
+  		}
+  		\only<2-4>{
+  			\begin{equation*}
+  				U = R I
+  			\end{equation*}
+  		}
+  		\only<3-4>{
+  			\begin{equation*}
+  				h_\mathrm{L} = R' \dot{V}
+  			\end{equation*}
+  		}
+  		\only<4-4>{
+  		
+  			Voor leidingen:
+  			\begin{equation*}
+  				R' = \frac{8 f}{g \pi^2} \frac{L}{D^5} \dot{V}
+  			\end{equation*}
+  			
+  			Voor lokale verliezen:
+  			\begin{equation*}
+  				R' = \frac{\zeta}{2 g A^2} \dot{V}
+  			\end{equation*}
+  		}
+  		\only<5-6>{
+  		
+  			Serieschakeling:
+  			\begin{align*}
+  				h_\mathrm{L,serie} &= R'_\mathrm{serie} \dot{V}\\
+  				R'_\mathrm{serie} &= \sum_i R'_i 
+  			\end{align*}
+  		}
+  		\only<6-6>{	
+  		
+  			Parallelschakeling:
+  			\begin{align*}
+  				h_\mathrm{L,parallel} &= R'_\mathrm{parallel} \dot{V}\\
+  				R'_\mathrm{parallel} &= \left( \sum_i \frac{1}{R'_i} \right)^{-1}
+  			\end{align*}
+  		}
+  		\only<7-8>{
+
+  			\begin{equation*}
+  				R' = \frac{8 f}{g \pi^2} \frac{L}{D^5} \underlinered{\dot{V}}
+  			\end{equation*}
+  			
+  			Iteratieve oplossingsprocedure noodzakelijk
+  			
+  		}
+  		\only<8-8>{
+  			
+  			\vspace{0.5cm}
+  			\setbeamertemplate{enumerate items}[default]
+			\begin{enumerate}
+				\item Schat $\dot{V}_i$
+				\item Bepaal $R'_i$
+				\item Bepaal $\dot{V}_i$, en andere grootheden
+				\item Indien de schatting te ver afwijkt van het resultaat: ga naar stap 2 
+			\end{enumerate}  		
+  		
+  		}
+  	\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   	\begin{frame}
   		\frametitle{Voorbeeld}
@@ -293,13 +361,13 @@
   		}
   		\only<2-5>{
   			\begin{textblock}{5}(0,3)
-        	    \includegraphics[width=4.5cm]{fig/leidingstelsels/handdoekdroger}
+        	    \includegraphics[width=4.5cm]{fig/leidingstelsels/Handdoekdroger}
         	\end{textblock}
   		}
   		\begin{textblock}{6}(5.5,3)
   			\only<3-5>{
   				\begin{equation*}
-  					h_{\mathrm{L},1\rightarrow 2} = \left( \frac{1}{\sqrt{R_{\mathrm{h},1}}} + \frac{1}{\sqrt{2R_{\mathrm{v},1}+R_{\mathrm{h},1}}} \right)^{-2} \dot{V}_{\mathrm{v},2}^2
+  					h_{\mathrm{L},1\rightarrow 2} = \left( \frac{1}{\sqrt{R_{\mathrm{h},2}}} + \frac{1}{\sqrt{2R_{\mathrm{v},1}+R_{\mathrm{h},1}}} \right)^{-2} \dot{V}_{\mathrm{v},2}^2
   				\end{equation*}
   				\begin{equation*}
   					R_{1\rightarrow 2} = \left( \frac{1}{\sqrt{R_{\mathrm{h},1}}} + \frac{1}{\sqrt{2R_{\mathrm{v},1}+R_{\mathrm{h},1}}} \right)^{-2}
@@ -307,16 +375,109 @@
   			}
   			\only<4-5>{
   				\begin{equation*}
-  					R_{1\rightarrow 3} = \left( \frac{1}{\sqrt{R_{\mathrm{h},2}}} + \frac{1}{\sqrt{2R_{\mathrm{v},2} + R_{1\rightarrow 2}}} \right)^{-2}
+  					R_{1\rightarrow 3} = \left( \frac{1}{\sqrt{R_{\mathrm{h},3}}} + \frac{1}{\sqrt{2R_{\mathrm{v},2} + R_{1\rightarrow 2}}} \right)^{-2}
   				\end{equation*}
   			}
   			\only<5-5>{
   				\begin{align*}
-  					R_{1\rightarrow n} &= \left( \frac{1}{\sqrt{R_{\mathrm{h},n-1}}} + \frac{1}{\sqrt{2R_{\mathrm{v},n-1}+R_{1\rightarrow n-1}}} \right)^{-2} \\
+  					R_{1\rightarrow n} &= \left( \frac{1}{\sqrt{R_{\mathrm{h},n}}} + \frac{1}{\sqrt{2R_{\mathrm{v},n-1}+R_{1\rightarrow n-1}}} \right)^{-2} \\
   					h_{\mathrm{L},1\rightarrow n} &= R_{1\rightarrow n} \dot{V}_{\mathrm{v},n}^2
   				\end{align*}
   			}
+  			\only<6>{
+  				code voorbeeld
+  			}
   		\end{textblock}
+  	\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  	\begin{frame}
+  		\frametitle{Voorbeeld iteratief}
+  		\only<1-6>{
+  			\begin{textblock}{5}(0,3)
+        	    \includegraphics[width=4.5cm]{fig/leidingstelsels/Handdoekdroger_iteratief}
+        	\end{textblock}
+  		}
+  		\begin{textblock}{6}(6.0,3)
+  			\only<2-3>{
+  				\begin{equation*}
+  					\frac{p_2}{\rho g} + \frac{v_2^2}{2 g} + z_2 = \frac{p_1}{\rho g} + \frac{v_1^2}{2 g} + z_1 - h_L
+  				\end{equation*}
+  			}
+  			\only<3-3>{
+  				\begin{equation*}
+  					H_2 = H_1 - h_L
+  				\end{equation*}
+  			}
+  			\only<4-5>{
+  				\begin{align*}
+  					H_{2,\mathrm{i}} &= H_{3,\mathrm{i}} - R'_{\mathrm{v},2} \dot{V}_{\mathrm{v},2} \\
+  					H_{3,\mathrm{u}} &= H_{2,\mathrm{u}} - R'_{\mathrm{v},2} \dot{V}_{\mathrm{v},2} \\
+  					H_{2,\mathrm{u}} &= H_{2,\mathrm{i}} - R'_{\mathrm{h},2} \dot{V}_{\mathrm{h},2}
+  				\end{align*}
+  			}
+  			\only<5-5>{
+				\begin{equation*}
+  					\dot{V}_{\mathrm{h},2} = \dot{V}_{\mathrm{v},2} + \dot{V}_{\mathrm{h},1}
+  				\end{equation*}
+  			}
+  			\only<6>{
+  				\begin{align*}
+  					H_{\mathrm{i},i} &= H_{\mathrm{i},i+1} - R'_{\mathrm{v},i} \dot{V}_{\mathrm{v},i} \\
+  					H_{\mathrm{u},i+1} &= H_{\mathrm{u},i} - R'_{\mathrm{v},i} \dot{V}_{\mathrm{v},i} \\
+  					H_{\mathrm{u},i} &= H_{\mathrm{i},i} - R'_{\mathrm{h},i} \dot{V}_{\mathrm{h},i} 
+  				\end{align*}
+				\begin{equation*}
+  					\dot{V}_{\mathrm{h},i+1} = \dot{V}_{\mathrm{v},i+1} + \dot{V}_{\mathrm{h},i}
+  				\end{equation*}
+  			}
+  		\end{textblock}
+  		
+		\only<7>{
+  			
+  			\vspace{-0.2cm}
+  			\begin{equation*}
+				\begin{pmatrix}
+    &        &        &        &        &        &        &                   &        & \\
+  0 & 1      & -1     & 0      &        &        &        & R'_{\mathrm{v},i} &        & \\
+    & \ddots & \ddots & \ddots & \ddots &        &        &                   & \ddots & \\
+    &        &        & 0      & -1     & 1      & 0      & R'_{\mathrm{v},i} &        & \\
+    &        &        &        & \ddots & \ddots & \ddots & \ddots            & \ddots & \\
+    &        &        &        &        &        &        &                   &        & \\
+    &        &        &        &        & \vdots &        &                   &        & \\
+\end{pmatrix}%
+ \cdot
+ \begin{pmatrix}
+  \vdots \\
+  H_{\mathrm{i},i} \\
+  H_{\mathrm{i},i+1} \\
+  \vdots \\
+  H_{\mathrm{u},i} \\
+  H_{\mathrm{u},i+1} \\
+  \vdots \\
+  \dot{V}_{\mathrm{v},i} \\
+  \dot{V}_{\mathrm{v},i+1} \\
+  \vdots \\
+  \dot{V}_{\mathrm{h},i} \\
+  \dot{V}_{\mathrm{h},i+1} \\
+  \vdots
+ \end{pmatrix}
+ =
+ \begin{pmatrix}
+  \vdots \\
+  0 \\
+  \vdots \\
+  0 \\
+  \vdots \\
+  \vdots \\
+  \vdots \\
+  0 \\
+  \vdots \\
+  \vdots \\
+  0 \\
+  \vdots
+ \end{pmatrix}
+  			\end{equation*}
+  		}
   	\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   	\begin{frame}
@@ -488,19 +649,29 @@
     \end{frame} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
   	\begin{frame}
-  		\frametitle{Leidingskarakteristiek}
-  		\only<1-2>{
+  		\frametitle{Leidingkarakteristiek}
+  		\only<1>{
+  			\begin{center}
+  				\includegraphics{fig/leidingstelsels/Leidingstelsel_pomp}
+  			\end{center}
+  		}
+  		\only<2-3>{
+  			\vspace{-0.6cm}
+  			\begin{center}
+  				\includegraphics[height=3cm]{fig/leidingstelsels/Leidingstelsel_pomp}
+  			\end{center}
+  			
   			Het ladingsverlies plus het verschil in energiehoogte tussen uit- en inlaat is een functie van het debiet:
   			\begin{equation*}
   				h_\mathrm{L}(\dot{V}) + \left( \frac{p_2}{\rho g} + 8 \frac{\dot{V}^2}{g \pi^2 D_2^4} + z_2 \right) - \left( \frac{p_1}{\rho g} + 8 \frac{\dot{V}^2}{g \pi^2 D_1^4} + z_1 \right)
   			\end{equation*}
   		}
-  		\only<2>{
+  		\only<3>{
   			\begin{equation*}
   				\frac{p_2}{\rho g} - \frac{p_1}{\rho g} + z_2 - z_1 + 8 \frac{\dot{V}^2}{g \pi^2 D_2^4} - 8 \frac{\dot{V}^2}{g \pi^2 D_1^4} + h_\mathrm{L}(\dot{V})
   			\end{equation*}
   		}
-  		\only<3>{
+  		\only<4>{
   			\center
   			\includegraphics[width=\textwidth]{fig/leidingstelsels/Leidingskarakteristiek}
   		}
@@ -514,7 +685,7 @@
   		}
   		\only<2-3>{
   			\center
-  			\textbf{Het werkingspunt is het snijpunt van de pomp- en leidingskaraketeristiek}
+  			\textbf{Het werkingspunt is het snijpunt van de pomp- en leidingkaraketeristiek}
   			
   			\begin{equation*}
   				h_\mathrm{L}(\dot{V}) + \left( \frac{p_2}{\rho g} + 8 \frac{\dot{V}^2}{g \pi^2 D_2^4} + z_2 \right) - \left( \frac{p_1}{\rho g} + 8 \frac{\dot{V}^2}{g \pi^2 D_1^4} + z_1 \right) = h_\mathrm{P}

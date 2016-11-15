@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:ns0="http://www.iki.fi/pav/software/textext/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="Handdoekdroger_iteratief.svg"
+   inkscape:version="0.91 r13725"
+   version="1.1"
+   id="svg3041"
+   height="184.25197"
+   width="177.16534">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.0964699"
+     inkscape:cx="59.969532"
+     inkscape:cy="69.504312"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer3"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="962"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     units="mm"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2992"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       units="mm"
+       spacingx="1mm"
+       spacingy="1mm" />
+  </sodipodi:namedview>
+  <defs
+     id="defs3043">
+    <linearGradient
+       id="linearGradient3888">
+      <stop
+         style="stop-color:#646464;stop-opacity:0.94545454;"
+         offset="0"
+         id="stop3890" />
+      <stop
+         id="stop3892"
+         offset="0.36636516"
+         style="stop-color:#a0a0a0;stop-opacity:1;" />
+      <stop
+         style="stop-color:#646464;stop-opacity:1;"
+         offset="1"
+         id="stop3894" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3870">
+      <stop
+         id="stop3872"
+         offset="0"
+         style="stop-color:#646464;stop-opacity:1;" />
+      <stop
+         style="stop-color:#a0a0a0;stop-opacity:1;"
+         offset="0.36636516"
+         id="stop3878" />
+      <stop
+         id="stop3874"
+         offset="1"
+         style="stop-color:#646464;stop-opacity:1;" />
+    </linearGradient>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mstart"
+       style="overflow:visible">
+      <path
+         id="path5984"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.4,0,0,0.4,4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend"
+       style="overflow:visible">
+      <path
+         id="path5981"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend"
+       style="overflow:visible">
+      <path
+         id="path5987"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <linearGradient
+       gradientTransform="matrix(1,0,0,0.93333335,-24.803153,7.5590567)"
+       gradientUnits="userSpaceOnUse"
+       y2="86.81102"
+       x2="56.692913"
+       y1="86.81102"
+       x1="49.6063"
+       id="linearGradient3876"
+       xlink:href="#linearGradient3870"
+       inkscape:collect="always" />
+    <linearGradient
+       y2="86.81102"
+       x2="54.514931"
+       y1="86.81102"
+       x1="51.404785"
+       gradientTransform="matrix(0,1,-0.71111107,0,150.31496,-17.716545)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4495"
+       xlink:href="#linearGradient3888"
+       inkscape:collect="always" />
+    <linearGradient
+       y2="86.81102"
+       x2="54.514931"
+       y1="86.81102"
+       x1="51.404785"
+       gradientTransform="matrix(0,1,-0.71111107,0,150.31496,106.29921)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4501"
+       xlink:href="#linearGradient3888"
+       inkscape:collect="always" />
+    <linearGradient
+       y2="86.81102"
+       x2="54.514931"
+       y1="86.81102"
+       x1="51.404785"
+       gradientTransform="matrix(0,1,-0.71111107,0,150.31496,88.582658)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4503"
+       xlink:href="#linearGradient3888"
+       inkscape:collect="always" />
+    <linearGradient
+       y2="86.81102"
+       x2="54.514931"
+       y1="86.81102"
+       x1="51.404785"
+       gradientTransform="matrix(0,1,-0.71111107,0,150.31496,70.866127)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4505"
+       xlink:href="#linearGradient3888"
+       inkscape:collect="always" />
+    <linearGradient
+       y2="86.81102"
+       x2="54.514931"
+       y1="86.81102"
+       x1="51.404785"
+       gradientTransform="matrix(0,1,-0.71111107,0,150.31496,53.149593)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4507"
+       xlink:href="#linearGradient3888"
+       inkscape:collect="always" />
+    <linearGradient
+       y2="86.81102"
+       x2="54.514931"
+       y1="86.81102"
+       x1="51.404785"
+       gradientTransform="matrix(0,1,-0.71111107,0,150.31496,35.433063)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4509"
+       xlink:href="#linearGradient3888"
+       inkscape:collect="always" />
+    <linearGradient
+       y2="86.81102"
+       x2="54.514931"
+       y1="86.81102"
+       x1="51.404785"
+       gradientTransform="matrix(0,1,-0.71111107,0,150.31496,17.716526)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4513"
+       xlink:href="#linearGradient3888"
+       inkscape:collect="always" />
+    <linearGradient
+       y2="86.81102"
+       x2="54.514931"
+       y1="86.81102"
+       x1="51.404785"
+       gradientTransform="matrix(0,1,-0.71111107,0,150.31496,-9.9209354e-6)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4515"
+       xlink:href="#linearGradient3888"
+       inkscape:collect="always" />
+    <linearGradient
+       y2="86.81102"
+       x2="54.514931"
+       y1="86.81102"
+       x1="51.404785"
+       gradientTransform="matrix(0,1,-0.71111107,0,150.31496,-35.433066)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4517"
+       xlink:href="#linearGradient3888"
+       inkscape:collect="always" />
+    <linearGradient
+       y2="86.81102"
+       x2="56.692913"
+       y1="86.81102"
+       x1="49.6063"
+       gradientTransform="matrix(1,0,0,0.93333335,95.669287,7.5590566)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4519"
+       xlink:href="#linearGradient3870"
+       inkscape:collect="always" />
+  </defs>
+  <metadata
+     id="metadata3046">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     style="display:inline"
+     inkscape:label="Radiator"
+     id="layer1"
+     inkscape:groupmode="layer">
+    <path
+       inkscape:connector-curvature="0"
+       id="path3082"
+       d="m 28.346453,162.99213 0,-148.8189"
+       style="fill:none;stroke:url(#linearGradient3876);stroke-width:7.08661413;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       style="fill:none;stroke:url(#linearGradient4519);stroke-width:7.08661413;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 148.8189,162.99213 0,-148.8189"
+       id="path3880"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3884"
+       d="m 31.889761,17.71655 113.385829,0"
+       style="fill:none;stroke:url(#linearGradient4517);stroke-width:5.31496048;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       style="fill:none;stroke:url(#linearGradient4495);stroke-width:5.31496048;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 31.889765,35.433071 113.385825,0"
+       id="path3896"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:url(#linearGradient4515);stroke-width:5.31496048;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 31.889761,53.149606 113.385829,0"
+       id="path3902"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:url(#linearGradient4513);stroke-width:5.31496048;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 31.889761,70.866142 113.385829,0"
+       id="path3906"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:url(#linearGradient4509);stroke-width:5.31496048;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 31.889761,88.582679 113.385829,0"
+       id="path3914"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:url(#linearGradient4507);stroke-width:5.31496048;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 31.889761,106.29921 113.385829,0"
+       id="path3918"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:url(#linearGradient4505);stroke-width:5.31496048;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 31.889761,124.01575 113.385829,0"
+       id="path3922"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:url(#linearGradient4503);stroke-width:5.31496048;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 31.889761,141.73228 113.385829,0"
+       id="path3926"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:url(#linearGradient4501);stroke-width:5.31496048;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 31.889761,159.44882 113.385829,0"
+       id="path3930"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4529"
+       d="m 28.346453,180.70867 0,-14.17323"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow1Mend)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow1Mend)"
+       d="m 148.8189,165.78544 0,14.17323"
+       id="path4903"
+       inkscape:connector-curvature="0" />
+    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       ns0:preamble="D:\\Onderwijs\\FLUI\\Cursusmateriaal\\Fluidummechanica\\tex\\packages.tex"
+       ns0:text="$\\dot{V}_{\\mathrm{v},n}$"
+       text-anchor="start"
+       word-spacing="normal"
+       letter-spacing="normal"
+       font-size-adjust="none"
+       font-stretch="normal"
+       font-weight="normal"
+       font-variant="normal"
+       font-style="normal"
+       fill-opacity="1"
+       fill-rule="evenodd"
+       fill="none"
+       stroke-opacity="1"
+       stroke-dashoffset="0"
+       stroke-dasharray="none"
+       stroke-miterlimit="10.433"
+       stroke-linejoin="miter"
+       stroke-linecap="butt"
+       stroke="black"
+       xml:space="preserve"
+       transform="matrix(1.25,0,0,-1.25,-247.632,775.21397)"
+       id="content">
+<path
+   id="path3104"
+   fill="black"
+   stroke-width="0"
+   d="M227.97,485.87 L227.97,485.9 L227.97,485.92 L227.97,485.95 L227.96,485.97 L227.95,486 L227.95,486.02 L227.94,486.04 L227.93,486.07 L227.92,486.09 L227.91,486.11 L227.9,486.14 L227.88,486.16 L227.87,486.18 L227.85,486.2 L227.84,486.22 L227.82,486.24 L227.8,486.26 L227.78,486.27 L227.76,486.29 L227.74,486.3 L227.72,486.32 L227.7,486.33 L227.68,486.34 L227.65,486.36 L227.63,486.37 L227.6,486.37 L227.58,486.38 L227.55,486.39 L227.53,486.39 L227.5,486.4 L227.47,486.4 L227.44,486.4 C227.11,486.4,226.91,486.12,226.91,485.87 C226.91,485.61,227.14,485.35,227.43,485.35 C227.77,485.35,227.97,485.63,227.97,485.87 Z " />
+<path
+   id="path3106"
+   fill="black"
+   stroke-width="0"
+   d="M229.68,482.89 L229.73,482.96 L229.77,483.02 L229.82,483.09 L229.86,483.14 L229.9,483.2 L229.95,483.25 L229.99,483.3 L230.03,483.34 L230.08,483.38 L230.12,483.42 L230.16,483.45 L230.2,483.48 L230.24,483.51 L230.28,483.54 L230.32,483.56 L230.36,483.58 L230.4,483.6 L230.44,483.62 L230.48,483.63 L230.52,483.65 L230.56,483.66 L230.59,483.67 L230.63,483.68 L230.67,483.68 L230.7,483.69 L230.74,483.69 L230.81,483.7 L230.88,483.71 L230.95,483.71 C231.07,483.72,231.08,483.89,231.08,483.9 C231.08,483.98,231.03,484.02,230.95,484.02 C230.7,484.02,230.41,483.99,230.14,483.99 C229.81,483.99,229.47,484.02,229.15,484.02 C229.09,484.02,228.96,484.02,228.96,483.83 C228.96,483.72,229.05,483.71,229.12,483.71 C229.39,483.69,229.58,483.59,229.58,483.38 C229.58,483.23,229.43,483.02,229.43,483.01 L226.38,478.16 L225.7,483.41 C225.7,483.58,225.93,483.71,226.39,483.71 C226.53,483.71,226.64,483.71,226.64,483.91 C226.64,484,226.56,484.02,226.5,484.02 C226.1,484.02,225.67,483.99,225.26,483.99 C225.08,483.99,224.9,484,224.71,484 C224.54,484,224.35,484.02,224.18,484.02 C224.11,484.02,223.99,484.02,223.99,483.83 C223.99,483.71,224.08,483.71,224.24,483.71 C224.79,483.71,224.8,483.62,224.84,483.37 L225.62,477.24 C225.65,477.05,225.69,477.02,225.82,477.02 C225.98,477.02,226.02,477.07,226.1,477.2 Z " />
+<path
+   id="path3108"
+   fill="black"
+   stroke-width="0"
+   d="M232.54,478.06 L232.55,478.08 L232.56,478.1 L232.57,478.11 L232.58,478.13 L232.59,478.15 L232.6,478.17 L232.62,478.2 L232.65,478.23 L232.67,478.25 L232.69,478.28 L232.71,478.3 L232.74,478.32 L232.76,478.34 L232.78,478.36 L232.81,478.38 L232.83,478.39 L232.86,478.41 L232.88,478.42 L232.9,478.43 L232.93,478.44 L232.95,478.45 L232.97,478.46 L232.99,478.46 L233.02,478.47 L233.04,478.47 L233.06,478.48 L233.08,478.48 L233.1,478.48 L233.11,478.48 L233.13,478.49 L233.15,478.49 L233.16,478.49 L233.18,478.49 L233.19,478.49 L233.2,478.49 V478.74 C233.03,478.72,232.85,478.71,232.67,478.71 C232.48,478.71,232.23,478.72,232.04,478.74 V478.49 C232.33,478.47,232.33,478.24,232.33,478.22 C232.33,478.19,232.32,478.12,232.27,478.02 L231.49,476.3 L230.62,478.2 C230.62,478.2,230.58,478.28,230.58,478.33 C230.58,478.49,230.82,478.49,230.94,478.49 V478.74 C230.92,478.74,230.43,478.71,230.14,478.71 C229.93,478.71,229.66,478.72,229.46,478.74 V478.49 C229.84,478.49,229.93,478.47,230.03,478.24 L231.13,475.82 C231.17,475.73,231.21,475.67,231.33,475.67 C231.46,475.67,231.49,475.73,231.52,475.81 Z " />
+<path
+   id="path3110"
+   fill="black"
+   stroke-width="0"
+   d="M235.01,475.85 L235.01,475.78 L235,475.71 L235,475.63 L234.99,475.55 L234.98,475.52 L234.98,475.48 L234.97,475.44 L234.96,475.4 L234.95,475.36 L234.94,475.32 L234.93,475.28 L234.91,475.24 L234.9,475.2 L234.88,475.16 L234.86,475.12 L234.84,475.08 L234.82,475.04 L234.8,475 L234.77,474.95 L234.75,474.91 L234.72,474.87 L234.69,474.83 L234.66,474.79 L234.62,474.75 L234.59,474.71 L234.55,474.66 L234.51,474.62 L234.46,474.58 C234.43,474.55,234.41,474.53,234.41,474.5 C234.41,474.45,234.47,474.4,234.51,474.4 C234.61,474.4,235.2,474.95,235.2,475.78 C235.2,476.21,235.03,476.54,234.71,476.54 C234.48,476.54,234.32,476.36,234.32,476.14 C234.32,475.92,234.48,475.74,234.72,475.74 C234.89,475.74,235,475.85,235.01,475.85 Z " />
+<path
+   id="path3112"
+   fill="black"
+   stroke-width="0"
+   d="M236.75,476.18 L236.75,476.17 L236.75,476.16 L236.74,476.15 L236.74,476.14 L236.74,476.13 L236.74,476.12 L236.73,476.11 L236.73,476.1 L236.72,476.08 L236.72,476.05 L236.71,476.03 L236.71,476.01 L236.7,476 L236.7,475.99 L236.7,475.98 L236.7,475.97 L236.7,475.96 L236.69,475.95 L236.69,475.94 L236.69,475.93 L236.69,475.93 L236.69,475.92 L236.69,475.91 L236.68,475.91 L236.68,475.9 L236.68,475.9 L236.68,475.9 L236.68,475.9 L236.68,475.9 L236.68,475.89 C236.68,475.74,236.81,475.67,236.92,475.67 C237.04,475.67,237.16,475.76,237.19,475.82 C237.23,475.89,237.28,476.11,237.32,476.26 C237.35,476.39,237.43,476.71,237.47,476.88 C237.51,477.03,237.55,477.19,237.59,477.35 C237.66,477.63,237.68,477.69,237.88,477.97 C238.08,478.25,238.4,478.61,238.93,478.61 C239.33,478.61,239.34,478.26,239.34,478.13 C239.34,477.71,239.04,476.94,238.93,476.64 C238.85,476.45,238.82,476.39,238.82,476.27 C238.82,475.9,239.13,475.67,239.48,475.67 C240.18,475.67,240.49,476.63,240.49,476.73 C240.49,476.83,240.4,476.83,240.37,476.83 C240.28,476.83,240.27,476.78,240.24,476.71 C240.08,476.15,239.78,475.87,239.5,475.87 C239.36,475.87,239.33,475.96,239.33,476.11 C239.33,476.27,239.37,476.36,239.49,476.67 C239.57,476.89,239.86,477.63,239.86,478.02 C239.86,478.69,239.32,478.81,238.95,478.81 C238.38,478.81,237.99,478.45,237.78,478.17 C237.73,478.65,237.32,478.81,237.03,478.81 C236.73,478.81,236.57,478.59,236.48,478.43 C236.33,478.17,236.23,477.78,236.23,477.74 C236.23,477.65,236.33,477.65,236.35,477.65 C236.45,477.65,236.45,477.67,236.5,477.86 C236.61,478.27,236.74,478.61,237.01,478.61 C237.19,478.61,237.24,478.46,237.24,478.27 C237.24,478.14,237.18,477.88,237.13,477.7 C237.08,477.51,237.01,477.22,236.98,477.07 Z " />
+</g>  </g>
+  <g
+     style="display:inline"
+     inkscape:label="Afmetingen"
+     id="layer2"
+     inkscape:groupmode="layer">
+    <g
+       id="g5796"
+       transform="matrix(1.25,0,0,-1.25,-227.60272,697.76045)"
+       xml:space="preserve"
+       stroke-miterlimit="10.433"
+       font-style="normal"
+       font-variant="normal"
+       font-weight="normal"
+       font-stretch="normal"
+       font-size-adjust="none"
+       letter-spacing="normal"
+       word-spacing="normal"
+       ns0:text="$D_\\mathrm{h}$"
+       ns0:preamble="D:\\Onderwijs\\FLUI\\Cursusmateriaal\\Fluidummechanica\\tex\\packages.tex"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline">
+<path
+   d="m 225.01,478.01 -0.01,-0.04 0,-0.03 -0.01,-0.03 -0.01,-0.03 -0.01,-0.03 -0.01,-0.03 -0.01,-0.02 -0.01,-0.03 -0.01,-0.02 -0.01,-0.02 -0.01,-0.02 -0.02,-0.02 -0.01,-0.02 -0.02,-0.01 -0.02,-0.02 -0.02,-0.01 -0.02,-0.01 -0.03,-0.01 -0.03,-0.01 -0.03,-0.01 -0.03,-0.01 -0.02,0 -0.01,-0.01 -0.02,0 -0.02,0 -0.02,-0.01 -0.02,0 -0.02,0 -0.03,0 -0.02,-0.01 -0.02,0 -0.03,0 -0.03,0 -0.02,0 -0.03,0 -0.03,0 -0.03,0 -0.03,-0.01 -0.03,0 -0.04,0 -0.03,0 -0.03,0 -0.04,0 c -0.17,0 -0.28,0 -0.28,-0.19 0,-0.12 0.09,-0.12 0.28,-0.12 h 3.29 l -0.18,0.31 h -1.12 c -0.14,0 -0.16,0 -0.22,0.01 -0.1,0.01 -0.13,0.02 -0.13,0.1 0,0.03 0,0.05 0.05,0.23 l 1.36,5.45 c 0.09,0.35 0.11,0.38 0.54,0.38 h 1.06 c 0.98,0 1.81,-0.53 1.81,-1.84 0,-0.48 -0.2,-2.11 -1.05,-3.2 -0.29,-0.37 -1.07,-1.13 -2.3,-1.13 l 0.18,-0.31 c 2.07,0 4.03,2.1 4.03,4.28 0,1.4 -0.84,2.51 -2.34,2.51 h -3.34 c -0.19,0 -0.3,0 -0.3,-0.19 0,-0.12 0.09,-0.12 0.29,-0.12 0.13,0 0.31,-0.01 0.43,-0.02 0.16,-0.02 0.22,-0.05 0.22,-0.16 0,-0.04 -0.01,-0.07 -0.04,-0.19 z"
+   id="path5798"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+<path
+   d="m 235.27,477.85 0,0.05 -0.01,0.06 0,0.05 -0.01,0.05 -0.01,0.05 -0.01,0.05 -0.01,0.05 -0.01,0.04 -0.02,0.05 -0.02,0.04 -0.02,0.04 -0.02,0.04 -0.02,0.03 -0.03,0.04 -0.03,0.03 -0.03,0.03 -0.03,0.03 -0.03,0.03 -0.04,0.03 -0.04,0.02 -0.04,0.03 -0.05,0.02 -0.04,0.02 -0.05,0.01 -0.05,0.02 -0.05,0.01 -0.06,0.01 -0.06,0.01 -0.06,0.01 -0.06,0 -0.07,0.01 -0.07,0 c -0.62,0 -0.96,-0.37 -1.11,-0.64 h -0.01 v 2.4 l -1.04,-0.08 v -0.25 c 0.46,0 0.52,-0.05 0.52,-0.39 v -3.56 c 0,-0.3 -0.07,-0.3 -0.52,-0.3 v -0.25 c 0.01,0 0.5,0.03 0.79,0.03 0.26,0 0.74,-0.02 0.8,-0.03 v 0.25 c -0.45,0 -0.52,0 -0.52,0.3 v 1.25 c 0,0.73 0.58,1.07 1.04,1.07 0.48,0 0.55,-0.38 0.55,-0.73 v -1.59 c 0,-0.3 -0.07,-0.3 -0.53,-0.3 v -0.25 c 0.02,0 0.51,0.03 0.8,0.03 0.26,0 0.74,-0.02 0.8,-0.03 v 0.25 c -0.45,0 -0.52,0 -0.52,0.3 z"
+   id="path5800"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+</g>    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       ns0:preamble="D:\\Onderwijs\\FLUI\\Cursusmateriaal\\Fluidummechanica\\tex\\packages.tex"
+       ns0:text="$L_\\mathrm{h}$"
+       word-spacing="normal"
+       letter-spacing="normal"
+       font-size-adjust="none"
+       font-stretch="normal"
+       font-weight="normal"
+       font-variant="normal"
+       font-style="normal"
+       stroke-miterlimit="10.433"
+       xml:space="preserve"
+       transform="matrix(1.25,0,0,-1.25,-199.14468,714.35228)"
+       id="g5938">
+<path
+   id="path5940"
+   d="m 227.15,483.24 0.01,0.04 0.01,0.03 0.01,0.03 0.01,0.03 0,0.03 0.01,0.02 0.01,0.03 0.01,0.02 0.02,0.02 0.01,0.02 0.01,0.02 0.02,0.02 0.02,0.02 0.02,0.01 0.02,0.02 0.02,0.01 0.03,0.02 0.03,0.01 0.03,0.01 0.04,0.01 0.02,0 0.01,0.01 0.03,0 0.02,0.01 0.02,0 0.02,0 0.03,0.01 0.02,0 0.03,0 0.02,0 0.03,0.01 0.03,0 0.03,0 0.03,0 0.03,0.01 0.04,0 0.03,0 0.04,0 0.03,0 0.04,0 0.04,0 0.04,0 0.04,0 0.05,0 c 0.3,0 0.38,0 0.38,0.19 0,0.12 -0.11,0.12 -0.16,0.12 -0.33,0 -1.15,-0.03 -1.48,-0.03 -0.29,0 -1.02,0.03 -1.32,0.03 -0.07,0 -0.19,0 -0.19,-0.2 0,-0.11 0.09,-0.11 0.28,-0.11 0.02,0 0.21,0 0.38,-0.02 0.18,-0.02 0.27,-0.03 0.27,-0.16 0,-0.04 -0.01,-0.07 -0.04,-0.19 l -1.34,-5.33 c -0.09,-0.39 -0.11,-0.47 -0.9,-0.47 -0.17,0 -0.27,0 -0.27,-0.2 0,-0.11 0.09,-0.11 0.27,-0.11 h 4.61 c 0.23,0 0.24,0 0.3,0.17 l 0.79,2.15 c 0.04,0.11 0.04,0.13 0.04,0.14 0,0.04 -0.03,0.11 -0.12,0.11 -0.09,0 -0.1,-0.05 -0.17,-0.21 -0.34,-0.92 -0.78,-2.05 -2.5,-2.05 h -0.93 c -0.14,0 -0.16,0 -0.22,0.01 -0.1,0.01 -0.13,0.02 -0.13,0.1 0,0.03 0,0.05 0.05,0.23 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+<path
+   id="path5942"
+   d="m 233.8,477.85 0,0.05 0,0.06 -0.01,0.05 -0.01,0.05 0,0.05 -0.01,0.05 -0.02,0.05 -0.01,0.04 -0.02,0.05 -0.01,0.04 -0.02,0.04 -0.03,0.04 -0.02,0.03 -0.03,0.04 -0.02,0.03 -0.03,0.03 -0.04,0.03 -0.03,0.03 -0.04,0.03 -0.04,0.02 -0.04,0.03 -0.04,0.02 -0.05,0.02 -0.05,0.01 -0.05,0.02 -0.05,0.01 -0.06,0.01 -0.06,0.01 -0.06,0.01 -0.06,0 -0.07,0.01 -0.07,0 c -0.62,0 -0.96,-0.37 -1.11,-0.64 h -0.01 v 2.4 l -1.04,-0.08 v -0.25 c 0.46,0 0.52,-0.05 0.52,-0.39 v -3.56 c 0,-0.3 -0.07,-0.3 -0.52,-0.3 v -0.25 c 0.01,0 0.5,0.03 0.79,0.03 0.26,0 0.74,-0.02 0.8,-0.03 v 0.25 c -0.45,0 -0.52,0 -0.52,0.3 v 1.25 c 0,0.73 0.58,1.07 1.04,1.07 0.49,0 0.55,-0.38 0.55,-0.73 v -1.59 c 0,-0.3 -0.07,-0.3 -0.52,-0.3 v -0.25 c 0.01,0 0.5,0.03 0.79,0.03 0.26,0 0.74,-0.02 0.8,-0.03 v 0.25 c -0.45,0 -0.52,0 -0.52,0.3 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+</g>    <path
+       style="fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend);display:inline"
+       d="m 23.035714,104.83963 0,-14.648138"
+       id="path6017"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g6784"
+       style="display:inline">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:url(#Arrow1Mend)"
+         d="m 11.158078,134.03342 12.505273,0"
+         id="path6391"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6579"
+         d="m 38.704769,134.03342 -6.318089,0"
+         style="fill:none;stroke:#000000;stroke-width:0.7086615;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:url(#Arrow1Mend)" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:none"
+         d="m 34.998418,134.03342 -12.505273,0"
+         id="path6581"
+         inkscape:connector-curvature="0" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path6769"
+       d="m 32.854505,120.49 111.221695,0"
+       style="fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend);display:inline" />
+    <g
+       id="g6779"
+       transform="matrix(0,1,-1,0,149.03727,57.430946)"
+       style="display:inline">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6773"
+         d="m 35.968064,99.390561 9.664219,0"
+         style="fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:url(#Arrow1Mend)" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.7086615;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:url(#Arrow1Mend)"
+         d="m 57.990484,99.390561 -6.318089,0"
+         id="path6775"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6777"
+         d="m 54.284133,99.390561 -9.341032,0"
+         style="fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:none" />
+    </g>
+    <g
+       id="g5524"
+       transform="matrix(0,-1.25,-1.25,0,615.35492,411.53703)"
+       xml:space="preserve"
+       stroke-miterlimit="10.433"
+       font-style="normal"
+       font-variant="normal"
+       font-weight="normal"
+       font-stretch="normal"
+       font-size-adjust="none"
+       letter-spacing="normal"
+       word-spacing="normal"
+       ns0:text="$D_\\mathrm{v}$"
+       ns0:preamble="D:\\Onderwijs\\FLUI\\Cursusmateriaal\\Fluidummechanica\\tex\\packages.tex"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0">
+<path
+   d="m 225.01,478.01 -0.01,-0.04 0,-0.03 -0.01,-0.03 -0.01,-0.03 -0.01,-0.03 -0.01,-0.03 -0.01,-0.02 -0.01,-0.03 -0.01,-0.02 -0.01,-0.02 -0.01,-0.02 -0.02,-0.02 -0.01,-0.02 -0.02,-0.01 -0.02,-0.02 -0.02,-0.01 -0.02,-0.01 -0.03,-0.01 -0.03,-0.01 -0.03,-0.01 -0.03,-0.01 -0.02,0 -0.01,-0.01 -0.02,0 -0.02,0 -0.02,-0.01 -0.02,0 -0.02,0 -0.03,0 -0.02,-0.01 -0.02,0 -0.03,0 -0.03,0 -0.02,0 -0.03,0 -0.03,0 -0.03,0 -0.03,-0.01 -0.03,0 -0.04,0 -0.03,0 -0.03,0 -0.04,0 c -0.17,0 -0.28,0 -0.28,-0.19 0,-0.12 0.09,-0.12 0.28,-0.12 h 3.29 l -0.18,0.31 h -1.12 c -0.14,0 -0.16,0 -0.22,0.01 -0.1,0.01 -0.13,0.02 -0.13,0.1 0,0.03 0,0.05 0.05,0.23 l 1.36,5.45 c 0.09,0.35 0.11,0.38 0.54,0.38 h 1.06 c 0.98,0 1.81,-0.53 1.81,-1.84 0,-0.48 -0.2,-2.11 -1.05,-3.2 -0.29,-0.37 -1.07,-1.13 -2.3,-1.13 l 0.18,-0.31 c 2.07,0 4.03,2.1 4.03,4.28 0,1.4 -0.84,2.51 -2.34,2.51 h -3.34 c -0.19,0 -0.3,0 -0.3,-0.19 0,-0.12 0.09,-0.12 0.29,-0.12 0.13,0 0.31,-0.01 0.43,-0.02 0.16,-0.02 0.22,-0.05 0.22,-0.16 0,-0.04 -0.01,-0.07 -0.04,-0.19 z"
+   id="path5526"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+<path
+   d="m 234.98,478.06 0.01,0.02 0.01,0.02 0.01,0.01 0.01,0.02 0.01,0.02 0.01,0.02 0.02,0.03 0.02,0.03 0.02,0.02 0.03,0.03 0.02,0.02 0.02,0.02 0.03,0.02 0.02,0.02 0.02,0.02 0.03,0.01 0.02,0.02 0.03,0.01 0.02,0.01 0.02,0.01 0.03,0.01 0.02,0.01 0.02,0 0.02,0.01 0.02,0 0.02,0.01 0.02,0 0.02,0 0.02,0 0.02,0.01 0.01,0 0.02,0 0.01,0 0.01,0 0.02,0 v 0.25 c -0.18,-0.02 -0.36,-0.03 -0.53,-0.03 -0.19,0 -0.45,0.01 -0.64,0.03 v -0.25 c 0.29,-0.02 0.29,-0.25 0.29,-0.27 0,-0.03 0,-0.1 -0.05,-0.2 l -0.79,-1.72 -0.86,1.9 c 0,0 -0.04,0.08 -0.04,0.13 0,0.16 0.23,0.16 0.35,0.16 v 0.25 c -0.01,0 -0.51,-0.03 -0.79,-0.03 -0.21,0 -0.48,0.01 -0.68,0.03 v -0.25 c 0.38,0 0.46,-0.02 0.57,-0.25 l 1.1,-2.42 c 0.03,-0.09 0.07,-0.15 0.19,-0.15 0.14,0 0.16,0.06 0.2,0.14 z"
+   id="path5528"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+</g>    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       ns0:preamble="D:\\Onderwijs\\FLUI\\Cursusmateriaal\\Fluidummechanica\\tex\\packages.tex"
+       ns0:text="$L_\\mathrm{v}$"
+       word-spacing="normal"
+       letter-spacing="normal"
+       font-size-adjust="none"
+       font-stretch="normal"
+       font-weight="normal"
+       font-variant="normal"
+       font-style="normal"
+       stroke-miterlimit="10.433"
+       xml:space="preserve"
+       transform="matrix(0,-1.25,-1.25,0,615.35492,381.7165)"
+       id="g5666">
+<path
+   id="path5668"
+   d="m 227.15,483.24 0.01,0.04 0.01,0.03 0.01,0.03 0.01,0.03 0,0.03 0.01,0.02 0.01,0.03 0.01,0.02 0.02,0.02 0.01,0.02 0.01,0.02 0.02,0.02 0.02,0.02 0.02,0.01 0.02,0.02 0.02,0.01 0.03,0.02 0.03,0.01 0.03,0.01 0.04,0.01 0.02,0 0.01,0.01 0.03,0 0.02,0.01 0.02,0 0.02,0 0.03,0.01 0.02,0 0.03,0 0.02,0 0.03,0.01 0.03,0 0.03,0 0.03,0 0.03,0.01 0.04,0 0.03,0 0.04,0 0.03,0 0.04,0 0.04,0 0.04,0 0.04,0 0.05,0 c 0.3,0 0.38,0 0.38,0.19 0,0.12 -0.11,0.12 -0.16,0.12 -0.33,0 -1.15,-0.03 -1.48,-0.03 -0.29,0 -1.02,0.03 -1.32,0.03 -0.07,0 -0.19,0 -0.19,-0.2 0,-0.11 0.09,-0.11 0.28,-0.11 0.02,0 0.21,0 0.38,-0.02 0.18,-0.02 0.27,-0.03 0.27,-0.16 0,-0.04 -0.01,-0.07 -0.04,-0.19 l -1.34,-5.33 c -0.09,-0.39 -0.11,-0.47 -0.9,-0.47 -0.17,0 -0.27,0 -0.27,-0.2 0,-0.11 0.09,-0.11 0.27,-0.11 h 4.61 c 0.23,0 0.24,0 0.3,0.17 l 0.79,2.15 c 0.04,0.11 0.04,0.13 0.04,0.14 0,0.04 -0.03,0.11 -0.12,0.11 -0.09,0 -0.1,-0.05 -0.17,-0.21 -0.34,-0.92 -0.78,-2.05 -2.5,-2.05 h -0.93 c -0.14,0 -0.16,0 -0.22,0.01 -0.1,0.01 -0.13,0.02 -0.13,0.1 0,0.03 0,0.05 0.05,0.23 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+<path
+   id="path5670"
+   d="m 233.51,478.06 0.01,0.02 0.01,0.02 0.01,0.01 0.01,0.02 0.01,0.02 0.01,0.02 0.02,0.03 0.02,0.03 0.03,0.02 0.02,0.03 0.02,0.02 0.03,0.02 0.02,0.02 0.02,0.02 0.03,0.02 0.02,0.01 0.02,0.02 0.03,0.01 0.02,0.01 0.02,0.01 0.03,0.01 0.02,0.01 0.02,0 0.02,0.01 0.03,0 0.02,0.01 0.02,0 0.01,0 0.02,0 0.02,0.01 0.02,0 0.01,0 0.01,0 0.02,0 0.01,0 v 0.25 c -0.18,-0.02 -0.36,-0.03 -0.53,-0.03 -0.19,0 -0.45,0.01 -0.63,0.03 v -0.25 c 0.29,-0.02 0.29,-0.25 0.29,-0.27 0,-0.03 -0.01,-0.1 -0.06,-0.2 l -0.78,-1.72 -0.87,1.9 c 0,0 -0.04,0.08 -0.04,0.13 0,0.16 0.24,0.16 0.35,0.16 v 0.25 c -0.01,0 -0.5,-0.03 -0.79,-0.03 -0.21,0 -0.48,0.01 -0.68,0.03 v -0.25 c 0.38,0 0.47,-0.02 0.57,-0.25 l 1.1,-2.42 c 0.03,-0.09 0.08,-0.15 0.19,-0.15 0.14,0 0.17,0.06 0.2,0.14 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+</g>  </g>
+  <g
+     style="display:inline"
+     inkscape:label="Kaders"
+     id="layer3"
+     inkscape:groupmode="layer">
+    <g
+       ns0:preamble="D:\\Onderwijs\\FLUI\\Cursusmateriaal\\Fluidummechanica\\tex\\packages.tex"
+       ns0:text="1"
+       word-spacing="normal"
+       letter-spacing="normal"
+       font-size-adjust="none"
+       font-stretch="normal"
+       font-weight="normal"
+       font-variant="normal"
+       font-style="normal"
+       stroke-miterlimit="10.433"
+       xml:space="preserve"
+       transform="matrix(1.25,0,0,-1.25,-114.17797,618.78485)"
+       id="g3141"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline">
+<path
+   id="path3994"
+   d="m 226.36,483.59 0,0.01 0,0.01 0,0.02 0,0.01 0,0 0,0.01 0,0.01 0,0.01 0,0.01 0,0.01 0,0.01 0,0.01 0,0 -0.01,0.01 0,0.01 0,0 0,0.01 0,0.01 0,0.01 0,0.01 -0.01,0.01 0,0.01 0,0.01 -0.01,0 0,0.01 -0.01,0.01 0,0 -0.01,0.01 -0.01,0 -0.01,0.01 0,0 -0.01,0 0,0 -0.01,0 0,0 -0.01,0 -0.01,0.01 0,0 -0.01,0 -0.01,0 0,0 -0.01,0 -0.01,0 -0.01,0 0,0 -0.01,0 -0.01,0 -0.01,0 -0.01,0 -0.01,0 -0.01,0 -0.01,0 c -0.62,-0.64 -1.49,-0.64 -1.81,-0.64 v -0.3 c 0.2,0 0.78,0 1.3,0.26 v -5.15 c 0,-0.36 -0.03,-0.48 -0.92,-0.48 h -0.32 v -0.31 c 0.35,0.04 1.21,0.04 1.61,0.04 0.4,0 1.26,0 1.61,-0.04 v 0.31 h -0.32 c -0.89,0 -0.92,0.11 -0.92,0.48 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+</g>    <g
+       id="g4151"
+       transform="matrix(1.25,0,0,-1.25,-113.42797,758.81278)"
+       xml:space="preserve"
+       stroke-miterlimit="10.433"
+       font-style="normal"
+       font-variant="normal"
+       font-weight="normal"
+       font-stretch="normal"
+       font-size-adjust="none"
+       letter-spacing="normal"
+       word-spacing="normal"
+       ns0:text="$n$"
+       ns0:preamble="D:\\Onderwijs\\FLUI\\Cursusmateriaal\\Fluidummechanica\\tex\\packages.tex"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline">
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 224.31,477.82 0,-0.01 -0.01,-0.02 0,-0.01 0,-0.02 -0.01,-0.03 -0.01,-0.03 -0.01,-0.03 0,-0.04 -0.01,-0.03 -0.01,-0.03 0,-0.01 -0.01,-0.02 0,-0.01 0,-0.02 0,-0.01 -0.01,-0.01 0,-0.02 0,-0.01 0,-0.01 -0.01,-0.01 0,-0.01 0,-0.01 0,-0.01 0,0 0,-0.01 0,-0.01 c 0,-0.18 0.14,-0.26 0.29,-0.26 0.12,0 0.29,0.07 0.37,0.27 0,0.02 0.12,0.49 0.18,0.74 l 0.22,0.89 c 0.06,0.22 0.12,0.44 0.17,0.67 0.04,0.17 0.12,0.46 0.13,0.5 0.15,0.3 0.68,1.21 1.62,1.21 0.45,0 0.54,-0.37 0.54,-0.7 0,-0.61 -0.49,-1.89 -0.65,-2.31 -0.09,-0.23 -0.1,-0.35 -0.1,-0.46 0,-0.47 0.35,-0.81 0.82,-0.81 0.93,0 1.3,1.45 1.3,1.53 0,0.1 -0.09,0.1 -0.12,0.1 -0.1,0 -0.1,-0.03 -0.15,-0.18 -0.19,-0.68 -0.52,-1.24 -1.01,-1.24 -0.17,0 -0.24,0.1 -0.24,0.33 0,0.25 0.09,0.49 0.18,0.71 0.19,0.52 0.61,1.62 0.61,2.18 0,0.67 -0.43,1.07 -1.15,1.07 -0.89,0 -1.38,-0.64 -1.55,-0.87 -0.05,0.56 -0.46,0.87 -0.92,0.87 -0.45,0 -0.64,-0.39 -0.74,-0.57 -0.16,-0.34 -0.3,-0.92 -0.3,-0.96 0,-0.1 0.1,-0.1 0.12,-0.1 0.1,0 0.11,0.01 0.17,0.23 0.17,0.7 0.37,1.18 0.73,1.18 0.19,0 0.3,-0.13 0.3,-0.46 0,-0.21 -0.03,-0.32 -0.16,-0.83 z"
+   id="path4153" />
+</g>    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       ns0:preamble="D:\\Onderwijs\\FLUI\\Cursusmateriaal\\Fluidummechanica\\tex\\packages.tex"
+       ns0:text="2"
+       word-spacing="normal"
+       letter-spacing="normal"
+       font-size-adjust="none"
+       font-stretch="normal"
+       font-weight="normal"
+       font-variant="normal"
+       font-style="normal"
+       stroke-miterlimit="10.433"
+       xml:space="preserve"
+       transform="matrix(1.25,0,0,-1.25,-113.69047,636.61902)"
+       id="g4289">
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   id="path4291"
+   d="m 224.7,478 1.05,1.02 c 1.55,1.37 2.15,1.91 2.15,2.9 0,1.14 -0.9,1.93 -2.11,1.93 -1.12,0 -1.86,-0.91 -1.86,-1.8 0,-0.55 0.5,-0.55 0.53,-0.55 0.17,0 0.51,0.12 0.51,0.52 0,0.26 -0.18,0.52 -0.52,0.52 -0.08,0 -0.1,0 -0.13,-0.01 0.23,0.64 0.76,1.01 1.34,1.01 0.91,0 1.33,-0.8 1.33,-1.62 0,-0.79 -0.49,-1.58 -1.04,-2.19 l -1.91,-2.13 c -0.11,-0.11 -0.11,-0.13 -0.11,-0.37 h 3.69 l 0.28,1.73 h -0.25 c -0.05,-0.29 -0.12,-0.73 -0.22,-0.88 C 227.36,478 226.71,478 226.49,478 z" />
+</g>    <g
+       id="g4425"
+       transform="matrix(1.25,0,0,-1.25,-113.59047,654.06942)"
+       xml:space="preserve"
+       stroke-miterlimit="10.433"
+       font-style="normal"
+       font-variant="normal"
+       font-weight="normal"
+       font-stretch="normal"
+       font-size-adjust="none"
+       letter-spacing="normal"
+       word-spacing="normal"
+       ns0:text="3"
+       ns0:preamble="D:\\Onderwijs\\FLUI\\Cursusmateriaal\\Fluidummechanica\\tex\\packages.tex"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline">
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 226.32,480.73 0.07,0.03 0.08,0.03 0.07,0.03 0.07,0.03 0.07,0.04 0.07,0.04 0.06,0.04 0.07,0.04 0.06,0.04 0.06,0.05 0.06,0.05 0.06,0.05 0.05,0.05 0.05,0.05 0.05,0.06 0.05,0.05 0.04,0.06 0.05,0.06 0.04,0.06 0.03,0.06 0.04,0.07 0.03,0.06 0.03,0.07 0.03,0.06 0.02,0.07 0.02,0.07 0.02,0.07 0.01,0.07 0.02,0.07 0,0.07 0.01,0.08 0,0.07 c 0,0.82 -0.87,1.37 -1.83,1.37 -1,0 -1.76,-0.59 -1.76,-1.35 0,-0.33 0.22,-0.52 0.51,-0.52 0.3,0 0.5,0.22 0.5,0.51 0,0.5 -0.46,0.5 -0.61,0.5 0.3,0.48 0.96,0.61 1.32,0.61 0.41,0 0.95,-0.22 0.95,-1.11 0,-0.12 -0.02,-0.69 -0.27,-1.13 -0.3,-0.48 -0.64,-0.51 -0.89,-0.52 -0.08,-0.01 -0.32,-0.03 -0.39,-0.03 -0.08,-0.01 -0.15,-0.02 -0.15,-0.12 0,-0.11 0.07,-0.11 0.24,-0.11 h 0.44 c 0.82,0 1.18,-0.67 1.18,-1.65 0,-1.35 -0.68,-1.63 -1.12,-1.63 -0.43,0 -1.17,0.16 -1.52,0.75 0.35,-0.05 0.65,0.17 0.65,0.55 0,0.35 -0.26,0.55 -0.55,0.55 -0.24,0 -0.56,-0.14 -0.56,-0.57 0,-0.91 0.92,-1.56 2.01,-1.56 1.21,0 2.12,0.9 2.12,1.91 0,0.82 -0.63,1.59 -1.66,1.8 z"
+   id="path4427" />
+</g>    <path
+       inkscape:connector-curvature="0"
+       id="path4411"
+       d="m 15.870951,157.07725 10.732873,2.05523"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.9992126;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#Arrow1Mend)" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.99921262;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="m 161.41547,59.646495 -10.73288,-4.68136"
+       id="path4616"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.99921262;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="m 15.870951,50.827227 10.732873,2.05523"
+       id="path4630"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4840"
+       d="m 15.870951,32.419168 10.732873,2.05523"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.99921262;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)" />
+    <g
+       id="g5179"
+       transform="matrix(1.25,0,0,-1.25,-277.22995,623.35174)"
+       xml:space="preserve"
+       stroke="black"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="10.433"
+       stroke-dasharray="none"
+       stroke-dashoffset="0"
+       stroke-opacity="1"
+       fill="none"
+       fill-rule="evenodd"
+       fill-opacity="1"
+       font-style="normal"
+       font-variant="normal"
+       font-weight="normal"
+       font-stretch="normal"
+       font-size-adjust="none"
+       letter-spacing="normal"
+       word-spacing="normal"
+       text-anchor="start"
+       ns0:text="$H_{\\mathrm{i},2}$"
+       ns0:preamble="D:\\Onderwijs\\FLUI\\Cursusmateriaal\\Fluidummechanica\\tex\\packages.tex"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
+<path
+   d="M231.04,483.26 L231.05,483.29 L231.06,483.32 L231.06,483.35 L231.07,483.38 L231.08,483.4 L231.09,483.43 L231.1,483.45 L231.11,483.48 L231.12,483.5 L231.13,483.52 L231.14,483.54 L231.15,483.56 L231.17,483.57 L231.18,483.59 L231.2,483.6 L231.22,483.62 L231.24,483.63 L231.26,483.64 L231.29,483.65 L231.32,483.66 L231.35,483.67 L231.36,483.67 L231.38,483.68 L231.4,483.68 L231.41,483.68 L231.43,483.69 L231.45,483.69 L231.47,483.69 L231.49,483.7 L231.52,483.7 L231.54,483.7 L231.56,483.7 L231.59,483.7 L231.61,483.71 L231.64,483.71 L231.66,483.71 L231.69,483.71 L231.72,483.71 L231.75,483.71 L231.78,483.71 L231.81,483.71 L231.84,483.71 L231.88,483.71 C232.14,483.71,232.22,483.71,232.22,483.91 C232.22,484.02,232.11,484.02,232.08,484.02 C231.8,484.02,231.08,483.99,230.8,483.99 C230.51,483.99,229.8,484.02,229.51,484.02 C229.43,484.02,229.32,484.02,229.32,483.82 C229.32,483.71,229.41,483.71,229.6,483.71 C229.63,483.71,229.81,483.71,229.98,483.69 C230.16,483.67,230.25,483.66,230.25,483.53 C230.25,483.49,230.24,483.47,230.21,483.34 L229.62,480.92 H226.57 L227.16,483.26 C227.25,483.61,227.28,483.71,228,483.71 C228.26,483.71,228.34,483.71,228.34,483.91 C228.34,484.02,228.23,484.02,228.2,484.02 C227.92,484.02,227.2,483.99,226.92,483.99 C226.63,483.99,225.93,484.02,225.64,484.02 C225.56,484.02,225.45,484.02,225.45,483.82 C225.45,483.71,225.54,483.71,225.73,483.71 C225.75,483.71,225.93,483.71,226.1,483.69 C226.28,483.67,226.37,483.66,226.37,483.53 C226.37,483.49,226.36,483.46,226.33,483.34 L225,478.01 C224.9,477.62,224.88,477.54,224.09,477.54 C223.91,477.54,223.82,477.54,223.82,477.34 C223.82,477.23,223.94,477.23,223.96,477.23 C224.24,477.23,224.95,477.27,225.23,477.27 C225.44,477.27,225.66,477.26,225.87,477.26 C226.09,477.26,226.3,477.23,226.51,477.23 C226.59,477.23,226.71,477.23,226.71,477.43 C226.71,477.54,226.62,477.54,226.43,477.54 C226.07,477.54,225.79,477.54,225.79,477.72 C225.79,477.78,225.8,477.83,225.82,477.89 L226.49,480.61 H229.54 C229.12,478.96,228.89,478.02,228.85,477.87 C228.75,477.55,228.56,477.54,227.94,477.54 C227.79,477.54,227.7,477.54,227.7,477.34 C227.7,477.23,227.82,477.23,227.84,477.23 C228.12,477.23,228.83,477.27,229.11,477.27 C229.32,477.27,229.54,477.26,229.74,477.26 C229.96,477.26,230.18,477.23,230.39,477.23 C230.47,477.23,230.59,477.23,230.59,477.43 C230.59,477.54,230.5,477.54,230.31,477.54 C229.94,477.54,229.66,477.54,229.66,477.72 C229.66,477.78,229.68,477.83,229.7,477.89 Z "
+   stroke-width="0"
+   fill="black"
+   id="path5181" />
+<path
+   d="M233.19,480.03 L233.19,480.05 L233.19,480.07 L233.18,480.09 L233.18,480.11 L233.18,480.12 L233.17,480.14 L233.17,480.16 L233.16,480.18 L233.15,480.2 L233.14,480.21 L233.13,480.23 L233.12,480.25 L233.11,480.26 L233.1,480.28 L233.09,480.29 L233.08,480.31 L233.06,480.32 L233.05,480.33 L233.03,480.34 L233.02,480.36 L233,480.37 L232.98,480.38 L232.97,480.39 L232.95,480.39 L232.93,480.4 L232.91,480.41 L232.89,480.41 L232.87,480.42 L232.85,480.42 L232.83,480.43 L232.81,480.43 L232.78,480.43 C232.57,480.43,232.38,480.26,232.38,480.03 C232.38,479.78,232.59,479.63,232.78,479.63 C233.01,479.63,233.19,479.8,233.19,480.03 Z "
+   stroke-width="0"
+   fill="black"
+   id="path5183" />
+<path
+   d="M232.13,478.73 V478.48 C232.57,478.48,232.63,478.44,232.63,478.1 V476.29 C232.63,475.99,232.56,475.99,232.11,475.99 V475.74 C232.12,475.74,232.61,475.77,232.89,475.77 C233.13,475.77,233.38,475.76,233.63,475.74 V475.99 C233.22,475.99,233.15,475.99,233.15,476.28 V478.81 Z "
+   stroke-width="0"
+   fill="black"
+   id="path5185" />
+<path
+   d="M235.44,475.85 L235.44,475.78 L235.44,475.71 L235.43,475.63 L235.43,475.55 L235.42,475.52 L235.41,475.48 L235.41,475.44 L235.4,475.4 L235.39,475.36 L235.38,475.32 L235.36,475.28 L235.35,475.24 L235.33,475.2 L235.32,475.16 L235.3,475.12 L235.28,475.08 L235.26,475.04 L235.24,475 L235.21,474.95 L235.18,474.91 L235.16,474.87 L235.13,474.83 L235.09,474.79 L235.06,474.75 L235.02,474.71 L234.98,474.66 L234.94,474.62 L234.9,474.58 C234.87,474.55,234.85,474.53,234.85,474.5 C234.85,474.45,234.91,474.4,234.95,474.4 C235.05,474.4,235.64,474.95,235.64,475.78 C235.64,476.21,235.47,476.54,235.15,476.54 C234.92,476.54,234.75,476.36,234.75,476.14 C234.75,475.92,234.91,475.74,235.16,475.74 C235.32,475.74,235.44,475.85,235.44,475.85 Z "
+   stroke-width="0"
+   fill="black"
+   id="path5187" />
+<path
+   d="M239.87,477.01 H239.63 C239.61,476.85,239.54,476.44,239.45,476.37 C239.39,476.33,238.85,476.33,238.75,476.33 H237.47 C238.2,476.98,238.45,477.17,238.87,477.5 C239.38,477.91,239.87,478.34,239.87,479 C239.87,479.84,239.13,480.36,238.23,480.36 C237.36,480.36,236.78,479.75,236.78,479.11 C236.78,478.76,237.08,478.72,237.15,478.72 C237.31,478.72,237.52,478.84,237.52,479.09 C237.52,479.22,237.47,479.46,237.1,479.46 C237.32,479.95,237.8,480.11,238.13,480.11 C238.82,480.11,239.19,479.57,239.19,479 C239.19,478.4,238.75,477.92,238.53,477.67 L236.85,476.01 C236.78,475.95,236.78,475.94,236.78,475.74 H239.66 Z "
+   stroke-width="0"
+   fill="black"
+   id="path5189" />
+</g>    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       ns0:preamble="D:\\Onderwijs\\FLUI\\Cursusmateriaal\\Fluidummechanica\\tex\\packages.tex"
+       ns0:text="$H_{\\mathrm{i},3}$"
+       text-anchor="start"
+       word-spacing="normal"
+       letter-spacing="normal"
+       font-size-adjust="none"
+       font-stretch="normal"
+       font-weight="normal"
+       font-variant="normal"
+       font-style="normal"
+       fill-opacity="1"
+       fill-rule="evenodd"
+       fill="none"
+       stroke-opacity="1"
+       stroke-dashoffset="0"
+       stroke-dasharray="none"
+       stroke-miterlimit="10.433"
+       stroke-linejoin="miter"
+       stroke-linecap="butt"
+       stroke="black"
+       xml:space="preserve"
+       transform="matrix(1.25,0,0,-1.25,-277.22995,641.7598)"
+       id="g5401">
+<path
+   id="path5403"
+   fill="black"
+   stroke-width="0"
+   d="M231.04,483.26 L231.05,483.29 L231.06,483.32 L231.06,483.35 L231.07,483.38 L231.08,483.4 L231.09,483.43 L231.1,483.45 L231.11,483.48 L231.12,483.5 L231.13,483.52 L231.14,483.54 L231.15,483.56 L231.17,483.57 L231.18,483.59 L231.2,483.6 L231.22,483.62 L231.24,483.63 L231.26,483.64 L231.29,483.65 L231.32,483.66 L231.35,483.67 L231.36,483.67 L231.38,483.68 L231.4,483.68 L231.41,483.68 L231.43,483.69 L231.45,483.69 L231.47,483.69 L231.49,483.7 L231.52,483.7 L231.54,483.7 L231.56,483.7 L231.59,483.7 L231.61,483.71 L231.64,483.71 L231.66,483.71 L231.69,483.71 L231.72,483.71 L231.75,483.71 L231.78,483.71 L231.81,483.71 L231.84,483.71 L231.88,483.71 C232.14,483.71,232.22,483.71,232.22,483.91 C232.22,484.02,232.11,484.02,232.08,484.02 C231.8,484.02,231.08,483.99,230.8,483.99 C230.51,483.99,229.8,484.02,229.51,484.02 C229.43,484.02,229.32,484.02,229.32,483.82 C229.32,483.71,229.41,483.71,229.6,483.71 C229.63,483.71,229.81,483.71,229.98,483.69 C230.16,483.67,230.25,483.66,230.25,483.53 C230.25,483.49,230.24,483.47,230.21,483.34 L229.62,480.92 H226.57 L227.16,483.26 C227.25,483.61,227.28,483.71,228,483.71 C228.26,483.71,228.34,483.71,228.34,483.91 C228.34,484.02,228.23,484.02,228.2,484.02 C227.92,484.02,227.2,483.99,226.92,483.99 C226.63,483.99,225.93,484.02,225.64,484.02 C225.56,484.02,225.45,484.02,225.45,483.82 C225.45,483.71,225.54,483.71,225.73,483.71 C225.75,483.71,225.93,483.71,226.1,483.69 C226.28,483.67,226.37,483.66,226.37,483.53 C226.37,483.49,226.36,483.46,226.33,483.34 L225,478.01 C224.9,477.62,224.88,477.54,224.09,477.54 C223.91,477.54,223.82,477.54,223.82,477.34 C223.82,477.23,223.94,477.23,223.96,477.23 C224.24,477.23,224.95,477.27,225.23,477.27 C225.44,477.27,225.66,477.26,225.87,477.26 C226.09,477.26,226.3,477.23,226.51,477.23 C226.59,477.23,226.71,477.23,226.71,477.43 C226.71,477.54,226.62,477.54,226.43,477.54 C226.07,477.54,225.79,477.54,225.79,477.72 C225.79,477.78,225.8,477.83,225.82,477.89 L226.49,480.61 H229.54 C229.12,478.96,228.89,478.02,228.85,477.87 C228.75,477.55,228.56,477.54,227.94,477.54 C227.79,477.54,227.7,477.54,227.7,477.34 C227.7,477.23,227.82,477.23,227.84,477.23 C228.12,477.23,228.83,477.27,229.11,477.27 C229.32,477.27,229.54,477.26,229.74,477.26 C229.96,477.26,230.18,477.23,230.39,477.23 C230.47,477.23,230.59,477.23,230.59,477.43 C230.59,477.54,230.5,477.54,230.31,477.54 C229.94,477.54,229.66,477.54,229.66,477.72 C229.66,477.78,229.68,477.83,229.7,477.89 Z " />
+<path
+   id="path5405"
+   fill="black"
+   stroke-width="0"
+   d="M233.19,480.03 L233.19,480.05 L233.19,480.07 L233.18,480.09 L233.18,480.11 L233.18,480.12 L233.17,480.14 L233.17,480.16 L233.16,480.18 L233.15,480.2 L233.14,480.21 L233.13,480.23 L233.12,480.25 L233.11,480.26 L233.1,480.28 L233.09,480.29 L233.08,480.31 L233.06,480.32 L233.05,480.33 L233.03,480.34 L233.02,480.36 L233,480.37 L232.98,480.38 L232.97,480.39 L232.95,480.39 L232.93,480.4 L232.91,480.41 L232.89,480.41 L232.87,480.42 L232.85,480.42 L232.83,480.43 L232.81,480.43 L232.78,480.43 C232.57,480.43,232.38,480.26,232.38,480.03 C232.38,479.78,232.59,479.63,232.78,479.63 C233.01,479.63,233.19,479.8,233.19,480.03 Z " />
+<path
+   id="path5407"
+   fill="black"
+   stroke-width="0"
+   d="M232.13,478.73 V478.48 C232.57,478.48,232.63,478.44,232.63,478.1 V476.29 C232.63,475.99,232.56,475.99,232.11,475.99 V475.74 C232.12,475.74,232.61,475.77,232.89,475.77 C233.13,475.77,233.38,475.76,233.63,475.74 V475.99 C233.22,475.99,233.15,475.99,233.15,476.28 V478.81 Z " />
+<path
+   id="path5409"
+   fill="black"
+   stroke-width="0"
+   d="M235.44,475.85 L235.44,475.78 L235.44,475.71 L235.43,475.63 L235.43,475.55 L235.42,475.52 L235.41,475.48 L235.41,475.44 L235.4,475.4 L235.39,475.36 L235.38,475.32 L235.36,475.28 L235.35,475.24 L235.33,475.2 L235.32,475.16 L235.3,475.12 L235.28,475.08 L235.26,475.04 L235.24,475 L235.21,474.95 L235.18,474.91 L235.16,474.87 L235.13,474.83 L235.09,474.79 L235.06,474.75 L235.02,474.71 L234.98,474.66 L234.94,474.62 L234.9,474.58 C234.87,474.55,234.85,474.53,234.85,474.5 C234.85,474.45,234.91,474.4,234.95,474.4 C235.05,474.4,235.64,474.95,235.64,475.78 C235.64,476.21,235.47,476.54,235.15,476.54 C234.92,476.54,234.75,476.36,234.75,476.14 C234.75,475.92,234.91,475.74,235.16,475.74 C235.32,475.74,235.44,475.85,235.44,475.85 Z " />
+<path
+   id="path5411"
+   fill="black"
+   stroke-width="0"
+   d="M238.24,478.06 L238.29,478.06 L238.34,478.06 L238.39,478.05 L238.44,478.05 L238.49,478.04 L238.53,478.02 L238.58,478.01 L238.62,477.99 L238.66,477.97 L238.7,477.95 L238.74,477.93 L238.78,477.91 L238.82,477.88 L238.85,477.85 L238.88,477.82 L238.92,477.78 L238.95,477.75 L238.98,477.71 L239,477.67 L239.03,477.63 L239.05,477.58 L239.07,477.53 L239.09,477.48 L239.11,477.43 L239.13,477.38 L239.14,477.32 L239.15,477.27 L239.16,477.21 L239.17,477.14 L239.18,477.08 L239.18,477.01 L239.18,476.94 C239.18,476.08,238.68,475.82,238.27,475.82 C237.99,475.82,237.38,475.9,237.08,476.31 C237.41,476.33,237.49,476.55,237.49,476.7 C237.49,476.92,237.32,477.08,237.1,477.08 C236.91,477.08,236.71,476.96,236.71,476.68 C236.71,476.03,237.44,475.6,238.29,475.6 C239.26,475.6,239.93,476.25,239.93,476.94 C239.93,477.49,239.48,478.03,238.71,478.19 C239.45,478.45,239.71,478.97,239.71,479.4 C239.71,479.95,239.08,480.36,238.3,480.36 C237.52,480.36,236.93,479.98,236.93,479.43 C236.93,479.19,237.08,479.06,237.29,479.06 C237.51,479.06,237.65,479.22,237.65,479.41 C237.65,479.61,237.51,479.76,237.29,479.77 C237.54,480.08,238.02,480.16,238.28,480.16 C238.59,480.16,239.03,480,239.03,479.4 C239.03,479.11,238.94,478.79,238.75,478.57 C238.52,478.31,238.33,478.29,237.98,478.27 C237.8,478.26,237.79,478.26,237.75,478.25 C237.74,478.25,237.68,478.24,237.68,478.16 C237.68,478.06,237.75,478.06,237.87,478.06 Z " />
+</g>    <g
+       id="g5624"
+       transform="matrix(1.25,0,0,-1.25,-127.50651,667.27272)"
+       xml:space="preserve"
+       stroke-miterlimit="10.433"
+       font-style="normal"
+       font-variant="normal"
+       font-weight="normal"
+       font-stretch="normal"
+       font-size-adjust="none"
+       letter-spacing="normal"
+       word-spacing="normal"
+       ns0:text="$H_{\\mathrm{u},3}$"
+       ns0:preamble="D:\\Onderwijs\\FLUI\\Cursusmateriaal\\Fluidummechanica\\tex\\packages.tex"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 231.04,483.26 0.01,0.03 0.01,0.03 0,0.03 0.01,0.03 0.01,0.02 0.01,0.03 0.01,0.02 0.01,0.03 0.01,0.02 0.01,0.02 0.01,0.02 0.01,0.02 0.02,0.01 0.01,0.02 0.02,0.01 0.02,0.02 0.02,0.01 0.02,0.01 0.03,0.01 0.03,0.01 0.03,0.01 0.01,0 0.02,0.01 0.02,0 0.01,0 0.02,0.01 0.02,0 0.02,0 0.02,0.01 0.03,0 0.02,0 0.02,0 0.03,0 0.02,0.01 0.03,0 0.02,0 0.03,0 0.03,0 0.03,0 0.03,0 0.03,0 0.03,0 0.04,0 c 0.26,0 0.34,0 0.34,0.2 0,0.11 -0.11,0.11 -0.14,0.11 -0.28,0 -1,-0.03 -1.28,-0.03 -0.29,0 -1,0.03 -1.29,0.03 -0.08,0 -0.19,0 -0.19,-0.2 0,-0.11 0.09,-0.11 0.28,-0.11 0.03,0 0.21,0 0.38,-0.02 0.18,-0.02 0.27,-0.03 0.27,-0.16 0,-0.04 -0.01,-0.06 -0.04,-0.19 l -0.59,-2.42 -3.05,0 0.59,2.34 c 0.09,0.35 0.12,0.45 0.84,0.45 0.26,0 0.34,0 0.34,0.2 0,0.11 -0.11,0.11 -0.14,0.11 -0.28,0 -1,-0.03 -1.28,-0.03 -0.29,0 -0.99,0.03 -1.28,0.03 -0.08,0 -0.19,0 -0.19,-0.2 0,-0.11 0.09,-0.11 0.28,-0.11 0.02,0 0.2,0 0.37,-0.02 0.18,-0.02 0.27,-0.03 0.27,-0.16 0,-0.04 -0.01,-0.07 -0.04,-0.19 L 225,478.01 c -0.1,-0.39 -0.12,-0.47 -0.91,-0.47 -0.18,0 -0.27,0 -0.27,-0.2 0,-0.11 0.12,-0.11 0.14,-0.11 0.28,0 0.99,0.04 1.27,0.04 0.21,0 0.43,-0.01 0.64,-0.01 0.22,0 0.43,-0.03 0.64,-0.03 0.08,0 0.2,0 0.2,0.2 0,0.11 -0.09,0.11 -0.28,0.11 -0.36,0 -0.64,0 -0.64,0.18 0,0.06 0.01,0.11 0.03,0.17 l 0.67,2.72 3.05,0 c -0.42,-1.65 -0.65,-2.59 -0.69,-2.74 -0.1,-0.32 -0.29,-0.33 -0.91,-0.33 -0.15,0 -0.24,0 -0.24,-0.2 0,-0.11 0.12,-0.11 0.14,-0.11 0.28,0 0.99,0.04 1.27,0.04 0.21,0 0.43,-0.01 0.63,-0.01 0.22,0 0.44,-0.03 0.65,-0.03 0.08,0 0.2,0 0.2,0.2 0,0.11 -0.09,0.11 -0.28,0.11 -0.37,0 -0.65,0 -0.65,0.18 0,0.06 0.02,0.11 0.04,0.17 z"
+   id="path5626" />
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 234.24,478.73 0,-0.25 c 0.47,0 0.52,-0.05 0.52,-0.39 l 0,-1.19 c 0,-0.61 -0.4,-1.03 -0.93,-1.03 -0.63,0 -0.66,0.3 -0.66,0.65 l 0,2.29 -1.08,-0.08 0,-0.25 c 0.53,0 0.53,-0.02 0.53,-0.64 l 0,-1.04 c 0,-0.48 0,-1.13 1.16,-1.13 0.16,0 0.67,0 1,0.59 l 0.01,0 0,-0.59 1.05,0.07 0,0.25 c -0.47,0 -0.52,0.05 -0.52,0.39 l 0,2.43 z"
+   id="path5628" />
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 237.59,475.85 0,-0.07 0,-0.07 -0.01,-0.08 -0.01,-0.08 -0.01,-0.03 0,-0.04 -0.01,-0.04 -0.01,-0.04 -0.01,-0.04 -0.01,-0.04 -0.01,-0.04 -0.02,-0.04 -0.01,-0.04 -0.02,-0.04 -0.02,-0.04 -0.01,-0.04 -0.03,-0.04 -0.02,-0.04 -0.02,-0.05 -0.03,-0.04 -0.03,-0.04 -0.03,-0.04 -0.03,-0.04 -0.04,-0.04 -0.03,-0.04 -0.04,-0.05 -0.04,-0.04 -0.05,-0.04 c -0.02,-0.03 -0.05,-0.05 -0.05,-0.08 0,-0.05 0.06,-0.1 0.1,-0.1 0.1,0 0.7,0.55 0.7,1.38 0,0.43 -0.17,0.76 -0.49,0.76 -0.23,0 -0.4,-0.18 -0.4,-0.4 0,-0.22 0.16,-0.4 0.4,-0.4 0.17,0 0.28,0.11 0.29,0.11 z"
+   id="path5630" />
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 240.39,478.06 0.05,0 0.05,0 0.05,-0.01 0.05,0 0.04,-0.01 0.05,-0.02 0.04,-0.01 0.05,-0.02 0.04,-0.02 0.04,-0.02 0.04,-0.02 0.03,-0.02 0.04,-0.03 0.04,-0.03 0.03,-0.03 0.03,-0.04 0.03,-0.03 0.03,-0.04 0.03,-0.04 0.02,-0.04 0.03,-0.05 0.02,-0.05 0.02,-0.05 0.02,-0.05 0.01,-0.05 0.02,-0.06 0.01,-0.05 0.01,-0.06 0.01,-0.07 0,-0.06 0,-0.07 0.01,-0.07 c 0,-0.86 -0.51,-1.12 -0.91,-1.12 -0.28,0 -0.9,0.08 -1.19,0.49 0.33,0.02 0.4,0.24 0.4,0.39 0,0.22 -0.16,0.38 -0.38,0.38 -0.2,0 -0.39,-0.12 -0.39,-0.4 0,-0.65 0.73,-1.08 1.57,-1.08 0.97,0 1.64,0.65 1.64,1.34 0,0.55 -0.44,1.09 -1.21,1.25 0.73,0.26 1,0.78 1,1.21 0,0.55 -0.64,0.96 -1.41,0.96 -0.78,0 -1.38,-0.38 -1.38,-0.93 0,-0.24 0.16,-0.37 0.37,-0.37 0.21,0 0.35,0.16 0.35,0.35 0,0.2 -0.14,0.35 -0.35,0.36 0.24,0.31 0.72,0.39 0.98,0.39 0.32,0 0.76,-0.16 0.76,-0.76 0,-0.29 -0.1,-0.61 -0.28,-0.83 -0.23,-0.26 -0.43,-0.28 -0.78,-0.3 -0.17,-0.01 -0.19,-0.01 -0.22,-0.02 -0.02,0 -0.07,-0.01 -0.07,-0.09 0,-0.1 0.06,-0.1 0.18,-0.1 z"
+   id="path5632" />
+</g>    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       ns0:preamble="D:\\Onderwijs\\FLUI\\Cursusmateriaal\\Fluidummechanica\\tex\\packages.tex"
+       ns0:text="$H_{\\mathrm{i},n}$"
+       text-anchor="start"
+       word-spacing="normal"
+       letter-spacing="normal"
+       font-size-adjust="none"
+       font-stretch="normal"
+       font-weight="normal"
+       font-variant="normal"
+       font-style="normal"
+       fill-opacity="1"
+       fill-rule="evenodd"
+       fill="none"
+       stroke-opacity="1"
+       stroke-dashoffset="0"
+       stroke-dasharray="none"
+       stroke-miterlimit="10.433"
+       stroke-linejoin="miter"
+       stroke-linecap="butt"
+       stroke="black"
+       xml:space="preserve"
+       transform="matrix(1.25,0,0,-1.25,-277.22995,748.00982)"
+       id="g5844">
+<path
+   id="path5846"
+   fill="black"
+   stroke-width="0"
+   d="M231.04,483.26 L231.05,483.29 L231.06,483.32 L231.06,483.35 L231.07,483.38 L231.08,483.4 L231.09,483.43 L231.1,483.45 L231.11,483.48 L231.12,483.5 L231.13,483.52 L231.14,483.54 L231.15,483.56 L231.17,483.57 L231.18,483.59 L231.2,483.6 L231.22,483.62 L231.24,483.63 L231.26,483.64 L231.29,483.65 L231.32,483.66 L231.35,483.67 L231.36,483.67 L231.38,483.68 L231.4,483.68 L231.41,483.68 L231.43,483.69 L231.45,483.69 L231.47,483.69 L231.49,483.7 L231.52,483.7 L231.54,483.7 L231.56,483.7 L231.59,483.7 L231.61,483.71 L231.64,483.71 L231.66,483.71 L231.69,483.71 L231.72,483.71 L231.75,483.71 L231.78,483.71 L231.81,483.71 L231.84,483.71 L231.88,483.71 C232.14,483.71,232.22,483.71,232.22,483.91 C232.22,484.02,232.11,484.02,232.08,484.02 C231.8,484.02,231.08,483.99,230.8,483.99 C230.51,483.99,229.8,484.02,229.51,484.02 C229.43,484.02,229.32,484.02,229.32,483.82 C229.32,483.71,229.41,483.71,229.6,483.71 C229.63,483.71,229.81,483.71,229.98,483.69 C230.16,483.67,230.25,483.66,230.25,483.53 C230.25,483.49,230.24,483.47,230.21,483.34 L229.62,480.92 H226.57 L227.16,483.26 C227.25,483.61,227.28,483.71,228,483.71 C228.26,483.71,228.34,483.71,228.34,483.91 C228.34,484.02,228.23,484.02,228.2,484.02 C227.92,484.02,227.2,483.99,226.92,483.99 C226.63,483.99,225.93,484.02,225.64,484.02 C225.56,484.02,225.45,484.02,225.45,483.82 C225.45,483.71,225.54,483.71,225.73,483.71 C225.75,483.71,225.93,483.71,226.1,483.69 C226.28,483.67,226.37,483.66,226.37,483.53 C226.37,483.49,226.36,483.46,226.33,483.34 L225,478.01 C224.9,477.62,224.88,477.54,224.09,477.54 C223.91,477.54,223.82,477.54,223.82,477.34 C223.82,477.23,223.94,477.23,223.96,477.23 C224.24,477.23,224.95,477.27,225.23,477.27 C225.44,477.27,225.66,477.26,225.87,477.26 C226.09,477.26,226.3,477.23,226.51,477.23 C226.59,477.23,226.71,477.23,226.71,477.43 C226.71,477.54,226.62,477.54,226.43,477.54 C226.07,477.54,225.79,477.54,225.79,477.72 C225.79,477.78,225.8,477.83,225.82,477.89 L226.49,480.61 H229.54 C229.12,478.96,228.89,478.02,228.85,477.87 C228.75,477.55,228.56,477.54,227.94,477.54 C227.79,477.54,227.7,477.54,227.7,477.34 C227.7,477.23,227.82,477.23,227.84,477.23 C228.12,477.23,228.83,477.27,229.11,477.27 C229.32,477.27,229.54,477.26,229.74,477.26 C229.96,477.26,230.18,477.23,230.39,477.23 C230.47,477.23,230.59,477.23,230.59,477.43 C230.59,477.54,230.5,477.54,230.31,477.54 C229.94,477.54,229.66,477.54,229.66,477.72 C229.66,477.78,229.68,477.83,229.7,477.89 Z " />
+<path
+   id="path5848"
+   fill="black"
+   stroke-width="0"
+   d="M233.19,480.03 L233.19,480.05 L233.19,480.07 L233.18,480.09 L233.18,480.11 L233.18,480.12 L233.17,480.14 L233.17,480.16 L233.16,480.18 L233.15,480.2 L233.14,480.21 L233.13,480.23 L233.12,480.25 L233.11,480.26 L233.1,480.28 L233.09,480.29 L233.08,480.31 L233.06,480.32 L233.05,480.33 L233.03,480.34 L233.02,480.36 L233,480.37 L232.98,480.38 L232.97,480.39 L232.95,480.39 L232.93,480.4 L232.91,480.41 L232.89,480.41 L232.87,480.42 L232.85,480.42 L232.83,480.43 L232.81,480.43 L232.78,480.43 C232.57,480.43,232.38,480.26,232.38,480.03 C232.38,479.78,232.59,479.63,232.78,479.63 C233.01,479.63,233.19,479.8,233.19,480.03 Z " />
+<path
+   id="path5850"
+   fill="black"
+   stroke-width="0"
+   d="M232.13,478.73 V478.48 C232.57,478.48,232.63,478.44,232.63,478.1 V476.29 C232.63,475.99,232.56,475.99,232.11,475.99 V475.74 C232.12,475.74,232.61,475.77,232.89,475.77 C233.13,475.77,233.38,475.76,233.63,475.74 V475.99 C233.22,475.99,233.15,475.99,233.15,476.28 V478.81 Z " />
+<path
+   id="path5852"
+   fill="black"
+   stroke-width="0"
+   d="M235.44,475.85 L235.44,475.78 L235.44,475.71 L235.43,475.63 L235.43,475.55 L235.42,475.52 L235.41,475.48 L235.41,475.44 L235.4,475.4 L235.39,475.36 L235.38,475.32 L235.36,475.28 L235.35,475.24 L235.33,475.2 L235.32,475.16 L235.3,475.12 L235.28,475.08 L235.26,475.04 L235.24,475 L235.21,474.95 L235.18,474.91 L235.16,474.87 L235.13,474.83 L235.09,474.79 L235.06,474.75 L235.02,474.71 L234.98,474.66 L234.94,474.62 L234.9,474.58 C234.87,474.55,234.85,474.53,234.85,474.5 C234.85,474.45,234.91,474.4,234.95,474.4 C235.05,474.4,235.64,474.95,235.64,475.78 C235.64,476.21,235.47,476.54,235.15,476.54 C234.92,476.54,234.75,476.36,234.75,476.14 C234.75,475.92,234.91,475.74,235.16,475.74 C235.32,475.74,235.44,475.85,235.44,475.85 Z " />
+<path
+   id="path5854"
+   fill="black"
+   stroke-width="0"
+   d="M237.19,476.18 L237.19,476.17 L237.18,476.16 L237.18,476.15 L237.18,476.14 L237.17,476.13 L237.17,476.12 L237.17,476.11 L237.17,476.1 L237.16,476.08 L237.15,476.05 L237.15,476.03 L237.14,476.01 L237.14,476 L237.14,475.99 L237.14,475.98 L237.13,475.97 L237.13,475.96 L237.13,475.95 L237.13,475.94 L237.12,475.93 L237.12,475.93 L237.12,475.92 L237.12,475.91 L237.12,475.91 L237.12,475.9 L237.12,475.9 L237.12,475.9 L237.12,475.9 L237.12,475.9 L237.12,475.89 C237.12,475.74,237.24,475.67,237.36,475.67 C237.48,475.67,237.59,475.76,237.63,475.82 C237.66,475.89,237.72,476.11,237.76,476.26 C237.79,476.39,237.87,476.71,237.91,476.88 C237.95,477.03,237.99,477.19,238.03,477.35 C238.1,477.63,238.12,477.69,238.32,477.97 C238.52,478.25,238.85,478.61,239.37,478.61 C239.77,478.61,239.78,478.26,239.78,478.13 C239.78,477.71,239.48,476.94,239.37,476.64 C239.29,476.45,239.26,476.39,239.26,476.27 C239.26,475.9,239.57,475.67,239.93,475.67 C240.63,475.67,240.94,476.63,240.94,476.73 C240.94,476.83,240.85,476.83,240.82,476.83 C240.73,476.83,240.72,476.78,240.69,476.71 C240.53,476.15,240.23,475.87,239.95,475.87 C239.8,475.87,239.77,475.96,239.77,476.11 C239.77,476.27,239.81,476.36,239.94,476.67 C240.02,476.89,240.31,477.63,240.31,478.02 C240.31,478.69,239.77,478.81,239.4,478.81 C238.82,478.81,238.43,478.45,238.22,478.17 C238.17,478.65,237.76,478.81,237.47,478.81 C237.17,478.81,237.01,478.59,236.92,478.43 C236.76,478.17,236.66,477.78,236.66,477.74 C236.66,477.65,236.76,477.65,236.78,477.65 C236.88,477.65,236.89,477.67,236.94,477.86 C237.04,478.27,237.17,478.61,237.45,478.61 C237.63,478.61,237.68,478.46,237.68,478.27 C237.68,478.14,237.62,477.88,237.57,477.7 C237.52,477.51,237.45,477.22,237.41,477.07 Z " />
+</g>  </g>
+</svg>

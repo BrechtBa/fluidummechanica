@@ -6,17 +6,17 @@ import matplotlib.pyplot as plt
 import _lib.frictionfactor
 
 # Gegevens
-g = 9.81				# m/s2
-rho = 990				# kg/m3
-nu = 1e-6				# m2/s
+g = 9.81                # m/s2
+rho = 990                # kg/m3
+nu = 1e-6                # m2/s
 
-L_h = 0.500				# m
-L_v = 0.040				# m
-D_h = 0.014       		# m
-D_v = 0.018				# m
-e = 0.10e-3				# m
-V_flow = 5./60000		# m3/s
-n = 10					# - , het aantal horizontale verbindingen
+L_h = 0.500                # m
+L_v = 0.040                # m
+D_h = 0.011               # m
+D_v = 0.014                # m
+e = 0.10e-3                # m
+V_flow = 15./60000        # m3/s
+n = 10                    # - , het aantal horizontale verbindingen
 
 # Oplossing
 # \dot{V}_{\mathrm{h},i}, D_\mathrm{h}, e \rightarrow f_{\mathrm{h},i}
@@ -43,7 +43,7 @@ n = 10					# - , het aantal horizontale verbindingen
 
 
 # Uitwerking
-niter = 10
+niter = 20
 
 # initialisatie
 V_flow_h = V_flow/n*np.ones(n)
@@ -62,46 +62,54 @@ h_Lv = np.zeros_like(V_flow_h)
 
 for k in range(niter):
 
-	print( 'iteration {}, V_flow_h[0] = {:.2f} l/min'.format(k,V_flow_h[0]*60000) )
-	
-	# bereken Re
-	Re_v = 4.0*V_flow_v/(nu*np.pi*D_v)
-	Re_h = 4.0*V_flow_h/(nu*np.pi*D_h)
+    print( 'iteration {}, V_flow_h[0] = {:.2f} l/min'.format(k,V_flow_h[0]*60000) )
 
-	# bereken f
-	damping = 0.5
-	for i in range(n):
-		if Re_v[i] > 2300:
-			f_v[i] = damping*f_v[i] + (1-damping)*_lib.frictionfactor.turbulent(Re_v[i],e/D_v)
-		else:
-			f_v[i] = damping*f_v[i] + (1-damping)*_lib.frictionfactor.laminar(Re_v[i])
-			
-		if Re_h[i] > 2300:
-			f_h[i] = damping*f_h[i] + (1-damping)*_lib.frictionfactor.turbulent(Re_h[i],e/D_h)
-		else:
-			f_h[i] = damping*f_h[i] + (1-damping)*_lib.frictionfactor.laminar(Re_h[i])
-	
-	# bereken R_h en R_v
-	for i in range(n):
-		R_h[i] = (8.*f_h[i])/(g*np.pi**2)*L_h/D_h**5
-		R_v[i] = (8.*f_v[i])/(g*np.pi**2)*L_v/D_v**5
-	
-	# bereken R
-	R[0] = R_h[0]
-	for i in range(1,n):
-		R[i] = ( 1.0/R_h[i]**0.5 + 1.0/(2.0*R_v[i-1]+R[i-1])**0.5 )**-2
+    # bereken Re
+    Re_v = 4.0*V_flow_v/(nu*np.pi*D_v)
+    Re_h = 4.0*V_flow_h/(nu*np.pi*D_h)
 
-	# bereken V_flow_h en V_flow _v
-	for i in range(n-1, 0, -1):
-		V_flow_h[i]   = (R[i]/R_h[i])**0.5 * V_flow_v[i]
-		V_flow_v[i-1] = ( R[i]/(2.0*R_v[i-1] + R[i-1]) )**0.5 * V_flow_v[i]
+    f_h0_old = f_h[0]
+    
+    # bereken f
+    damping = 0.8
+    for i in range(n):
+        if Re_v[i] > 2300:
+            f_v[i] = damping*f_v[i] + (1-damping)*_lib.frictionfactor.turbulent(Re_v[i],e/D_v)
+        else:
+            f_v[i] = damping*f_v[i] + (1-damping)*_lib.frictionfactor.laminar(Re_v[i])
+            
+        if Re_h[i] > 2300:
+            f_h[i] = damping*f_h[i] + (1-damping)*_lib.frictionfactor.turbulent(Re_h[i],e/D_h)
+        else:
+            f_h[i] = damping*f_h[i] + (1-damping)*_lib.frictionfactor.laminar(Re_h[i])
+    
 
-	V_flow_h[0] = V_flow_v[0]
-	
-	# itereer
-	
-	
-	
+    # bereken R_h en R_v
+    for i in range(n):
+        R_h[i] = (8.*f_h[i])/(g*np.pi**2)*L_h/D_h**5
+        R_v[i] = (8.*f_v[i])/(g*np.pi**2)*L_v/D_v**5
+    
+    # bereken R
+    R[0] = R_h[0]
+    for i in range(1,n):
+        R[i] = ( 1.0/R_h[i]**0.5 + 1.0/(2.0*R_v[i-1]+R[i-1])**0.5 )**-2
+
+    # bereken V_flow_h en V_flow _v
+    for i in range(n-1, 0, -1):
+        V_flow_h[i]   = (R[i]/R_h[i])**0.5 * V_flow_v[i]
+        V_flow_v[i-1] = ( R[i]/(2.0*R_v[i-1] + R[i-1]) )**0.5 * V_flow_v[i]
+
+    V_flow_h[0] = V_flow_v[0]
+    
+    
+    # controleer convergentie
+    if abs(f_h0_old-f_h[0]) < 0.02*f_h[0]:
+        break
+    
+    # itereer
+    
+    
+    
 # totaal ladingsverlies
 h_L = R[n-1]*V_flow_v[n-1]**2
 
@@ -113,20 +121,18 @@ print('h_l = {:.3f} m'.format(h_L) )
 # equivalente lengte
 Re_eq = 4.0*V_flow/(nu*np.pi*D_v)
 if Re_eq > 2300:
-	f_eq = _lib.frictionfactor.turbulent(Re_eq,e/D_v)
+    f_eq = _lib.frictionfactor.turbulent(Re_eq,e/D_v)
 else:
-	f_eq = _lib.frictionfactor.laminar(Re_eq)
-	
+    f_eq = _lib.frictionfactor.laminar(Re_eq)
+    
 L_eq = h_L*np.pi**2*g*D_v**5/8.0/f_eq/V_flow
 
 
 
-	
+    
 # plot stijl instellen
-plt.rc('text', usetex=True)
-plt.rc('font', family='serif')
 plt.rc('figure', autolayout=True)
-	
+    
 # plotten
 plt.figure()
 width = 0.5
