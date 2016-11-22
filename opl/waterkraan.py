@@ -22,4 +22,4 @@ A_2 = V_flow/v_2
 D_2 = (4*A_2/np.pi)**0.5
 
 print('De diameter is:')
-print('D = {:.1f} mm'.format(D_2*1000) )
+print('D = {:.2f} mm'.format(D_2*1000) )
