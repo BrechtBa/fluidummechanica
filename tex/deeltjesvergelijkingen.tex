@@ -213,21 +213,33 @@ Uit de thermodynamica weten we dat wanneer de dichtheid constant blijft een stij
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Bewegingsvergelijking loodrecht op de stromingsrichting}
-Ook in de richting loodrecht op de stroomlijnen kunnen we het behoud van impuls toepassen. Stellen we voor de eenvoud dat de stroming twee-dimensionaal is (in dit geval is de richting loodrecht op de stroomlijnen eenduidig bepaald). Beschouwen we hierin een  infinitesimaal klein controle volume tussen twee stroomlijnen met diepte $\Delta z$. Bij verwaarlozing van de zwaartekracht wordt de vergelijking van behoud van impuls:
+Ook in de richting loodrecht op de stroomlijnen kunnen we het behoud van impuls toepassen. Stellen we voor de eenvoud dat de stroming twee-dimensionaal is (in dit geval is de richting loodrecht op de stroomlijnen eenduidig bepaald). Beschouwen we hierin een  infinitesimaal klein controle volume tussen twee stroomlijnen met diepte $\Delta z$ (Figuur \ref{fig:Controlevolume_tussen_stroomlijnen_loodrecht}).
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics{fig/deeltjesvergelijkingen/Controlevolume_tussen_stroomlijnen_loodrecht}
+	\caption{Een infenitesimaal controlevolume tussen twee gekromde stroomlijnen}
+	\label{fig:Controlevolume_tussen_stroomlijnen_loodrecht}
+\end{figure}
+
+Bij verwaarlozing van de zwaartekracht wordt de vergelijking van behoud van impuls:
 \begin{equation}
-	\left.\rho v_{\parallel} v_{\perp} \Delta n \Delta z \right|_{s+\Delta s}-
-	\left.\rho v_{\parallel} v_{\perp} \Delta n \Delta z \right|_{s} = 
+	\left.\rho v_{\perp} \Delta n \Delta z v_{\parallel} \right|_{s+\Delta s}-
+	\left.\rho v_{\perp} \Delta n \Delta z v_{\parallel} \right|_{s} = 
 	\left. p \Delta s \Delta z \right|_{n} - \left. p \Delta s \Delta z \right|_{n+\Delta n} 
 \end{equation}
 Waarin $v_{\parallel}$ de component van de snelheid evenwijdig met de rand van het controlevolume voorstelt.
 De krachten die in deze richting op het controle volume inwerken zijn de drukkrachten aan weerszijden.
-We kunnen het controle volume steeds zo kiezen dat de snelheid parallel aan de ingang van het controle volume $0$ is. Wanneer we de kromtestraal $R$ van de gemiddelde stroomlijn kennen, kunnen we de parallelle snelheid aan de uitgang schrijven als:
+We kunnen het controle volume steeds zo kiezen dat de snelheid parallel aan de ingang van het controle volume $0$ is. Wanneer we de kromtestraal $R$ van de gemiddelde stroomlijn kennen, kunnen we de parallelle en loodrechte component van de snelheid aan de uitgang benaderen als:
+
+\begin{align}
+	v_{\perp}|_{s+\Delta s} &\approx v \\
+	v_{\parallel}|_{s+\Delta s} &\approx v \frac{\Delta s}{R}
+\end{align}
+
+Hierin gebruiken we de conventie dat $R$ steeds groter dan 0 is en dat $\vt{n}$ naar het middelpunt van de aanliggende cirkel toe staat. Na deling door $\Delta s$,  $\Delta n$ en $\Delta z$ en het nemen van de limiet voor $\Delta n$ gaande naar nul wordt de impulsbalans:
 \begin{equation}
-	v_{\parallel}|_{s+\Delta s} = \frac{v}{R} \Delta s
-\end{equation}
-Hierin gebruiken we de conventie dat $R$ steeds groter dan 0 is en dat $\vt{n}$ van het middelpunt van de aanliggende cirkel weg staat. Na deling door $\Delta s$,  $\Delta n$ en $\Delta z$ en het nemen van de limiet voor $\Delta n$ gaande naar nul wordt de impulsbalans:
-\begin{equation}
-	\rho \frac{v^2}{R} = \frac{\partial p}{\partial n}
+	\rho \frac{v^2}{R} = -\frac{\partial p}{\partial n}
 \end{equation}
 Hierin zien we dat er enkel een variatie in druk loodrecht op de stroomlijnen kan bestaan indien de stroomlijnen een eindige kromtestraal hebben. Indien de stroomlijnen rechten zijn, is de kromtestraal oneindig en dus de drukverandering loodrecht op de stroomlijnen $0$.
 	
