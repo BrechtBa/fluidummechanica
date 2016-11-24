@@ -1,0 +1,245 @@
+% Dit werk is gelicenseerd onder de licentie Creative Commons Naamsvermelding-GelijkDelen 4.0 Internationaal. Ga naar http://creativecommons.org/licenses/by-sa/4.0/ om een kopie van de licentie te kunnen lezen.
+\documentclass[t]{beamer}
+
+\input{../tex/packages}
+\input{../tex/packages_slides}
+
+\subtitle{Behoudsvergelijkingen langs stroomlijnen}
+
+\begin{document}
+
+	\frame{\titlepage}
+	\section{Inleiding}
+	\begin{frame}
+		\frametitle{Voorbeeld}
+		\center
+    	\includegraphics[height=0.8\textheight]{../fig/deeltjesvergelijkingen/Dalco_Supercomputer_CFD_BMW_F1_PressurePath.jpg}\\
+		\footnotesize{Bron: http://www.dalco.ch/}
+  	\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  	\section{Bewegingsvergelijking}	
+  	\begin{frame}
+		\frametitle{Stroomlijncoordinaten}
+		\vspace{0.5cm}
+		\centering
+		\includegraphics{../fig/deeltjesvergelijkingen/Stoomlijncoordinaten}
+  	\end{frame}
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  	\begin{frame}
+		\frametitle{Bewegingsvergelijking}
+		\vspace{0.5cm}
+		\centering
+		\includegraphics{../fig/deeltjesvergelijkingen/Controlevolume_tussen_stroomlijnen}
+  	\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  	\begin{frame}
+		\frametitle{Bewegingsvergelijking}
+		\begin{textblock}{5}(0,3)
+            \includegraphics[width=5cm]{../fig/deeltjesvergelijkingen/Controlevolume_tussen_stroomlijnen}
+        \end{textblock}
+        \only<1-3>{
+        	\vspace{2.5cm}
+        	\begin{equation*}
+				\frac{\diff \vt{P}_{CV}}{\diff t} + \dot{\vt{P}}_{\partial CV} =  \vt{F}
+        	\end{equation*}
+        }
+        \only<2-3>{
+        	\begin{align*}
+				\left. \rho v v_{\perp} A \right|_{s+\Delta s} - \left. \rho v v_{\perp} A \right|_{s} &= \left. p A \right|_{s} - \left. p A \right|_{s+\Delta s} \\
+				&+ p_{gem} (\left. A \right|_{s+\Delta s}-\left. A \right|_{s}) -\rho g A_{gem} \Delta s \cos \alpha
+        	\end{align*}
+        }
+        \only<3-3>{
+        	\begin{align*}
+				\frac{\left. \rho v v A \right|_{s+\Delta s} - \left. \rho v v A \right|_{s}}{\Delta s} &= -\frac{\left. p A \right|_{s+\Delta s} - \left. p A \right|_{s}}{\Delta s} \\
+				& + p_{gem} \frac{\left. A \right|_{s+\Delta s}-\left. A \right|_{s}}{\Delta s} -\rho g A_{gem} \frac{\left. z\right|_{s+\Delta s} - \left. z\right|_{s}}{\Delta s}
+			\end{align*}
+		}
+		\only<4-6>{
+			\vspace{3.5cm}
+			\begin{equation*}
+				\frac{\diff \rho v v A}{\diff s} = -\frac{\diff p A}{\diff s} + p \frac{\diff A}{\diff s} -\rho g A \frac{\diff z}{\diff s}
+			\end{equation*}
+		}
+		\only<5-6>{
+			\begin{equation*}
+				\rho v A \frac{\diff v}{\diff s} +  v \frac{\diff \rho v A}{\diff s} = -A \frac{\diff p}{\diff s} - p\frac{\diff A}{\diff s} + p \frac{\diff A}{\diff s} -\rho g A \frac{\diff z}{\diff s}
+			\end{equation*}
+		}
+		\only<6-6>{
+			\begin{equation}
+				\rho v \frac{\diff v}{\diff s} + \frac{\diff p}{\diff s} + \rho g \frac{\diff z}{\diff s} = 0
+				\label{eqn:vergelijking van Euler}
+			\end{equation}
+		}
+  		\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{frame}
+		\frametitle{Deeltjesversnelling}
+		\vspace{1cm}
+		\begin{equation}
+			\frac{\subsdiff}{\subsdiff t} = \frac{\partial}{\partial t} + v_x \frac{\partial}{\partial x} + v_y \frac{\partial}{\partial y} + v_z \frac{\partial}{\partial z}
+		\end{equation}
+		\pause
+		\vspace{1cm}
+		\begin{equation}
+			\rho \frac{\subsdiff \vt{v}}{\subsdiff t} = -\nabla p + \rho \vt{g}
+		\end{equation}
+  	\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Bernoulli}
+	\begin{frame}
+		\frametitle{Integratie van de bewegingsvergelijking}
+		\vspace{1cm}
+		\begin{equation*}
+			\rho v \frac{\diff v}{\diff s} + \frac{\diff p}{\diff s} + \rho g \frac{\diff z}{\diff s} = 0
+		\end{equation*}
+		\pause
+		\vspace{0.5cm}
+		\begin{equation*}
+			\int \rho v \frac{\diff v}{\diff s} \diff s + \int \frac{\diff p}{\diff s} \diff s + \int \rho g \frac{\diff z}{\diff s}  \diff s = \textrm{Cst}
+		\end{equation*}
+		\pause
+        \hspace{5cm} $\Downarrow \quad \rho = \textrm{Cst}$ 
+		\begin{equation}
+			\frac{1}{2} \rho v^2 + p + \rho g z = \textrm{Cst}
+			\label{eqn:vergelijking van Bernoulli}
+		\end{equation}
+  	\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  	\begin{frame}
+  		\frametitle{Bernoulli}
+  		\begin{itemize}
+  			\pause
+  			\item Stationaire stroming
+  			\pause
+  			\item Langs een stroomlijn
+  			\pause
+  			\item Niet-viskeuze stroming
+  			\pause
+  			\item Niet-samendrukbare stroming
+  		\end{itemize}
+  		\pause
+  		\vspace{1cm}
+  		\begin{equation*}
+			\frac{1}{2} \rho v^2 + p + \rho g z = \textrm{Cst}
+		\end{equation*}
+  	\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{frame}
+		\frametitle{Toepassing}
+		Pitot-Statisch buis
+		% demo
+		\pause
+		\vspace{0.5cm}
+		\center
+		\includegraphics{../fig/deeltjesvergelijkingen/Pitotstatischbuis}
+	\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{frame}
+		\frametitle{Toepassing}
+		\center
+		\includegraphics[height=0.8\textheight]{../fig/deeltjesvergelijkingen/747pitottube}\\
+		\footnotesize{Bron: http://www.edwardsflighttest.com/}
+	\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{frame}
+		\frametitle{Mechanische arbeid van een deeltje}
+		\begin{equation*}
+			\rho v \frac{\diff v}{\diff s} = - \frac{\diff p}{\diff s} - \rho g \frac{\diff z}{\diff s}
+		\end{equation*}
+		\begin{equation*}
+			W = \int_1^2 F \diff s
+		\end{equation*}				
+		\pause
+		\begin{equation*}
+			\int_1^2 \rho v \frac{\diff v}{\diff s} \diff s = - \int_1^2 \frac{\diff p}{\diff s} \diff s - \int_1^2 \rho g \frac{\diff y}{\diff s} \diff s
+		\end{equation*}
+		\pause
+        \hspace{5cm} $\Downarrow \quad \rho = \textrm{Cst}$ 
+        \begin{equation*}
+			\rho \frac{1}{2} (v_2^2-v_1^2)  = - (p_2-p_1) - \rho g (z_2-z_1)
+		\end{equation*}
+		\pause
+		\begin{equation}
+			\rho \frac{1}{2} (v_2^2-v_1^2) + (p_2-p_1) + \rho g (z_2-z_1) = 0
+			\label{eqn:kinetische energie en arbeid}
+		\end{equation}
+  		\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{frame}
+		\frametitle{Grafische voorstelling}
+		\vspace{1cm}
+		\center
+		\includegraphics{../fig/deeltjesvergelijkingen/Energiehoogte}
+	\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{frame}
+		\frametitle{Energiebeschouwingen en irreversibiliteit}
+		\begin{equation*}
+			\dot{m} (u_u + \frac{p_u}{\rho_u} + \frac{1}{2}v^2_u + g z_u) - \dot{m} (u_i + \frac{p_i}{\rho_i}+ \frac{1}{2}v^2_i + g z_i) = \dot{Q}-\dot{W}_a
+		\end{equation*}
+		\pause
+			\hspace{5cm} $\Downarrow \quad \rho = \textrm{Cst}, \dot{Q} = 0, \dot{W}_a = 0$ 
+		\begin{equation*}
+			u_u + \frac{p_u}{\rho} + \frac{1}{2}v^2_u + g z_u = u_i + \frac{p_i}{\rho}+ \frac{1}{2}v^2_i + g z_i
+		\end{equation*}
+		\pause
+		\begin{equation*}
+			\rho (u_u-u_i) + (p_u-p_i) + \frac{1}{2} \rho (v_u^2-v_i^2) + \rho g (z_u-z_i) = 0
+		\end{equation*}
+		\pause
+		\begin{center}
+			vs
+		\end{center}
+		\begin{equation*}
+			(p_2-p_1) + \frac{1}{2} \rho (v_2^2-v_1^2) + \rho g (z_2-z_1) = 0
+		\end{equation*}
+	\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Navier-Stokes}
+	\begin{frame}
+		\frametitle{Navier-Stokes vergelijking}
+		\begin{itemize}
+  			\item Newtoniaanse vloeistof
+  			\item Niet-samendrukbare stroming
+  		\end{itemize}
+  		\pause
+  		\vspace{1cm}
+  		\begin{equation}
+			\rho \frac{\subsdiff \vt{v}}{\subsdiff t} = -\nabla p + \rho \vt{g} + \mu \nabla^2 \vt{v}
+		\end{equation}
+		\pause
+		\vspace{0.2cm}
+		\begin{align}
+			&\rho \left(\frac{\partial v_x}{\partial t} + v_x \frac{\partial v_x}{\partial x} + v_y \frac{\partial v_x}{\partial y} + v_z \frac{\partial v_x}{\partial z} \right) = \nonumber\\
+			&\hspace{2cm} -\frac{\partial p}{\partial x} +\rho g_x + \mu \left( \frac{\partial^2 v_x}{\partial x^2} + \frac{\partial^2 v_x}{\partial y^2} + \frac{\partial^2 v_x}{\partial z^2} \right)
+		\end{align}
+	\end{frame}
+	\begin{frame}
+		\frametitle{Continuiteitsvergelijking}
+		\begin{textblock}{5}(0,3)
+            \includegraphics[width=5cm]{../fig/deeltjesvergelijkingen/Continuiteitsvergelijking}
+        \end{textblock}
+  		\pause
+  		\vspace{1.5cm}
+  		\begin{align*}
+			0 &= (\rho v_x|_{x} - \rho v_x|_{x+\Delta x})\Delta y \Delta z \\
+			  &+ (\rho v_y|_{y} - \rho v_y|_{y+\Delta y})\Delta x \Delta z \\
+			  &+ (\rho v_z|_{z} - \rho v_z|_{z+\Delta z})\Delta x \Delta y
+		\end{align*}
+		\pause
+		\begin{equation*}
+			0 = \frac{\rho v_x|_{x} - \rho v_x|_{x+\Delta x}}{\Delta x} + \frac{\rho v_y|_{y} - \rho v_y|_{y+\Delta y}}{\Delta y} + \frac{\rho v_z|_{z} - \rho v_z|_{z+\Delta z}}{\Delta z}
+		\end{equation*}
+		\pause
+		\begin{equation*}
+			\frac{\partial \rho v_x}{\partial x} + \frac{\partial \rho v_y}{\partial y} + \frac{\partial \rho v_z}{\partial z} = 0
+		\end{equation*}
+		\pause
+		\begin{equation}
+			\vt{\nabla} \vt{v} = 0
+		\end{equation}
+	\end{frame}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}			
