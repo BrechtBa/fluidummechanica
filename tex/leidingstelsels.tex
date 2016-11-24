@@ -33,6 +33,60 @@ In ingenieurstoepassingen zijn we vaak niet geïnteresseerd in de gemiddelde sne
 	\label{eqn:ladingsverlies door een leiding debiet}
 \end{equation}
 
+\begin{voorbeeld}
+\label{ex:leiding tussen reservoirs}
+Een leiding met cirkelvormige doorsnede en lengte 10 \unit{m}, diameter 0.10 \unit{m} en ruwheid 0.1 \unit{mm} verbind twee waterreservoirs. De niveau's van deze reservoirs worden op constante hoogte gehouden en het hoogteverschil tussen de twee reservoirs is 1 \unit{m}. 
+
+Bepaal het debiet door de leiding.
+
+We kunnen de mechanische energie vergelijking opschrijven tussen twee punten met punt $1$ aan het oppervlak van het hoger gelegen reservoir en punt $2$ aan het oppervlak van het lager gelegen reservoir. 
+\begin{equation}
+	z_1 + \frac{p_1}{\rho g} + \frac{v_1^2}{2 g} - h_\mathrm{L} =  z_2 + \frac{p_2}{\rho g} + \frac{v_2^2}{2 g} \nonumber
+\end{equation}
+
+In beide punten is de snelheid bij benadering gelijk aan nul, en de druk atmosfeerdruk. Bovenstaande vergelijking vereenvoudigt zich dus tot:
+\begin{equation}
+	z_1 - z_2 = h_\mathrm{L}
+	\label{eqn:voorbeeld leiding tussen reservoirs energie}
+\end{equation}
+
+De ladingsverliezen kunnen verder uitgeschreven worden als:
+\begin{equation}
+	h_\mathrm{L} = 8 f \frac{\dot{V}^2}{\pi^2 g}\frac{L}{D^5}
+\end{equation}
+
+Op de wrijvingsfactor te bepalen uit figuur \ref{fig:Moody diagram} hebben we het Reynoldsgetal nodig. Dit kunnen we bepalen uit het debiet als:
+\begin{equation}
+	\mathrm{Re} = \frac{v D}{\nu} = \frac{4 \dot{V}}{\pi D \nu}
+\end{equation}
+
+De wrijvingsfactor kan niet rechtstreeks bepaald worden aangezien deze afhankelijk is van het Reynoldsgetal en dus ook van het nog onbekende debiet. Om een oplossing te bekomen gebruiken we dus een iteratieve oplossingsprocedure:
+\begin{enumerate}
+	\item schat $f$
+	\item los (\ref{eqn:voorbeeld leiding tussen reservoirs energie}) op naar $\dot{V}$
+	\item bepaal $\mathrm{Re}$ met het gevonden debiet
+	\item bepaal $f$ met behulp van het Moody diagram
+	\item ga naar stap 2
+\end{enumerate}
+
+Indien we beginnen van een veronderstelling $f=0.030$ bekomen we de volgende oplossingstabel:
+\begin{center}
+	\begin{tabular}{llll}
+		\hline
+		iteratie & $\mathrm{Re}$   & $f$   & $\dot{V}$ (\unit{m^3/s}) \\
+		\hline
+		0        &       /         & 0.030 &  $0.0201$ \\
+		1        & $256\times10^3$ & 0.021 &  $0.0242$ \\
+		2        & $308\times10^3$ & 0.021 &  $0.0243$ \\
+		\hline
+	\end{tabular}
+\end{center}
+
+Het debiet door de leiding is dus 0.024 \unit{m^3/s}
+
+\end{voorbeeld}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Lokale ladingsverliezen}
 	\label{sec:Lokale ladingsverliezen}
@@ -87,44 +141,28 @@ De verliescoëfficiënt wordt dus:
 De verliescoëfficiënt is hier dus enkel een functie van de geometrie. Dit resultaat is in goede overeenstemming met experimenteel bepaalde waarden. Wanneer we de oppervlakte $A_2$ naar oneindig laten gaan bekomen we de verliescoëfficiënt voor een uitstroming in een zeer groot reservoir. De verliescoëfficiënt is dan 1. Met andere woorden de volledige kinetische energie wordt gedissipeerd tijdens de uitstroming in een reservoir.
 
 \begin{voorbeeld}
-Een leiding met cirkelvormige doorsnede en lengte 10\unit{m}, diameter 0.10\unit{m} en ruwheid 0.1\unit{mm} verbind twee waterreservoirs. De niveau's van deze reservoirs worden op constante hoogte gehouden en het hoogteverschil tussen de twee reservoirs is 1\unit{m}. De in- en uitlaat van de leiding in de reservoirs is zonder afrondingen uitgevoerd.
+\label{ex:voorbeeld leiding tussen reservoirs lokale verliezen}
+Bepaal voor het systeem uit  voorbeeld \ref{ex:leiding tussen reservoirs} het debiet door de leiding rekeninghoudend met de ladingsverliezen aan in- en uitstroom als de in- en uitstroom van de leiding in de reservoirs zonder afrondingen is uitgevoerd.
 
-Bepaal het debiet door de leiding rekeninghoudend met de ladingsverliezen aan in- en uitlaat.
-
-We kunnen de mechanische energie vergelijking opschrijven tussen twee punten met punt $1$ aan het oppervlak van het hoger gelegen reservor en punt $2$ aan het oppervlak van het lager gelegen reservoir. 
+We kunnen de mechanische energie vergelijking (\ref{eqn:voorbeeld leiding tussen reservoirs energie}) uit voorbeeld \ref{ex:leiding tussen reservoirs} uitbreiden door de lokale verliezen toe te voegen:
 \begin{equation}
-	z_1 + \frac{p_1}{\rho g} + \frac{v_1^2}{2 g} - h_\mathrm{L} - h_\mathrm{L,inlaat} - h_\mathrm{L,uitlaat} =  z_2 + \frac{p_2}{\rho g} + \frac{v_2^2}{2 g} \nonumber
+	z_1 -z_2 = h_\mathrm{L} + h_\mathrm{L,instroom} + h_\mathrm{L,uitstroom}
+	\label{eqn:voorbeeld leiding tussen reservoirs lokale verliezen energie}
 \end{equation}
 
-In beide punten is de snelheid bij benadering gelijk aan nul, en de druk atmosfeerdruk. Bovernstaande vergelijking vereenvoudigt zich dus tot:
-\begin{equation}
-	z_1 -z_2 = h_\mathrm{L} + h_\mathrm{L,inlaat} + h_\mathrm{L,uitlaat}
-	\label{eqn:toepassing lokale verliezen mechanische energie}
-\end{equation}
-
-De verschillende ladingsverliezen kunnen verder uitgeschrenen worden als:
+De lokale ladingsverliezen kunnen verder uitgeschrenen worden als:
 \begin{align}
-	h_\mathrm{L} &= 8 f \frac{\dot{V}^2}{\pi^2 g}\frac{L}{D^5} \nonumber \\
-	h_\mathrm{L,inlaat} &= 8 K_\mathrm{inlaat} \frac{\dot{V}^2}{\pi^2 g D^4} \nonumber \\
-	h_\mathrm{L,uitlaat} &= 8 K_\mathrm{uitlaat} \frac{\dot{V}^2}{\pi^2 g D^4} \nonumber
+	h_\mathrm{L,instroom} &= 8 K_\mathrm{instroom} \frac{\dot{V}^2}{\pi^2 g D^4} \nonumber \\
+	h_\mathrm{L,uitstroom} &= 8 K_\mathrm{uitstroom} \frac{\dot{V}^2}{\pi^2 g D^4} \nonumber
 \end{align}
 
-De weerstandscoefficienten $K_\mathrm{inlaat}$ en $K_\mathrm{uitlaat}$ kunnen we bekomen uit \label{sec:Tabellen en grafieken}. Voor de niet afgeronde in- en uitlaat wordt dit:
+De verliescoëfficiënten $K_\mathrm{instroom}$ en $K_\mathrm{uitstroom}$ kunnen we bekomen uit Appendix \ref{sec:Tabellen en grafieken}. Voor de niet afgeronde in- en uitstroom wordt dit:
 \begin{align}
-	K_\mathrm{inlaat} = 0.5 \nonumber \\
-	K_\mathrm{uitlaat} = 1.0 \nonumber
+	K_\mathrm{instroom} = 0.5 \nonumber \\
+	K_\mathrm{uitstroom} = 1.0 \nonumber
 \end{align}
 
-De wrijvingsfactor kan niet rechtstreeks bepaald worden aangezien deze afhankelijk is van het Reynoldsgetal en dus ook van het nog onbekende debiet. Om een oplossing te bekomen gebruiken we dus een iteratieve oplossingsprocedure:
-\begin{enumerate}
-	\item schat $f$
-	\item los (\ref{eqn:toepassing lokale verliezen mechanische energie}) op naar $\dot{V}$
-	\item bepaal $\mathrm{Re}$ met het gevonden debiet
-	\item bepaal $f$ met behulp van het Moody diagram
-	\item ga naar stap 2
-\end{enumerate}
-
-Indien we beginnen van een veronderstelling $f=0.030$ bekomen we de volgende oplossingstabel:
+Om een oplossing te bekomen kan dezelfde iteratieve oplossingsprocedure als in voorbeeld \ref{ex:leiding tussen reservoirs} gebruikt worden. Indien we opnieuw beginnen van een veronderstelling $f=0.030$ bekomen we de volgende oplossingstabel:
 \begin{center}
 	\begin{tabular}{llll}
 		\hline

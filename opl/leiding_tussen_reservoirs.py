@@ -13,14 +13,14 @@ L = 10.0                # m
 D = 0.10                # m
 e = 0.1e-3              # m
 
-K_inlaat = 0.5          # - 
-K_uitlaat = 1.0         # - 
+K_instroom = 0.5          # - 
+K_uitstroom = 1.0         # - 
 
 # Oplossing
-# z_1 -z_2 = h_\mathrm{L} + h_\mathrm{L,inlaat} + h_\mathrm{L,uitlaat}
+# z_1 -z_2 = h_\mathrm{L} + h_\mathrm{L,instroom} + h_\mathrm{L,uitstroom}
 # h_\mathrm{L} &= 8 f \frac{\dot{V}^2}{\pi^2 g}\frac{L}{D^5} \nonumber \\
-# h_\mathrm{L,inlaat} &= 8 K_\mathrm{inlaat} \frac{\dot{V}^2}{\pi^2 g D^4} \nonumber \\
-# h_\mathrm{L,uitlaat} &= 8 K_\mathrm{uitlaat} \frac{\dot{V}^2}{\pi^2 g D^4} \nonumber
+# h_\mathrm{L,instroom} &= 8 K_\mathrm{instroom} \frac{\dot{V}^2}{\pi^2 g D^4} \nonumber \\
+# h_\mathrm{L,uitstroom} &= 8 K_\mathrm{uitstroom} \frac{\dot{V}^2}{\pi^2 g D^4} \nonumber
 
 
 # Uitwerking zonder lokale verliezen
@@ -62,7 +62,7 @@ print('{:<10} {:<15} {:<15} {:<15}'.format('iter','Re','f','V (m3/s)'))
     
 for i in range(4):
     
-    V2 = dz/( 8*f*L/(np.pi**2*g*D**5) + 8*K_inlaat/(np.pi**2*g*D**4) + 8*K_uitlaat/(np.pi**2*g*D**4) )
+    V2 = dz/( 8*f*L/(np.pi**2*g*D**5) + 8*K_instroom/(np.pi**2*g*D**4) + 8*K_uitstroom/(np.pi**2*g*D**4) )
     V = V2**0.5
     
     print('{:<10.0f} {:<15.0f} {:<15.3f} {:<15.4f}'.format(i,Re,f,V))
