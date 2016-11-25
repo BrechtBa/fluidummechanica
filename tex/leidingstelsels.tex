@@ -16,13 +16,18 @@ In het vorige hoofdstuk hebben we de drukverliezen van een viskeuze stroming in 
 
 In sectie \ref{sec:Mechanische arbeid van een deeltje} hebben we de vergelijking van Bernoulli beschouwd als behoud van mechanische energie van een niet-viskeuze, stationaire stroming langs een stroomlijn. In een leiding zullen er steeds stoomlijnen de leiding volgen. De precieze ligging van deze stroomlijnen in de leiding is niet belangrijk aangezien we in de gemiddelde grootheden overheen de leiding geïnteresseerd zijn. Bij viskeuze stromingen zal echter een deel van de mechanische energie verloren gaan. We kunnen (\ref{eqn:kinetische energie en arbeid}) dus herformuleren voor een viskeuze stroming:
 \begin{equation}
-	p_2 + \rho \frac{1}{2} v_2^2 + \rho g z_2 = p_1 + \rho \frac{1}{2} v_1^2 + \rho g z_1 - \Delta E
+	 \rho g z_2 + p_2 + \rho \frac{1}{2} v_2^2 =  \rho g z_1 + p_1 + \rho \frac{1}{2} v_1^2 - \Delta E
 \end{equation}
-Met $\Delta E$ het energieverlies ten gevolge van de viskeuze dissipatie zoals berekend in het vorige hoofdstuk. Een vaak gebruikte voorstelling van deze vergelijking is de weergave als energiehoogtes. De vergelijking wordt dan:
+Met $\Delta E$ het energieverlies ten gevolge van de viskeuze dissipatie zoals berekend in het vorige hoofdstuk. Een vaak gebruikte voorstelling van deze vergelijking is de weergave als energiehoogtes of ladingen. De lading (E: head) $H$ in een punt van een stroming is gedefinieerd als de totale mechanische energie in dat punt gedeeld door de valversnelling en de dichtheid in het punt:
 \begin{equation}
-	\frac{p_2}{\rho g} + \frac{v_2^2}{2 g}  + z_2 = \frac{p_1}{\rho g} + \frac{v_1^2}{2 g}  + z_1 - h_L
+	H = z + \frac{p}{\rho g} + \frac{v^2}{2 g}
 \end{equation}
-Hierin wordt $h_L$ het \emph{ladingsverlies} (E: head loss) genoemd. In woorden stelt de vergelijking dat de mechanische energie in punt 2 gelijk is aan de mechanische energie in punt 1 min het ladingsverlies. De uitdrukking voor dit ladingsverlies in eenvoudig af te leiden uit (\ref{eqn:drukval bij turbulente stroming}) door te delen door $\rho g$:
+Als we de volledige mechanische energievergelijking delen door $\rho g$ kunnen we deze dus schrijven als:
+\begin{equation}
+	H_2 = H_1 - h_L
+\end{equation}
+Met $H_1$ de lading in punt $1$ en $H_2$ de lading in punt $2$.
+De term $h_L$ wordt dan het \emph{ladingsverlies} (E: head loss) genoemd. In woorden stelt de vergelijking dat de lading in punt 2 gelijk is aan de lading in punt 1 min het ladingsverlies. De uitdrukking voor dit ladingsverlies in eenvoudig af te leiden uit (\ref{eqn:drukval bij turbulente stroming}) door te delen door $\rho g$:
 \begin{equation}
 	h_L = f \frac{v^2}{2 g} \frac{L}{D}
 	\label{eqn:ladingsverlies door een leiding}
@@ -41,10 +46,10 @@ Bepaal het debiet door de leiding.
 
 We kunnen de mechanische energie vergelijking opschrijven tussen twee punten met punt $1$ aan het oppervlak van het hoger gelegen reservoir en punt $2$ aan het oppervlak van het lager gelegen reservoir. 
 \begin{equation}
-	z_1 + \frac{p_1}{\rho g} + \frac{v_1^2}{2 g} - h_\mathrm{L} =  z_2 + \frac{p_2}{\rho g} + \frac{v_2^2}{2 g} \nonumber
+	H_2 = H_1 - h_\mathrm{L} \nonumber
 \end{equation}
 
-In beide punten is de snelheid bij benadering gelijk aan nul, en de druk atmosfeerdruk. Bovenstaande vergelijking vereenvoudigt zich dus tot:
+In beide punten is de snelheid bij benadering gelijk aan nul, en de druk atmosfeerdruk. De lading in punt 1 en 2 is dus gelijk aan het niveau van de waterreservoirs. Bovenstaande vergelijking vereenvoudigt zich dus tot:
 \begin{equation}
 	z_1 - z_2 = h_\mathrm{L}
 	\label{eqn:voorbeeld leiding tussen reservoirs energie}
@@ -230,32 +235,6 @@ Samen met de continuïteitsvergelijking levert dit een stelsel van $n+1$ vergeli
 	\label{eqn:parallelschakeling}
 \end{equation}
 
-Bij het toepassen van bovenstaande uitdrukkingen op ingenieurstoepassingen ontstaan er meteen enkele problemen. Wanneer de debieten in de leidingen gekend zijn kunnen we met behulp van het Moody diagram de ladingsverliezen (en dus de drukken in elk punt van de leidingen) berekenen. Dit is echter niet het enige type probleem dat we kunnen tegenkomen. Algemeen zijn er drie types problemen te onderscheiden:
-\begin{itemize}
-	\item Het berekenen van ladingsverliezen uit het debiet en de geometrie
-	\item Het berekenen van het debiet uit gekende ladingsverliezen en geometrie
-	\item Het berekenen van de geometrie met gekende ladingsverliezen bij een bepaald debiet
-\end{itemize}
-Het eerste type probleem is zeer eenvoudig en kan bij een serieschakeling van elementen zonder problemen gedaan worden. Wanneer er echter een parallelschakeling in het leidingstelsel voorkomt wordt ook dit probleem iets ingewikkelder. Naar alle waarschijnlijkheid zal de debietverdeling in de verschillende componenten van de parallelschakeling niet gekend zijn. We dienen dus het stelsel (\ref{eqn:parallelschakeling}) op te lossen. Hierin zijn de wrijvingsfactoren $f_i$ echter afhankelijk van het Reynoldsgetal en dus het debiet (dat niet gekend is). Bij turbulente stroming is deze relatie zelfs sterk niet lineair en moeilijk in gesloten vorm weer te geven. Daarbovenop is het stelsel (\ref{eqn:parallelschakeling}) zelf ook niet lineair. Er is dus geen garantie dat er een oplossing bestaat.
-Indien de oplossing echter wel bestaat kunnen we met behulp van iteratieve technieken wel tot deze oplossing komen. Een stappenplan om tot een oplossing te komen gaat als volgt:
-\begin{enumerate}
-	\item Maak een veronderstelling voor het debiet in de verschillende leidingen
-	\item Bereken de Reynoldsgetallen en de wrijvingsfactoren voor elke leiding met behulp van het Moody diagram
-	\item Los het stelsel (\ref{eqn:parallelschakeling}) op naar de debieten met de veronderstelde wrijvingsfactoren
-	\item Indien de debieten sterk afwijken van de voorgaande debieten ga naar stap 2, indien niet is de oplossing gevonden.
-\end{enumerate}
-
-Voor het tweede type problemen (Bepaling van het debiet bij een gekend ladingsverlies) kan bovenstaande oplossingsmethode ook gebruikt worden. Dit type problemen komt voor bij stroming die wordt veroorzaakt door hoogteverschillen tussen 2 reservoirs of bij stroming tussen een leiding op gekende druk en een reservoir. 
-
-Het derde type probleem is een typische ingenieursprobleem waarbij een bepaald debiet fluïdum van een locatie naar een andere getransporteerd dient te worden. De diameter van de leidingen moet zo gekozen worden dat het ladingsverlies over elk onderdeel beperkt blijft. Het toegelaten ladingsverlies bepaalt hoeveel vermogen er nodig is voor het transport en dus de grootte van pompen of ventilatoren en de energie nodig voor het transport. Aangezien het Reynoldsgetal (en dus ook de wrijvingsfactor) ook afhankelijk is van de diameter van de leiding, hebben we opnieuw een iteratieve techniek nodig om dit probleem op te lossen. Indien we het bovenstaande stappenplan licht aanpassen bekomen we:
-\begin{enumerate}
-	\item Maak een veronderstelling voor de diameter van de leiding
-	\item Bereken de Reynoldsgetallen en de wrijvingsfactoren voor elke leiding met behulp van het Moody diagram
-	\item Bepaal met behulp van (\ref{eqn:ladingsverlies door een leiding debiet}) de diameter
-	\item Indien de diameters sterk afwijken van de voorgaande waarden ga naar stap 2, indien niet is de oplossing gevonden.
-\end{enumerate}
-Aangezien de diameters van leidingen sterk genormeerd zijn kan de eerstvolgende grotere leiding gekozen worden en dienen er nooit veel iteraties uitgevoerd te worden.
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Leiding netwerken}
 	\label{sec:Leiding netwerken}	
@@ -270,19 +249,19 @@ Indien we de leidingen vertrekkende uit reservoir $i$ aanduiden met de index $i$
 \begin{equation}
 	\left\{
 	\begin{array}{lcl}
-		\frac{p_k}{\rho g} + z_k &=& \frac{p_1}{\rho g} + z_1 - h_{L,1} \nonumber \\
-		\frac{p_k}{\rho g} + z_k &=& \frac{p_2}{\rho g} + z_2 - h_{L,2} \\
-		\frac{p_3}{\rho g} + z_3 &=& \frac{p_k}{\rho g} + z_k - h_{L,3} \nonumber
+		H_k &=& H_1 - h_{L,1} \nonumber \\
+		H_k &=& H_2 - h_{L,2} \\
+		H_3 &=& H_k - h_{L,3} \nonumber
 	\end{array}
 	\right.
 \end{equation} 
-Bij het opschrijven van deze vergelijkingen hebben we impliciet stroomrichtingen verondersteld. In leiding 1 en 2 hebben de stroming naar het knooppunt toe verondersteld, terwijl in leiding 3 de stroming van het knooppunt weg verondersteld is. Ook hebben we verondersteld dat de kinetische energie in het knooppunt verwaarloosbaar is ten opzichte van de druk en de hoogte. Dit is een veel gemaakte veronderstelling die in de meeste gevallen gerechtvaardigd is. De ladingsverliezen kunnen we ook schrijven in functie van de debieten in de 3 leidingen. Indien we de wrijvingsfactoren gekend veronderstellen (wat mogelijk is door het gebruik van een iteratieve techniek) hebben we dus een stelsel van 3 vergelijkingen en 4 onbekenden ($\dot{V}_1,\dot{V}_2,\dot{V}_3$ en $p_k$). Er is dus nog één vergelijking nodig om dit stelsel te kunnen oplossen. Deze vinden we in de vorm van de continuïteitsvergelijking. In het knooppunt moet namelijk evenveel massa toekomen als vertrekken. Het volledige stelsel wordt dus:
+Bij het opschrijven van deze vergelijkingen hebben we impliciet stroomrichtingen verondersteld. In leiding 1 en 2 hebben de stroming naar het knooppunt toe verondersteld, terwijl in leiding 3 de stroming van het knooppunt weg verondersteld is. De ladingsverliezen kunnen we ook schrijven in functie van de debieten in de 3 leidingen. Indien we de wrijvingsfactoren gekend veronderstellen (wat mogelijk is door het gebruik van een iteratieve techniek) hebben we dus een stelsel van 3 vergelijkingen en 4 onbekenden ($\dot{V}_1,\dot{V}_2,\dot{V}_3$ en $H_k$). Er is dus nog één vergelijking nodig om dit stelsel te kunnen oplossen. Deze vinden we in de vorm van de continuïteitsvergelijking. In het knooppunt moet namelijk evenveel massa toekomen als vertrekken. Het volledige stelsel wordt dus:
 \begin{equation}
 	\left\{
 	\begin{array}{lcl}
-		\dfrac{p_k}{\rho g} + z_k &=& \dfrac{p_1}{\rho g} + z_1 - 8 f_1 \dfrac{\dot{V}_1^2}{g \pi^2} \dfrac{L_1}{D_1^5} \\
-		\dfrac{p_k}{\rho g} + z_k &=& \dfrac{p_2}{\rho g} + z_2 - 8 f_2 \dfrac{\dot{V}_2^2}{g \pi^2} \dfrac{L_2}{D_2^5} \\
-		\dfrac{p_3}{\rho g} + z_3 &=& \dfrac{p_k}{\rho g} + z_k - 8 f_3 \dfrac{\dot{V}_3^2}{g \pi^2} \dfrac{L_3}{D_3^5} \\
+		H_k &=& H_1 - 8 f_1 \dfrac{\dot{V}_1^2}{g \pi^2} \dfrac{L_1}{D_1^5} \\
+		H_k &=& H_2 - 8 f_2 \dfrac{\dot{V}_2^2}{g \pi^2} \dfrac{L_2}{D_2^5} \\
+		H_3 &=& H_k - 8 f_3 \dfrac{\dot{V}_3^2}{g \pi^2} \dfrac{L_3}{D_3^5} \\
 		\dot{V}_3 &=& \dot{V}_1 + \dot{V}_2
 	\end{array}
 	\right.
@@ -297,19 +276,83 @@ Het is echter ook mogelijk dat de oplossing van het bovenstaande stelsel geen en
 Wanneer dit voorvalt wil het zeggen dat één of meerdere stromingsrichtingen verkeerd gekozen zijn. We moeten dus het stelsel aanpassen zodat het overeenkomt met een nieuwe veronderstelling voor de stroomrichtingen.
 
 In het geval van Figuur \ref{fig:leidingnetwerk} is het, afhankelijk van de getalwaarden voor de hoogtes, leiding lengtes en diameters, best mogelijk dat de stroming niet van punt 2 naar het knooppunt gaat, maar van het knooppunt naar punt 2. We moeten dan de energievergelijking tussen punt 2 en het knooppunt en de continuïteitsvergelijking aanpassen:
-			\begin{equation}
-				\left\{
-				\begin{array}{lcl}
-					\dfrac{p_k}{\rho g} + z_k &=& \dfrac{p_1}{\rho g} + z_1 - 8 f_1 \dfrac{\dot{V}_1^2}{g \pi^2} \dfrac{L_1}{D_1^5} \\
-					\dfrac{p_2}{\rho g} + z_2 &=& \dfrac{p_k}{\rho g} + z_k - 8 f_2 \dfrac{\dot{V}_2^2}{g \pi^2} \dfrac{L_2}{D_2^5} \\
-					\dfrac{p_3}{\rho g} + z_3 &=& \dfrac{p_k}{\rho g} + z_k - 8 f_3 \dfrac{\dot{V}_3^2}{g \pi^2} \dfrac{L_3}{D_3^5} \\
-					\dot{V}_3 + \dot{V}_2 &=& \dot{V}_1 
-				\end{array}
-				\right.
-				\label{eqn:3reservoirs stelsel2}
-			\end{equation}
+\begin{equation}
+	\left\{
+	\begin{array}{lcl}
+		H_k &=& H_1 - 8 f_1 \dfrac{\dot{V}_1^2}{g \pi^2} \dfrac{L_1}{D_1^5} \\
+		H_2 &=& H_k - 8 f_2 \dfrac{\dot{V}_2^2}{g \pi^2} \dfrac{L_2}{D_2^5} \\
+		H_3 &=& H_k - 8 f_3 \dfrac{\dot{V}_3^2}{g \pi^2} \dfrac{L_3}{D_3^5} \\
+		\dot{V}_3 + \dot{V}_2 &=& \dot{V}_1 
+	\end{array}
+	\right.
+	\label{eqn:3reservoirs stelsel2}
+\end{equation}
 
 Met dit nieuwe stelsel van vergelijkingen kan nu wel een correcte oplossing, waarvoor alle 3 de debieten groter zijn dan nul bekomen worden.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Stromingsweerstand oplossingsmethode}
+	\label{sec:stromingsweerstand oplossingsmethode}
+voor het bepalen van de debieten in zelfs eenvoudige leidingstelsels ontstaan stelsels waarin lineaire vergelijkingen en kwadratische vergelijkingen door elkaar staan. De uitdrukking van de mechanische energievergelijking tussen twee punten in een leiding geeft namelijk een vergelijking die kwadratisch is in het debiet door de leiding. De continuïteitsvergelijking in een knooppunt geeft dan weer een vergelijking die lineair is in de debieten. Bovendien is de wrijvingsfactor ook zee niet lineair afhankelijk van het debiet. Het oplossen van zo'n stelsel is niet voor de hand liggend en vaak zijn numerieke oplossingstechnieken de enige uitweg.
+
+We kunnen de oplossing echter een stukje vereenvoudigen indien we het begrip stromingsweerstand invoeren naar analogie met een elektrische weerstand. We zouden namelijk de mechanische energievergelijking kunnen schrijven als:
+\begin{equation}
+	H_2 = H_1 - R \dot{V}			
+\end{equation}
+Hierin kunnen we $R$ de stromingsweerstand van een leiding uitschrijven als:
+\begin{equation}
+	R = 8 f \dfrac{|\dot{V}|}{g \pi^2} \dfrac{L}{D^5}	
+\end{equation}
+Voor een lokaal verlies wordt dit:
+\begin{equation}
+	R_\mathrm{lokaal} = K \frac{|\dot{V}|}{2 g A^2}
+\end{equation}
+
+Indien we de waarden van de stromingsweerstanden kennen bekomen we dan een stelsel met enkel nog lineaire vergelijkingen waarin de debieten en ladingen in interne knooppunten onbekend zijn. Dit stelsel kan dus eenvoudig opgelost worden.
+De stromingsweerstanden zijn echter ook functies van het debiet. We kunnen ze dus niet a priori bepalen. Er moet dus eerst een veronderstelling gemaakt worden omtrent de debieten. Met deze veronderstelling kunnen wrijvingsfactoren en de waarden van de stromingsweerstanden bepaald worden. Eens deze vast liggen kan het stelsel dat volgt uit de mechanische energievergelijkingen en de continuïteitsvergelijkingen opgelost worden naar de onbekende debieten. Deze debieten kunnen dan gebruikt worden om nieuwe, betere waarden voor de stromingsweerstanden te bepalen en de procedure kan herhaald worden tot de bekomen oplossing convergeert.
+
+Voor serie en parallelschakelingen van leidingen heeft het werken met stromingsweerstanden nog een bijkomend voordeel. Aangezien de mechanische energievergelijking analoog is aan de wet van Ohm, kunnen de vergelijkingen voor de totale weerstand van een serie of parallelschakeling ook gebruikt worden in een stromingsprobleem.
+
+Voor een serieschakeling van leidingen zal de totale weerstand dus de som van de weerstanden van de onderdelen zijn:
+\begin{equation}
+	R_\mathrm{serie} = \sum_i R_i
+\end{equation}
+Voor een parallelschakeling van leidingen is de inverse van de totale weerstand gelijk aan de som van de inversen van de weerstanden van onderdelen:
+\begin{equation}
+	R_\mathrm{parallel} = \left( \sum_i \frac{1}{R_i} \right)^{-1}
+\end{equation}
+
+Met deze uitdrukkingen kan dus voor een systeem dat bestaat uit serie en parallelschakelingen van verschillende componenten, de totale stromingsweerstand van het systeem bepaald worden. Het oplossen van een stelsel is dan zelfs niet meer nodig aangezien er slechts één vergelijking overblijft.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Types stromingsproblemen}
+	\label{sec:types stromingsproblemen}
+Bij het toepassen van bovenstaande uitdrukkingen op ingenieurstoepassingen ontstaan er meteen enkele verscillende types toepassingen. Wanneer de debieten in de leidingen gekend zijn kunnen we met behulp van het Moody diagram de ladingsverliezen (en dus de drukken in elk punt van de leidingen) berekenen. Dit is echter niet het enige type probleem dat we kunnen tegenkomen. Algemeen zijn er drie types problemen te onderscheiden:
+\begin{itemize}
+	\item Het berekenen van ladingsverliezen uit het debiet en de geometrie
+	\item Het berekenen van het debiet uit gekende ladingsverliezen en geometrie
+	\item Het berekenen van de geometrie met gekende ladingsverliezen bij een bepaald debiet
+\end{itemize}
+Het eerste type toepassingen is zeer eenvoudig en kan bij een serieschakeling van elementen zonder problemen gedaan worden. Wanneer er echter een parallelschakeling in het leidingstelsel voorkomt wordt ook dit probleem iets ingewikkelder. Naar alle waarschijnlijkheid zal de debietverdeling in de verschillende componenten van de parallelschakeling niet gekend zijn. We dienen dus het stelsel (\ref{eqn:parallelschakeling}) op te lossen. Hierin zijn de wrijvingsfactoren $f_i$ echter afhankelijk van het Reynoldsgetal en dus het debiet (dat niet gekend is). Bij turbulente stroming is deze relatie zelfs sterk niet lineair en moeilijk in gesloten vorm weer te geven. Daarbovenop is het stelsel (\ref{eqn:parallelschakeling}) zelf ook niet lineair. Er is dus geen garantie dat er een oplossing bestaat.
+Indien de oplossing echter wel bestaat kunnen we met behulp van iteratieve technieken wel tot deze oplossing komen. Een stappenplan om tot een oplossing te komen gaat als volgt:
+\begin{enumerate}
+	\item Maak een veronderstelling voor het debiet in de verschillende leidingen
+	\item Bereken de Reynoldsgetallen en de wrijvingsfactoren voor elke leiding met behulp van het Moody diagram
+	\item Los het stelsel (\ref{eqn:parallelschakeling}) op naar de debieten met de veronderstelde wrijvingsfactoren
+	\item Indien de debieten sterk afwijken van de voorgaande debieten ga naar stap 2, indien niet is de oplossing gevonden.
+\end{enumerate}
+
+Voor het tweede type toepassingen (Bepaling van het debiet bij een gekend ladingsverlies) kan bovenstaande oplossingsmethode ook gebruikt worden. Dit type problemen komt voor bij stroming die wordt veroorzaakt door hoogteverschillen tussen 2 reservoirs of bij stroming tussen een leiding op gekende druk en een reservoir. 
+
+Het derde type toepassing is een typische ingenieursprobleem waarbij een bepaald debiet fluïdum van een locatie naar een andere getransporteerd dient te worden. De diameter van de leidingen moet zo gekozen worden dat het ladingsverlies over elk onderdeel beperkt blijft. Het toegelaten ladingsverlies bepaalt hoeveel vermogen er nodig is voor het transport en dus de grootte van pompen of ventilatoren en de energie nodig voor het transport. Aangezien het Reynoldsgetal (en dus ook de wrijvingsfactor) ook afhankelijk is van de diameter van de leiding, hebben we opnieuw een iteratieve techniek nodig om dit probleem op te lossen. Indien we het bovenstaande stappenplan licht aanpassen bekomen we:
+\begin{enumerate}
+	\item Maak een veronderstelling voor de diameter van de leiding
+	\item Bereken de Reynoldsgetallen en de wrijvingsfactoren voor elke leiding met behulp van het Moody diagram
+	\item Bepaal met behulp van (\ref{eqn:ladingsverlies door een leiding debiet}) de diameter
+	\item Indien de diameters sterk afwijken van de voorgaande waarden ga naar stap 2, indien niet is de oplossing gevonden.
+\end{enumerate}
+Aangezien de diameters van leidingen sterk genormeerd zijn kan de eerstvolgende grotere leiding gekozen worden en dienen er nooit veel iteraties uitgevoerd te worden.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -317,7 +360,7 @@ Met dit nieuwe stelsel van vergelijkingen kan nu wel een correcte oplossing, waa
 	\label{sec:Pomp - ventilator - leiding karakteristiek}
 In de voorgaande secties werd het debiet in een leiding of leidingstelsel veroorzaakt door een hoogteverschil of het debiet werd verondersteld gekend te zijn. Het is echter ook mogelijk dat het de stroming wordt veroorzaakt door een pomp of ventilator. Dit zijn toestellen met als doel een bepaald debiet te genereren. Een pomp of ventilator zal dus net zoveel energie aan de stroming toevoegen totdat de toegevoegde energie gelijk is aan de energie die nodig is om hoogte of drukverschillen te overwinnen en de gedisipeerde energie. We kunnen de vergelijking van Bernoulli dus nogmaals uitbreiden naar situatie waar er energie aan de stroming toegevoegd wordt. Dit geeft: 
 \begin{equation}
-	\frac{p_2}{\rho g} + \frac{v_2^2}{2 g}  + z_2 = \frac{p_1}{\rho g} + \frac{v_1^2}{2 g}  + z_1 - h_L + h_P
+	H_2 = H_1 - h_L + h_P
 	\label{eqn:mechanische energievergelijking}
 \end{equation}
 Hierin stelt $h_P$ de opvoerhoogte van de aanwezige pompen voor. De opvoerhoogte van een pomp is een maat voor de energie die de pomp aan de stroming toegevoegd. Vaak komt deze tot uiting als een drukverhoging van de inlaat tot de uitlaat van de pomp. Indien de we de hoogteverschillen en verschillen in kinetische energie tussen inlaat en uitlaat verwaarlozen vinden we het drukverschil tussen in en uitlaat als:
@@ -368,7 +411,7 @@ Wanneer we de pompkarakteristiek (Figuur \ref{fig:Pompkarakteristiek}) en leidin
 Het zoeken van het werkingspunt op deze manier komt neer op het grafisch oplossen van de mechanische energievergelijking. De pompkarakteristiek en leidingskarakteristiek kunnen we namelijk schrijven als:
 \begin{align}
 	h_P(\dot{V}) \\
-	\frac{p_2-p_1}{\rho g} + \frac{v_2^2-v_1^2}{2 g}  + z_2-z_1 + h_L(\dot{V})
+	H_2-H_1 + h_L(\dot{V})
 \end{align}
 Indien we deze twee aan elkaar gelijkstellen bekomen we de mechanische energievergelijking die we kunnen oplossen naar $\dot{V}$ om het werkingspunt te vinden.
 
