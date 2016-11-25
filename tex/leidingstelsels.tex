@@ -218,18 +218,18 @@ Een iets complexere structuur is de parallelschakeling (\ref{fig:parallelschakel
 	\label{fig:parallelschakeling}
 \end{figure}
 \begin{equation}
-	h_{L,parallel} = h_{L,i} \quad i=1..n
+	h_{L,parallel} = h_{L,i} \quad i=\mathrm{A},\mathrm{B},\mathrm{C},...
 \end{equation}
 Voor een parallelschakeling van leidingen wordt dit:
 \begin{equation}
-	h_{L,parallel} = 8 f_i \frac{\dot{V_i}^2}{g \pi^2} \frac{L_i}{D^5_i} \quad i=1..n
+	h_{L,parallel} = 8 f_i \frac{\dot{V_i}^2}{g \pi^2} \frac{L_i}{D^5_i} \quad i=\mathrm{A},\mathrm{B},\mathrm{C},...
 \end{equation}
-Samen met de continuïteitsvergelijking levert dit een stelsel van $n+1$ vergelijkingen en $n+1$ onbekenden ($h_{L,parallel}$ en $\dot{V}_i, i=1..n$):
+Samen met de continuïteitsvergelijking levert dit een stelsel met evenveel vergelijkingen als onbekenden ($h_{L,parallel}$ en $\dot{V}_i, i=\mathrm{A},\mathrm{B},\mathrm{C},...$):
 \begin{equation}
 	\left\{
 	\begin{array}{lcl}
-		h_{L,parallel} &=& 8 f_i \frac{\dot{V_i}^2}{g \pi^2} \frac{L_i}{D^5_i} \quad i=1..n \\
-		\dot{V} &=& \sum_i^n \dot{V}_i
+		h_{L,parallel} &=& 8 f_i \frac{\dot{V_i}^2}{g \pi^2} \frac{L_i}{D^5_i} \quad i=\mathrm{A},\mathrm{B},\mathrm{C},... \\
+		\dot{V} &=& \sum_i \dot{V}_i
 	\end{array}
 	\right.
 	\label{eqn:parallelschakeling}
@@ -249,20 +249,20 @@ Indien we de leidingen vertrekkende uit reservoir $i$ aanduiden met de index $i$
 \begin{equation}
 	\left\{
 	\begin{array}{lcl}
-		H_k &=& H_1 - h_{L,1} \nonumber \\
-		H_k &=& H_2 - h_{L,2} \\
-		H_3 &=& H_k - h_{L,3} \nonumber
+		H_k &=& H_1 - h_{\mathrm{L},\mathrm{A}} \nonumber \\
+		H_k &=& H_2 - h_{\mathrm{L},\mathrm{B}} \\
+		H_3 &=& H_k - h_{\mathrm{L},\mathrm{C}} \nonumber
 	\end{array}
 	\right.
 \end{equation} 
-Bij het opschrijven van deze vergelijkingen hebben we impliciet stroomrichtingen verondersteld. In leiding 1 en 2 hebben de stroming naar het knooppunt toe verondersteld, terwijl in leiding 3 de stroming van het knooppunt weg verondersteld is. De ladingsverliezen kunnen we ook schrijven in functie van de debieten in de 3 leidingen. Indien we de wrijvingsfactoren gekend veronderstellen (wat mogelijk is door het gebruik van een iteratieve techniek) hebben we dus een stelsel van 3 vergelijkingen en 4 onbekenden ($\dot{V}_1,\dot{V}_2,\dot{V}_3$ en $H_k$). Er is dus nog één vergelijking nodig om dit stelsel te kunnen oplossen. Deze vinden we in de vorm van de continuïteitsvergelijking. In het knooppunt moet namelijk evenveel massa toekomen als vertrekken. Het volledige stelsel wordt dus:
+Bij het opschrijven van deze vergelijkingen hebben we impliciet stroomrichtingen verondersteld. In leiding A en B hebben de stroming naar het knooppunt toe verondersteld, terwijl in leiding C de stroming van het knooppunt weg verondersteld is zoals aangegeven op de figuur. De ladingsverliezen kunnen we ook schrijven in functie van de debieten in de 3 leidingen. Indien we de wrijvingsfactoren gekend veronderstellen (wat mogelijk is door het gebruik van een iteratieve techniek) hebben we dus een stelsel van 3 vergelijkingen en 4 onbekenden ($\dot{V}_\mathrm{A},\dot{V}_\mathrm{B},\dot{V}_\mathrm{C}$ en $H_k$). Er is dus nog één vergelijking nodig om dit stelsel te kunnen oplossen. Deze vinden we in de vorm van de continuïteitsvergelijking. In het knooppunt moet namelijk evenveel massa toekomen als vertrekken. Het volledige stelsel wordt dus:
 \begin{equation}
 	\left\{
 	\begin{array}{lcl}
-		H_k &=& H_1 - 8 f_1 \dfrac{\dot{V}_1^2}{g \pi^2} \dfrac{L_1}{D_1^5} \\
-		H_k &=& H_2 - 8 f_2 \dfrac{\dot{V}_2^2}{g \pi^2} \dfrac{L_2}{D_2^5} \\
-		H_3 &=& H_k - 8 f_3 \dfrac{\dot{V}_3^2}{g \pi^2} \dfrac{L_3}{D_3^5} \\
-		\dot{V}_3 &=& \dot{V}_1 + \dot{V}_2
+		H_k &=& H_1 - 8 f_\mathrm{A} \dfrac{\dot{V}_\mathrm{A}^2}{g \pi^2} \dfrac{L_\mathrm{A}}{D_\mathrm{A}^5} \\
+		H_k &=& H_2 - 8 f_\mathrm{B} \dfrac{\dot{V}_\mathrm{B}^2}{g \pi^2} \dfrac{L_\mathrm{B}}{D_\mathrm{B}^5} \\
+		H_3 &=& H_k - 8 f_\mathrm{C} \dfrac{\dot{V}_\mathrm{C}^2}{g \pi^2} \dfrac{L_\mathrm{C}}{D_\mathrm{C}^5} \\
+		\dot{V}_\mathrm{C} &=& \dot{V}_\mathrm{A} + \dot{V}_\mathrm{B}
 	\end{array}
 	\right.
 	\label{eqn:3reservoirs stelsel}
@@ -279,10 +279,10 @@ In het geval van Figuur \ref{fig:leidingnetwerk} is het, afhankelijk van de geta
 \begin{equation}
 	\left\{
 	\begin{array}{lcl}
-		H_k &=& H_1 - 8 f_1 \dfrac{\dot{V}_1^2}{g \pi^2} \dfrac{L_1}{D_1^5} \\
-		H_2 &=& H_k - 8 f_2 \dfrac{\dot{V}_2^2}{g \pi^2} \dfrac{L_2}{D_2^5} \\
-		H_3 &=& H_k - 8 f_3 \dfrac{\dot{V}_3^2}{g \pi^2} \dfrac{L_3}{D_3^5} \\
-		\dot{V}_3 + \dot{V}_2 &=& \dot{V}_1 
+		H_k &=& H_1 - 8 f_\mathrm{A} \dfrac{\dot{V}_\mathrm{A}^2}{g \pi^2} \dfrac{L_\mathrm{A}}{D_\mathrm{A}^5} \\
+		H_2 &=& H_k - 8 f_\mathrm{B} \dfrac{\dot{V}_\mathrm{B}^2}{g \pi^2} \dfrac{L_\mathrm{B}}{D_\mathrm{B}^5} \\
+		H_3 &=& H_k - 8 f_\mathrm{C} \dfrac{\dot{V}_\mathrm{C}^2}{g \pi^2} \dfrac{L_\mathrm{C}}{D_\mathrm{C}^5} \\
+		\dot{V}_\mathrm{B} + \dot{V}_\mathrm{C} &=& \dot{V}_\mathrm{A} 
 	\end{array}
 	\right.
 	\label{eqn:3reservoirs stelsel2}
@@ -291,50 +291,15 @@ In het geval van Figuur \ref{fig:leidingnetwerk} is het, afhankelijk van de geta
 Met dit nieuwe stelsel van vergelijkingen kan nu wel een correcte oplossing, waarvoor alle 3 de debieten groter zijn dan nul bekomen worden.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\section{Stromingsweerstand oplossingsmethode}
-	\label{sec:stromingsweerstand oplossingsmethode}
-voor het bepalen van de debieten in zelfs eenvoudige leidingstelsels ontstaan stelsels waarin lineaire vergelijkingen en kwadratische vergelijkingen door elkaar staan. De uitdrukking van de mechanische energievergelijking tussen twee punten in een leiding geeft namelijk een vergelijking die kwadratisch is in het debiet door de leiding. De continuïteitsvergelijking in een knooppunt geeft dan weer een vergelijking die lineair is in de debieten. Bovendien is de wrijvingsfactor ook zee niet lineair afhankelijk van het debiet. Het oplossen van zo'n stelsel is niet voor de hand liggend en vaak zijn numerieke oplossingstechnieken de enige uitweg.
-
-We kunnen de oplossing echter een stukje vereenvoudigen indien we het begrip stromingsweerstand invoeren naar analogie met een elektrische weerstand. We zouden namelijk de mechanische energievergelijking kunnen schrijven als:
-\begin{equation}
-	H_2 = H_1 - R \dot{V}			
-\end{equation}
-Hierin kunnen we $R$ de stromingsweerstand van een leiding uitschrijven als:
-\begin{equation}
-	R = 8 f \dfrac{|\dot{V}|}{g \pi^2} \dfrac{L}{D^5}	
-\end{equation}
-Voor een lokaal verlies wordt dit:
-\begin{equation}
-	R_\mathrm{lokaal} = K \frac{|\dot{V}|}{2 g A^2}
-\end{equation}
-
-Indien we de waarden van de stromingsweerstanden kennen bekomen we dan een stelsel met enkel nog lineaire vergelijkingen waarin de debieten en ladingen in interne knooppunten onbekend zijn. Dit stelsel kan dus eenvoudig opgelost worden.
-De stromingsweerstanden zijn echter ook functies van het debiet. We kunnen ze dus niet a priori bepalen. Er moet dus eerst een veronderstelling gemaakt worden omtrent de debieten. Met deze veronderstelling kunnen wrijvingsfactoren en de waarden van de stromingsweerstanden bepaald worden. Eens deze vast liggen kan het stelsel dat volgt uit de mechanische energievergelijkingen en de continuïteitsvergelijkingen opgelost worden naar de onbekende debieten. Deze debieten kunnen dan gebruikt worden om nieuwe, betere waarden voor de stromingsweerstanden te bepalen en de procedure kan herhaald worden tot de bekomen oplossing convergeert.
-
-Voor serie en parallelschakelingen van leidingen heeft het werken met stromingsweerstanden nog een bijkomend voordeel. Aangezien de mechanische energievergelijking analoog is aan de wet van Ohm, kunnen de vergelijkingen voor de totale weerstand van een serie of parallelschakeling ook gebruikt worden in een stromingsprobleem.
-
-Voor een serieschakeling van leidingen zal de totale weerstand dus de som van de weerstanden van de onderdelen zijn:
-\begin{equation}
-	R_\mathrm{serie} = \sum_i R_i
-\end{equation}
-Voor een parallelschakeling van leidingen is de inverse van de totale weerstand gelijk aan de som van de inversen van de weerstanden van onderdelen:
-\begin{equation}
-	R_\mathrm{parallel} = \left( \sum_i \frac{1}{R_i} \right)^{-1}
-\end{equation}
-
-Met deze uitdrukkingen kan dus voor een systeem dat bestaat uit serie en parallelschakelingen van verschillende componenten, de totale stromingsweerstand van het systeem bepaald worden. Het oplossen van een stelsel is dan zelfs niet meer nodig aangezien er slechts één vergelijking overblijft.
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Types stromingsproblemen}
 	\label{sec:types stromingsproblemen}
-Bij het toepassen van bovenstaande uitdrukkingen op ingenieurstoepassingen ontstaan er meteen enkele verscillende types toepassingen. Wanneer de debieten in de leidingen gekend zijn kunnen we met behulp van het Moody diagram de ladingsverliezen (en dus de drukken in elk punt van de leidingen) berekenen. Dit is echter niet het enige type probleem dat we kunnen tegenkomen. Algemeen zijn er drie types problemen te onderscheiden:
+Bij het toepassen van bovenstaande uitdrukkingen op ingenieurstoepassingen ontstaan er meteen enkele verscillende types toepassingen. Wanneer de debieten in de leidingen gekend zijn kunnen we met behulp van het Moody diagram de ladingsverliezen (en dus de lading in elk punt van de leidingen) berekenen. Dit is echter niet het enige type toepassing dat we kunnen tegenkomen. Algemeen zijn er drie types toepassingen te onderscheiden:
 \begin{itemize}
 	\item Het berekenen van ladingsverliezen uit het debiet en de geometrie
 	\item Het berekenen van het debiet uit gekende ladingsverliezen en geometrie
 	\item Het berekenen van de geometrie met gekende ladingsverliezen bij een bepaald debiet
 \end{itemize}
-Het eerste type toepassingen is zeer eenvoudig en kan bij een serieschakeling van elementen zonder problemen gedaan worden. Wanneer er echter een parallelschakeling in het leidingstelsel voorkomt wordt ook dit probleem iets ingewikkelder. Naar alle waarschijnlijkheid zal de debietverdeling in de verschillende componenten van de parallelschakeling niet gekend zijn. We dienen dus het stelsel (\ref{eqn:parallelschakeling}) op te lossen. Hierin zijn de wrijvingsfactoren $f_i$ echter afhankelijk van het Reynoldsgetal en dus het debiet (dat niet gekend is). Bij turbulente stroming is deze relatie zelfs sterk niet lineair en moeilijk in gesloten vorm weer te geven. Daarbovenop is het stelsel (\ref{eqn:parallelschakeling}) zelf ook niet lineair. Er is dus geen garantie dat er een oplossing bestaat.
+Het eerste type toepassingen is zeer eenvoudig en kan bij een serieschakeling van elementen zonder problemen opgelost worden. Wanneer er echter een parallelschakeling in het leidingstelsel voorkomt wordt ook dit type toepassing iets ingewikkelder. Naar alle waarschijnlijkheid zal de debietverdeling in de verschillende componenten van de parallelschakeling niet gekend zijn. We dienen dus het stelsel (\ref{eqn:parallelschakeling}) op te lossen. Hierin zijn de wrijvingsfactoren $f_i$ echter afhankelijk van het Reynoldsgetal en dus het debiet (dat niet gekend is). Bij turbulente stroming is deze relatie zelfs sterk niet lineair en moeilijk in gesloten vorm weer te geven. Daarbovenop is het stelsel (\ref{eqn:parallelschakeling}) zelf ook niet lineair. Er is dus geen garantie dat er een oplossing bestaat.
 Indien de oplossing echter wel bestaat kunnen we met behulp van iteratieve technieken wel tot deze oplossing komen. Een stappenplan om tot een oplossing te komen gaat als volgt:
 \begin{enumerate}
 	\item Maak een veronderstelling voor het debiet in de verschillende leidingen
@@ -353,6 +318,46 @@ Het derde type toepassing is een typische ingenieursprobleem waarbij een bepaald
 	\item Indien de diameters sterk afwijken van de voorgaande waarden ga naar stap 2, indien niet is de oplossing gevonden.
 \end{enumerate}
 Aangezien de diameters van leidingen sterk genormeerd zijn kan de eerstvolgende grotere leiding gekozen worden en dienen er nooit veel iteraties uitgevoerd te worden.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Stromingsweerstand oplossingsmethode}
+	\label{sec:stromingsweerstand oplossingsmethode}
+voor het bepalen van de debieten in zelfs eenvoudige leidingstelsels ontstaan stelsels waarin lineaire vergelijkingen en kwadratische vergelijkingen door elkaar staan. De uitdrukking van de mechanische energievergelijking tussen twee punten in een leiding geeft namelijk een vergelijking die kwadratisch is in het debiet door de leiding. De continuïteitsvergelijking in een knooppunt geeft dan weer een vergelijking die lineair is in de debieten. Het oplossen van zo'n stelsel is niet voor de hand liggend en vaak zijn numerieke oplossingstechnieken de enige uitweg.
+
+We kunnen de oplossing echter een stukje vereenvoudigen indien we het begrip stromingsweerstand invoeren naar analogie met een elektrische weerstand. We zouden namelijk de mechanische energievergelijking kunnen schrijven als:
+\begin{equation}
+	H_2 = H_1 - R \dot{V}			
+\end{equation}
+Hierin kunnen we $R$ de stromingsweerstand van een leiding uitschrijven als:
+\begin{equation}
+	R = 8 f \dfrac{|\dot{V}|}{g \pi^2} \dfrac{L}{D^5}	
+\end{equation}
+Voor een lokaal verlies wordt dit:
+\begin{equation}
+	R_\mathrm{lokaal} = K \frac{|\dot{V}|}{2 g A^2}
+\end{equation}
+
+Indien we de waarden van de stromingsweerstanden kennen bekomen we dan een stelsel met enkel nog lineaire vergelijkingen waarin de debieten en ladingen in interne knooppunten onbekend zijn. Dit stelsel kan dus eenvoudig opgelost worden.
+De stromingsweerstanden zijn echter ook functies van het debiet. We kunnen ze dus niet a priori bepalen. Er moet dus eerst een veronderstelling gemaakt worden omtrent de debieten. Met deze veronderstelling kunnen wrijvingsfactoren en de waarden van de stromingsweerstanden bepaald worden. Eens deze vast liggen kan het stelsel dat volgt uit de mechanische energievergelijkingen en de continuïteitsvergelijkingen opgelost worden naar de onbekende debieten. Deze debieten kunnen dan gebruikt worden om nieuwe, betere waarden voor de stromingsweerstanden te bepalen en de procedure kan herhaald worden tot de bekomen oplossing convergeert. 
+
+Aangezien door de niet lineariteit van de wrijvingsfactor voor een turbulente stroming we toch reeds een iteratief oplossingsproces nodig hadden, is het bijkomende iteratief proces voor het oplossen van het stelsel vergelijkingen niet zo'n probleem. Het is namelijk mogelijk om beide iteratieve procedures samen te voegen, waardoor een zeer efficiënte oplossingsmethode kan opgesteld worden.
+
+Ook voor het bepalen van de wrijvingsfactor uit de vergelijking van Colebrook (\ref{eqn:colebrook}) is een iteratieve procedure nodig. Aangezien de oplossing van het stelsel van vergelijkingen niet in één stap gedaan kan worden is het ook niet noodzakelijk de wrijvingsfactor in elke stap zeer nauwkeurig te bepalen. Deze bepaling kan beperkt worden tot enkele iteraties indien de waarde voor elke leiding kan worden opgeslagen.
+
+Voor serie en parallelschakelingen van leidingen heeft het werken met stromingsweerstanden nog een bijkomend voordeel. Aangezien de mechanische energievergelijking analoog is aan de wet van Ohm, kunnen de vergelijkingen voor de totale weerstand van een serie of parallelschakeling ook gebruikt worden in een stromingsprobleem.
+
+Voor een serieschakeling van leidingen zal de totale weerstand dus de som van de weerstanden van de onderdelen zijn:
+\begin{equation}
+	R_\mathrm{serie} = \sum_i R_i
+\end{equation}
+Voor een parallelschakeling van leidingen is de inverse van de totale weerstand gelijk aan de som van de inversen van de weerstanden van onderdelen:
+\begin{equation}
+	R_\mathrm{parallel} = \left( \sum_i \frac{1}{R_i} \right)^{-1}
+\end{equation}
+
+Met deze uitdrukkingen kan dus voor een systeem dat bestaat uit serie en parallelschakelingen van verschillende componenten, de totale stromingsweerstand van het systeem bepaald worden. Het oplossen van een stelsel is dan zelfs niet meer nodig aangezien er slechts één vergelijking overblijft.
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
