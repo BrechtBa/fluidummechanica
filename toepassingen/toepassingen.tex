@@ -1,0 +1,26 @@
+% Dit werk is gelicenseerd onder de licentie Creative Commons Naamsvermelding-GelijkDelen 4.0 Internationaal. Ga naar http://creativecommons.org/licenses/by-sa/4.0/ om een kopie van de licentie te kunnen lezen.
+\documentclass[11pt,twoside,openright]{book}
+
+\input{../common/tex/packages}
+\input{../common/tex/packages_tekst}
+\input{tex/packages_toepassingen}
+
+\begin{document}
+
+	\renewcommand{\labelenumi}{(\roman{enumi})}
+
+	\frontmatter
+		\input{../common/tex/copyright}
+		
+	\mainmatter
+		\input{tex/hydrostatica}
+		\input{tex/behoudsvergelijkingen}
+		\input{tex/behoudsvergelijkingen_gecombineerd}
+		\input{tex/gelijkvormigheid}
+		\input{tex/uitwendige_stroming}
+		\input{tex/stroming_in_leidingen}
+		\input{tex/leidingstelsels}	
+		
+	\backmatter
+		\input{tex/studeerplan}
+\end{document}
