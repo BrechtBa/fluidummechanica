@@ -118,7 +118,7 @@ Deze vergelijking werd als eerste gepubliceerd door Daniel Bernoulli en werd nad
 	\item Evaluatie langs een stroomlijn
 	\item Constante dichtheid langs de stroomlijn
 \end{itemize}
-	
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Mechanische arbeid van een deeltje}
 	\label{sec:Mechanische arbeid van een deeltje}
@@ -258,6 +258,18 @@ Geprojecteerd op de $x$-richting van een carthesiaans assenstelsel geeft dit:
 	\label{eqn:navier-stokes vergelijkingen carthesiaans}
 \end{equation}
 In het linkerlid vinden we de versnelling van het deeltje terug. In het rechterlid de verschillende krachten die op het deeltje inwerken. De eerste twee termen in het rechterlid zijn herkenbaar van in de vergelijking van Euler (\ref{eqn:vergelijking van Euler}) als de krachten ten gevolge van drukverschillen en ten gevolge van de zwaartekracht. De derde term geeft de viskeuze krachten in een Newtoniaanse niet-samendrukbare stroming weer.
+
+Uit deze vergelijking kan nog een interessante bemerking afgeleid worden. Indien we een nieuwe grootheid definieren die bestaat uit de som van de druk in de druk in de vloeistof en de hydrostatische druk die zou veroorzaakt worden in een stilstaande vloeistof. In de $x$-richting wordt dit:
+\begin{equation}
+	p_{g,x} = p - \rho g_x x
+\end{equation}
+
+De partieel afgeleide hiervan naar $x$ komt net overeen met de drukterm en de zwaartekrachtsterm in de Navier-Stokes vergelijking. Deze kan dus herschreven worden als:
+\begin{equation}
+	\rho \left(\frac{\partial v_x}{\partial t} + v_x \frac{\partial v_x}{\partial x} + v_y \frac{\partial v_x}{\partial y} + v_z \frac{\partial v_x}{\partial z} \right) = -\frac{\partial p_{g,x}}{\partial x} + \mu \left( \frac{\partial^2 v_x}{\partial x^2} + \frac{\partial^2 v_x}{\partial y^2} + \frac{\partial^2 v_x}{\partial z^2} \right)
+\end{equation}
+
+Dit leid tot de conclusie dat de zwaartekracht enkel een drukverandering veroorzaakt die overeenstempt met de drukverandering wanneer het fluïdum stilstaat. Dit resultaat kunnen we in volgende hoofdstukken gebruiken.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Het oplossen van de Navier-Stokes vergelijkingen naar het snelheidsveld en drukveld bij bepaalde begin en randvoorwaarden is echter nog niet mogelijk. De vergelijkingen hebben namelijk slechts 3 componenten (één in elke coordinaat richting) en er zijn 4 onbekenden: $v_x$, $v_y$, $v_z$ en $p$. De extra vergelijking nodig voor het bepalen van een oplossing vinden we in de vergelijking van behoud van massa. Ook deze kan in differentiaalvorm geschreven worden.

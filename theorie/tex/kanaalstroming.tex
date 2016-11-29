@@ -5,9 +5,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Inleiding}
 	\label{sec:Kanaalstroming Inleiding}
-Veel van de stromingen die we in het dagelijks leven tegenkomen hebben een vrij oppervlak. Hiermee wordt bedoeld dat een deel van het vloeistof oppervlak grenst aan een ander fluïdum. Vaak is dit ander fluïdum de lucht in de atmosfeer. Er wordt gesproken over vrij oppervlak stroming (E: free surface flow) aangezien het oppervlak van de vloeistof vrij is om te vervormen.
+Veel van de stromingen die we in het dagelijks leven tegenkomen hebben een vrij oppervlak. Hiermee wordt bedoeld dat een deel van het vloeistof oppervlak grenst aan een ander fluïdum. Vaak is dit ander fluïdum de lucht in de atmosfeer. Er wordt gesproken over vrije-oppervlaktestroming (E: free surface flow) aangezien het oppervlak van de vloeistof vrij is om te vervormen.
 
-Een interessante subsectie van de vrije oppervlakte stromingen is de kanaal stroming. Hier stroomt een vloeistof in een kanaal waarvan één dimensie veel groter is dan de andere 2 en waar een vrij oppervlak ontstaat. Denk maar aan de stroming van beken en rivieren, kanalen (vandaar de naam) of zelfs leidingen die niet volledig gevuld zijn (Figuur \ref{fig:Open_kanaal_doorsnedes}). 
+Een interessante subsectie van de vrije-oppervlaktestromingen is de kanaalstroming. Hier stroomt een vloeistof in een kanaal waarvan één dimensie veel groter is dan de andere 2 en waar een vrij oppervlak ontstaat. Denk maar aan de stroming van beken en rivieren, kanalen (vandaar de naam) of zelfs leidingen die niet volledig gevuld zijn (Figuur \ref{fig:Open_kanaal_doorsnedes}). 
 \begin{figure}[htb]
 	\centering
 	\includegraphics{fig/kanaalstroming/Open_kanaal_doorsnedes}
@@ -20,17 +20,18 @@ De beweging van deze stromingen wordt voornamelijk veroorzaakt door de zwaartekr
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Oppervlaktegolven}
 	\label{sec:Oppervlaktegolven}
-	
-Beschouw een kanaal met breedte $b$  waarin een een golf met een kleine uitwijking $\Delta y$ ten opzichte van de diepte van het kanaal $y$ zich voortplant. De golf beweegt met een nog onbekende snelheid $c$. Deze stroming kunnen we als stationair beschouwen indien we een controlevolume kiezen dat met de golf mee beweegt zoals in \ref{fig:Golfsnelheid}. We kiezen het controlevolume zo dat de ene zijde overeenkomt met de top van de golf en de andere zijde met de ongestoorde vloeistof.
+Aangezien het oppervlak in een open-kanaalstroming vrij is om te vervormen, zal een lokale vervorming van dat oppervlak zich onder invloed van de zwaartekracht zich verplaatsen over het oppervlak. We noemen dit een oppervlaktegolf. In een kanaal, zal de verplaatsing hoofdzakelijk in de lengterichting van het kanaal gebeuren aangezien de vrijheid in de andere richtingen beperkt is. De snelheid waarmee zo'n golf beweegt kunnen we onder bepaalde aannames theoretisch bepalen.
+
+Beschouw een kanaal met breedte $b$  waarin een een golf met een kleine uitwijking $\Delta y$ ten opzichte van de diepte van het kanaal $y$ zich voortplant. De golf beweegt met een nog onbekende snelheid $c$. Deze stroming kunnen we als stationair beschouwen indien we een controlevolume kiezen dat met de golf mee beweegt zoals in figuur \ref{fig:Golfsnelheid}. We kiezen het controlevolume zo dat de ene zijde overeenkomt met de top van de golf en de andere zijde met de ongestoorde vloeistof.
 \begin{figure}[htb]
 	\centering
 	\includegraphics{fig/kanaalstroming/Golfsnelheid}
 	\caption{Stationair controlevolume dat meebeweegt met een golf met een kleine uitwijking}
 	\label{fig:Golfsnelheid}
 \end{figure}
-Door de beweging van het controlevolume is het alsof er aan de linkerzijde een gemiddelde stroomsnelheid, gelijk aan de golfsnelheid $c$ heerst. Aangezien aan de rechterzijde de hoogte lager is zal hier de gemiddelde snelheid groter zijn $c+\Delta v$. Schrijven we nu de vergelijking van behoud van massa uit:
+Door de beweging van het controlevolume is het alsof er aan de linkerzijde een gemiddelde stroomsnelheid, gelijk aan de golfsnelheid $c$ heerst. Aangezien aan de rechterzijde de diepte kleiner is zal hier de gemiddelde snelheid groter zijn $c+\Delta v$. Schrijven we nu de vergelijking van behoud van massa uit:
 \begin{equation}
-	0 = (c+\Delta v) b y - c b (y+\Delta y)
+	0 = c b (y+\Delta y) - (c+\Delta v) b y 
 \end{equation}
 Hieruit kunnen we de golfsnelheid bepalen als:
 \begin{equation}
@@ -60,7 +61,7 @@ Indien we deze uitdrukking invullen in (\ref{eqn:golfsnelheid behoud van massa})
 	\label{eqn:golfsnelheid ondiep}
 \end{equation}
 
-De golfsnelheid van een kleine golf is dus enkel afhankelijk van de diepte van het kanaal en de valversnelling en niet van de dichtheid van het fluïdum.
+De golfsnelheid van een kleine golf is dus enkel afhankelijk van de diepte van het kanaal en de valversnelling en niet van de dichtheid van het fluïdum. De golfsnelheid zoals hierboven bepaald zal ons toelaten resultaten uit verdere analyses te interpreteren.
 
 De uitwerking hierboven is enkel geldig voor een alleenstaande golf met een zeer kleine uitwijking. Wanneer verschillende golven met een bijvoorbeeld een sinusoïdaal profiel na elkaar beschouwd worden wordt de uitwerking veel complexer. De golfsnelheid wordt dan niet alleen afhankelijk van de diepte maar ook van de golflengte $\lambda$ (de afstand tussen 2 golf toppen) \cite{Henderson1966}. Hieruit volgt dat bovenstaande uitdrukking (\ref{eqn:golfsnelheid ondiep}) voor de golfsnelheid enkel geldig is wanneer de golflengte veel groter is dan de diepte ($\frac{\lambda}{y} > 20$, dus een enkele golf). Wanneer de golflengte in dezelfde grootteorde of kleiner is dan de diepte $\frac{\lambda}{y} < 3$ wordt de golfsnelheid benaderd door:
 \begin{equation}
@@ -80,7 +81,7 @@ Beschouw een stationaire uniforme stroming in een eenvoudig rechthoekig kanaal m
 	\caption{Stationaire uniforme stroming in een open kanaal met energielijnen}
 	\label{fig:Open_kanaal_bernoulli}
 \end{figure}
-Indien de stroming niet-viskeus en niet-samendrukbaar is, kunnen we tussen 2 punten op de bodem van het kanaal de vergelijking van Bernoulli uitschrijven:
+Indien de stroming zick niet-viskeus en niet-samendrukbaar gedraagt, kunnen we tussen 2 punten op de bodem van het kanaal de vergelijking van Bernoulli uitschrijven:
 \begin{equation}
 	\frac{p_1}{\rho g} + \frac{v_1^2}{2 g} + z_1 = \frac{p_2}{\rho g} + \frac{v_2^2}{2 g} + z_2
 \end{equation}
@@ -137,7 +138,7 @@ We kunnen nu ook een dimensieloos getal vormen door de de snelheid te delen door
 De betekenis ervan wordt nu ook duidelijker. Het Froude getal is de verhouding van de traagheidskrachten ten opzichte van de zwaartekracht, of de snelheid, die gerelateerd kan worden aan de traagheidskracht, ten opzichte van de golfsnelheid, die gerelateerd kan worden aan de zwaartekracht. Bij een Froude getal van 1 hebben we kritische stroming en zullen de traagheidskrachten en zwaartekracht elkaar in evenwicht houden. Bij een Froude getal groter dan 1 spreken we over super-kritische stroming en overheersen de traagheidskrachten. Bij een Froude getal kleiner dan 1 spreken we over sub-kritische stroming en overheerst de zwaartekracht.
 
 	\section{Veranderingen in diepte bij verschillende stromingstypes}
-Een interessante vraag is hoe de hoogte van het vloeistofoppervlak in een kanaal zal reageren op een verandering van hoogte is het kanaal. Beschouw hiervoor een eenvoudig kanaal met stationaire stroming waarvan de bodem een plotse stijging ondervindt (Figuur \ref{fig:Open_kanaal_bodemstijging_subkritisch}). 
+Een interessante vraag is hoe de diepte in een kanaal zal veranderen bij een verandering van hoogte van de bodem van het kanaal. Beschouw hiervoor een eenvoudig kanaal met stationaire stroming waarvan de bodem een plotse stijging ondervindt (Figuur \ref{fig:Open_kanaal_bodemstijging_subkritisch}). 
 \begin{figure}[htb]
 	\centering
 	\includegraphics{fig/kanaalstroming/Open_kanaal_bodemstijging_subkritisch}
