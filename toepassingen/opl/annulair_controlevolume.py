@@ -1,6 +1,46 @@
 #!/usr/bin/python
 # coding: utf-8
 # Dit werk is gelicenseerd onder de licentie Creative Commons Naamsvermelding-GelijkDelen 4.0 Internationaal. Ga naar http://creativecommons.org/licenses/by-sa/4.0/ om een kopie van de licentie te kunnen lezen.
+
+"""
+Behoud van impuls voor een controlevolume met één instroom en één uitstroom in de axiale richting
+\begin{equation}
+    F_a = \dot{m} (v_{2a}-v_{1a})
+\end{equation} 
+
+Behoud van massa:
+\begin{equation}
+    \rho v_{1a} A = \rho v_{2a} A 
+\end{equation} 
+\begin{equation}
+    v_{2a} = v_{1a}
+\end{equation} 
+Krachten die inwerken op het controlevolume in axiale richting:
+F is de kracht die het voorwerp uitoefent op de lucht in het controlevolume
+\begin{equation}
+    F_a = F + p_1 A - p_2 A = 0
+\end{equation} 
+\begin{equation}
+    F = (p_2 - p_1) 2 \pi r dr
+\end{equation} 
+
+Bernoulli:
+\begin{equation}
+    1/2 \rho v_1^2 + p_1 = 1/2 \rho v_2^2 + p_2
+\end{equation} 
+\begin{equation}
+    p_2-p_1 = 1/2 \rho (v_1^2-v_2^2)
+\end{equation} 
+
+\begin{equation}
+    v_1^2 = v_{1a}^2 + \omega_1^2 r^2
+\end{equation} 
+\begin{equation}
+    v_2^2 = v_{2a}^2 + \omega_2^2 r^2
+\end{equation} 
+
+"""
+
 import numpy as np
 
 # Gegevens
@@ -12,25 +52,7 @@ v_1a = 10.				# m/s
 omega_1 = 1.26			# rad/s
 omega_2 = 1.29			# rad/s
 
-# Oplossing
-# Behoud van impuls voor een controlevolume met één instroom en één uitstroom in de axiale richting
-# F_a = \dot{m} (v_{2a}-v_{1a})
-# 
-# Behoud van massa
-# \rho v_{1a} A = \rho v_{2a} A 
-# v_{2a} = v_{1a}
-#
-# Krachten die inwerken op het controlevolume in axiale richting:
-# F is de kracht die het voorwerp uitoefent op de lucht in het controlevolume
-# F_a = F + p_1 A - p_2 A = 0
-# F = (p_2 - p_1) 2 \pi r dr
-#
-# Bernoulli:
-# 1/2 \rho v_1^2 + p_1 = 1/2 \rho v_2^2 + p_2
-# p_2-p_1 = 1/2 \rho (v_1^2-v_2^2)
-#
-# v_1^2 = v_{1a}^2 + \omega_1^2 r^2
-# v_2^2 = v_{2a}^2 + \omega_2^2 r^2
+
 
 
 # Uitwerking
