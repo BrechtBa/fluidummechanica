@@ -76,13 +76,13 @@ De wrijvingsfactor kan niet rechtstreeks bepaald worden aangezien deze afhankeli
 
 Indien we beginnen van een veronderstelling $f=0.030$ bekomen we de volgende oplossingstabel:
 \begin{center}
-	\begin{tabular}{llll}
+	\begin{tabular}{lllll}
 		\hline
-		iteratie & $\mathrm{Re}$   & $f$   & $\dot{V}$ (\unit{m^3/s}) \\
+		iteratie & $\dot{V}$ (\unit{m^3/s}) & $\mathrm{Re}$   & $f$   & $\dot{V}$ (\unit{m^3/s}) \\
 		\hline
-		0        &       /         & 0.030 &  $0.0201$ \\
-		1        & $256\times10^3$ & 0.021 &  $0.0242$ \\
-		2        & $308\times10^3$ & 0.021 &  $0.0243$ \\
+		0        &  /                       &       /         & 0.030 &  $0.0201$ \\
+		1        &  $0.0201$                & $256\times10^3$ & 0.021 &  $0.0242$ \\
+		2        &  $0.0242$                & $308\times10^3$ & 0.021 &  $0.0243$ \\
 		\hline
 	\end{tabular}
 \end{center}
@@ -169,13 +169,13 @@ De verliescoëfficiënten $K_\mathrm{instroom}$ en $K_\mathrm{uitstroom}$ kunnen
 
 Om een oplossing te bekomen kan dezelfde iteratieve oplossingsprocedure als in voorbeeld \ref{ex:leiding tussen reservoirs} gebruikt worden. Indien we opnieuw beginnen van een veronderstelling $f=0.030$ bekomen we de volgende oplossingstabel:
 \begin{center}
-	\begin{tabular}{llll}
+	\begin{tabular}{lllll}
 		\hline
-		iteratie & $\mathrm{Re}$   & $f$   & $\dot{V}$ (\unit{m^3/s}) \\
+		iteratie & $\dot{V}$ (\unit{m^3/s}) & $\mathrm{Re}$   & $f$   & $\dot{V}$ (\unit{m^3/s}) \\
 		\hline
-		0        &       /         & 0.030 &  $0.0164$ \\
-		1        & $209\times10^3$ & 0.021 &  $0.0183$ \\
-		2        & $234\times10^3$ & 0.021 &  $0.0184$ \\
+		0        &    /                     &       /         & 0.030 &  $0.0164$ \\
+		1        & $0.0164$                 & $209\times10^3$ & 0.021 &  $0.0183$ \\
+		2        & $0.0164$                 &   $234\times10^3$ & 0.021 &  $0.0184$ \\
 		\hline
 	\end{tabular}
 \end{center}
@@ -235,6 +235,9 @@ Samen met de continuïteitsvergelijking levert dit een stelsel met evenveel verg
 	\label{eqn:parallelschakeling}
 \end{equation}
 
+\begin{voorbeeld}
+	Parallelschakeling met gekend totaal debiet
+\end{voorbeeld}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Leiding netwerken}
 	\label{sec:Leiding netwerken}	
