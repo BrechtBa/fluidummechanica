@@ -90,7 +90,7 @@ Een klassieke toepassing van hydrostatica is het meten van drukken met behulp va
 \end{figure}
 Vroeger werd vaak kwik als meetvloeistof gebruikt omwille van zijn hoge dichtheid ($\rho_{Hg} \simeq 13600\unit{kg/m^3}$). Wanneer een kwikmanometer gebruikt wordt om de druk in een gas te meten kan vaak de dichtheid van het gas verwaarloosd worden. Dit is ook de herkomst van de eenheid voor druk [mm Hg] die overeenkomt met het hoogteverschil afgelezen tussen de 2 manometer benen uitgedrukt in mm.
 
-Ander types analoge manometers (vb. zuiger-, bourdon- of membraanmanometers) maken gebruik van veren om een druk uit te lezen. Elektronische manometers kunnen gebruik maken van rekstrookjes, piëzo elementen of andere technieken om drukken te meten.
+Andere types analoge manometers (vb. zuiger-, bourdon- of membraanmanometers) maken gebruik van veren om een druk uit te lezen. Elektronische manometers kunnen gebruik maken van rekstrookjes, piëzo elementen of andere technieken om drukken te meten.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Hydrostatische krachten}
@@ -119,17 +119,22 @@ Deze uitdrukking kan ook grafisch weergegeven worden. Indien we de druk die heer
 	\label{fig:grafische_weergave_integraal}
 \end{figure}
 
-De richting waarin de kracht werkt zal nog steeds gelijk zijn aan de richting waarin de druk werkt dus loodrecht op het oppervlak. Om de inwerkende kracht volledig te karakteriseren hebben we echter ook zijn aangrijpingspunt nodig. Voor het aangrijpingspunt van de kracht moet gelden dat het moment dat de kracht rond dit punt uitoefent 0 is. Het moment dat de kracht uitoefent is de som van de momenten die de infinitesimale krachten uitoefenen. In een cartesiaans assenstelsel wordt dit:
+De richting waarin de kracht werkt zal nog steeds gelijk zijn aan de richting waarin de druk werkt dus loodrecht op het oppervlak. Om de inwerkende kracht volledig te karakteriseren hebben we echter ook zijn aangrijpingspunt nodig. Voor het aangrijpingspunt van de kracht moet gelden dat het moment dat de kracht rond dit punt uitoefent 0 is. Het moment dat de kracht uitoefent is de som van de momenten die de infinitesimale krachten uitoefenen. In een cartesiaans assenstelsel wordt het moment uitgeoefend rond een punt met coordinaten $(x_z,y_z)$:
 \begin{align}
-	M_x &= \int_A  p (y-y_z)  \diff A = 0 \\
-	M_y &= \int_A  p (x-x_z)  \diff A = 0
+	M_x &= \int_A  p (y-y_z)  \diff A \\
+	M_y &= \int_A  p (x-x_z)  \diff A
+\end{align}
+Dit punt is het aangrijpingspunt van de resultante kracht indien de momenten in beide richtingen gelijk aan nul zijn:
+\begin{align}
+	\int_A  p (y-y_z)  \diff A = 0 \\
+	\int_A  p (x-x_z)  \diff A = 0
 \end{align}
 Indien we opnieuw de grafische voorstelling van hierboven gebruiken, dan komen de bovenstaande vergelijkingen overeen met de definitie van het zwaartepunt van het gevormde volume. Het aangrijpingspunt van de kracht komt dus overeen met het zwaartepunt van het volume gevormd door de druk als hoogte loodrecht op het oppervlak uit te zetten.
 
 In het geval van hydrostatisch drukken leid dit vaak zeer eenvoudige uitdrukkingen voor de kracht en het aangrijpingspunt aangezien de druk lineair verloopt met de diepte.
 
 \begin{voorbeeld}
-	\label{vb:luik}
+	\label{vb:kracht op luik}
 	Bepaal de grootte en het aangrijpingspunt van de resulterende kracht op het luik ondergedompeld in een fluïdum met dichtheid $\rho$ getoond in de figuur. De bovenzijde bevindt zich op een diepte $d$, het luik heeft een hoogte $h$ en breedte $b$ (de breedte staat loodrecht op het vlak van de figuur).
 	\begin{center}
 		\includegraphics{fig/hydrostatica/kracht_op_luik}
@@ -176,6 +181,43 @@ De totale kracht kunnen we opnieuw berekenen door te integreren over het volledi
 \end{equation}
 Hierin zullen de normaalvector en de druk in veel gevallen afhankelijk zijn van de positie. Om de integraal uit te werken zullen dus afhankelijk van de situatie geschikte uitdrukkingen voor $p$ en $\vt{n}$ moeten opgesteld worden.
 
+\begin{voorbeeld}
+	\label{vb:kracht op cilindermantel}
+	Bereken de horiontale en verticale kracht die uitgeoefend wordt op een kwart van een cilindermantel met straal $r$ en breedte $b$ waarvan het bovenste punt zich op een diepte $d$ bevindt zoals afgebeeld in Figuur \ref{fig:kracht_gebogen_oppervlak_vereenvoudigd_2d}.
+
+	De grootte van de kracht die inwerkt op een infinitesimaal stukje van de cilindermantel beschreven door de hoek $\diff \alpha$ is:
+	\begin{equation*}
+		\diff F = p\ \diff A = p b r\ \diff \alpha
+	\end{equation*}
+	Deze kracht werkt loodrecht in op het oppervlak, ze kan dus ontbonden worden in een horizontale (positief naar rechts) en een verticale (positief naar boven) component:
+	\begin{align*}
+		\diff F_x &= -p \ (\vt{n} \cdot \vt{x}) \ b r\ \diff \alpha = p \cos \alpha\ b r\ \diff \alpha \\
+		\diff F_y &= -p \ (\vt{n} \cdot \vt{y}) \ b r\ \diff \alpha = -p \sin \alpha\ b r\ \diff \alpha
+	\end{align*}
+	Hierin is $\vt{n}$ de normaal vector op het oppervlak in de richting van het fluïdum. Aangezien de druk in de richting tegengesteld van deze normaalvector werkt is in de bovenstaande vergelijkingen een $-$ teken ingevoerd.
+	
+	De druk kan uitgeschreven worden met behulp van de diepte tot het vloeistof oppervlak ($z$):
+	\begin{equation*}
+		p = \rho g z
+	\end{equation*}
+	Deze diepte kan geschreven worden in functie van de hoek $\alpha$. Dit leidt tot een uitdrukking voor de druk:
+	\begin{equation*}
+		p = \rho g (d + r - r \sin \alpha)
+	\end{equation*}
+	
+	Met behulp van deze uitdrukkingen kan de totale kracht in horizontale en verticale richting bepaald worden met de integralen:
+	\begin{align*}
+		F_x &= \int_A \diff F_x = \int_0^{\pi/2} \rho g (d + r - r \sin \alpha) \cos \alpha\ b r\ \diff \alpha \\
+		F_y &= \int_A \diff F_y = \int_0^{\pi/2} -\rho g (d + r - r \sin \alpha) \sin \alpha\ b r\ \diff \alpha
+	\end{align*}
+
+	De krachten volgen uit de uitwerking van de integralen:
+	\begin{align*}
+		F_x &= \rho g \left(d r + \frac{1}{2} r^2 \right) b \\
+		F_y &= -\rho g \left( (d+r) r - \frac{1}{4} \pi r^2 \right) b
+	\end{align*}
+\end{voorbeeld}
+
 Voor horizontale krachten kan de uitwerking van bovenstaande integraal vermeden worden. Het is namelijk steeds mogelijk een volume af te zonderen met als begrenzingen het beschouwde oppervlak, een projectie van dit oppervlak op een verticaal vlak loodrecht op de beschouwde richting en de verbinding tussen de twee. Ook voor dit volume moet een krachtenevenwicht gelden. In de horizontale richting werken er slechts twee krachten, aan de ene zijde de reactie kracht van het beschouwde oppervlak op het volume, en aan de andere zijde de hydrostatische kracht ten gevolge van het aangrenzende fluïdum. Deze krachten zijn dus gelijk en aangezien het tweede oppervlak een recht oppervlak is, bovendien een verticaal oppervlak, kan de kracht, en het aangrijpingspunt, berekend worden volgens de formules voor een recht oppervlak. De horizontale kracht op eender welk oppervlak is dus gelijk aan de kracht die inwerkt op de projectie van het oppervlak op een verticaal vlak dat loodrecht staat op de beschouwde richting. Ook het aangrijpingspunt (in elk geval de hoogte van het aangrijpingspunt) van de kracht kan volgend de formules en eenvoudige methodes voor vlakke oppervlakken berekend worden. Dit wordt voor een geval in 2 dimensies geïllustreerd in Figuur \ref{fig:kracht_gebogen_oppervlak_vereenvoudigd_2d}.
 
 Ook voor verticale krachten kan de berekening vereenvoudigd worden. De kracht op zal namelijk gelijk zijn aan het gewicht van het volume boven het oppervlak alsof dit volledig met vloeistof gevuld zou zijn. Dit komt echter overeen met de berekening van een volume met een gekromd eindvlak. Hiervoor zal vaak een volume integraal uitgewerkt moeten worden wat de berekening niet steeds vereenvoudigd. Ook hier zal het aangrijpingspunt van de kracht samenvallen met het zwaartepunt van het beschouwde volume (Figuur \ref{fig:kracht_gebogen_oppervlak_vereenvoudigd_2d}).
@@ -195,21 +237,23 @@ Het feit dat de kracht op een oppervlak in een stilstaande vloeistof onafhankeli
 \end{figure}
 
 \begin{voorbeeld}
-	Bereken de horiontale en verticale kracht die uitgeoefend wordt op een kwart van een cilindermantel met straal $r$ en breedte $b$ waarvan het bovenste punt zich op een diepte $d$ bevindt zoals afgebeeld in Figuur \ref{fig:kracht_gebogen_oppervlak_vereenvoudigd_2d}.
+	\label{vb:kracht op cilindermantel vereenvoudigd}
+	Bereken nogmaals de horiontale en verticale kracht die uitgeoefend wordt op een kwart van een cilindermantel met straal $r$ en breedte $b$ waarvan het bovenste punt zich op een diepte $d$ bevindt zoals afgebeeld in Figuur \ref{fig:kracht_gebogen_oppervlak_vereenvoudigd_2d}, gebruik de eenvoudige werkwijze.
 
-	Het horizontale gedeelte van de kracht zal gelijk zijn aan de horizontale kracht uitgeoefend op een verticaal vlak met dezelfde geprojecteerde oppervlakte en kan dus zoals in Voorbeeld \ref{vb:luik} berekend worden:
+	Het horizontale gedeelte van de kracht (positief naar rechts) zal gelijk zijn aan de horizontale kracht uitgeoefend op een verticaal vlak met dezelfde geprojecteerde oppervlakte en kan dus zoals in Voorbeeld \ref{vb:kracht op luik} berekend worden:
 	\begin{align*}
-		F_{hor} &= \left( A_{\text{rechthoek}} + A_{\text{driehoek}} \right) b\\
-		        &= \left( \rho g d r + 1/2 \rho g r r \right) b \\
+		F_x &= \left( A_{\text{rechthoek}} + A_{\text{driehoek}} \right) b\\
+		    &= \left(\rho g  d r + \rho g \frac{1}{2} r r \right) b \\
 		y_z &= \frac{ y_{z,\text{rechthoek}} A_{\text{rechthoek}} + y_{z,\text{driehoek}} A_{\text{driehoek}}}{A_{\text{rechthoek}} + A_{\text{driehoek}}} \\
 		    &= \frac{ 1/2 d r + 1/6 r^2}{d + 1/2 r}
 	\end{align*}
 
-	Om de verticale kracht te berekenen moeten we het volume boven het oppervlak berekenen (het donkere gedeelte op de figuur). Het gewicht van dit volume water komt overeen met de verticale kracht. Bemerk dat het volume niet noodzakelijk gevuld met water moet zijn. Het volume is eenvoudig te berekenen al de oppervlakte van een rechthoek min de oppervlakte van de kwart cilinder vermenigvuldigd met de lengte:
+	Om de verticale kracht (positief naar boven) te berekenen moeten we het volume boven het oppervlak berekenen (het donkere gedeelte op de figuur). Het gewicht van dit volume water komt overeen met de verticale kracht. Bemerk dat het volume niet noodzakelijk gevuld met water moet zijn. Het volume is eenvoudig te berekenen als de oppervlakte van een rechthoek min de oppervlakte van de kwart cilinder vermenigvuldigd met de breedte:
 	\begin{align*}
-		F_{ver} &= \rho g (A_{\text{rechthoek}} - \frac{1}{4}A_{\text{cilinder}}) L\\
-		        &= \rho g \left( (d+r)r - \frac{1}{4} \pi r^2 \right) b
+		F_y &= -(A_{\text{rechthoek}} - \frac{1}{4}A_{\text{cilinder}}) b\\
+		    &= -\left( \rho g (d+r)r - \rho g \frac{1}{4} \pi r^2 \right) b
 	\end{align*}
+	Hierin is het minteken ingevoerd aangezien de kracht naar beneden werkt. De bekomen krachten zijn uiteraard gelijk aan die bekomen door uitwerking van de integraal in Voorbeeld \ref{vb:kracht op cilindermantel}
 
 	Het aangrijpingspunt van de verticale kracht kan op dezelfde manier gevonden worden als dat van de horizontale component, enkel moet het zwaartepunt van de kwart cirkel berekend worden. Dit ligt op $\frac{4r}{3\pi}$ van het middelpunt. De verdere uitwerking verloopt analoog als hierboven.
 \end{voorbeeld}
