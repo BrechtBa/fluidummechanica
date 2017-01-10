@@ -5,11 +5,11 @@
 \input{../common/tex/packages_tekst.tex}
 \input{tex/packages_theorie.tex}
 
-
 \begin{document}
 
 	\frontmatter
 
+		\input{tex/titelblad}
 		\input{../common/tex/copyright}
 		\input{tex/woordvooraf}
 		\tableofcontents
@@ -27,15 +27,14 @@
 		\input{tex/leidingstelsels}	
 		\input{tex/kanaalstroming}
 		
-		% Bibliografie en index
-		\input{tex/bibliografie}
-		%\printindex
 		
 	\appendix
 		\input{tex/formularium}
  		\input{tex/tabellen}
  		%\input{tex/errata}
  		
-			
+		% Bibliografie en index
+		\input{tex/bibliografie}
+		%\printindex
 
 \end{document}
